@@ -1,0 +1,159 @@
+<div class="icon-section">
+  <div class="page-width">
+    <div class="custom-icon-wrap">
+      {% for block in section.blocks %}
+        <div class="custom-icon-content">
+        <div class="custom-icon">
+           <img src="{{ block.settings.icon-img | img_url: 'master' }}" alt="Icon">
+        </div>
+        <div class="custom-icon-text">
+          <h6>{{ block.settings.icon-head }}</h6>
+          <p>{{ block.settings.icon-p }}</p>
+        </div>          
+        </div>
+       {% endfor %}
+    </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "icon with text",
+    "settings": [],
+    "blocks": [
+      {
+        "type": "column",
+        "name": "icon column",
+        "settings": [
+      {
+        "type": "image_picker",
+        "id": "icon-img",
+        "label": "Icon image"        
+      },      
+      {
+        "type": "text",
+        "id": "icon-head",
+        "label": "Heading"
+      },
+      {
+        "type": "text",
+        "id": "icon-p",
+        "label": "Text"
+      }
+        ]
+      }
+    ],
+        "presets": [
+      {
+        "name": "icon with text"
+      }
+    ]
+  }
+{% endschema %}
+<style>
+  .custom-icon-wrap {
+    border-radius: 65.5px;
+    background: #E5F1FF;
+    padding: 25px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -3em;
+    gap: 20px;
+}
+  .custom-icon-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+}
+  .custom-icon {
+    width: 80px;
+    /* height: 80px; */
+}
+  .custom-icon-text h6 {
+    margin: 0px;
+    color: #38306A;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+}
+  .custom-icon-text p {
+    margin: 0px;
+    color: #38306A;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+  @media (max-width: 1100px) {
+    .custom-icon-wrap {
+    padding: 25px;
+}
+    .custom-icon-content {
+    column-gap: 10px;
+}
+    .custom-icon-text p {
+    font-size: 18px;
+    line-height: normal;
+}
+  }
+  @media (max-width: 992px) {
+    .custom-icon-wrap {
+    align-items: flex-start;
+    margin-top: -5.5em;
+    border-radius: 35px;
+}
+    .custom-icon-content {
+    display: block;
+    width: 33%;
+}
+    .custom-icon {
+    margin: 0 auto;
+}
+    .custom-icon-text h6 {
+    text-align: center;
+    font-size: 16px;
+}
+    .custom-icon-text p {
+    text-align: center;
+    font-size: 16px;
+    width: 80%;
+    margin: 0 auto;
+}
+  }
+  @media (max-width: 767px) {
+    .custom-icon-wrap {
+    flex-wrap: wrap;
+    margin-top: -8.5em;
+}
+    .custom-icon-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-flow: column;  
+    width: 100%;
+    margin-bottom: 30px;  
+}
+    .custom-icon-content:last-child {
+    margin-bottom: 0px;  
+}
+    .custom-icon {
+    margin: 0px;
+      margin-bottom: 10px;
+}
+    .custom-icon-text {
+    text-align: center;
+}
+    .custom-icon-text h6 {
+    text-align: center;
+}
+    .custom-icon-text p {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+}
+  }
+</style>

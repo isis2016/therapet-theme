@@ -1,0 +1,315 @@
+{
+  "sections": {
+    "e1cd6145-ac4b-4b0d-b32b-3d7a89a3f508": {
+      "type": "product-banner",
+      "settings": {
+        "qhero-img": "shopify:\/\/shop_images\/hero_aa32c8f0-400c-4507-b620-c3e81ca3db68.jpg",
+        "hide-img": false,
+        "qhero-img2": "shopify:\/\/shop_images\/Screenshot_at_Nov_18_11-52-33.png",
+        "qhero-img3": "shopify:\/\/shop_images\/Screenshot_at_Nov_18_11-52-33.png",
+        "hide-headline": false,
+        "qhero-head": "If Your Dog Pees Indoor, Chews Excessively, or Bites its Paws, They May Be Silently Fighting Separation Anxiety!",
+        "hide-text": false,
+        "qhero-p": "<p>Every 60 seconds, another US dog owner buys this science-backed solution to help bring relief and comfort their dog so desperately deserves!<\/p>",
+        "red-btn": "#stats-block",
+        "red-text": "Find Out More",
+        "blue-btn": "#question-two",
+        "blue-text": "Skip"
+      }
+    },
+    "b3526ef6-b8b8-4535-839f-d66a4122b919": {
+      "type": "seasonal",
+      "settings": {
+        "videoOpt": "",
+        "hide-seasonal-video": false,
+        "bg": "",
+        "custom-id": "stats-block",
+        "seasonal-head": "Anxiety is a debilitating issue that can rob dogs of their joy 😢",
+        "hide-seasonal-head": false,
+        "seasonal-p": "<p>A recent study suggests that <strong>8 out of 10 dogs<\/strong> <strong>struggle<\/strong> to cope <strong>when left alone<\/strong>. Roughly <strong>67% of dogs<\/strong> with separation anxiety<strong> aren’t treated<\/strong> for it because their owners miss the signs, and <strong>the<\/strong> <strong>longer<\/strong> this issue goes untreated, <strong>the worse it gets.<\/strong><\/p>",
+        "red-btn": "#symptoms",
+        "red-text": "What Are The Signs?",
+        "blue-btn": "",
+        "blue-text": "",
+        "seasonal-img": "shopify:\/\/shop_images\/dog_alone.jpg",
+        "hide-seasonal-img": false,
+        "section_css_class": "stats"
+      }
+    },
+    "166469fc-b179-4ede-8b27-b963d1ab65f3": {
+      "type": "seasonal",
+      "custom_css": [
+        "a.btn-pet.show {width: 70%;}",
+        "a.btn-pet.blue.show2 {width: 30%;}",
+        "@media screen and (max-width: 767px) {a.btn-pet.show {width: 70%; } a.btn-pet.blue.show2 {width: 25%; }}"
+      ],
+      "settings": {
+        "videoOpt": "",
+        "hide-seasonal-video": false,
+        "bg": "#f5f7ff",
+        "custom-id": "symptoms",
+        "seasonal-head": "What Are The Signs Of Separation Anxiety?",
+        "hide-seasonal-head": true,
+        "seasonal-p": "<p><em>Here are some telltale signs to look out for:<\/em><\/p><ul><li><strong>Indoor peeing, spraying, and marking<\/strong><\/li><li><strong>Chewing and Destroying furniture<\/strong><\/li><li><strong>Howling, barking, whining<\/strong><\/li><li><strong>Paw licking or tail-biting<\/strong><\/li><li><strong>Excessive salivation, vomiting<\/strong><\/li><li><strong>Not eating when you're out<\/strong><\/li><\/ul>",
+        "red-btn": "#solution-one",
+        "red-text": "What's The Solution?",
+        "blue-btn": "#question-one",
+        "blue-text": "Skip",
+        "seasonal-img": "shopify:\/\/shop_images\/4prob.jpg",
+        "hide-seasonal-img": false,
+        "section_css_class": "stats test"
+      }
+    },
+    "b6b321e3-0cbb-477a-8914-53abe85154f2": {
+      "type": "seasonal",
+      "settings": {
+        "videoOpt": "",
+        "hide-seasonal-video": false,
+        "bg": "rgba(0,0,0,0)",
+        "custom-id": "solution-one",
+        "seasonal-head": "Get To The Root Of Your Dog's Anxiety – With This Breakthrough Calming Diffuser",
+        "hide-seasonal-head": false,
+        "seasonal-p": "<p>TheraPet allows all dog parents to benefit from the powerful impact pheromones have on dogs. They play a crucial role in their cognitive processes and <strong>regulate their emotions and behaviors.<\/strong><\/p><p>And this means: less indoor peeing, excessive licking, head shaking or itching, and chewing and destroying things. And your doggo back to <strong>their healthy, joyful and calm self. <\/strong><\/p>",
+        "red-btn": "#solution-two",
+        "red-text": "Continue reading",
+        "blue-btn": "",
+        "blue-text": "",
+        "seasonal-img": "shopify:\/\/shop_images\/4split_d10c8e74-7f1b-46fb-af31-1a2f4822e3bb.png",
+        "hide-seasonal-img": false,
+        "section_css_class": "stats"
+      }
+    },
+    "d10aa53c-dc8d-47ff-9581-15d2be2118af": {
+      "type": "seasonal",
+      "settings": {
+        "videoOpt": "",
+        "hide-seasonal-video": false,
+        "bg": "#f5f7ff",
+        "custom-id": "solution-two",
+        "seasonal-head": "The Science Behind The Magic",
+        "hide-seasonal-head": true,
+        "seasonal-p": "<p>Pheromones are triggers that convey various messages to dogs’ brains and affecting their nervous system. <\/p><p>Maternal pheromones activate the “feel-good” chemicals in dogs’ brains, so they <strong>protect<\/strong> <strong>our furry friends<\/strong> <strong>from anxiety<\/strong> triggers, working like a safety bubble. <\/p><p>And when separation triggers anxiety, maternal pheromones turn off these stressful chemicals and alleviate their emotional tension <strong>instantly, naturally and effectively.<\/strong><\/p>",
+        "red-btn": "#solution-three",
+        "red-text": "Continue reading",
+        "blue-btn": "",
+        "blue-text": "",
+        "seasonal-img": "shopify:\/\/shop_images\/EDITED_PHOTO-08.jpg",
+        "hide-seasonal-img": false,
+        "section_css_class": "stats"
+      }
+    },
+    "eacfc3c9-106a-4e00-b123-f94d653255a0": {
+      "type": "seasonal",
+      "settings": {
+        "videoOpt": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/ed9c2327f29d4639863ad238efe5f160.mp4",
+        "hide-seasonal-video": false,
+        "bg": "",
+        "custom-id": "solution-three",
+        "seasonal-head": "The moment you plug it in, it starts its magic!",
+        "hide-seasonal-head": true,
+        "seasonal-p": "<p>These pheromones are called “maternal” for a reason: it’s the same scent a <strong>mama dog<\/strong> gives off while bonding with her newborn puppies, <strong>making them feel loved and secure. <\/strong><\/p><p>And dogs never forget the scent, as soon as they smell it, they<strong> feel calmer and safer<\/strong>, and they don’t feel the need to <strong>unload emotional tension<\/strong> through indoor urinating, excessive barking or destroying furniture. <\/p>",
+        "red-btn": "#survey",
+        "red-text": "Continue reading",
+        "blue-btn": "",
+        "blue-text": "",
+        "hide-seasonal-img": false,
+        "section_css_class": "stats"
+      }
+    },
+    "0244b9e8-ef39-441f-a4f1-9e584b70f10b": {
+      "type": "progress-blog",
+      "blocks": {
+        "22a4cb7b-0bee-4d21-b89e-003ae099ece6": {
+          "type": "block",
+          "settings": {
+            "tested-head": "84%",
+            "tested-p": "<p><strong>Saw a reduction in indoor peeing & urine spraying<\/strong><\/p>",
+            "progress": 84
+          }
+        },
+        "3b70b77a-f50b-45be-b241-315bab5c29b1": {
+          "type": "block",
+          "settings": {
+            "tested-head": "87%",
+            "tested-p": "<p><strong>Saw a reduction in chewing and destructive behaviors<\/strong><\/p>",
+            "progress": 87
+          }
+        },
+        "0a55cb2c-e5a3-41c2-b176-1050af23df85": {
+          "type": "block",
+          "settings": {
+            "tested-head": "89%",
+            "tested-p": "<p><strong>Saw reduction in barking, howling, and paw licking<\/strong><\/p>",
+            "progress": 89
+          }
+        },
+        "ff9091a8-f8b0-4aeb-97bd-7d77a17f369a": {
+          "type": "block",
+          "settings": {
+            "tested-head": "100%",
+            "tested-p": "<p><strong>Saved at least 40% on their VET bills<\/strong><\/p>",
+            "progress": 100
+          }
+        }
+      },
+      "block_order": [
+        "22a4cb7b-0bee-4d21-b89e-003ae099ece6",
+        "3b70b77a-f50b-45be-b241-315bab5c29b1",
+        "0a55cb2c-e5a3-41c2-b176-1050af23df85",
+        "ff9091a8-f8b0-4aeb-97bd-7d77a17f369a"
+      ],
+      "settings": {
+        "custom-id": "survey",
+        "bg": "#ffffff",
+        "head": "84% of TheraPet customers saw results after just the first month!",
+        "hide-progress-head": false,
+        "tested-img": "shopify:\/\/shop_images\/EDITED_PHOTO-02-min.jpg",
+        "hide-testedimg": true,
+        "pro-btn": "#featured-one",
+        "pro-text": "Continue",
+        "pro-p": "<p><em>*Results based on Calming Diffuser buyers' internal feedback survey conducted in March 2024 (n=300)<\/em><\/p>",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_top-mob": 0,
+        "padding_bottom-mob": 0
+      }
+    },
+    "16e3d6b3-f10a-4d9a-8921-09da29e14ce2": {
+      "type": "featured",
+      "blocks": {
+        "15957e30-b56d-4e75-9b4d-eba509c13beb": {
+          "type": "column",
+          "settings": {
+            "featured-head": "Vet-reviewed...",
+            "hide-featuredhead": false,
+            "featured-img": "shopify:\/\/shop_images\/EDITED_PHOTO-03-min.png",
+            "hide-featuredimg": false
+          }
+        },
+        "4f0d6955-997f-4798-8beb-8e2dff247fde": {
+          "type": "column",
+          "settings": {
+            "featured-head": "Loved by pet parents...",
+            "hide-featuredhead": false,
+            "featured-img": "shopify:\/\/shop_images\/EDITED_PHOTO-01-min.png",
+            "hide-featuredimg": false
+          }
+        },
+        "d7e130f6-00dd-4b62-8b36-8c2511224c31": {
+          "type": "column",
+          "settings": {
+            "featured-head": "...And thousands of dogs worldwide!",
+            "hide-featuredhead": false,
+            "featured-img": "shopify:\/\/shop_images\/people.jpg",
+            "hide-featuredimg": false
+          }
+        }
+      },
+      "block_order": [
+        "15957e30-b56d-4e75-9b4d-eba509c13beb",
+        "4f0d6955-997f-4798-8beb-8e2dff247fde",
+        "d7e130f6-00dd-4b62-8b36-8c2511224c31"
+      ],
+      "settings": {
+        "bg": "#ffffff",
+        "custom-id": "featured-one",
+        "red-btn": "#question-one",
+        "red-text": "Continue",
+        "section_css_class": "world"
+      }
+    },
+    "e8bea94a-07b2-4d1b-9ea0-06775f07389d": {
+      "type": "question",
+      "blocks": {
+        "59d05855-7f21-4eec-82e8-563906e8a21b": {
+          "type": "column",
+          "settings": {
+            "blue-btn": "#question-two",
+            "blue-text": "Daily"
+          }
+        },
+        "bc153449-bf1d-4c47-8151-af1e5b8e4172": {
+          "type": "column",
+          "settings": {
+            "blue-btn": "#question-two",
+            "blue-text": "Sometimes"
+          }
+        },
+        "b9b0209a-1fe3-4263-a215-357b2352ff17": {
+          "type": "column",
+          "settings": {
+            "blue-btn": "#question-two",
+            "blue-text": "Never"
+          }
+        }
+      },
+      "block_order": [
+        "59d05855-7f21-4eec-82e8-563906e8a21b",
+        "bc153449-bf1d-4c47-8151-af1e5b8e4172",
+        "b9b0209a-1fe3-4263-a215-357b2352ff17"
+      ],
+      "settings": {
+        "custom-id": "question-one",
+        "section_css_class": "",
+        "question-head": "How often do you leave your dog alone?"
+      }
+    },
+    "b10c87e9-ac74-4d21-a284-a9a2c181efed": {
+      "type": "question",
+      "blocks": {
+        "c55f2b37-3d70-4af7-8c52-28e483573d2d": {
+          "type": "column",
+          "settings": {
+            "blue-btn": "https:\/\/therapetmd.com\/pages\/step2-dogs-v2",
+            "blue-text": "Rarely"
+          }
+        },
+        "3f17d015-36b1-426a-9c04-d028d18e0d51": {
+          "type": "column",
+          "settings": {
+            "blue-btn": "https:\/\/therapetmd.com\/pages\/step2-dogs-v2",
+            "blue-text": "Sometimes"
+          }
+        },
+        "114b3eeb-1d2b-479e-ab71-7aeb87cd954f": {
+          "type": "column",
+          "settings": {
+            "blue-btn": "https:\/\/therapetmd.com\/pages\/step2-dogs-v2",
+            "blue-text": "Often"
+          }
+        },
+        "aa40e87e-96b4-419e-abe0-38d3721ba923": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "blue-btn": "https:\/\/therapetmd.com\/pages\/step2-adv",
+            "blue-text": "All the time"
+          }
+        }
+      },
+      "block_order": [
+        "c55f2b37-3d70-4af7-8c52-28e483573d2d",
+        "3f17d015-36b1-426a-9c04-d028d18e0d51",
+        "114b3eeb-1d2b-479e-ab71-7aeb87cd954f",
+        "aa40e87e-96b4-419e-abe0-38d3721ba923"
+      ],
+      "settings": {
+        "custom-id": "question-two",
+        "section_css_class": "",
+        "question-head": "How often do you notice them showing separation-related behaviors?\u2028"
+      }
+    }
+  },
+  "order": [
+    "e1cd6145-ac4b-4b0d-b32b-3d7a89a3f508",
+    "b3526ef6-b8b8-4535-839f-d66a4122b919",
+    "166469fc-b179-4ede-8b27-b963d1ab65f3",
+    "b6b321e3-0cbb-477a-8914-53abe85154f2",
+    "d10aa53c-dc8d-47ff-9581-15d2be2118af",
+    "eacfc3c9-106a-4e00-b123-f94d653255a0",
+    "0244b9e8-ef39-441f-a4f1-9e584b70f10b",
+    "16e3d6b3-f10a-4d9a-8921-09da29e14ce2",
+    "e8bea94a-07b2-4d1b-9ea0-06775f07389d",
+    "b10c87e9-ac74-4d21-a284-a9a2c181efed"
+  ]
+}

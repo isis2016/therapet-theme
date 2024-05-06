@@ -1,0 +1,50 @@
+<style>
+  .wrapNeedHelp {
+    padding: 50px 0;
+    text-align: center;
+}.wrapNeedHelp h2 {
+    font-size: 1.8em;
+}.wrapNeedHelp a {
+    font-weight: 900;
+    text-decoration: none;color:{{settings.heading}}
+}
+</style>
+
+<section style="background:{{ section.settings.backColor }}">
+<div class="page-width">
+<div class="wrapNeedHelp">
+<h2>{{ section.settings.heading }}</h2>
+{{ section.settings.text }}
+</div>
+</div>
+</section>
+
+
+{% schema %}
+  {
+    "name": "Need Help",
+    "settings": [
+      {
+        "type":"color",
+        "id":"backColor",
+        "label":"Background Color",
+        "default":"#E8F1F7"
+      },
+      {
+        "type":"textarea",
+        "id":"heading",
+        "label":"Heading"
+      },
+      {
+        "type":"richtext",
+        "id":"text",
+        "label":"Text"
+      }
+    ],
+    "presets":[
+      {
+        "name":"Need Help"
+      }
+    ]
+  }
+{% endschema %} 

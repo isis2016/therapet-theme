@@ -1,0 +1,51 @@
+{
+  "parent": "page.offer-bfcm.json",
+  "context": {
+    "market": "us"
+  },
+  "sections": {
+    "33f8fc7f-ff65-4d0c-a79e-75a81eda5b58": {
+      "settings": {
+      },
+      "blocks": {
+        "template--21542042009920__33f8fc7f-ff65-4d0c-a79e-75a81eda5b58-title-1": {
+          "settings": {
+            "title_label": "BLACK FRIDAY SALE"
+          }
+        },
+        "0169b17c-4cb6-4a1b-ac99-cdcd67f9ef9a": {
+          "settings": {
+            "badge": "ON SALE"
+          }
+        },
+        "564d97c7-38e7-414b-a2a5-b438cd3bce42": {
+          "settings": {
+            "product": "copy-of-1x-therapet-diffuser-limited-sale",
+            "badge": "ON SALE"
+          }
+        },
+        "c68d5dc7-6455-4279-ae42-afb1a56a9ae3": {
+          "settings": {
+            "product": "3x-therapet-diffuser-limited-sale",
+            "badge": "ON SALE"
+          }
+        }
+      }
+    },
+    "5f859064-7221-486d-a60a-60545bf6d6f6": {
+      "settings": {
+        "subheading": ""
+      },
+      "blocks": {
+      }
+    },
+    "9cb78ee0-8d59-49cc-b61b-45b391185f36": {
+      "settings": {
+        "review2": "",
+        "btn_text": "BLACK FRIDAY LIMITED SALE>"
+      },
+      "blocks": {
+      }
+    }
+  }
+}

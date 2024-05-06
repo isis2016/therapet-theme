@@ -1,0 +1,988 @@
+{
+  "sections": {
+    "9cb78ee0-8d59-49cc-b61b-45b391185f36": {
+      "type": "new-design-main",
+      "blocks": {
+        "f36df904-46c2-4146-b418-6c6ca294e88c": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/TheraPetMd_dog_landing_page_elements_icon-05.png",
+            "text": "<b>Eliminates Unwanted Peeing<\/b>"
+          }
+        },
+        "ad66102f-29c4-4ed8-bb85-901bcaf2d14b": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/icon7.png",
+            "text": "<b>Eases Anxiety & Loneliness<\/b>"
+          }
+        },
+        "bd5e56ce-99aa-4834-bdbd-472586b7b5e9": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/icon6.png",
+            "text": "<b>Decreases Destructive Behaviors<\/b>"
+          }
+        },
+        "ca674cd5-3b78-4d07-a0ec-db674c2a1a4c": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/icon1.png",
+            "text": "<b>Reduces Aggressive Behavior<\/b>"
+          }
+        },
+        "289c538f-7506-48d0-87cb-93a0f348db19": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/icon2.png",
+            "text": "<b>Hyperactivity & Reactivity<\/b>"
+          }
+        },
+        "6e1e25b1-f596-461b-91b8-821ea98c1a4d": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/icon3.png",
+            "text": "<b>Reduces Whining &Barking<\/b>"
+          }
+        },
+        "c50a9685-8a0c-4ea8-abb7-91caa19f914d": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/icon4.png",
+            "text": "<b>Helps with Fear of Noises<\/b>"
+          }
+        },
+        "62e363b4-2566-4a4a-ab92-c52ca8d2b984": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/icon5.png",
+            "text": "<b>Easier Travel & Changes<\/b>"
+          }
+        }
+      },
+      "block_order": [
+        "f36df904-46c2-4146-b418-6c6ca294e88c",
+        "ad66102f-29c4-4ed8-bb85-901bcaf2d14b",
+        "bd5e56ce-99aa-4834-bdbd-472586b7b5e9",
+        "ca674cd5-3b78-4d07-a0ec-db674c2a1a4c",
+        "289c538f-7506-48d0-87cb-93a0f348db19",
+        "6e1e25b1-f596-461b-91b8-821ea98c1a4d",
+        "c50a9685-8a0c-4ea8-abb7-91caa19f914d",
+        "62e363b4-2566-4a4a-ab92-c52ca8d2b984"
+      ],
+      "settings": {
+        "headingColor": "#003b62",
+        "gradient1": "#1773b0",
+        "gradient2": "#3b9ee0",
+        "backgroundWrap": "#f2f7fe",
+        "backimage": "shopify:\/\/shop_images\/hero_section_dogs_test_desktop-02.png",
+        "backimagem": "shopify:\/\/shop_images\/hero_section_for_dog_edited-03-min.png",
+        "bundlesUp": "",
+        "heading": "If You Spot Your Dog  Peeing Indoor, Marking, or Acting Scared, This Science-Driven Solution Is A Must.",
+        "text": "",
+        "btn_text": "STOP MY DOG'S INDOOR PEEING!",
+        "btn_link": "#order-now-section",
+        "guaranteeText": "30-Day Money Back Guarantee",
+        "review": "<p>5,080+ Verified Reviews<\/p>",
+        "review2": "<p>“I bought this for my 5-year-old buddy who would pee every day in exactly the same spot. I really had enough of cleaning his pee. This product has helped us so much, he no longer does it! It also helps with his anxiety about storms. Really great product I can't speak highly enough of!” <em>- <\/em><strong>Augustine J., TheraPet™ Customer<\/strong><\/p>",
+        "featured": "Experience the power of TheraPet™ in reducing your dog's anxiety, Without resorting to <b><span class=\"red\">❌ Expensive VET trips, Training, Toys, Medications, or Supplements!<\/span><\/b>"
+      }
+    },
+    "3aa132a9-3ee7-42e9-83d7-396f032d9137": {
+      "type": "richTextNew",
+      "settings": {
+        "gradient1": "#1773b0",
+        "gradient2": "#3b9ee0",
+        "heading": "<i>A PhD VET Reveals: Inappropriate Peeing Affects 68% of Dogs!<\/i>",
+        "text": "<p>Of these, 25-45% urinate inappropriately due to <strong>underlying stress or anxiety,<\/strong> while <strong>up to 52%<\/strong> do so in response to <strong>unfamiliar sights, noises or peopl<\/strong>e. Shockingly, most dogs aren’t treated for it, and the longer this issue goes untreated, <strong>the worse it gets! <\/strong>But this is all set to change with TheraPet™ — on a mission to <strong>offer a stress-free environment <\/strong>for dogs worldwide!<\/p>",
+        "btn_text": "",
+        "btn_link": ""
+      }
+    },
+    "aa3113d8-10fd-4952-ae79-1135faf2ffd7": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--19044223844672__aa3113d8-10fd-4952-ae79-1135faf2ffd7-1683726190edd5355e-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Ever noticed your dog peeing indoors or marking urine? Or often overly alert, suddenly barking at small things, or acting jumpy?",
+            "heading_top_mobile": false,
+            "heading_size": "h2"
+          }
+        },
+        "template--19044223844672__aa3113d8-10fd-4952-ae79-1135faf2ffd7-1683726190edd5355e-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>If your <strong>pooch<\/strong> is <strong>healthy<\/strong> and you're <strong>walking<\/strong> them enough, you might wonder, \"<strong>Why's my dog still peeing at home?<\/strong>\" You're not alone. We <strong>adore<\/strong> our dogs, but <strong>indoor peeing<\/strong> is a challenge.<\/p><p>Dogs have their <strong>stress-coping<\/strong> behaviors: <strong>indoor peeing, urine marking<\/strong>...<\/p><p>Seeing our dogs like this is <strong>hard<\/strong>, especially after trying everything—<strong>extra playtime, new toys, costly vet visits<\/strong>, and <strong>expensive medications<\/strong>.<\/p><p>Various factors can trigger your dog's “<strong>indoor peeing mode<\/strong>”—<strong>new environments, loud noises, long hours alone<\/strong>, or even <strong>slight changes in routine<\/strong>.<\/p><p>Here, <strong>TheraPet™<\/strong> comes into play, designed to <strong>ease this stress<\/strong> and create a <strong>tranquil environment<\/strong> for your <strong>furry friend<\/strong>.<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--19044223844672__aa3113d8-10fd-4952-ae79-1135faf2ffd7-1683726190edd5355e-0",
+        "template--19044223844672__aa3113d8-10fd-4952-ae79-1135faf2ffd7-1683726190edd5355e-1"
+      ],
+      "settings": {
+        "headingColor": "#1773b0",
+        "image": "shopify:\/\/shop_images\/prob.jpg",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-2",
+        "mobile_content_alignment": "left",
+        "padding_top": 60,
+        "padding_bottom": 8
+      }
+    },
+    "f9b6148f-ca59-4f35-a9fc-59992b0ae349": {
+      "type": "faq-section-new",
+      "blocks": {
+        "template--15731761184924__f9b6148f-ca59-4f35-a9fc-59992b0ae349-1676754232bbeca43b-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Does your dog pee indoors, regularly or accidentally, or leave urine marks?",
+            "icon": "none",
+            "row_content": "<p>Some dogs leave urine marks to mark their territory; others choose one spot and consistently pee there. they may also pee out of fear, excitement or loneliness. In all cases, it’s their call for help!<\/p>",
+            "page": ""
+          }
+        },
+        "6f1c80c6-abc1-4a2b-8c1e-a3b2e71f65da": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Does your dog often bark or lunge at others randomly?",
+            "icon": "none",
+            "row_content": "<p>This unexpected aggression is a sign of reactivity, often rooted in anxiety or prior stressful experiences.<\/p>",
+            "page": ""
+          }
+        },
+        "86edf87d-35d9-4ecc-8702-b84d3daadcc3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Does your dog get scared easily with loud noises or new people?",
+            "icon": "none",
+            "row_content": "<p>Being always tense or jumpy, especially in new settings, points to underlying stress or anxiety making them uneasy.<\/p>",
+            "page": ""
+          }
+        },
+        "template--15731761184924__f9b6148f-ca59-4f35-a9fc-59992b0ae349-1676754232bbeca43b-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Does your dog act out when you're not around?",
+            "icon": "none",
+            "row_content": "<p>Acting up when left alone can be a sign your dog is feeling stressed when you're not around, known as separation anxiety.<\/p>",
+            "page": ""
+          }
+        },
+        "template--15731761184924__f9b6148f-ca59-4f35-a9fc-59992b0ae349-1676754232bbeca43b-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Pacing back and forth or being unable to settle in one place?",
+            "icon": "none",
+            "row_content": "<p>Constant pacing or restlessness often indicates stress, with the dog struggling to find comfort or feeling on high alert.<\/p>",
+            "page": ""
+          }
+        },
+        "template--15731761184924__f9b6148f-ca59-4f35-a9fc-59992b0ae349-1676754232bbeca43b-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Frequently restless or struggling to find a calm moment?",
+            "icon": "none",
+            "row_content": "<p>A perpetual state of unrest highlights chronic stress or anxiety, as they're unable to relax and feel at peace.<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15731761184924__f9b6148f-ca59-4f35-a9fc-59992b0ae349-1676754232bbeca43b-1",
+        "6f1c80c6-abc1-4a2b-8c1e-a3b2e71f65da",
+        "86edf87d-35d9-4ecc-8702-b84d3daadcc3",
+        "template--15731761184924__f9b6148f-ca59-4f35-a9fc-59992b0ae349-1676754232bbeca43b-0",
+        "template--15731761184924__f9b6148f-ca59-4f35-a9fc-59992b0ae349-1676754232bbeca43b-2",
+        "template--15731761184924__f9b6148f-ca59-4f35-a9fc-59992b0ae349-1676754232bbeca43b-3"
+      ],
+      "settings": {
+        "headingColor": "#1773b0",
+        "color": "#f5f7ff",
+        "subheading": "WHY DO YOU NEED THERAPET",
+        "caption": "If the answer is yes to any of these questions …TheraPet Is a Must Have!",
+        "heading": "It's time to show your dog you care, With TheraPet™ Diffuser",
+        "heading_size": "h2",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 32,
+        "padding_bottom": 48,
+        "bottom": "Look No More! Let TheraPet create a more comfortable, calming home for you and your dog!"
+      }
+    },
+    "52eaad7f-3fd1-494c-9a6e-4ac0cd95745d": {
+      "type": "introduction",
+      "blocks": {
+        "25a0d281-5551-4d1b-8a21-aa43205400be": {
+          "type": "block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/TheraPetMd_landing_page-14.png",
+            "text": "78% Reduction in Indoor Peeing"
+          }
+        },
+        "acc14f3e-81ee-4a8a-92c4-4320b15df2c8": {
+          "type": "block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/TheraPetMd_dog_landing_page_elements-13_78fdd443-bf99-4275-9a1b-63ce94b52874.png",
+            "text": "74% Reduction in Destructive Behaviors"
+          }
+        },
+        "678aeb5d-fefd-4f25-a344-05d248b201cb": {
+          "type": "block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/TheraPetMd_dog_landing_page_elements-14_ba646623-b615-4c8f-b313-77e49fb1c3f4.png",
+            "text": "83% Reduction in Tension &Aggression"
+          }
+        },
+        "2595a8f4-1829-4b42-98a2-b563bbacc481": {
+          "type": "block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/TheraPetMd_dog_landing_page_elements-15_1f8ebf5d-146b-4b78-9f07-1466cd495072.png",
+            "text": "86% Reduction in Hiding & Fear"
+          }
+        }
+      },
+      "block_order": [
+        "25a0d281-5551-4d1b-8a21-aa43205400be",
+        "acc14f3e-81ee-4a8a-92c4-4320b15df2c8",
+        "678aeb5d-fefd-4f25-a344-05d248b201cb",
+        "2595a8f4-1829-4b42-98a2-b563bbacc481"
+      ],
+      "settings": {
+        "backimage": "shopify:\/\/shop_images\/backintrodogs.jpg",
+        "imagem": "shopify:\/\/shop_images\/TheraPetMd_dog_landing_page_elements-11-min.png",
+        "heading_top_mobile": false,
+        "border": "shopify:\/\/shop_images\/image_1012_600x_8a68f252-cc43-49aa-b51f-9b7d93b6705c.webp",
+        "intro": "INTRODUCING",
+        "logo": "shopify:\/\/shop_images\/TheraPetMd_dog_landing_page_logo-37.png",
+        "text": "<p>TheraPet™ Diffuser effortlessly solves dogs’ indoor peeing issues by easing their stress and anxiety. It releases calming pheromones, perceptible only to dogs, conveying safety and love. <\/p><p>These pheromones target the brain's stress-response cells, reducing the emotional tension that causes indoor peeing and marking.<\/p><p>TheraPet™ transforms your home into a peaceful, dog-pee-free environment, ensuring comfort for your dog and family. <\/p><p>It’s more than a diffuser; it's a daily gesture of care for your dog, ensuring peace and a stronger bond. TheraPet is the key to a welcoming, fresh-smelling home<\/p>"
+      }
+    },
+    "482d3967-4f26-4fc2-91c9-ab3b5d3e865c": {
+      "type": "vs-blocks",
+      "blocks": {
+        "92ac95a5-491a-47d2-ada0-0e2451cf4e24": {
+          "type": "Blocks",
+          "settings": {
+            "videoOpt": "",
+            "BlockImage": "shopify:\/\/shop_images\/sparcling_effect_dog-01-min.png",
+            "BlockText": "Canine Appeasing Pheromones",
+            "BlockrichText": "<p>Think of them as doggy \"feel-good\" vibes. When pups are relaxed and happy, they give off these vibes to let their buddies know, \"Hey, everything's chill here.\" So, when your fur baby gets a whiff of TheraPet's pheromones, they feel like they're in their happy place, and don't feel the urge to release the tension by urinating.<\/p>",
+            "content": "<li>[Tick] Boosts Security — Mimics 'all-clear' signals to reduce stress and foster a sense of safety.<\/li>\n<li>[Tick] Reduces Jitters — It's like telling your pup everything's fine, calming those nerves and reactive jumps.<\/li>\n<li>[Tick] Encourages Play — Promotes an environment for natural curiosity and playfulness.<\/li>"
+          }
+        },
+        "738fc78b-3bb1-4180-9e00-b8e909c0f259": {
+          "type": "Blocks",
+          "settings": {
+            "videoOpt": "",
+            "BlockImage": "shopify:\/\/shop_images\/sparcling_effect_dog-04.png",
+            "BlockText": "Maternal Appeasing Pheromones",
+            "BlockrichText": "<p>TheraPet™ uses what we call Maternal Appeasing Pheromones. Remember those cozy, safe feelings as a kid with mom around? It's the same! Mother dogs give off these calming scents to make their puppies feel safe and sound. TheraPet™ brings that motherly comfort to dogs of all ages!<\/p>",
+            "content": "<li>[Tick] Feels Like a Hug — It's like a warm embrace, easing worries and jitters.<\/li>\n<li>[Tick] Strengthens Connection — Perfect for homes with more than one dog, making sure everyone feels part of the pack.<\/li>\n<li>[Tick] Smooths Out Changes — Whether moving or bringing a new pet home, TheraPet™ helps ease them into new situations.<\/li>"
+          }
+        }
+      },
+      "block_order": [
+        "92ac95a5-491a-47d2-ada0-0e2451cf4e24",
+        "738fc78b-3bb1-4180-9e00-b8e909c0f259"
+      ],
+      "settings": {
+        "BlockColor": "#ffffff",
+        "Text": "Whats The Secret Behind TheraPet?",
+        "richText": "<p>It's all in our unique blend of Canine Appeasing Pheromones! <\/p><p>Sounds complicated? Don't worry, it's not!<\/p>",
+        "vscheckbox": false,
+        "vscolor": "#eeefc6",
+        "vstext": "PLUS"
+      }
+    },
+    "2113bc22-8a62-4a14-b3d8-8c10771b0621": {
+      "type": "richTextNew",
+      "settings": {
+        "gradient1": "#1773b0",
+        "gradient2": "#3b9ee0",
+        "image": "shopify:\/\/shop_images\/TheraPetMd_dog_landing_page_elements-38.png",
+        "heading": "GET 50% OFF + 60 DAYS REFILLS TODAY!",
+        "text": "<p>You haven't truly seen your dog at their <strong>happiest and most relaxed <\/strong>until you've tried TheraPet™!<\/p><p>This will be the most seamless and effective way to enhance your dog's emotional well-being. <strong>After all, your loyal buddy deserves all the peace and relaxation they can get!<\/strong><\/p>",
+        "btn_text": "CLAIM YOUR DISCOUNT NOW!",
+        "btn_link": "#order-now-section"
+      }
+    },
+    "381e61a9-3a1a-4f29-bf0a-5a23cdaf2b6e": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--19044223844672__381e61a9-3a1a-4f29-bf0a-5a23cdaf2b6e-1683887730aa7d971d-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Ever wish you could just wrap your pup in a protective bubble of calm?",
+            "heading_top_mobile": false,
+            "heading_size": "h2"
+          }
+        },
+        "template--19044223844672__381e61a9-3a1a-4f29-bf0a-5a23cdaf2b6e-1683887730aa7d971d-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>That's exactly what TheraPet does! Imagine it as a gentle whisper in your dog's ear, saying, \"<em>Hey buddy, everything's alright.\"<\/em><\/p><p>It's not only about <strong>eliminating indoor peeing and saving your couch, shoes or floor<\/strong>– it's about letting your dog's cheerful, carefree spirit shine through. <\/p><p>Picture more tail wags, relaxed snoozes in their favorite spot, and those playful antics that <strong>make your heart swell…<\/strong><\/p><p>The magic behind this? TheraPet's <strong>one-of-a-kind calming blend. <\/strong>Honestly, there's nothing quite like it out there. It's the <strong>secret sauce <\/strong>for any dog parent wanting to gift their furry friend a <strong>peaceful, happy home.<\/strong> Trust me, <strong>your dog will thank you!<\/strong><\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--19044223844672__381e61a9-3a1a-4f29-bf0a-5a23cdaf2b6e-1683887730aa7d971d-0",
+        "template--19044223844672__381e61a9-3a1a-4f29-bf0a-5a23cdaf2b6e-1683887730aa7d971d-1"
+      ],
+      "settings": {
+        "headingColor": "#1773b0",
+        "image": "shopify:\/\/shop_images\/sparcling_effect_dog-03-min.png",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 56,
+        "padding_bottom": 0
+      }
+    },
+    "d94d84d0-0224-4c64-855b-44f4726ad3cc": {
+      "type": "features-section",
+      "blocks": {
+        "6409377b-f8c3-4c3b-bef5-e6fa95daf85f": {
+          "type": "text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/TheraPetMd_dog_landing_page_elements-18_c13acee2-fa78-45e7-bd5c-2172bd3e6b11.png",
+            "heading": "Safe & Drug-Free Relief",
+            "text": "TheraPet™ is a non-invasive, drug-free solution that respects your dog's normal routine. No side effects, no dietary changes—just a happier, calmer dog."
+          }
+        },
+        "ca1d3b08-4567-4d41-a6f6-2da663fc2a44": {
+          "type": "text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/TheraPetMd_dog_landing_page_elements-17_6efe3e51-a7e0-4ac8-92b4-3df3b64ac213.png",
+            "heading": "Around-the-Clock Calming",
+            "text": "TheraPet™ works 24\/7, turning your home into a calm oasis for your furry friend, ensuring consistent peace day and night."
+          }
+        },
+        "13c34edf-0703-4d6d-83a6-11110e6c7cb7": {
+          "type": "text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/TheraPetMd_dog_landing_page_elements-20_b38a2c42-1751-455f-a6f6-6adcbdacbca7.png",
+            "heading": "Customizable Comfort",
+            "text": "TheraPet™ respects your dog's uniqueness, customizing its calming effect to fit your canine's specific tranquility needs."
+          }
+        },
+        "db39819b-f7ef-4b95-afbe-dc824458b4eb": {
+          "type": "text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/TheraPetMd_dog_landing_page_elements-19_6dffd2aa-6b76-4651-8b85-65b1b3d9d813.png",
+            "heading": "Ideal for Multi-Dog Homes",
+            "text": "Got more than one furball? No problem! TheraPet works its magic on all your doggies, ensuring a peaceful, harmonious household."
+          }
+        }
+      },
+      "block_order": [
+        "6409377b-f8c3-4c3b-bef5-e6fa95daf85f",
+        "ca1d3b08-4567-4d41-a6f6-2da663fc2a44",
+        "13c34edf-0703-4d6d-83a6-11110e6c7cb7",
+        "db39819b-f7ef-4b95-afbe-dc824458b4eb"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "headingColor": "#1773b0",
+        "heading": "Experience the TheraPet Advantage:<br>Designed with Care, Engineered for Calm",
+        "text": "TheraPet™ is more than a diffuser—it's a pledge to your dog's tranquility. It's where nature's wisdom meets canine understanding, creating a harmony your dog will love.",
+        "image": "shopify:\/\/shop_images\/TheraPetMd_dog_landing_page_elements-23-min.png",
+        "image2": "shopify:\/\/shop_images\/TheraPetMd_dog_landing_page_elements-24.png"
+      }
+    },
+    "e63e90ff-94a1-4e71-b825-a692d261ffb6": {
+      "type": "richTextNew",
+      "settings": {
+        "gradient1": "#1773b0",
+        "gradient2": "#3b9ee0",
+        "image": "shopify:\/\/shop_images\/TheraPetMd_dog_landing_page_elements-38.png",
+        "heading": "GET 50% OFF + 60 DAYS REFILLS TODAY!",
+        "text": "<p>You haven't truly seen your dog at their <strong>happiest and most relaxed <\/strong>until you've tried TheraPet™!<\/p><p>This will be the most seamless and effective way to enhance your dog's emotional well-being. <strong>After all, your loyal buddy deserves all the peace and relaxation they can get!<\/strong><\/p>",
+        "btn_text": "CLAIM YOUR DISCOUNT NOW!",
+        "btn_link": "#order-now-section"
+      }
+    },
+    "ef818d8e-ffb9-4d92-ac5b-6d95ea3fec82": {
+      "type": "picture-reviews",
+      "settings": {
+        "headingColor": "#1773b0",
+        "backColor": "#fcfbf3",
+        "heading": "Don't Just Take Our Word For It!<br> Hear from Our Happy TheraPet Families!",
+        "image1": "shopify:\/\/shop_images\/1_d6e0ed90-ec47-4f97-af79-ae4970028888.png",
+        "image2": "shopify:\/\/shop_images\/3.png",
+        "image3": "shopify:\/\/shop_images\/8_5ecc5463-002f-4563-8991-9c978f90c67c.png",
+        "image4": "shopify:\/\/shop_images\/4_c96d3c5f-9dfa-4e33-a6af-cfca9865627e.png",
+        "image5": "shopify:\/\/shop_images\/7_243a5e3a-94a8-4d15-993d-457b7a816e88.png",
+        "image6": "shopify:\/\/shop_images\/2.png",
+        "image7": "shopify:\/\/shop_images\/3.png",
+        "image8": "shopify:\/\/shop_images\/5_88764174-481f-416e-9d4a-299bcd5748c8.png"
+      }
+    },
+    "fe0f2cf5-e6d2-4198-8e30-3131e7b1408b": {
+      "type": "how-it-works",
+      "blocks": {
+        "652fc414-1ba9-425a-a788-97ecacf0605b": {
+          "type": "step",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/TheraPetMd_landing_page-24_7ae106c1-c994-4e01-8021-273a94ae5915.png",
+            "text": "<b>Find the Perfect Spot<\/b>\n<br>Find a spot in your dog's favorite room and make sure it's not hidden—your TheraPet needs space to spread its magic!"
+          }
+        },
+        "48f83e86-2114-4126-94a9-57f9c0badd83": {
+          "type": "step",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/TheraPetMd_dog_landing_page_elements-26.png",
+            "text": "<b>Power It Up<\/b>\n<br>Now, simply plug it in! Your TheraPet will start spreading its soothing pheromone blend right away. No extra settings, no hassle."
+          }
+        },
+        "42edea17-ab59-43d8-9353-677d766638f7": {
+          "type": "step",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/TheraPetMd_dog_landing_page_elements-27.png",
+            "text": "<b>Let It Do Its Thing!<\/b>\n<br>TheraPet is designed to work all on its own. It'll continuously spread calming vibes, keeping your doggo relaxed and joyful."
+          }
+        },
+        "60ddef40-1c51-4ef6-bb68-77aed74ffde5": {
+          "type": "step",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/TheraPetMd_landing_page-27_3cc9c108-22fe-4cca-a808-a4fb2f1cdaac.png",
+            "text": "<b>Enjoy the Tranquility.<\/b>\n<br>Experience the TheraPet magic! It turns your home into a 24\/7 kitty oasis. Just don't forget the monthly refill for sustained serenity!"
+          }
+        }
+      },
+      "block_order": [
+        "652fc414-1ba9-425a-a788-97ecacf0605b",
+        "48f83e86-2114-4126-94a9-57f9c0badd83",
+        "42edea17-ab59-43d8-9353-677d766638f7",
+        "60ddef40-1c51-4ef6-bb68-77aed74ffde5"
+      ],
+      "settings": {
+        "headingColor": "#1773b0",
+        "gradient1": "#f5f7ff",
+        "gradient2": "#f5f7ff",
+        "heading": "Your Effortless Path to Purr-fect Peace",
+        "text": "TheraPet isn't just about bringing tranquility to your dog—it's about making your life easier too!"
+      }
+    },
+    "495952d2-4bf1-4655-9b50-0f5735ddce40": {
+      "type": "comparison-table",
+      "blocks": {
+        "681362ed-ab68-43f5-b887-95f74c3543c0": {
+          "type": "block",
+          "settings": {
+            "text": "<b>Dual-Soothe Blend:<\/b> Dual pheromones for double the tranquility.",
+            "firstColumn": true,
+            "fText": "",
+            "secondColumn": false,
+            "sText": ""
+          }
+        },
+        "d31d1a38-02a6-4885-8a12-4aefa62f5c99": {
+          "type": "block",
+          "settings": {
+            "text": "<b>Two Months Peace:<\/b> 60 days of harmony per TheraPet.",
+            "firstColumn": true,
+            "fText": "",
+            "secondColumn": false,
+            "sText": ""
+          }
+        },
+        "6439c15a-2d4e-4e8f-8706-d12b0fc37f7f": {
+          "type": "block",
+          "settings": {
+            "text": "<b>Pure, Safe Comfort:<\/b> No odors, no irritants, just natural calm.",
+            "firstColumn": true,
+            "fText": "",
+            "secondColumn": false,
+            "sText": ""
+          }
+        },
+        "30366896-4d45-4625-9e9b-dc9e07b90064": {
+          "type": "block",
+          "settings": {
+            "text": "<b>Medical-Grade Build:<\/b> Sturdy enough to stand up to curious kitties.",
+            "firstColumn": true,
+            "fText": "",
+            "secondColumn": false,
+            "sText": ""
+          }
+        },
+        "e0428fc4-e374-4400-b96f-df24015234a0": {
+          "type": "block",
+          "settings": {
+            "text": "<b>Eco-Friendly:<\/b> Minimal power usage for an energy-efficient solution.",
+            "firstColumn": true,
+            "fText": "",
+            "secondColumn": false,
+            "sText": ""
+          }
+        },
+        "3c58127d-05c8-45e0-ac38-d84ab308612e": {
+          "type": "block",
+          "settings": {
+            "text": "<b>No-Risk, All Reward:<\/b> Rest easy with our 30-day money-back guarantee.",
+            "firstColumn": true,
+            "fText": "",
+            "secondColumn": false,
+            "sText": ""
+          }
+        }
+      },
+      "block_order": [
+        "681362ed-ab68-43f5-b887-95f74c3543c0",
+        "d31d1a38-02a6-4885-8a12-4aefa62f5c99",
+        "6439c15a-2d4e-4e8f-8706-d12b0fc37f7f",
+        "30366896-4d45-4625-9e9b-dc9e07b90064",
+        "e0428fc4-e374-4400-b96f-df24015234a0",
+        "3c58127d-05c8-45e0-ac38-d84ab308612e"
+      ],
+      "settings": {
+        "headingColor": "#000000",
+        "subheading": "What Makes TheraPet",
+        "heading": "Far Superior to Others",
+        "pluxytext": "TheraPet",
+        "competitortext": "OTHER SOLUTIONS",
+        "back": "#c9e9ff",
+        "back2": "#1773b0",
+        "firstColumnTextColor": "#ffffff",
+        "secondColumnTextColor": "#ff0000",
+        "tick": "shopify:\/\/shop_images\/yes_100x_7be8875a-175f-4f55-9096-7a9544f74e4d.png",
+        "cross": "shopify:\/\/shop_images\/no.png",
+        "main": "shopify:\/\/shop_images\/TheraPetMd_dog_landing_page_elements-28.png",
+        "comp": "shopify:\/\/shop_images\/TheraPetMd_dog_landing_page_elements-29.png"
+      }
+    },
+    "reviews_slider_trustpilot_FqFUgT": {
+      "type": "reviews-slider-trustpilot",
+      "blocks": {
+        "review_FDLGrG": {
+          "type": "Review",
+          "settings": {
+            "product": "3x-therapet-dog-diffuser-1",
+            "image": "shopify:\/\/shop_images\/visuals_5-19.png",
+            "heading": "I am truly in awe...",
+            "text": "I am truly in awe of what the dog diffusers have brought to our home. As a volunteer foster with a local dog rescue, I often bring new dogs into our home. Despite being potty trained, our own dogs typically begin to pee and 'mark their territory' throughout the house. Cleaning up and trying to change this behavior had become exhausting and unsuccessful. Fostering dogs in need is a big part of my life, and I love being a part of dog rescue. So, I purchased the starter set with three diffusers (and refills). I can honestly say, with excitement and disbelief, that our dogs' behavior has drastically, if not completely, changed. They are no longer 'marking' and urinating in their typical spots. I just placed my second order of refills. It's been a total game changer for our house!",
+            "name": "Roberta T."
+          }
+        },
+        "review_qp9LkN": {
+          "type": "Review",
+          "settings": {
+            "product": "2x-therapet™-dog-calming-diffuser",
+            "image": "shopify:\/\/shop_images\/visuals_5-20.png",
+            "heading": "We have had trouble with our dog…",
+            "text": "We have had trouble with our dog wetting in the house for years, I came across the diffuser and within 24 hours the wetting had stopped! Everyone in the house was amazed. You can't see it or smell it yet it clearly is making a difference in her anxiety",
+            "name": "Rebecca J."
+          }
+        },
+        "review_BMzqjy": {
+          "type": "Review",
+          "settings": {
+            "product": "2x-therapet™-dog-calming-diffuser",
+            "image": "shopify:\/\/shop_images\/visuals_5-15.png",
+            "heading": "My morning nigthmares are GONE!!",
+            "text": "Just tried the product for my dogs for 2 weeks, and I am absolutely thrilled with the results! I had one problem dog who had 8 places he would constantly pee at. Every morning was a nightmare, filled with screaming and crying... But it's been 8-10 days now, and there's been nothing in the house! What a joy to wake up to no messes! I am amazed and sold!",
+            "name": "Valery S."
+          }
+        },
+        "review_LWbKkE": {
+          "type": "Review",
+          "settings": {
+            "product": "therapet-dog-calming-diffuser",
+            "image": "shopify:\/\/shop_images\/visuals_5-12.png",
+            "heading": "Excellent product that works !!",
+            "text": "Just started using a couple of weeks ago and I see such an improvement in my dog when she is left home alone. She has not soiled on the floor at all. This product is great and works 100%",
+            "name": "Maria K."
+          }
+        }
+      },
+      "block_order": [
+        "review_FDLGrG",
+        "review_qp9LkN",
+        "review_BMzqjy",
+        "review_LWbKkE"
+      ],
+      "settings": {
+        "heading": "What Customers Said About Using TherapetMD Dog Diffuser",
+        "backcolor": "#ffffff"
+      }
+    },
+    "127ed70d-6fa2-4a29-9008-575fa8d7653b": {
+      "type": "order-now-buyNEW",
+      "settings": {
+        "headingColor": "#1773b0",
+        "announcement": "",
+        "backColor": "linear-gradient(180deg, rgba(56, 171, 255, 0.1) 0%, rgba(23, 111, 173, 0.1) 100%);",
+        "subheading": "GET UP TO 50% OFF TODAY.",
+        "heading": "NO COUPON CODE NEEDED.",
+        "text": "Hurry! This special offer is only available while supplies last. Your discount will be automatically applied. Order now to secure yours.",
+        "guaranteeImg": "shopify:\/\/shop_images\/download_600x_514d6ed6-665d-4fcb-acb4-a63d23473f5d.webp",
+        "gS": false,
+        "guaranteeimg1": "shopify:\/\/shop_images\/download_600x_514d6ed6-665d-4fcb-acb4-a63d23473f5d.webp",
+        "guarantee1": "FREE Shipping • 1 Year Warranty • 30 Day Returns",
+        "guaranteeimg2": "shopify:\/\/shop_images\/download_600x_514d6ed6-665d-4fcb-acb4-a63d23473f5d.webp",
+        "guarantee2": "FREE Shipping • 1 Year Warranty • 30 Day Returns",
+        "showShopGateways": false,
+        "saveT1": "60 DAYS SUPPLY ($0.5\/DAY)",
+        "heading1": "1x Diffuser + 2 Refills",
+        "bubblecolor": "#3aaa35",
+        "bubble1": "SAVE $25!",
+        "product1": "therapet-dog-calming-diffuser",
+        "saveT2": "Best Seller",
+        "heading2": "2x Diffusers + 4 Refills",
+        "bubble2": "SAVE $64!",
+        "product2": "2x-therapet™-dog-calming-diffuser",
+        "saveT3": "Multi-Dogs Home",
+        "heading3": "3x Diffusers + 6 Refills",
+        "bubble3": "SAVE $105!",
+        "product3": "3x-therapet™-dog-calming-diffuser",
+        "CheckShipsOrders": true,
+        "colorBackgare": "",
+        "richtextBottom": "Ships",
+        "richtextBottom2": "<p>17 Orders <strong>Remains<\/strong><\/p>",
+        "richtextBottom22": "<p>13 Orders <strong>Remain<\/strong><\/p>",
+        "richtextBottom23": "<p>9 Orders <strong>Remain<\/strong><\/p>"
+      }
+    },
+    "ea97f637-07b3-4afd-9b40-505558abeeb0": {
+      "type": "richTextNew",
+      "settings": {
+        "gradient1": "#1773b0",
+        "gradient2": "#3b9ee0",
+        "image": "shopify:\/\/shop_images\/image_1011_500x_3c3c5c0f-788b-4764-af20-103e1b8142b6.webp",
+        "heading": "30-Day Peace & Paw-fect Satisfaction Promise",
+        "text": "<p>From the moment your TheraPet™ package arrives at your door, you have <strong>a full 30 days <\/strong>to witness its calming magic on your dog. Take your time, let your pup adjust, and <strong>see the transformation.<\/strong><br\/><br\/>If, for any reason, you <strong>don't notice a positive change<\/strong> in your dog's behavior or feel that TheraPet doesn't meet your expectations, simply contact our customer support team at support@therapetmd.com, and we'll quickly process a <strong>100% refund, no questions asked.<\/strong><\/p>",
+        "btn_text": "",
+        "btn_link": ""
+      }
+    },
+    "55377324-4cfe-4ace-b430-05d0f485d6d9": {
+      "type": "rich-text",
+      "blocks": {
+        "template--15731761184924__55377324-4cfe-4ace-b430-05d0f485d6d9-1677226622d4145aef-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Real Reviews from Real Dog Parents!<\/p>",
+            "heading_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "template--15731761184924__55377324-4cfe-4ace-b430-05d0f485d6d9-1677226622d4145aef-0"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 60,
+        "padding_bottom": 0
+      }
+    },
+    "16772265663741e36d": {
+      "type": "apps",
+      "blocks": {
+        "d17baafa-cd83-4913-bfc2-acc3f8f18836": {
+          "type": "shopify:\/\/apps\/stamped-product-reviews-ugc\/blocks\/main-widget\/a103faaf-2125-4b0e-89fa-de5149736723",
+          "settings": {
+            "animation": false,
+            "tags_exclude": "",
+            "tags_include": "dogreviews",
+            "search": "",
+            "linkify": false,
+            "use_metafields": false,
+            "sku_tagtype": "handle"
+          }
+        }
+      },
+      "block_order": [
+        "d17baafa-cd83-4913-bfc2-acc3f8f18836"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "d736d065-12ce-464c-a650-42d75363f117": {
+      "type": "featureBlocks",
+      "blocks": {
+        "b56188f4-4a74-4df5-98cb-ac609bd1b81c": {
+          "type": "text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/002-buttocks_200x_31ed4ce5-792b-496c-a23a-213e487b49b4.webp",
+            "heading": "30 Day Trial",
+            "text": "Try it risk-free for 30 days! Don’t like it? Get a full refund."
+          }
+        },
+        "5652b496-4155-42fe-a588-9b45d2cc4be3": {
+          "type": "text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_22_1_200x_731896c3-ae11-4998-af30-185943b12f85.webp",
+            "heading": "Free Shipping & Returns",
+            "text": "We proudly offer Fast & FREE shipping across the U.S., UK, Australia, and Canada."
+          }
+        },
+        "30177869-d18e-4fae-b5d6-5d8ec3bcb127": {
+          "type": "text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/tel_200x_fbeb370b-0b32-4a6e-a664-53d6f2df12e1.webp",
+            "heading": "World-class Customer Support",
+            "text": "Need help? Questions? Concerns? Email us at support@TheraPetMD.com"
+          }
+        }
+      },
+      "block_order": [
+        "b56188f4-4a74-4df5-98cb-ac609bd1b81c",
+        "5652b496-4155-42fe-a588-9b45d2cc4be3",
+        "30177869-d18e-4fae-b5d6-5d8ec3bcb127"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "heading1": "",
+        "gradient1": "#1773b0",
+        "gradient2": "#36a2e9"
+      }
+    },
+    "93a8a084-03fb-4658-b0c1-b6930690a6ed": {
+      "type": "faq-section",
+      "blocks": {
+        "f254dcf4-4da2-42f6-b36f-461688c7a318": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What exactly is TheraPet™ Diffuser?",
+            "icon": "none",
+            "row_content": "<p>TheraPet™ is an innovative diffuser designed to reduce dog reactivity, stress, and anxiety by releasing calming pheromones that only dogs can detect. It provides your pup with a comforting message that they're safe and loved.<\/p>",
+            "page": ""
+          }
+        },
+        "32947cb0-6668-4f0e-a587-8d6a9c5c8b94": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What are dog pheromones?",
+            "icon": "none",
+            "row_content": "<p>Dog pheromones are natural chemicals produced by dogs to communicate with each other. These pheromones convey various messages, such as comfort, security, and contentment. TheraPet™ utilizes Canine Appeasing Pheromones and Maternal Appeasing Pheromones, replicating these calming signals to help reduce stress, anxiety, and reactivity in dogs.<\/p>",
+            "page": ""
+          }
+        },
+        "374eb10a-269b-4dc2-a6de-9eac38311de9": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How does TheraPet™ combat stress and reactivity in dogs?",
+            "icon": "none",
+            "row_content": "<p>TheraPet™ releases Canine Appeasing Pheromones and Maternal Appeasing Pheromones, which are natural \"feel-good\" vibes. They help create a serene environment, reducing reactive behaviors and instilling a sense of calm and security.<\/p>",
+            "page": ""
+          }
+        },
+        "template--15698234605724__93a8a084-03fb-4658-b0c1-b6930690a6ed-1671718955a93ab1e7-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Will TheraPet™ interfere with my dog's medications or diet?",
+            "icon": "none",
+            "row_content": "<p>No, TheraPet™ is a non-invasive, drug-free solution that doesn't require any dietary changes or interfere with any medications your dog may be on.<\/p>",
+            "page": ""
+          }
+        },
+        "671ed52a-1d64-43a8-b15b-108990976c4e": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How long does it take to see results with TheraPet™?",
+            "icon": "none",
+            "row_content": "<p>Many users notice a difference in their dog's behavior within a week, but results can vary based on the dog and the level of stress or anxiety they experience.<\/p>",
+            "page": ""
+          }
+        },
+        "08cd3935-da22-40c6-8768-db41367fc6bc": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can TheraPet™ help if my dog is afraid of specific noises or situations?",
+            "icon": "none",
+            "row_content": "<p>Definitely. TheraPet™ helps with a range of anxieties, including fear of noises, making it easier for dogs to adapt to unfamiliar situations.<\/p>",
+            "page": ""
+          }
+        },
+        "f18a507c-f77d-41d5-a1a5-770c810f289f": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Where should I use the diffuser?",
+            "icon": "none",
+            "row_content": "<p>The plug-in should be used in rooms where your dog spends most of its time. Avoid using outlets that are under windows, near air vents, or close to doors as drafts will impair the proper diffusion of the pheromones. DO NOT plug the diffuser into a power strip or surge protector. The vial should always be directly below the plug-in unit for proper diffusion and to prevent leakage. To ensure the vial is always below the plug-in unit, there is a swivel function on the prongs for outlets with horizontal orientations.<\/p>",
+            "page": ""
+          }
+        },
+        "template--15698234605724__93a8a084-03fb-4658-b0c1-b6930690a6ed-1671718955a93ab1e7-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Is TheraPet™ safe for homes with multiple dogs?",
+            "icon": "none",
+            "row_content": "<p>Absolutely! TheraPet™ is ideal for multi-dog households, ensuring a harmonious environment for all your furry friends.<\/p>",
+            "page": ""
+          }
+        },
+        "0bab3027-d4fa-4d08-b5c0-a534c605169e": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Is the smell normal?",
+            "icon": "none",
+            "row_content": "<p>The pheromones are diffused when the plug-in unit heats up. As with any heating element, a slight smell may be present and is totally normal. If you find your diffuser has a stronger smell, please call us and we will be happy to troubleshoot with you!<\/p>",
+            "page": ""
+          }
+        },
+        "template--15698234605724__93a8a084-03fb-4658-b0c1-b6930690a6ed-1671718955a93ab1e7-3": {
+          "type": "collapsible_row",
+          "disabled": true,
+          "settings": {
+            "heading": "Should I unplug the diffuser at night?",
+            "icon": "none",
+            "row_content": "<p>To keep the good vibes flowing, you should keep your diffuser plugged in at all times. If you notice your diffuser collecting dust, please unplug and follow the cleaning instructions in the user manual found in every box.<\/p>",
+            "page": ""
+          }
+        },
+        "template--15698234605724__93a8a084-03fb-4658-b0c1-b6930690a6ed-1671718955a93ab1e7-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How often should I replace the diffuser?",
+            "icon": "none",
+            "row_content": "<p>We recommend replacing the refill vial every 30 days or when the liquid runs out. The plug-in unit should be replaced after 6 months of use or after you have used three refill vials (whichever comes first!)<\/p>",
+            "page": ""
+          }
+        },
+        "0b0e86c5-9e35-4207-b084-e4b318311758": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What makes TheraPet™ different from other diffusers on the market?",
+            "icon": "none",
+            "row_content": "<p>TheraPet™ is the only diffuser with our unique pheromone combination, designed specifically to address dog stress, anxiety, and reactivity, making it a game-changer for dog parents.<\/p>",
+            "page": ""
+          }
+        },
+        "68de7289-174d-4d9d-9226-64088b11c4db": {
+          "type": "collapsible_row",
+          "disabled": true,
+          "settings": {
+            "heading": "In what currency are the prices listed on the store ?",
+            "icon": "none",
+            "row_content": "<p>All prices listed on our store are in United States Dollars (USD)<\/p>",
+            "page": ""
+          }
+        },
+        "81cd0322-1101-4734-bffc-8c001d5c3d90": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Is TheraPet available on retail shops or marketplaces like Amazon and eBay?",
+            "icon": "none",
+            "row_content": "<p>No, TheraPet is exclusively sold on our official store with a 30-day money-back guarantee and warranty.<\/p><p>Beware of unauthorized, low-quality copycats on Amazon, eBay, and other platforms. For authentic, top-quality Pheromones, buy only from our official store.<\/p>",
+            "page": ""
+          }
+        },
+        "0c04f443-13ac-4cf4-894f-723372cd0749": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What if I'm not satisfied with the results?",
+            "icon": "none",
+            "row_content": "<p>We stand by the efficacy of TheraPet™. If you're not seeing positive changes in your dog's behavior, please reach out to our customer service team for support and assistance.<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "f254dcf4-4da2-42f6-b36f-461688c7a318",
+        "32947cb0-6668-4f0e-a587-8d6a9c5c8b94",
+        "374eb10a-269b-4dc2-a6de-9eac38311de9",
+        "template--15698234605724__93a8a084-03fb-4658-b0c1-b6930690a6ed-1671718955a93ab1e7-1",
+        "671ed52a-1d64-43a8-b15b-108990976c4e",
+        "08cd3935-da22-40c6-8768-db41367fc6bc",
+        "f18a507c-f77d-41d5-a1a5-770c810f289f",
+        "template--15698234605724__93a8a084-03fb-4658-b0c1-b6930690a6ed-1671718955a93ab1e7-2",
+        "0bab3027-d4fa-4d08-b5c0-a534c605169e",
+        "template--15698234605724__93a8a084-03fb-4658-b0c1-b6930690a6ed-1671718955a93ab1e7-3",
+        "template--15698234605724__93a8a084-03fb-4658-b0c1-b6930690a6ed-1671718955a93ab1e7-0",
+        "0b0e86c5-9e35-4207-b084-e4b318311758",
+        "68de7289-174d-4d9d-9226-64088b11c4db",
+        "81cd0322-1101-4734-bffc-8c001d5c3d90",
+        "0c04f443-13ac-4cf4-894f-723372cd0749"
+      ],
+      "settings": {
+        "headingColor": "#000000",
+        "color": "#ededed",
+        "caption": "Need help to find an answer to your question? Ask our customer support at support@TheraPetMD.com",
+        "heading": "FREQUENTLY ASKED QUESTIONS",
+        "heading_size": "h2",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 64,
+        "padding_bottom": 92
+      }
+    },
+    "3a12e570-589c-40ec-ae98-767101c3ebc2": {
+      "type": "richTextNew",
+      "settings": {
+        "gradient1": "#1773b0",
+        "gradient2": "#3b9ee0",
+        "image": "shopify:\/\/shop_images\/TheraPetMd_dog_landing_page_elements-38.png",
+        "heading": "GET UP TO 50% OFF + FREE REFILLS TODAY!",
+        "text": "<p>You haven't truly seen your dog at their <strong>happiest and most relaxed <\/strong>until you've tried TheraPet™!<\/p><p>This will be the most seamless and effective way to enhance your dog's emotional well-being. <strong>After all, your loyal buddy deserves all the peace and relaxation they can get!<\/strong><\/p>",
+        "btn_text": "CLAIM YOUR DISCOUNT NOW!",
+        "btn_link": "#order-now-section"
+      }
+    },
+    "194c6aa8-a223-4de1-85e9-c7c2caa6b1ee": {
+      "type": "need-help",
+      "settings": {
+        "backColor": "#ffffff",
+        "heading": "Need help? Questions? Concerns?",
+        "text": "<p>Please do not hesitate to email us at support@TheraPetMD.com<\/p>"
+      }
+    }
+  },
+  "order": [
+    "9cb78ee0-8d59-49cc-b61b-45b391185f36",
+    "3aa132a9-3ee7-42e9-83d7-396f032d9137",
+    "aa3113d8-10fd-4952-ae79-1135faf2ffd7",
+    "f9b6148f-ca59-4f35-a9fc-59992b0ae349",
+    "52eaad7f-3fd1-494c-9a6e-4ac0cd95745d",
+    "482d3967-4f26-4fc2-91c9-ab3b5d3e865c",
+    "2113bc22-8a62-4a14-b3d8-8c10771b0621",
+    "381e61a9-3a1a-4f29-bf0a-5a23cdaf2b6e",
+    "d94d84d0-0224-4c64-855b-44f4726ad3cc",
+    "e63e90ff-94a1-4e71-b825-a692d261ffb6",
+    "ef818d8e-ffb9-4d92-ac5b-6d95ea3fec82",
+    "fe0f2cf5-e6d2-4198-8e30-3131e7b1408b",
+    "495952d2-4bf1-4655-9b50-0f5735ddce40",
+    "reviews_slider_trustpilot_FqFUgT",
+    "127ed70d-6fa2-4a29-9008-575fa8d7653b",
+    "ea97f637-07b3-4afd-9b40-505558abeeb0",
+    "55377324-4cfe-4ace-b430-05d0f485d6d9",
+    "16772265663741e36d",
+    "d736d065-12ce-464c-a650-42d75363f117",
+    "93a8a084-03fb-4658-b0c1-b6930690a6ed",
+    "3a12e570-589c-40ec-ae98-767101c3ebc2",
+    "194c6aa8-a223-4de1-85e9-c7c2caa6b1ee"
+  ]
+}

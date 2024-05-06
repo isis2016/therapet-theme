@@ -1,0 +1,38 @@
+{% if section.settings.CheckShipsOrders %}
+       <div class="BrX1sr73" bis_skin_checked="1" style="background-color: {{ section.settings.colorBackgare }}">
+         <div class="KFC0oANj" bis_skin_checked="1">
+         <img width="10" height="10" src="{{ 'circle.svg' | asset_url }}" alt="" class="yYJMv_Cz DkAMmHTW" loading="lazy">
+
+         <div class="X2wcfIs2" bis_skin_checked="1">
+{{ section.settings.richtextBottom }} 
+<strong>           
+{% assign seconds = 1 | times: 24 | times: 60 | times: 60 %}
+{% assign dateFinal = 'now' | date: "%s" | plus: seconds | date: "%b %d" %} 
+Tomorrow, {{ dateFinal | replace: "Jan", "January" | replace: "Feb", "February"}} 
+</strong> 
+</div>
+         </div>
+
+         <div class="KFC0oANj" bis_skin_checked="1">
+         <img width="9" height="13" src="{{ 'hourglass.svg' | asset_url }}" alt="" class="yYJMv_Cz iKv8oK_V" loading="lazy">
+
+         <div class="eAiF72DT" bis_skin_checked="1">{{ section.settings.richtextBottom23 }}</div>
+         </div>
+       </div>
+{% endif %}
+
+{%  if section.settings.gS %}
+        <div class="thallyAlla">                     
+        <p class="guaranteeText mainHeading ">
+          <img loading="lazy" src="{{ section.settings.guaranteeimg1 | img_url: '120x' }}"/>
+          <span>{{ section.settings.guarantee1 }} </span>
+        </p>
+<!--
+<div class="vertical"></div>
+-->
+        <p class="guaranteeText mainHeading ">
+          <img loading="lazy" src="{{ section.settings.guaranteeimg2 | img_url: '120x' }}"/>
+          <span>{{ section.settings.guarantee2 }}</span>
+        </p>
+       </div>
+{% endif %}

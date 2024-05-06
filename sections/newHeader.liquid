@@ -1,0 +1,170 @@
+<style>
+  div#shopify-section-header,
+  div#shopify-section-announcement-bar {
+    display: none !important;
+  }
+  .topBARS {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    background-color: white;
+    margin-bottom: 15px;
+  }
+  .topBar p {
+    margin: 0;
+    font-size: 14px;
+  }
+  .topBar {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2px;
+  }
+  .bottomBar img {
+    width: auto;
+    height: 32px;
+    object-fit: contain;
+    max-width: 100%;
+  }
+  .bottomBar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+  }
+  .annoucement-bar {
+    background: #37306b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  .text-bar {
+    width: 1024px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+
+  }
+  .text-bar img {
+    width: 25px;
+    padding: 3px;
+    height: auto;
+  }
+
+  .text-bar p {
+    margin: 0;
+  }
+  h1,
+  h2 {
+    font-weight: 800;
+  }
+  p {
+    color: rgba(var(--color-foreground), 1);
+  }
+
+  @media screen and (max-width: 767px) {
+    .bottomBar {
+      padding-top: 5px;
+      padding-bottom: 6px;
+    }
+
+    .text-bar {
+      padding: 0 25px;
+      gap: 5px;
+    }
+  }
+</style>
+<link
+  href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap"
+  rel="preload"
+  as="style"
+>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link
+  rel="preconnect"
+  href="https://fonts.gstatic.com"
+  crossorigin
+>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+
+<section class="topBARS">
+  <div class="topBar" style="background:{{ section.settings.top_back }}">
+    {{ section.settings.top }}
+  </div>
+  <div class="bottomBar" style="background:{{ section.settings.bottom_back }}">
+    <img
+      src="{{ section.settings.logo | img_url: '400x' }}"
+      alt="{{ section.settings.logo.alt }}"
+      width="100%"
+      height="100%"
+    >
+  </div>
+  <div
+    class="annoucement-bar"
+    style="background:{{ section.settings.text_back }}; color: {{ section.settings.text_color }}"
+  >
+    <div class="text-bar">
+      <img
+        src="https://cdn.shopify.com/s/files/1/0764/0530/9760/files/SCR-20240426-logl.png"
+        alt="Logo of text"
+        width="100%"
+        height="100%"
+      >
+      {{ section.settings.text }}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "New Header",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Top Bar"
+    },
+    {
+      "type": "richtext",
+      "id": "top",
+      "label": "Top Bar Text"
+    },
+    {
+      "type": "color",
+      "id": "top_back",
+      "label": "Top Bar Background"
+    },
+    {
+      "type": "header",
+      "content": "Bottom Bar"
+    }, {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Logo"
+    }, {
+      "type": "color",
+      "id": "bottom_back",
+      "label": "Bottom Bar Background"
+    }, {
+      "type": "color",
+      "id": "text_color",
+      "label": "Under Logo Text Color"
+    }, {
+      "type": "color",
+      "id": "text_back",
+      "label": "Under Logo Text Background"
+    }, {
+      "type": "richtext",
+      "id": "text",
+      "label": "Under Logo Text"
+    }
+  ],
+  "presets": [
+    {
+      "name": "New Header"
+    }
+  ]
+}
+{% endschema %}

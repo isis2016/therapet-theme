@@ -1,0 +1,424 @@
+{
+  "sections": {
+    "e1cd6145-ac4b-4b0d-b32b-3d7a89a3f508": {
+      "type": "product-banner",
+      "settings": {
+        "qhero-img": "shopify:\/\/shop_images\/istockphoto-1313831575-612x612-1.webp",
+        "hide-img": false,
+        "qhero-img2": "shopify:\/\/shop_images\/Screenshot_at_Nov_18_11-52-33.png",
+        "qhero-img3": "shopify:\/\/shop_images\/Screenshot_at_Nov_18_11-52-33.png",
+        "hide-headline": false,
+        "qhero-head": "Does your cat mark, spray, or pee everywhere? If so, it’s time to try this new solution used by over 500,000 American owners",
+        "hide-text": false,
+        "qhero-p": "<p>Every 2 minutes, another US cat parent buys these breakthrough stress relief diffusers – find out why.<\/p>",
+        "red-btn": "#stats-block",
+        "red-text": "Find Out More",
+        "blue-btn": "#question-two",
+        "blue-text": "Skip"
+      }
+    },
+    "b3526ef6-b8b8-4535-839f-d66a4122b919": {
+      "type": "seasonal",
+      "settings": {
+        "videoOpt": "",
+        "hide-seasonal-video": false,
+        "bg": "",
+        "custom-id": "stats-block",
+        "seasonal-head": "Anxiety is a debilitating issue that can rob cats of their happiness and joy 😢",
+        "hide-seasonal-head": false,
+        "seasonal-p": "<p><strong>1 in 4 cats suffer from anxiety<\/strong>, and at least 20% of those cats feel extreme separation anxiety. Roughly 67% of cats with anxiety aren’t treated for it, and <strong>the longer<\/strong> this issue goes untreated, <strong>the worse it gets. <\/strong><\/p>",
+        "red-btn": "#problem-two",
+        "red-text": "How Does It Happen?!",
+        "blue-btn": "",
+        "blue-text": "",
+        "seasonal-img": "shopify:\/\/shop_images\/tumblr_inline_p5ym1oxqog1u0huaa_1280_5d3aa1c0-2b41-4d12-9f38-80359f677d60.jpg",
+        "hide-seasonal-img": false,
+        "section_css_class": "stats"
+      }
+    },
+    "fc5b06f3-2e66-4f55-8cb9-b9aeee743390": {
+      "type": "seasonal",
+      "settings": {
+        "videoOpt": "",
+        "hide-seasonal-video": false,
+        "bg": "#f5f7ff",
+        "custom-id": "problem-two",
+        "seasonal-head": "It All Boils Down To The 'Stressed-Cat' Instincts… 🙀",
+        "hide-seasonal-head": false,
+        "seasonal-p": "<p>You see, the furry feline cats we love and adore in our home, are descendants of wild jungle cats...<br\/><br\/>As a result, they have dormant<strong> “Stressed-Cat\" Instincts<\/strong> that when activated by factors beyond your control…<\/p><p>It can suddenly make them <strong>HYPER-SENSITIVE<\/strong>, uncomfortable and <span style=\"text-decoration:underline\">change how they perceive their environment and react to stress...<\/span><\/p>",
+        "red-btn": "#problem-two2",
+        "red-text": "Continue reading",
+        "blue-btn": "",
+        "blue-text": "",
+        "seasonal-img": "shopify:\/\/shop_images\/cat-screaming-compressed.jpg",
+        "hide-seasonal-img": true,
+        "section_css_class": "stats"
+      }
+    },
+    "0131b186-29ef-44d4-ab5a-9f474a33e35c": {
+      "type": "seasonal",
+      "settings": {
+        "videoOpt": "",
+        "hide-seasonal-video": false,
+        "bg": "#ffffff",
+        "custom-id": "problem-two2",
+        "seasonal-head": "What's more concerning is the cascade of effects resulting from their high-stress levels, leading to more serious health problems.",
+        "hide-seasonal-head": true,
+        "seasonal-p": "<p><strong>According to the National Institutes of Health*, chronic stress can significantly harm cats' immune systems, leading to various health issues.<\/strong><br\/><br\/>This is due to cortisol, the stress hormone that <strong>lowers their immunity<\/strong>, which makes them <strong>vulnerable<\/strong> to <strong>infections, UTIs, skin issues, and digestive problems.<\/strong><\/p>",
+        "red-btn": "#symptoms",
+        "red-text": "What are the symptoms?",
+        "blue-btn": "",
+        "blue-text": "",
+        "seasonal-img": "shopify:\/\/shop_images\/nihstudy.jpg",
+        "hide-seasonal-img": false,
+        "section_css_class": "stats"
+      }
+    },
+    "166469fc-b179-4ede-8b27-b963d1ab65f3": {
+      "type": "seasonal",
+      "custom_css": [
+        "a.btn-pet.show {width: 70%;}",
+        "a.btn-pet.blue.show2 {width: 30%;}",
+        "@media screen and (max-width: 767px) {a.btn-pet.show {width: 70%; } a.btn-pet.blue.show2 {width: 25%; }}"
+      ],
+      "settings": {
+        "videoOpt": "",
+        "hide-seasonal-video": false,
+        "bg": "#f5f7ff",
+        "custom-id": "symptoms",
+        "seasonal-head": "How Can You Spot This?!",
+        "hide-seasonal-head": true,
+        "seasonal-p": "<p>You see, your cat won’t wear a sign saying they're stressed. Instead, they express it through 'unwanted' behaviors like:<\/p><ul><li><strong>Not using their litter box<\/strong><\/li><li><strong>Spraying pee to mark their spot<\/strong><\/li><li><strong>Fighting with other cats or dogs<\/strong><\/li><li><strong>Scratching your furniture<\/strong><\/li><li><strong>Meowing a lot and loudly<\/strong><\/li><li><strong>Hiding or not liking being touched<\/strong><\/li><\/ul>",
+        "red-btn": "#solution-one",
+        "red-text": "What's The Solution?",
+        "blue-btn": "#question-one",
+        "blue-text": "Skip",
+        "seasonal-img": "shopify:\/\/shop_images\/behaviors2_45081fb1-74f3-41c6-a7ad-570bb38cee45.jpg",
+        "hide-seasonal-img": false,
+        "section_css_class": "stats test"
+      }
+    },
+    "b6b321e3-0cbb-477a-8914-53abe85154f2": {
+      "type": "seasonal",
+      "settings": {
+        "videoOpt": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/ba6a3fd84eba40eba4f88435d3547714.mp4",
+        "hide-seasonal-video": false,
+        "bg": "",
+        "custom-id": "solution-one",
+        "seasonal-head": "Get To The Root Of Your Cat's Stress & Anxiety – With This Breakthrough Cat Calming Diffuser",
+        "hide-seasonal-head": false,
+        "seasonal-p": "<p>We worked with pet scientists and industry experts to formulate a cat-first calming diffuser that focuses on <strong>potency, purity, and power.<\/strong><\/p>",
+        "red-btn": "#solution-two",
+        "red-text": "Continue reading",
+        "blue-btn": "",
+        "blue-text": "",
+        "hide-seasonal-img": false,
+        "section_css_class": "stats"
+      }
+    },
+    "d10aa53c-dc8d-47ff-9581-15d2be2118af": {
+      "type": "seasonal",
+      "settings": {
+        "videoOpt": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/eb0e51e4a46442e3a96903fd124c62b8.mp4",
+        "hide-seasonal-video": false,
+        "bg": "#f5f7ff",
+        "custom-id": "solution-two",
+        "seasonal-head": "The moment you plug it in, it starts its magic!",
+        "hide-seasonal-head": true,
+        "seasonal-p": "<p><strong>TheraPet releases natural and drug-free \"All Clear Signals\" throughout your cat’s surroundings...<\/strong><br\/><br\/>These signals are a carefully crafted mix of the <strong>most powerful cat-calming pheromones.<\/strong><\/p><p>These pheromones are scentless and safe for humans, yet they work wonders on cats. <\/p>",
+        "red-btn": "#solution-three",
+        "red-text": "Continue reading",
+        "blue-btn": "",
+        "blue-text": "",
+        "hide-seasonal-img": false,
+        "section_css_class": "stats"
+      }
+    },
+    "eacfc3c9-106a-4e00-b123-f94d653255a0": {
+      "type": "seasonal",
+      "settings": {
+        "videoOpt": "",
+        "hide-seasonal-video": false,
+        "bg": "",
+        "custom-id": "solution-three",
+        "seasonal-head": "The Science Behind The Magic",
+        "hide-seasonal-head": true,
+        "seasonal-p": "<p><strong>Backed by over 25 years of scientific research, cat pheromones have been proven to soothe stressed and anxious felines effortlessly and quickly.<\/strong><\/p><p>These are natural chemical signals that cats use to communicate with each other, they tap into <strong>your cat's “Calm Instincts”<\/strong> guiding them into <strong>a state of Kitty Zen<\/strong><\/p><p>Think of it as <strong>flipping a switch to tranquility!<\/strong><\/p>",
+        "red-btn": "#survey",
+        "red-text": "Continue reading",
+        "blue-btn": "",
+        "blue-text": "",
+        "seasonal-img": "shopify:\/\/shop_images\/pherdetection_d88e1a9e-9a48-4b82-9167-a6ea81c5e170.jpg",
+        "hide-seasonal-img": false,
+        "section_css_class": "stats"
+      }
+    },
+    "c3261476-a1d0-4e81-a1e0-cc06ca574b4b": {
+      "type": "video-blog",
+      "blocks": {
+        "e06d30e6-4c2c-4d77-8a7b-d41209f369a9": {
+          "type": "Blocks",
+          "settings": {
+            "videoOpt": "",
+            "hide-uppervideo": false,
+            "BlockImage": "shopify:\/\/shop_images\/blog-img-1.webp",
+            "hide-upperimage": false,
+            "BlockText": "Feline Facial Pheromones",
+            "hide-upperblocktext": false,
+            "BlockrichText": "<p>Facial Pheromones are what cats <strong>naturally produce when they're feeling good<\/strong> and want to mark their territory as safe. It's like their way of giving a \"thumbs up\" to a particular spot. When your cat senses these pheromones in the air, they'll <strong>understand it as a sign of comfort and safety.<\/strong><\/p>",
+            "content": ""
+          }
+        },
+        "72ff439e-323c-4369-9d63-1a1d87f2e037": {
+          "type": "Blocks",
+          "settings": {
+            "videoOpt": "",
+            "hide-uppervideo": false,
+            "BlockImage": "shopify:\/\/shop_images\/blog-img-2.webp",
+            "hide-upperimage": false,
+            "BlockText": "Maternal Appeasing Pheromones",
+            "hide-upperblocktext": false,
+            "BlockrichText": "<p>These scents are the same ones that mother cats naturally emit to <strong>calm and reassure their kittens.<\/strong> They act as nurturing and calming signals, <strong>creating an environment of peace and security.<\/strong> This comforting aroma is <strong>familiar and deeply soothing<\/strong>, helping to ease stress and anxiety in <strong>cats of all ages. <\/strong><\/p>",
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "e06d30e6-4c2c-4d77-8a7b-d41209f369a9",
+        "72ff439e-323c-4369-9d63-1a1d87f2e037"
+      ],
+      "disabled": true,
+      "settings": {
+        "custom-id": "science",
+        "BlockColor": "#f5f7ff",
+        "Text": "What Makes TheraPet So Special?",
+        "hide-upperhead": false,
+        "richText": "<p>It's all in our unique Dual Blend of the most potent calming pheromones! It’s like pressing a 'relax' button, transforming tense, anxious behavior into calm and contentment.<\/p>",
+        "vscheckbox": false,
+        "vscolor": "",
+        "vstext": "",
+        "red-btn": "#featured-one",
+        "red-text": "Continue"
+      }
+    },
+    "f28ef85b-09f2-4d79-87f8-0b0306abed7e": {
+      "type": "probiotic",
+      "disabled": true,
+      "settings": {
+        "bg": "#f5f7ff",
+        "custom-id": "probiotic",
+        "survey-head": "84% of TheraPet customers surveyed are seeing results after an average of 10 days!",
+        "survey-img": "shopify:\/\/shop_images\/survey-img.webp",
+        "red-btn": "#featured-one",
+        "red-text": "Continue",
+        "survey-p": "<p><em>*Results based on Calming Diffuser buyers' internal feedback survey conducted in August 2023 (n=300)<\/em><\/p>"
+      }
+    },
+    "0244b9e8-ef39-441f-a4f1-9e584b70f10b": {
+      "type": "progress-blog",
+      "blocks": {
+        "22a4cb7b-0bee-4d21-b89e-003ae099ece6": {
+          "type": "block",
+          "settings": {
+            "tested-head": "84%",
+            "tested-p": "<p><strong>Saw a  reduction in random peeing & urine spraying<\/strong><\/p>",
+            "progress": 84
+          }
+        },
+        "3b70b77a-f50b-45be-b241-315bab5c29b1": {
+          "type": "block",
+          "settings": {
+            "tested-head": "87%",
+            "tested-p": "<p><strong>Saw a reduction in furniture scratching<\/strong><\/p>",
+            "progress": 87
+          }
+        },
+        "0a55cb2c-e5a3-41c2-b176-1050af23df85": {
+          "type": "block",
+          "settings": {
+            "tested-head": "89%",
+            "tested-p": "<p><strong>Saw reduction in tension & conflicts between cats<\/strong><\/p>",
+            "progress": 89
+          }
+        },
+        "ff9091a8-f8b0-4aeb-97bd-7d77a17f369a": {
+          "type": "block",
+          "settings": {
+            "tested-head": "100%",
+            "tested-p": "<p><strong>Saved at least 40% on their VET bills<\/strong><\/p>",
+            "progress": 100
+          }
+        }
+      },
+      "block_order": [
+        "22a4cb7b-0bee-4d21-b89e-003ae099ece6",
+        "3b70b77a-f50b-45be-b241-315bab5c29b1",
+        "0a55cb2c-e5a3-41c2-b176-1050af23df85",
+        "ff9091a8-f8b0-4aeb-97bd-7d77a17f369a"
+      ],
+      "settings": {
+        "custom-id": "survey",
+        "bg": "#ffffff",
+        "head": "84% of TheraPet customers saw results after just the first month!",
+        "hide-progress-head": false,
+        "tested-img": "shopify:\/\/shop_images\/stats.png",
+        "hide-testedimg": true,
+        "pro-btn": "#featured-one",
+        "pro-text": "Continue",
+        "pro-p": "<p><em>*Results based on Calming Diffuser buyers' internal feedback survey conducted in August 2023 (n=300)<\/em><\/p>",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_top-mob": 0,
+        "padding_bottom-mob": 0
+      }
+    },
+    "16e3d6b3-f10a-4d9a-8921-09da29e14ce2": {
+      "type": "featured",
+      "blocks": {
+        "15957e30-b56d-4e75-9b4d-eba509c13beb": {
+          "type": "column",
+          "settings": {
+            "featured-head": "Vet-reviewed...",
+            "hide-featuredhead": false,
+            "featured-img": "shopify:\/\/shop_images\/vet.jpg",
+            "hide-featuredimg": false
+          }
+        },
+        "4f0d6955-997f-4798-8beb-8e2dff247fde": {
+          "type": "column",
+          "settings": {
+            "featured-head": "Loved by pet parents...",
+            "hide-featuredhead": false,
+            "featured-img": "shopify:\/\/shop_images\/rev.jpg",
+            "hide-featuredimg": false
+          }
+        },
+        "d7e130f6-00dd-4b62-8b36-8c2511224c31": {
+          "type": "column",
+          "settings": {
+            "featured-head": "...And thousands of cats worldwide!",
+            "hide-featuredhead": false,
+            "featured-img": "shopify:\/\/shop_images\/visuals_5-02.png",
+            "hide-featuredimg": false
+          }
+        }
+      },
+      "block_order": [
+        "15957e30-b56d-4e75-9b4d-eba509c13beb",
+        "4f0d6955-997f-4798-8beb-8e2dff247fde",
+        "d7e130f6-00dd-4b62-8b36-8c2511224c31"
+      ],
+      "settings": {
+        "bg": "#ffffff",
+        "custom-id": "featured-one",
+        "red-btn": "#question-one",
+        "red-text": "Continue",
+        "section_css_class": "world"
+      }
+    },
+    "e8bea94a-07b2-4d1b-9ea0-06775f07389d": {
+      "type": "question",
+      "blocks": {
+        "59d05855-7f21-4eec-82e8-563906e8a21b": {
+          "type": "column",
+          "settings": {
+            "blue-btn": "#question-two",
+            "blue-text": "One"
+          }
+        },
+        "bc153449-bf1d-4c47-8151-af1e5b8e4172": {
+          "type": "column",
+          "settings": {
+            "blue-btn": "#question-two",
+            "blue-text": "Two"
+          }
+        },
+        "69435b0a-5587-4580-9be8-373561b07088": {
+          "type": "column",
+          "settings": {
+            "blue-btn": "#question-two",
+            "blue-text": "Three"
+          }
+        },
+        "b9b0209a-1fe3-4263-a215-357b2352ff17": {
+          "type": "column",
+          "settings": {
+            "blue-btn": "#question-two",
+            "blue-text": "Four or more"
+          }
+        }
+      },
+      "block_order": [
+        "59d05855-7f21-4eec-82e8-563906e8a21b",
+        "bc153449-bf1d-4c47-8151-af1e5b8e4172",
+        "69435b0a-5587-4580-9be8-373561b07088",
+        "b9b0209a-1fe3-4263-a215-357b2352ff17"
+      ],
+      "settings": {
+        "custom-id": "question-one",
+        "section_css_class": "",
+        "question-head": "How many cats do you have at home?"
+      }
+    },
+    "b10c87e9-ac74-4d21-a284-a9a2c181efed": {
+      "type": "question",
+      "blocks": {
+        "c55f2b37-3d70-4af7-8c52-28e483573d2d": {
+          "type": "column",
+          "settings": {
+            "blue-btn": "https:\/\/therapetmd.com\/pages\/step2-adv",
+            "blue-text": "Rarely"
+          }
+        },
+        "3f17d015-36b1-426a-9c04-d028d18e0d51": {
+          "type": "column",
+          "settings": {
+            "blue-btn": "https:\/\/therapetmd.com\/pages\/step2-adv",
+            "blue-text": "Sometimes"
+          }
+        },
+        "114b3eeb-1d2b-479e-ab71-7aeb87cd954f": {
+          "type": "column",
+          "settings": {
+            "blue-btn": "https:\/\/therapetmd.com\/pages\/step2-adv",
+            "blue-text": "Often"
+          }
+        },
+        "aa40e87e-96b4-419e-abe0-38d3721ba923": {
+          "type": "column",
+          "settings": {
+            "blue-btn": "https:\/\/therapetmd.com\/pages\/step2-adv",
+            "blue-text": "All the time"
+          }
+        }
+      },
+      "block_order": [
+        "c55f2b37-3d70-4af7-8c52-28e483573d2d",
+        "3f17d015-36b1-426a-9c04-d028d18e0d51",
+        "114b3eeb-1d2b-479e-ab71-7aeb87cd954f",
+        "aa40e87e-96b4-419e-abe0-38d3721ba923"
+      ],
+      "settings": {
+        "custom-id": "question-two",
+        "section_css_class": "",
+        "question-head": "How often do you notice them showing unwanted behaviors?\u2028"
+      }
+    }
+  },
+  "order": [
+    "e1cd6145-ac4b-4b0d-b32b-3d7a89a3f508",
+    "b3526ef6-b8b8-4535-839f-d66a4122b919",
+    "fc5b06f3-2e66-4f55-8cb9-b9aeee743390",
+    "0131b186-29ef-44d4-ab5a-9f474a33e35c",
+    "166469fc-b179-4ede-8b27-b963d1ab65f3",
+    "b6b321e3-0cbb-477a-8914-53abe85154f2",
+    "d10aa53c-dc8d-47ff-9581-15d2be2118af",
+    "eacfc3c9-106a-4e00-b123-f94d653255a0",
+    "c3261476-a1d0-4e81-a1e0-cc06ca574b4b",
+    "f28ef85b-09f2-4d79-87f8-0b0306abed7e",
+    "0244b9e8-ef39-441f-a4f1-9e584b70f10b",
+    "16e3d6b3-f10a-4d9a-8921-09da29e14ce2",
+    "e8bea94a-07b2-4d1b-9ea0-06775f07389d",
+    "b10c87e9-ac74-4d21-a284-a9a2c181efed"
+  ]
+}

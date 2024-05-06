@@ -1,0 +1,49 @@
+<style>
+footer{
+  display:none !important
+}.FooterNEWAaha{    font-size: 0.85em;
+    text-align: center;
+    padding: 50px 20px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}.FooterNEWAaha p{
+  color:{{ section.settings.color }}
+}
+</style>
+<section style="background:{{ section.settings.back }};color:{{ section.settings.color }};background: linear-gradient(102.47deg, {{section.settings.gradient1}} 0.87%, {{section.settings.gradient2}} 101.26%);">
+<div class="FooterNEWAaha">
+ {{ section.settings.text }} 
+</div>
+</section>
+{% schema %}
+  {
+    "name": "Footer",
+    "settings": [
+ {
+        "type":"color",
+        "id":"gradient1",
+        "label":"Gradient 1",
+        "default":"#5D3891"
+      },
+      {
+        "type":"color",
+        "id":"gradient2",
+        "label":"Gradient 2",
+        "default":"#66347F"
+      },  
+     {
+    "type":"color",
+    "id":"color",
+    "label":"Color",
+       "default":"#fff"
+  },  
+      {
+    "type":"richtext",
+    "id":"text",
+    "label":"Text"
+  } 
+  ],
+  "presets":[{"name":"Footer"}]
+  }
+{% endschema %} 

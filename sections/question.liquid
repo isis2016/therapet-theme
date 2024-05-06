@@ -1,0 +1,142 @@
+ <section class="question--section {{ section.settings.section_css_class }}" id="{{ section.settings.custom-id }}">
+         <div class="ques__wrap">
+             <h4>{{ section.settings.question-head }}</h4>
+             <div class="two__btns three__btns">
+               {% for block in section.blocks %}
+               {% if block.settings.blue-btn != blank %}
+                 <a href="{{ block.settings.blue-btn }}" class="btn-pet blue">{{ block.settings.blue-text }}</a>
+               {% endif %}
+                 {% endfor %}
+             </div>
+         </div>
+     </section>
+{% schema %}
+  {
+    "name": "Question section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "custom-id",
+        "label": "Custom Id"
+      },
+      {
+        "type": "text",
+        "id": "section_css_class",
+        "label": "Custom Class"
+      },
+      {
+        "type": "text",
+        "id": "question-head",
+        "label": "Question"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "column",
+        "name": "buttons",
+        "settings": [
+               
+      {
+        "type": "url",
+        "id": "blue-btn",
+        "label": "first button url"
+      },
+      {
+        "type": "text",
+        "id": "blue-text",
+        "label": "first button text"
+      }
+        ]
+      }
+    ],
+        "presets": [
+      {
+        "name": "Question section"
+      }
+    ]
+  }
+{% endschema %}
+<style>
+   section.question--section {
+     background: #f2f4f8;
+     height: 100vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+  .ques__wrap {
+    width: 100%;
+  }
+  .ques__wrap h4 {
+    font-size: 32px;
+    line-height: 36px;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 2vw;
+    margin: 0px;
+    letter-spacing: normal;
+    font-family: 'Inter', sans-serif;
+}
+  .two__btns.three__btns {
+    justify-content: center;
+    align-items: center;
+    column-gap: 1rem;
+    padding: 0.5rem 0;
+}
+  .three__btns .btn-pet {
+    min-width: 224px;
+}
+  .signs .ques__wrap h4 {
+    width: 38%;
+    margin: 0 auto;
+  }
+  .signs .three__btns .btn-pet {
+    min-width: 328px;
+}
+  .main__purple {
+    opacity: 0.6;
+  }
+    @media (max-width: 1100px) {
+      .signs .ques__wrap h4 {
+    width: 70%;
+}
+  }
+  @media (max-width: 992px) {
+      .signs .ques__wrap h4 {
+    width: 85%;
+}
+    .two__btns.three__btns {
+    flex-wrap: wrap;
+    row-gap: 1rem;
+}
+  }
+   @media (max-width: 767px) {
+     .question--section {
+    padding: 0 1.5rem;
+}
+     .ques__wrap h4 {
+    font-size: 22px;
+    line-height: 28px;
+    padding-bottom: 1.5rem;
+}
+      .signs .ques__wrap h4 {
+    flex-flow: column;
+    row-gap: 1rem;
+}
+     .three__btns .btn-pet {
+    min-width: 97%!important;
+}
+     .signs .ques__wrap h4 {
+    width: 100%;
+}
+  }
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+   $(document).ready(function () {
+            $('.three__btns .btn-pet').click(function () {
+                $('.three__btns .btn-pet').removeClass('main__purple');
+                $(this).addClass('main__purple');
+            });
+        });
+</script>

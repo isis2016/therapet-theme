@@ -1,0 +1,286 @@
+<div class="category-section">
+  <div class="page-width">
+    <div class="category-wrap">
+      <div class="category-text">
+        <h6>{{ section.settings.offer-head }}</h6>
+        <h3>{{ section.settings.category-head }}</h3>
+        <p>{{ section.settings.category-p }}</p>
+      </div>
+      <div class="category-foot">
+        <img src="{{ section.settings.foot-img | img_url: 'master' }}" alt="Icon">
+      </div>
+    </div>
+    <div class="category-content-wrap">
+    {% for block in section.blocks %}
+     <a class="category-content" href="{{ block.settings.category-link }}">
+      <div class="category-image">
+        <img src="{{ block.settings.category-img | img_url: 'master' }}" alt=" Category img">
+      </div>
+       <div class="link-wrap">
+         <h5>{{ block.settings.link-p }}</h5>
+         <div class="new-arrow-icon">
+             <img src="{{ block.settings.arrow-img | img_url: 'master' }}" alt=" Arrow icon">
+          </div>
+       </div>
+     </a>
+    {% endfor %}      
+    </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "category section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "offer-head",
+        "label": "Offer head"
+      },
+      {
+        "type": "text",
+        "id": "category-head",
+        "label": "Heading"
+      },
+      {
+        "type": "text",
+        "id": "category-p",
+        "label": "Text"
+      },      
+      {
+        "type": "image_picker",
+        "id": "foot-img",
+        "label": "Foot image"        
+      }
+    ],
+    "blocks": [
+      {
+        "type": "column",
+        "name": "category column",
+        "settings": [
+      { 
+        "type": "url",
+        "id": "category-link",
+        "label": "Category link"
+      },
+      { 
+        "type": "image_picker",
+        "id": "category-img",
+        "label": "Category image"
+      },
+      {
+        "type": "text",
+        "id": "link-p",
+        "label": "Text"
+      },
+      { 
+        "type": "image_picker",
+        "id": "arrow-img",
+        "label": "Icon"
+      }
+        ]
+      }
+    ],
+        "presets": [
+      {
+        "name": "category section"
+      }
+    ]
+  }
+{% endschema %}
+<style>
+  img {
+    width: 100%;
+    height: 100%;
+}
+  .category-section {
+    padding: 100px 0px;
+  }
+  .category-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+  .category-text {
+    width: 54%;
+}
+  .category-text h6 {
+    margin: 0px 0px 15px 0px;
+    color: #50B27F;
+    font-family: Poppins;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+  .category-text h3 {
+    margin: 0px 0px 27px 0px;
+    color: #37306B;
+    font-family: AvertaStd-ExtraBold;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60px;
+}
+  .category-text p {
+    margin: 0px;
+    color: #37306B;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+  .category-foot {
+    width: 15%;
+    height: auto;
+}
+  .category-content {
+    text-decoration: none;
+    width: 32%;
+}
+  .category-image {
+    width: 100%;
+    height: auto;
+    line-height: 0px;
+    margin-bottom: 30px;
+}
+  .category-content-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  .link-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    column-gap: 20px;
+}
+  .link-wrap h5 {
+    margin: 0px;
+    color: #F675A8;
+    font-family: AvertaStd-Bold;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+  .new-arrow-icon {
+    width: 5%;
+    height: auto;
+    line-height: 0px;
+}
+  @media (max-width: 1100px) {
+    .category-section {
+    padding: 80px 0px;
+}
+    .category-wrap {
+    margin-bottom: 35px;
+}
+    .category-text {
+    width: 70%;
+}
+    .category-text h6 {
+    margin: 0px 0px 15px 0px;
+    font-size: 20px;
+}
+    .category-text h3 {
+    margin: 0px 0px 25px;
+    font-size: 40px;
+    line-height: 50px;
+}
+    .category-text p {
+    font-size: 18px;
+    line-height: normal;
+}
+    .category-foot {
+    width: 25%;
+}
+    .category-image {
+    margin-bottom: 10px;
+}
+    .link-wrap h5 {
+    font-size: 20px;
+}
+    .link-wrap {
+    align-items: flex-start;
+    column-gap: 20px;
+}
+    .new-arrow-icon {
+    width: 7%;
+}
+  }
+  @media (max-width: 992px) {
+    .category-wrap {
+    margin-bottom: 25px;
+}
+    .category-text h6 {
+    font-size: 18px;
+}
+    .category-text h3 {
+    margin: 0px 0px 20px;
+    font-size: 30px;
+    line-height: 40px;
+}
+    .category-text p {
+    font-size: 18px;
+}
+    .link-wrap {
+    align-items: center;
+}
+  }
+  @media (max-width: 767px) {
+    .category-section {
+    padding: 40px 0px;
+}
+    .category-wrap {
+    flex-wrap: wrap;
+    margin-bottom: 15px;  
+}
+    .category-text h6 {
+    font-size: 16px;
+}
+    .category-text {
+    width: 100%;
+    margin-bottom: 15px;
+      text-align: center;
+}
+    .category-text h3 {
+      width: 90%;
+      margin: 0 auto 15px;
+      font-family: AvertaStd-Bold;
+}
+    .category-text p {
+    font-size: 16px;
+}
+    .category-foot {
+      display: none;
+}
+    .category-content-wrap {
+      flex-wrap: wrap;
+      width: 90%;
+      margin: 0 auto;
+}
+    .category-content {
+    margin-bottom: 25px;
+    width: 100%;
+}
+    .category-image {
+    margin-bottom: 15px;
+}
+    .link-wrap h5 {
+    font-size: 20px;
+    font-family: 'Poppins';
+    font-weight: 700;
+}
+    .category-content:last-child {
+      margin-bottom: 0;
+    }
+    .category-content:lasst-child {
+    margin-bottom: 0px;
+}
+    .new-arrow-icon {
+    width: 5%;
+}
+  }
+</style>

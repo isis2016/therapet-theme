@@ -1,0 +1,914 @@
+{
+  "sections": {
+    "9cb78ee0-8d59-49cc-b61b-45b391185f36": {
+      "type": "new-design-main",
+      "blocks": {
+        "ca674cd5-3b78-4d07-a0ec-db674c2a1a4c": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/congestion.png",
+            "text": "<b>Clears Congested Nose<\/b>"
+          }
+        },
+        "ad66102f-29c4-4ed8-bb85-901bcaf2d14b": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/nose.png",
+            "text": "<b>Improves Nose Breathing<\/b>"
+          }
+        },
+        "bd5e56ce-99aa-4834-bdbd-472586b7b5e9": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/sleep.png",
+            "text": "<b>Improves Sleep & Tiredness<\/b>"
+          }
+        },
+        "f36df904-46c2-4146-b418-6c6ca294e88c": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/snoring.png",
+            "text": "<b>Silences Nasal Snoring<\/b>"
+          }
+        },
+        "289c538f-7506-48d0-87cb-93a0f348db19": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/headaches.png",
+            "text": "<b>Eases Headaches & Pressure<\/b>"
+          }
+        },
+        "6e1e25b1-f596-461b-91b8-821ea98c1a4d": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/allrr2.png",
+            "text": "<b>Allergy Symptoms Relief<\/b>"
+          }
+        },
+        "c50a9685-8a0c-4ea8-abb7-91caa19f914d": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/safe.png",
+            "text": "<b>Provides Natural Relief<\/b>"
+          }
+        },
+        "62e363b4-2566-4a4a-ab92-c52ca8d2b984": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/shield.png",
+            "text": "<b>Drug-Free & Painless<\/b>"
+          }
+        }
+      },
+      "block_order": [
+        "ca674cd5-3b78-4d07-a0ec-db674c2a1a4c",
+        "ad66102f-29c4-4ed8-bb85-901bcaf2d14b",
+        "bd5e56ce-99aa-4834-bdbd-472586b7b5e9",
+        "f36df904-46c2-4146-b418-6c6ca294e88c",
+        "289c538f-7506-48d0-87cb-93a0f348db19",
+        "6e1e25b1-f596-461b-91b8-821ea98c1a4d",
+        "c50a9685-8a0c-4ea8-abb7-91caa19f914d",
+        "62e363b4-2566-4a4a-ab92-c52ca8d2b984"
+      ],
+      "settings": {
+        "backimage": "shopify:\/\/shop_images\/desktop-hero.png",
+        "backimagem": "shopify:\/\/shop_images\/mobile.png",
+        "bundlesUp": "",
+        "heading": "Relieve Congestion, Breath Freely, And Sleep Soundly!",
+        "text": "Cleanux Flushes Out <span class=\"red\">Nasal Congestion And Improves Breathing <\/span><i>Instantly, Easily, and Drug-Free!<\/i>",
+        "btn_text": "TRY CLEANUX RISK-FREE!",
+        "btn_link": "#order-now-section",
+        "guaranteeImg": "shopify:\/\/shop_images\/moneyback_200x_1.png",
+        "guaranteeText": "30-Day Money Back Guarantee",
+        "review": "<p>2570+ Verified Reviews<\/p>",
+        "review2": "<p><em>“<\/em>My husband deals with some horrible allergies year-round. I bought this for him for Christmas. He said I gave the gift of oxygen. Apparently he hasn't been able to breathe for about 15 years since he broke his nose and deviated his septum. So he uses this every day and can nose breathe again! Bonus his snoring has definitely improved!<em>” - <\/em><strong>Augustine J., Cleanux Customer<\/strong><\/p>",
+        "featured": "Without resorting to chemical sprays, addictive pills, expensive ENT visits or painful surgery! ⬇️"
+      }
+    },
+    "8b9681e7-2542-43c0-8107-bea19ee66e5b": {
+      "type": "richTextNew",
+      "settings": {
+        "heading": "Leading ENT Doctor says “Unobstructed Breathing is Key to Good Health!”",
+        "text": "<p>A nasal irrigator is a breakthrough in maintaining clear nasal passages and <strong>enhancing your breathing and sleep quality<\/strong>. Congestion from mucus inflames your sensitive nasal tissues, depriving you of the free breathing and peaceful sleep you deserve. The purification stream from Cleanux will combat years of distress that <strong>conventional solutions couldn't resolve.<\/strong><\/p>",
+        "btn_text": "",
+        "btn_link": ""
+      }
+    },
+    "eea5c2f1-a43d-47a5-a9a0-80b5f70a3fdc": {
+      "type": "features-section-new",
+      "blocks": {
+        "4421ee40-9d6c-4589-8073-fd421682ebb9": {
+          "type": "text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pill.png",
+            "heading": "Meds & Antibiotics",
+            "text": "❌ Drowsiness & nausea<br>\n❌  Rebound headaches<br>\n❌ Difficulty sleeping<br>\n❌ Stomach upset<br>\n❌ Increased blood pressure"
+          }
+        },
+        "4dffd73e-be0b-484c-9a25-aabb2404c3e1": {
+          "type": "text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/spray.png",
+            "heading": "Nasal sprays",
+            "text": "❌ Rebound congestion<br>\n❌  Irritation & dryness<br>\n❌ Spray dependence<br>\n❌ Nosebleeds<br>\n❌ Reduces smell and taste"
+          }
+        }
+      },
+      "block_order": [
+        "4421ee40-9d6c-4589-8073-fd421682ebb9",
+        "4dffd73e-be0b-484c-9a25-aabb2404c3e1"
+      ],
+      "settings": {
+        "subheading": "EFFECTIVE IMMEDIATELY",
+        "heading": "Throw Those Over-the-counter \"Solutions\" Away!",
+        "text": "If you're a frequent nasal spray user, you may have noticed that your symptoms don't improve much, despite your best efforts... \n<br>\nNewsflash... Over-the-counter \"solutions\" are to blame!",
+        "image": "shopify:\/\/shop_images\/failed.jpg",
+        "textw": "<p>This is called rebound congestion, a condition where the nasal passages become dependent on over-the-counter sprays for relief, and <strong>worsens when the spray is not used...<\/strong><\/p><p>This leads to <strong>thinning nose tissues, deteriorating nasal cartilage, and more <\/strong><em><strong>frequent nosebleeds...<\/strong><\/em><\/p><p>And if you're already taking other medications, OTC solutions may interact with them, <strong>leading to further complications!<\/strong><\/p>",
+        "colorw": "#ffc8c8",
+        "fact": "<p><strong>Don't settle for short-term relief that do harm more than good in the long run<\/strong><\/p>",
+        "factc": "#e22120",
+        "bottom": "<p>It's Time To Switch To a Natural & Drug-Free Remedy With ZERO Side Effects!<\/p>"
+      }
+    },
+    "2113bc22-8a62-4a14-b3d8-8c10771b0621": {
+      "type": "richTextNew",
+      "disabled": true,
+      "settings": {
+        "heading": "Congestion Relief Has Never Been Easier, Thanks to Cleanux!",
+        "text": "<p>You haven't experienced the true benefits of clear sinuses until you try  Cleanux. This will be the most effortless and effective way to improve your nasal health. <em><strong>Because you deserve to breathe easy!<\/strong><\/em><\/p>",
+        "btn_text": "CONGESTION RELIEF OR YOUR MONEY-BACK",
+        "btn_link": "#order-now-section"
+      }
+    },
+    "52eaad7f-3fd1-494c-9a6e-4ac0cd95745d": {
+      "type": "introduction",
+      "settings": {
+        "backimage": "shopify:\/\/shop_images\/image00012_1.png",
+        "imagem": "shopify:\/\/shop_images\/4p2_202a094a-90b1-4071-95be-747b46aa85e3.png",
+        "border": "shopify:\/\/shop_images\/image_1012.png",
+        "intro": "INTRODUCING",
+        "logo": "shopify:\/\/shop_images\/image_160_4.png",
+        "text": "<p>Developed by a team of <em><strong>Leading Sinus Specialists<\/strong><\/em>, Cleanux is a cutting-edge <strong>nasal decongestion and sinus cleansing device<\/strong> that <strong>rejuvenates your nasal passages <\/strong>and<strong> transcends your breathing experience.<\/strong><\/p><p>It uses a powerful yet controlled and gentle stream of water to <strong>instantly dislodge stubborn mucus buildup in<\/strong> your nose, and wash<strong> away all pesky irritants and culprits <\/strong>of nasal discomfort.<\/p><p>You can instantly sense your nasal pathways opening up, allowing for <strong>better airflow and breathing!<\/strong><\/p><p>And the best part? It's <em><strong>safe for daily use<\/strong><\/em>, and provides <em><strong>natural & long-lasting relief<\/strong><\/em>, without worrying about <strong>unwanted side effects or potential issues<\/strong> from long-term medication use!<\/p>"
+      }
+    },
+    "25fc0dc2-df1d-4f82-9b63-3282d63a4e18": {
+      "type": "features-section",
+      "blocks": {
+        "fe5d2afb-f717-42ec-9a40-e83d4e2a1fcc": {
+          "type": "text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/instant222.png",
+            "heading": "Effective & Instant Relief",
+            "text": "Our users notice a big difference the first time they use Cleanux. Quickly, your nose may feel much clearer, and the more you use it, the better your breathing will be."
+          }
+        },
+        "ff53d96f-8c30-4092-9e12-aa3312942bbf": {
+          "type": "text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/cost1.png",
+            "heading": "Once In A Lifetime Purchase",
+            "text": "Cleanux is a one-time purchase, it requires absolutely no refills, no replacements, and zero maintenance fees."
+          }
+        },
+        "dc1bd9b2-7fb9-4344-a350-21a77abd3cc2": {
+          "type": "text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/easy1.png",
+            "heading": "Easy To Use & Travel-Sized",
+            "text": "Cleanux is super easy to use and takes less than two minutes, just like brushing your teeth. And thanks to its small and handy design, its easy to bring wherever you go!"
+          }
+        },
+        "9a4e6b42-6b72-4039-bc3b-1a23bd4b094a": {
+          "type": "text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/mutliple.png",
+            "heading": "Adjustable Pressure & Irrigation Modes",
+            "text": "Cleanux offers 3 water pressure modes and 2 irrigation modes. Each is calibrated to deliver a customized experience, catering to your comfort and preference."
+          }
+        }
+      },
+      "block_order": [
+        "fe5d2afb-f717-42ec-9a40-e83d4e2a1fcc",
+        "ff53d96f-8c30-4092-9e12-aa3312942bbf",
+        "dc1bd9b2-7fb9-4344-a350-21a77abd3cc2",
+        "9a4e6b42-6b72-4039-bc3b-1a23bd4b094a"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "heading": "CLEANUX IS LIKE A NETI POT ON STEROIDS!",
+        "text": "We took the best from all nasal irrigation solutions and combined them in one smart device to ensure maximum efficiency!",
+        "image": "shopify:\/\/shop_images\/features2.jpg",
+        "image2": "shopify:\/\/shop_images\/features_7bb09760-45a9-40d8-ae17-f82cfd371f0d.jpg"
+      }
+    },
+    "f9b6148f-ca59-4f35-a9fc-59992b0ae349": {
+      "type": "faq-section-new",
+      "disabled": true,
+      "blocks": {
+        "6f1c80c6-abc1-4a2b-8c1e-a3b2e71f65da": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Difficulty breathing through the nose?",
+            "icon": "none",
+            "row_content": "<p>When the nasal passages are blocked, it becomes challenging to breathe through the nose, resulting in difficulty inhaling sufficient air. <\/p>",
+            "page": ""
+          }
+        },
+        "template--15731761184924__f9b6148f-ca59-4f35-a9fc-59992b0ae349-1676754232bbeca43b-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Snoring and waking up unable to breathe?",
+            "icon": "none",
+            "row_content": "<p>Congestion in the nasal passages, whether due to mucus buildup, can contribute to both snoring and sleep apnea by blocking the airways, making air unable to circulate properly in the nose.<\/p>",
+            "page": ""
+          }
+        },
+        "86edf87d-35d9-4ecc-8702-b84d3daadcc3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Dealing with constant allergy attacks?",
+            "icon": "none",
+            "row_content": "<p>allergens like pollen, dust, or pet dander, invade through the nose, causing inflammation in the sinuses and triggering symptoms like itching, sneezing, runny nose, and postnasal drip..<\/p>",
+            "page": ""
+          }
+        },
+        "template--15731761184924__f9b6148f-ca59-4f35-a9fc-59992b0ae349-1676754232bbeca43b-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Difficulty falling asleep?",
+            "icon": "none",
+            "row_content": "<p>Sinus issues can make it hard to fall asleep because sinus congestion or inflammation can cause difficulty breathing, leading to discomfort and an inability to relax. Additionally, sinus pressure can make it difficult to find a comfortable sleeping position, further impeding the ability to fall asleep.<\/p>",
+            "page": ""
+          }
+        },
+        "template--15731761184924__f9b6148f-ca59-4f35-a9fc-59992b0ae349-1676754232bbeca43b-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Constant headaches and sinus pressure?",
+            "icon": "none",
+            "row_content": "<p>When sinus cavities are inflamed and stuffed with mucus, and with low air circulation, it results in pressure in the sinus area and a feeling of fullness in the head along with dizziness.<\/p>",
+            "page": ""
+          }
+        },
+        "16bde425-28f5-4631-989e-3225041eb8ea": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Always relying on sprays for relief?",
+            "icon": "none",
+            "row_content": "<p>Sinus issues can cause difficulty breathing during sleep, resulting in poor quality sleep and fatigue upon waking up.<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "6f1c80c6-abc1-4a2b-8c1e-a3b2e71f65da",
+        "template--15731761184924__f9b6148f-ca59-4f35-a9fc-59992b0ae349-1676754232bbeca43b-2",
+        "86edf87d-35d9-4ecc-8702-b84d3daadcc3",
+        "template--15731761184924__f9b6148f-ca59-4f35-a9fc-59992b0ae349-1676754232bbeca43b-0",
+        "template--15731761184924__f9b6148f-ca59-4f35-a9fc-59992b0ae349-1676754232bbeca43b-3",
+        "16bde425-28f5-4631-989e-3225041eb8ea"
+      ],
+      "settings": {
+        "color": "#ededed",
+        "subheading": "WHY CLEANUX IS FOR YOU",
+        "caption": "If the answer is YES to any of these questions.. Cleanux is definitely a must-have!",
+        "heading": "Breathe Better, Sleep Deeper, and Live Congestion-Free!",
+        "heading_size": "h2",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 52,
+        "padding_bottom": 36,
+        "bottom": "Look no more, Cleanux is the answer you’ve been looking for!"
+      }
+    },
+    "a139d53e-d2eb-4906-9284-022a504659b4": {
+      "type": "richTextNew",
+      "settings": {
+        "heading": "Get 30% Off + FREE Shipping On Your Order Today!",
+        "text": "<p>You haven't experienced the true benefits of effortless breathing until you try Cleanux. This will be the most effortless and effective way to improve your nasal health. <em><strong>Drug-Free, Easily, and Naturally!<\/strong><\/em><\/p>",
+        "btn_text": "Claim My Discount Now",
+        "btn_link": "#order-now-section"
+      }
+    },
+    "b4bb6ecc-35a9-4f9f-ad48-41a9173b1aab": {
+      "type": "vs-blocks",
+      "blocks": {
+        "a3d529b2-cbb2-433e-9745-9cfe4106f688": {
+          "type": "Blocks",
+          "settings": {
+            "videoOpt": "",
+            "BlockImage": "shopify:\/\/shop_images\/before.jpg",
+            "BlockText": "Nasal Congestion Makes Breathing Hard",
+            "BlockrichText": "<p>Dealing with a congested nose due to allergies, deviated septum or common cold is like trying to breathe through a crumpled straw…<\/p>",
+            "content": "<b>\n<li>[Cross] Sniffling, Sneezing, Shortness of breath<\/li>\n<li>[Cross] Loud Snoring &amp; Poor Sleep<\/li>\n<li>[Cross] Sinus Pressure &amp; Feeling Of Suffocation<\/li><\/b>"
+          }
+        },
+        "1e89f59a-2ad0-43a1-92d3-efb86589ee46": {
+          "type": "Blocks",
+          "settings": {
+            "videoOpt": "",
+            "BlockImage": "shopify:\/\/shop_images\/aftr.jpg",
+            "BlockText": "Cleanux Gives Your Nose More Room To Breath",
+            "BlockrichText": "<p>Cleanux removes the straw by flushing out mucus and irritants from your nose – allowing you to breathe effortlessly and congestion-free.<\/p>",
+            "content": "<ul><b>\n<li>[Tick] Opens Up Blocked Airways &amp; Promotes Natural Breathing <\/li>\n<li>[Tick] Keeps Your Nose Clean By Draining Out Stubborn Mucus &amp; Irritants<\/li>\n<li>[Tick] Moisturizes Nasal Passages And Prevents Infections<\/li>\n<li>[Tick] Reduces Symptoms Of Sinusitis, Cold, &amp; Allergies<\/li>\n<\/b><\/ul>"
+          }
+        }
+      },
+      "block_order": [
+        "a3d529b2-cbb2-433e-9745-9cfe4106f688",
+        "1e89f59a-2ad0-43a1-92d3-efb86589ee46"
+      ],
+      "settings": {
+        "BlockColor": "#ecf4ff",
+        "Text": "Better Breathing Is Minutes Away",
+        "richText": "<p>Cleanux harnesses the ancient wisdom of nasal irrigation, a time-proven therapy pioneered in the 11th century, with the cutting-edge technology of the 21st century!<\/p>",
+        "vscheckbox": true,
+        "vscolor": "#ffdb06",
+        "vstext": "VS"
+      }
+    },
+    "f048dcc2-03ae-45c3-8cb1-07b2d9093de3": {
+      "type": "benefits",
+      "blocks": {
+        "9f24b637-0397-4db6-b6b7-c464c3ea2ae4": {
+          "type": "Benefit",
+          "settings": {
+            "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/822a67374c4342cc84b92ea756888892.mp4",
+            "heading": "#1 Squeaky Clean Nose, Breathing On Autopilot",
+            "text": "<p>In just a few minutes a day, Cleanux can clear your nose of stubborn mucus and irritants, and help you breathe better than ever before.<\/p>"
+          }
+        },
+        "895cca74-1407-4695-b1f2-d085a7f4d727": {
+          "type": "Benefit",
+          "settings": {
+            "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/0455809b954d414aa55a88b921b9cfb1.mp4",
+            "heading": "#2 Better Nights, Better Mornings",
+            "text": "<p>Using Cleanux just before bed flushes congestion out and keeps your nasal passages clear and ready for the deepest sleep ever, with no awakenings or snoring!<\/p>"
+          }
+        },
+        "aecef3f8-2950-45bf-9747-f0f738c03054": {
+          "type": "Benefit",
+          "settings": {
+            "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/4a45cebeedff43a8973e0051a2648202.mp4",
+            "heading": "#3 No More Harmful Chemicals & Drugs",
+            "text": "<p>Cleanux is completely drug-free, doesn’t require a prescription, and is entirely safe for anyone to use, with zero side effects.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "9f24b637-0397-4db6-b6b7-c464c3ea2ae4",
+        "895cca74-1407-4695-b1f2-d085a7f4d727",
+        "aecef3f8-2950-45bf-9747-f0f738c03054"
+      ],
+      "settings": {
+        "subheading": "3 Reasons Why Thousands Use Cleanux",
+        "heading": "The All-Natural Breathing Relief",
+        "bottom": "",
+        "arrow1": "shopify:\/\/shop_images\/arr.png",
+        "arrow2": "shopify:\/\/shop_images\/arr2.png"
+      }
+    },
+    "d4468034-ee17-4bb3-9789-4129722b296e": {
+      "type": "richTextNew",
+      "settings": {
+        "heading": "Unblock Your Sinuses And Breathe Better Than Ever!",
+        "text": "<p>You haven't experienced the true benefits of effortless breathing until you try Cleanux. This will be the most effortless and effective way to improve your nasal health. <em><strong>Drug-Free, Easily, and Naturally!<\/strong><\/em><\/p>",
+        "btn_text": "NO CONGESTION OR YOUR MONEY BACK",
+        "btn_link": "#order-now-section"
+      }
+    },
+    "b15bd9ac-1b0a-4b4b-82ad-8023d010a7e2": {
+      "type": "reviews-slider-new",
+      "blocks": {
+        "3fe27ffe-f04b-4b75-a5b8-d8be62807bdb": {
+          "type": "Review",
+          "settings": {
+            "heading": "Wow, what a difference!!",
+            "text": "I rarely write reviews unless I really like a product. I have to say that this knocked it out of the park. I've been having sinus issues for years. Tried all the OTC products, some with minor success (but never long lasting). I've seen this advertised for awhile and finally decided to go for it and I'm so glad I did. After one use I was able breathe so much better than I'd been in awhile. I use it twice a day right now, morning and night. My sleep is better, too. Cleanux... you're a life saver!!",
+            "avatar": "shopify:\/\/shop_images\/andy_Moment2.jpg",
+            "name": "Shamar W.",
+            "reference": "CLEANUX Customer"
+          }
+        },
+        "50308e50-7478-4906-b43f-8daa820168cb": {
+          "type": "Review",
+          "settings": {
+            "heading": "haven't breathed this freely since I was a teen.",
+            "text": "Cleanux device works! I won't lie, the first try was a bit weird, but not painful. But the flush released a ridiculous amount of blockage and dislodged much other stuff that didn't flush out. I was blowing it out all night. In the morning, the second round was much smoother. I haven't breathed this freely since I was a teen.",
+            "avatar": "shopify:\/\/shop_images\/smith-min.png",
+            "name": "Smith O.",
+            "reference": "CLEANUX Customer"
+          }
+        },
+        "97deb2b8-268f-4d15-87b5-4f69527766c3": {
+          "type": "Review",
+          "settings": {
+            "heading": "If you have asthma, You have to have this!!",
+            "text": "I have really bad asthma and sinus. I love that it fully cleans my sinuses out. I also can breathe a lot better!!! The concept of this product kinda grossed me out, but once I used it I found it surprisingly comfortable! Highly recommend this.",
+            "avatar": "shopify:\/\/shop_images\/unnamed_1.jpg",
+            "name": "Shayla S.",
+            "reference": "CLEANUX Customer"
+          }
+        },
+        "c86a1d95-519f-4864-82b7-b5fef6a94900": {
+          "type": "Review",
+          "settings": {
+            "heading": "I forgot how to breathe easily!",
+            "text": "I've started using Cleanux 3 days ago and what a huge difference! I had forgotten how amazing it feels to be able to breathe easily after my surgery 11 years ago. This thing really works! I love it!",
+            "avatar": "shopify:\/\/shop_images\/rrr-min.png",
+            "name": "Max K.",
+            "reference": "CLEANUX Customer"
+          }
+        },
+        "fb984e3d-4aa6-4226-988e-d875e0f3a2eb": {
+          "type": "Review",
+          "settings": {
+            "heading": "Thrilled with this product! No more snoring!",
+            "text": "I was snoring pretty bad and I've been trying different methods of trying to correct it non surgically before I take that step. This worked wonderfully to clear my nasal passages and make breathing so much easier!",
+            "avatar": "shopify:\/\/shop_images\/Sans-titre-1.jpg",
+            "name": "Sharon I.",
+            "reference": "CLEANUX Customer"
+          }
+        },
+        "19a5e888-5ab6-439b-8ff2-430ccf31d0b2": {
+          "type": "Review",
+          "settings": {
+            "heading": "Congestion GONE!",
+            "text": "I wish I tried this sooner. I have had issues with one nostril being partial to completely blocked, for years.\nNow, I breathe freely. I noticed a slight improvement immediately, then it got better with every use. I probably do 4 days out of 7 now. I’ve never breathed so well in my life! If you have sinus issues, you need this!",
+            "avatar": "shopify:\/\/shop_images\/336.jpg",
+            "name": "Anthony H.",
+            "reference": "CLEANUX Customer"
+          }
+        },
+        "8de622f3-bc45-4f39-a540-9cc4ab4c4bf3": {
+          "type": "Review",
+          "settings": {
+            "heading": "Best product I ever purchased.",
+            "text": "This thing is incredible. I can finally breathe through my nose at night again. Certainly helps with sleeping and removes congestion in general. 100\/10.",
+            "avatar": "shopify:\/\/shop_images\/nathan_Moment.jpg",
+            "name": "Karl B.",
+            "reference": "CLEANUX Customer"
+          }
+        }
+      },
+      "block_order": [
+        "3fe27ffe-f04b-4b75-a5b8-d8be62807bdb",
+        "50308e50-7478-4906-b43f-8daa820168cb",
+        "97deb2b8-268f-4d15-87b5-4f69527766c3",
+        "c86a1d95-519f-4864-82b7-b5fef6a94900",
+        "fb984e3d-4aa6-4226-988e-d875e0f3a2eb",
+        "19a5e888-5ab6-439b-8ff2-430ccf31d0b2",
+        "8de622f3-bc45-4f39-a540-9cc4ab4c4bf3"
+      ],
+      "settings": {
+        "heading": "Don't Just Take Our Word For It!",
+        "backcolor": "#f5f7f9"
+      }
+    },
+    "fe0f2cf5-e6d2-4198-8e30-3131e7b1408b": {
+      "type": "how-it-works",
+      "blocks": {
+        "652fc414-1ba9-425a-a788-97ecacf0605b": {
+          "type": "step",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1_27880d75-ca5b-4e12-a57c-67dae4b83197.jpg",
+            "text": "Open the water tank, fill it with filtered, distilled, or previously boiled water, and add a tbsp of sea salt."
+          }
+        },
+        "48f83e86-2114-4126-94a9-57f9c0badd83": {
+          "type": "step",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2_250c93ce-afbf-48a1-8801-736c842389fe.jpg",
+            "text": "Select the preferred nozzle and insert it into the device."
+          }
+        },
+        "42edea17-ab59-43d8-9353-677d766638f7": {
+          "type": "step",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/4_d056456c-eb96-4110-8a92-f07064424843.jpg",
+            "text": "Select the appropriate pressure mode and place the nozzle into the nostril"
+          }
+        },
+        "60ddef40-1c51-4ef6-bb68-77aed74ffde5": {
+          "type": "step",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/5.jpg",
+            "text": "Lean forward, turn CLEANUX on, and watch congestion going down the drain!"
+          }
+        }
+      },
+      "block_order": [
+        "652fc414-1ba9-425a-a788-97ecacf0605b",
+        "48f83e86-2114-4126-94a9-57f9c0badd83",
+        "42edea17-ab59-43d8-9353-677d766638f7",
+        "60ddef40-1c51-4ef6-bb68-77aed74ffde5"
+      ],
+      "settings": {
+        "backColor": "linear-gradient(180deg, rgba(56, 171, 255, 0.1) 0%, rgba(23, 111, 173, 0.1) 100%);",
+        "heading": "How It Works",
+        "text": "Nasal irrigation works, and Cleanux makes it like a breeze!"
+      }
+    },
+    "5d124f3a-03bc-4c9c-965f-f61d24a54179": {
+      "type": "richTextNew",
+      "settings": {
+        "heading": "Save 30% On Your Cleanux Order Today!",
+        "text": "<p>You haven't experienced the true benefits of effortless breathing until you try Cleanux. This will be the most effortless and effective way to improve your nasal health. <em><strong>Because you deserve to breathe easy!<\/strong><\/em><\/p>",
+        "btn_text": "GET 30% OFF + FREE SHIPPING",
+        "btn_link": "#order-now-section"
+      }
+    },
+    "495952d2-4bf1-4655-9b50-0f5735ddce40": {
+      "type": "comparison-table",
+      "blocks": {
+        "681362ed-ab68-43f5-b887-95f74c3543c0": {
+          "type": "block",
+          "settings": {
+            "text": "<b>Offers 3 adjustable water pressure modes<\/b>"
+          }
+        },
+        "d31d1a38-02a6-4885-8a12-4aefa62f5c99": {
+          "type": "block",
+          "settings": {
+            "text": "<b>Works with any saline solution, including homemade<\/b>"
+          }
+        },
+        "6439c15a-2d4e-4e8f-8706-d12b0fc37f7f": {
+          "type": "block",
+          "settings": {
+            "text": "<b>A one-time investment, no replacements or refills are required<\/b>"
+          }
+        },
+        "30366896-4d45-4625-9e9b-dc9e07b90064": {
+          "type": "block",
+          "settings": {
+            "text": "<b>Beginner-friendly, causes zero pain and discomfort<\/b>"
+          }
+        },
+        "e0428fc4-e374-4400-b96f-df24015234a0": {
+          "type": "block",
+          "settings": {
+            "text": "<b>Hassle-free, ergonomic, and user-friendly<\/b>"
+          }
+        },
+        "3c58127d-05c8-45e0-ac38-d84ab308612e": {
+          "type": "block",
+          "settings": {
+            "text": "<b>Cordless, lightweight, waterproof, and portable<\/b>"
+          }
+        }
+      },
+      "block_order": [
+        "681362ed-ab68-43f5-b887-95f74c3543c0",
+        "d31d1a38-02a6-4885-8a12-4aefa62f5c99",
+        "6439c15a-2d4e-4e8f-8706-d12b0fc37f7f",
+        "30366896-4d45-4625-9e9b-dc9e07b90064",
+        "e0428fc4-e374-4400-b96f-df24015234a0",
+        "3c58127d-05c8-45e0-ac38-d84ab308612e"
+      ],
+      "settings": {
+        "subheading": "What Makes Cleanux",
+        "heading": "Far Superior To Other Solutions",
+        "pluxytext": "CLEANUX",
+        "competitortext": "OTHERS",
+        "back": "#deebf1",
+        "back2": "#25478d",
+        "tick": "shopify:\/\/shop_images\/yes.png",
+        "cross": "shopify:\/\/shop_images\/Vector_5_100x_6b452d21-df25-4539-bdde-5db1dcb0bbcb.png",
+        "main": "shopify:\/\/shop_images\/hero322-min_25f7fc64-c9ca-45f7-93c5-7cb14bf903dd.png",
+        "comp": "shopify:\/\/shop_images\/them_4de3f23b-ceb4-45ca-a477-b91d8e8a8cf3.png"
+      }
+    },
+    "b3615cee-fe22-41c8-8971-f445fbc3f2eb": {
+      "type": "what-is-in-box-new",
+      "blocks": {
+        "6d0eb31e-26e2-40db-a941-359905c7e743": {
+          "type": "item",
+          "settings": {
+            "label": "1x Cleanux Nasal Water Jet"
+          }
+        },
+        "f48731aa-13e7-43e3-ba6f-9f399d4c08fb": {
+          "type": "item",
+          "settings": {
+            "label": "1x Water-Spray Nozzle"
+          }
+        },
+        "c1f92cfd-6ad5-4433-9785-cb8dabf4337d": {
+          "type": "item",
+          "settings": {
+            "label": "1x Water-Jet Nozzle"
+          }
+        },
+        "82a3cbe3-bfc6-43df-baa4-2064d8b492d7": {
+          "type": "item",
+          "settings": {
+            "label": "1x USB Charging Cable"
+          }
+        },
+        "aff645ff-d232-40c1-b9e4-8e756d030873": {
+          "type": "item",
+          "settings": {
+            "label": "1x Tips Card"
+          }
+        },
+        "a4ce475d-3741-4377-9659-019b4dcd9d8c": {
+          "type": "item",
+          "settings": {
+            "label": "1x User Manual"
+          }
+        }
+      },
+      "block_order": [
+        "6d0eb31e-26e2-40db-a941-359905c7e743",
+        "f48731aa-13e7-43e3-ba6f-9f399d4c08fb",
+        "c1f92cfd-6ad5-4433-9785-cb8dabf4337d",
+        "82a3cbe3-bfc6-43df-baa4-2064d8b492d7",
+        "aff645ff-d232-40c1-b9e4-8e756d030873",
+        "a4ce475d-3741-4377-9659-019b4dcd9d8c"
+      ],
+      "settings": {
+        "heading": "WHAT'S IN THE BOX?",
+        "text": "Lightweight and cordless, CLEANUX can easily fit in any bag and be taken wherever life takes you!",
+        "image": "shopify:\/\/shop_images\/imageMain.jpg",
+        "background": "#eaf4fc",
+        "btn_text": "",
+        "btn_link": "",
+        "satisfiedCustomers": "",
+        "count": "#2491c4"
+      }
+    },
+    "ea97f637-07b3-4afd-9b40-505558abeeb0": {
+      "type": "richTextNew",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/image_1011.png",
+        "heading": "30-DAY \"RESULTS OR REFUND\" GUARANTEE",
+        "text": "<p>When your package arrives, you have 30 days to try the Cleanux Nasal Water Jet.<\/p><p>If it doesn't <strong>improve your breathing and relieve your nasal congestion or allergy symptoms, or if you are unsatisfied in any way<\/strong>, simply contact our customer support team at support@cleanux.co. <\/p><p><strong>One of our agents will process a 100% refund for you.<\/strong><\/p>",
+        "btn_text": "",
+        "btn_link": ""
+      }
+    },
+    "c1d56645-bc86-424c-bd83-dfa154ac7e24": {
+      "type": "order-now-buy",
+      "settings": {
+        "announcement": "",
+        "backColor": "linear-gradient(180deg, rgba(56, 171, 255, 0.1) 0%, rgba(23, 111, 173, 0.1) 100%);",
+        "subheading": "GET 30% OFF TODAY.",
+        "heading": "NO COUPON CODE NEEDED.",
+        "text": "Hurry! This special offer is only available while supplies last.",
+        "guaranteeImg": "shopify:\/\/shop_images\/download.webp",
+        "guaranteeimg": "shopify:\/\/shop_images\/download.png",
+        "guarantee": "1-Year Warranty • 30-Days Return",
+        "guarantee2": "FREE Shipping • 1 Year Warranty • 30 Day Returns",
+        "showShopGateways": false,
+        "saveT1": "",
+        "bubble1": "YOU SAVE $30!",
+        "product1": "cleanux™-nasal-water-jet",
+        "saveT2": "MOST POPULAR",
+        "bubble2": "$64 EACH - SAVE $90!",
+        "product2": "2x-cleanux™-nasal-water-jet",
+        "saveT3": "FAMILY PACK",
+        "bubble3": "$56 EACH - SAVE $160!",
+        "product3": "3x-cleanux™-nasal-water-jet"
+      }
+    },
+    "55377324-4cfe-4ace-b430-05d0f485d6d9": {
+      "type": "rich-text",
+      "blocks": {
+        "template--15731761184924__55377324-4cfe-4ace-b430-05d0f485d6d9-1677226622d4145aef-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>SEE WHAT OUR CUSTOMERS ARE SAYING!<\/p>",
+            "heading_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "template--15731761184924__55377324-4cfe-4ace-b430-05d0f485d6d9-1677226622d4145aef-0"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 60,
+        "padding_bottom": 0
+      }
+    },
+    "16772265663741e36d": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "d736d065-12ce-464c-a650-42d75363f117": {
+      "type": "featureBlocks",
+      "blocks": {
+        "b56188f4-4a74-4df5-98cb-ac609bd1b81c": {
+          "type": "text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/002-buttocks.png",
+            "heading": "30 Day Trial",
+            "text": "Try it risk-free for 30 days! Don’t like it? Get a refund."
+          }
+        },
+        "5652b496-4155-42fe-a588-9b45d2cc4be3": {
+          "type": "text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_22_1.png",
+            "heading": "Free Shipping & Returns",
+            "text": "We proudly offer Fast & free shipping across the U.S., UK, Australia, and Canada."
+          }
+        },
+        "30177869-d18e-4fae-b5d6-5d8ec3bcb127": {
+          "type": "text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/tel.png",
+            "heading": "World-class Customer Support",
+            "text": "Need help? Questions? Concerns? Give us a call! +1 888-683-8705"
+          }
+        }
+      },
+      "block_order": [
+        "b56188f4-4a74-4df5-98cb-ac609bd1b81c",
+        "5652b496-4155-42fe-a588-9b45d2cc4be3",
+        "30177869-d18e-4fae-b5d6-5d8ec3bcb127"
+      ],
+      "settings": {
+        "heading1": ""
+      }
+    },
+    "93a8a084-03fb-4658-b0c1-b6930690a6ed": {
+      "type": "faq-section",
+      "blocks": {
+        "template--15698234605724__93a8a084-03fb-4658-b0c1-b6930690a6ed-1671718955a93ab1e7-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How often can I use CLEANUX ?",
+            "icon": "none",
+            "row_content": "<p>You can use CLEANUX as often as you wish! We suggest you use it twice a day, just like brushing your teeth. However, CLEANUX is completely natural and drug-free, and health professionals agree that it’s safe to use as often as needed or wanted.<br\/><br\/>We recommend that new users use CLEANUX twice a day for the first couple of weeks-once in the morning and again before bed. This will give you a very good idea of the benefits you can enjoy with daily nasal care. Ultimately, you will find your own level of use. It may be three times a day; it may be three times per week; it may be more in the winter or more during heavy pollen seasons.<\/p>",
+            "page": ""
+          }
+        },
+        "template--15698234605724__93a8a084-03fb-4658-b0c1-b6930690a6ed-1671718955a93ab1e7-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How long is an irrigation cycle?",
+            "icon": "none",
+            "row_content": "<p>CLEANUX irrigation cycle can last from about 10 seconds to a minute, depending on personal anatomy and congestion. <\/p><p>Most cycles last from 20 to 30 seconds. The cycle is complete when the water tank is empty.<\/p>",
+            "page": ""
+          }
+        },
+        "template--15698234605724__93a8a084-03fb-4658-b0c1-b6930690a6ed-1671718955a93ab1e7-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What type of water should I use?",
+            "icon": "none",
+            "row_content": "<p>Please use ONLY filtered, distilled, or previously boiled water for nasal irrigation using CLEANUX.<\/p><p>Most users prefer to warm their water prior to use. If you do this, do not overheat the water. It should be lukewarm to the touch and not hotter than about 85°– 90°F (29°– 32°C).<\/p>",
+            "page": ""
+          }
+        },
+        "f18a507c-f77d-41d5-a1a5-770c810f289f": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Will It hurt?",
+            "icon": "none",
+            "row_content": "<p>Actually, you'll hardly feel anything during the irrigation cycle! Best of all, nasal irrigation provides benefit of a clean nose and relief from sinus congestion.<\/p><p>So why not take the CLEANUX Challenge: Use CLEANUX twice a day for two weeks and find out what improved nose-breathing and a clean nose can do for you! <\/p><p>Your satisfaction is unconditionally guaranteed by our 30-Day, Zero-Risk Trial, so you have nothing to lose and everything to gain!<\/p>",
+            "page": ""
+          }
+        },
+        "template--15698234605724__93a8a084-03fb-4658-b0c1-b6930690a6ed-1671718955a93ab1e7-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can more than one person use CLEANUX ?",
+            "icon": "none",
+            "row_content": "<p>To avoid the risk of spreading germs from one user to another, the best practice hygienically is for each user to have his or her own device.<\/p>",
+            "page": ""
+          }
+        },
+        "0bab3027-d4fa-4d08-b5c0-a534c605169e": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How often should I clean the device?",
+            "icon": "none",
+            "row_content": "<p>Properly clean the device after use so that viruses and bacteria from your nose are not transferred to the device and the germs are not given the opportunity to colonize and be reintroduced into the nose upon subsequent use.<\/p><p>If you use the device daily and rinse it thoroughly before and after use, the risk is quite small. If the device is properly cleaned after use, the risk can be eliminated completely.<\/p><p>After each use, rinse the water tank thoroughly with warm water to remove any residual saline and allow to air dry. (Soap and water may also be used periodically for cleaning.) It is beneficial to frequently rinse the unit after use by running through a full reservoir of pure warm water until there is no more water in the reservoir and none is being ejected from the tip. <\/p><p>Once the water has all gone, continue to allow the unit to run for about 5 seconds to push out any residual moisture. Be sure to wipe down the unit regularly to remove any saline solution that may have spilled on the exterior to minimize accumulation of salt deposits.<\/p>",
+            "page": ""
+          }
+        },
+        "94de5d8e-a477-4776-a11c-548b7075e572": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can CLEANUX work with saline solution?",
+            "icon": "none",
+            "row_content": "<p>CLEANUX can be used with a saline solution, but ONLY filtered, distilled, or previously boiled water should be used with or without packets. Please follow all usage directions mentioned in our user manual, any water other than mentioned above is not considered to be properly filtered and can cause infections.<\/p>",
+            "page": ""
+          }
+        },
+        "0b0e86c5-9e35-4207-b084-e4b318311758": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Is CLEANUX travel-friendly?",
+            "icon": "none",
+            "row_content": "<p>Neither the Transportation Security Administration (TSA) nor the airlines impose limitations on traveling with CLEANUX. It can be packed in your carry-on or checked baggage.<\/p><p>The situation with Salt Packages is a little different. According to the TSA website, passengers may bring up to a quart-sized bag of liquids in a carry-on. The individual items must be in small containers that are each 3.4 ounces or less. According to TSA, \"Placing these items in a small bag and separating them from your carry-on baggage facilitates the screening process. Pack items that are in containers larger than 3.4 ounces or 100 milliliters in checked baggage.\"<\/p><p>The good news is that each CLEANUX Salt Package contains 0.13 oz of saline concentrate, so you can carry on as many Packages as can be placed in a quart-sized Ziploc bag (it's a lot!).<\/p>",
+            "page": ""
+          }
+        },
+        "68de7289-174d-4d9d-9226-64088b11c4db": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "In what currency are the prices listed on the store ?",
+            "icon": "none",
+            "row_content": "<p>All prices listed on our store are in United States Dollars (USD)<\/p>",
+            "page": ""
+          }
+        },
+        "81cd0322-1101-4734-bffc-8c001d5c3d90": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Is Cleanux available on retail shops or marketplaces like Amazon and eBay?",
+            "icon": "none",
+            "row_content": "<p>No, Cleanux is exclusively sold on our official store with a 30-day money-back guarantee and warranty.<\/p><p>Beware of unauthorized, low-quality copycats on Amazon, eBay, and other platforms. For authentic, top-quality Cleanux, buy only from our official store.<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15698234605724__93a8a084-03fb-4658-b0c1-b6930690a6ed-1671718955a93ab1e7-0",
+        "template--15698234605724__93a8a084-03fb-4658-b0c1-b6930690a6ed-1671718955a93ab1e7-1",
+        "template--15698234605724__93a8a084-03fb-4658-b0c1-b6930690a6ed-1671718955a93ab1e7-2",
+        "f18a507c-f77d-41d5-a1a5-770c810f289f",
+        "template--15698234605724__93a8a084-03fb-4658-b0c1-b6930690a6ed-1671718955a93ab1e7-3",
+        "0bab3027-d4fa-4d08-b5c0-a534c605169e",
+        "94de5d8e-a477-4776-a11c-548b7075e572",
+        "0b0e86c5-9e35-4207-b084-e4b318311758",
+        "68de7289-174d-4d9d-9226-64088b11c4db",
+        "81cd0322-1101-4734-bffc-8c001d5c3d90"
+      ],
+      "settings": {
+        "color": "#ededed",
+        "caption": "Need help finding an answer to your question? Ask our customer support at support@cleanux.co",
+        "heading": "FREQUENTLY ASKED QUESTIONS",
+        "heading_size": "h2",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 64,
+        "padding_bottom": 92
+      }
+    },
+    "8dffa033-57a7-4d1f-9a33-55e23b5c055a": {
+      "type": "richTextNew",
+      "settings": {
+        "heading": "Effortless Breathing Is Just A Tap Away!",
+        "text": "<p>By draining out gunk, irritants, and mucus buildup from your nasal passages, Cleanux frees room for air to circulate and allows you to take full, effortless breaths again!<\/p><p>This will be the most effortless and effective way to improve your nasal breathing. <em><strong>Because you deserve to breathe easy!<\/strong><\/em><\/p>",
+        "btn_text": "IMPROVE YOUR NOSE BREATHING TODAY!",
+        "btn_link": "#order-now-section"
+      }
+    },
+    "194c6aa8-a223-4de1-85e9-c7c2caa6b1ee": {
+      "type": "need-help",
+      "settings": {
+        "backColor": "#e8f1f7",
+        "heading": "Need help? Questions? Concerns?",
+        "text": "<p>Please do not hesitate to email us at <a href=\"mailto:support@cleanux.co\" title=\"mailto:support@cleanux.co\">support@cleanux.co<\/a><\/p><p>or give us a call at +1 888-683-8705<\/p>"
+      }
+    }
+  },
+  "order": [
+    "9cb78ee0-8d59-49cc-b61b-45b391185f36",
+    "8b9681e7-2542-43c0-8107-bea19ee66e5b",
+    "eea5c2f1-a43d-47a5-a9a0-80b5f70a3fdc",
+    "2113bc22-8a62-4a14-b3d8-8c10771b0621",
+    "52eaad7f-3fd1-494c-9a6e-4ac0cd95745d",
+    "25fc0dc2-df1d-4f82-9b63-3282d63a4e18",
+    "f9b6148f-ca59-4f35-a9fc-59992b0ae349",
+    "a139d53e-d2eb-4906-9284-022a504659b4",
+    "b4bb6ecc-35a9-4f9f-ad48-41a9173b1aab",
+    "f048dcc2-03ae-45c3-8cb1-07b2d9093de3",
+    "d4468034-ee17-4bb3-9789-4129722b296e",
+    "b15bd9ac-1b0a-4b4b-82ad-8023d010a7e2",
+    "fe0f2cf5-e6d2-4198-8e30-3131e7b1408b",
+    "5d124f3a-03bc-4c9c-965f-f61d24a54179",
+    "495952d2-4bf1-4655-9b50-0f5735ddce40",
+    "b3615cee-fe22-41c8-8971-f445fbc3f2eb",
+    "ea97f637-07b3-4afd-9b40-505558abeeb0",
+    "c1d56645-bc86-424c-bd83-dfa154ac7e24",
+    "55377324-4cfe-4ace-b430-05d0f485d6d9",
+    "16772265663741e36d",
+    "d736d065-12ce-464c-a650-42d75363f117",
+    "93a8a084-03fb-4658-b0c1-b6930690a6ed",
+    "8dffa033-57a7-4d1f-9a33-55e23b5c055a",
+    "194c6aa8-a223-4de1-85e9-c7c2caa6b1ee"
+  ]
+}

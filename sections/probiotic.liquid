@@ -1,0 +1,147 @@
+<style>
+  #shopify-section-{{ section.id }}{
+    background-color:{{- section.settings.bg -}};
+    
+  }
+</style>
+<section class="survey--section" id="{{ section.settings.custom-id }}">
+            <div class="container">
+                <div class="survey__main">
+                    <h2>{{ section.settings.survey-head }}</h2>
+                    <div class="survey__image">
+                        <img src="{{ section.settings.survey-img | img_url: 'master' }}" alt="Survey img">
+                    </div>
+                    <div class="featured__cta survey">
+                        <a href="{{ section.settings.red-btn }}" class="btn-pet short">{{ section.settings.red-text }}</a>
+                    </div>
+                    {{ section.settings.survey-p }}
+                </div>
+            </div>
+        </section>
+{% schema %}
+  {
+    "name": "Probiotic section",
+    "settings": [
+      {
+        "type": "color",
+        "id": "bg",
+        "label": "background colour"
+      },
+      {
+        "type": "text",
+        "id": "custom-id",
+        "label": "Custom Id"
+      },
+      {
+        "type": "text",
+        "id": "survey-head",
+        "label": "Heading"
+      },
+      {
+        "type": "image_picker",
+        "id": "survey-img",
+        "label": "Survey image"
+      },
+      {
+        "type": "url",
+        "id": "red-btn",
+        "label": "button url"
+      }, 
+      {
+        "type": "text",
+        "id": "red-text",
+        "label": "button text"
+      },
+      {
+        "type": "richtext",
+        "id": "survey-p",
+        "label": "Paragraph",
+        "default": "<p>Add text<p>"
+      }
+    ],
+        "presets": [
+      {
+        "name": "Probiotic section"
+      }
+    ]
+  }
+{% endschema %}
+<style>
+  .survey--section {
+        padding-bottom: 5rem;
+        padding-top: 5rem;
+    }
+
+    .survey--section .container {
+        max-height: 850px;
+        max-width: 800px;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        margin: 0 auto;
+    }
+
+    .survey__main h2 {
+        font-size: 32px;
+        padding-bottom: 2vw;
+        color: #333;
+        line-height: 38px;
+        font-weight: 700;
+        text-align: center;
+        margin: 0;
+        letter-spacing: normal;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .survey__image {
+        width: 100%;
+        padding-bottom: 2vw;
+        line-height: 0px;
+    }
+
+    .survey__main p {
+        font-size: 14px;
+        text-align: center;
+        padding-bottom: 2vw;
+        line-height: 22px;
+        font-style: italic;
+        margin: 0;
+      font-family: 'Inter', sans-serif;
+    }
+    .featured__cta.survey {
+        text-align: center;
+        padding-bottom: 1.5rem;
+    }
+  .short {
+        min-width: 160px;
+    }
+   @media (max-width: 1100px) {
+      .survey__main h2 {
+    font-size: 2vw;
+    line-height: 2.5vw;
+}
+   }
+  @media (max-width: 992px) {
+      .survey__main h2 {
+    font-size: 24px;
+    line-height: 28px;
+}
+   }
+    @media (max-width: 767px) {
+      .survey__main h2 {
+    text-align: left;
+    padding-bottom: 1.5rem;
+}
+      .survey--section .container {
+    padding: 0 1.5rem;
+}
+      .short {
+    min-width: 100%;
+}
+      .survey__main p {
+    font-size: 10px;
+    text-align: left;
+    padding-bottom: 1.5rem;
+    line-height: 20px;
+}
+   }
+</style>

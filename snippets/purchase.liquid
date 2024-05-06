@@ -1,0 +1,125 @@
+<style>
+  .h-\[10px\].w-\[10px\].sml\:h-\[15px\].sml\:w-\[15px\].rounded-full.bg-\[\#604EC2\]{ 
+    background: white !important;
+}input[name="purchase"]:checked+label .h-\[10px\].w-\[10px\].sml\:h-\[15px\].sml\:w-\[15px\].rounded-full.bg-\[\#604EC2\]{ 
+    background:{{section.settings.colorMain}} !important
+} 
+</style>
+ 
+ <div class="custom-buy-bundle flex asasaasass flex-col gap-3 mt-4 [&>:nth-child(even)]:bg-[#a99dea] [&>:nth-child(even)]:text-white [&>:nth-child(odd)]:bg-[#f2f0ff] [&>:nth-child(odd)]:text-black">
+                    {% for block in section.blocks %}
+                      {% if block.type == "product" %}
+                        {% assign product = block.settings.product %}
+                        
+                      <div {% if block.settings.background != "rgba(0,0,0,0)" %}style="background-color:{{ block.settings.background }}"{% endif %}
+                        data-element-type="bundle-selector"
+                        class="custom-bundle-inner rounded-lg border border-[#a99dea] relative"
+                      >
+                        
+                        {% if block.settings.badge != blank %}
+                            {% if section.settings.newDesign %}
+  <div class="absolute fixTopbadge top-0 left-0 block origin-bottom-left bg-[#604ec2] py-[2px] text-[8px]/[1.2] font-semibold uppercase tracking-wider text-white">
+                              {{ block.settings.badge }}
+                            </div>
+                        {% else %}
+                          <div class="absolute -left-2 -top-2 aspect-square w-16 overflow-hidden rounded-sm">
+                            <div class="absolute right-0 top-0 h-2 w-2 bg-[#604ec2]"></div>
+                            <div class="absolute bottom-0 left-0 h-2 w-2 bg-[#604ec2]"></div>
+                            <div class="w-square-diagonal absolute bottom-0 left-0 block origin-bottom-left -rotate-45 bg-[#604ec2] py-[2px] text-center text-[8px]/[1.2] font-semibold uppercase tracking-wider text-white">
+                              {{ block.settings.badge }}
+                            </div>
+                          </div>
+                        {% endif %}
+                          {% endif %}
+                        
+                        <input
+                          class="sr-only peer"
+                          type="radio"
+                          id="{{ section.id }}-{{ product.id }}-{{ forloop.index0 }}"
+                          name="purchase"
+                          value="{{ product.selected_or_first_available_variant.id }}" 
+                          {% if block.settings.default %}
+                            checked
+                          {% endif %}
+                        >  
+                        
+                        <label class="label" for="{{ section.id }}-{{ product.id }}-{{ forloop.index0 }}">
+
+{% render 'buyButton',product:product %}
+                          
+                          {% assign numberOfItems = block.settings.numberOfItems %}
+                          <div class="bundle-inner-wrap relative grid grid-cols-[auto_100px_auto_auto_auto] md:grid-cols-auto lgl:grid-cols-[30px_80px_auto_140px_60px] items-center sml:gap-6 rounded-lg px-3 py-2 sml:px-6 sml:py-4 md:px-3 md:py-2 lgl:px-6 lgl:gap-4 lgl:py-4 cursor-pointer">
+                            <!-- Radio Button -->
+                            <div class="radio mr-1 sml:mr-2 flex h-[20px] w-[20px] sml:h-[25px] sml:w-[25px] flex-shrink-0 items-center justify-center rounded-full bg-white border border-[#a99dea]">
+                              <div
+                                data-element-type="radio-button"
+                                class="{% unless variant.id == defaultVariant %}hidden {% endunless %}h-[10px] w-[10px] sml:h-[15px] sml:w-[15px] rounded-full bg-[#604EC2]"
+                              ></div>
+                            </div>
+                            <!-- Variant Image -->
+                            <div class="image shrink-0 flex justify-center">
+                              {{
+                                product.featured_image
+                                | image_url: width: 280
+                                | image_tag: class: 'h-16 w-auto'
+                              }}
+                            </div>
+                            {% if block.settings.meta-img != blank %}
+                            <div class="meta-img"><img src="{{ block.settings.meta-img | img_url: 'master' }}" alt="Meta Img"  loading="lazy"></div>
+                            {% endif %}
+                            <!-- Product Name -->
+                          <div class="btitle"> {{- block.settings.offerTitle -}}</div>
+                            <div class="flex flex-col text-left">
+                              <span class="title text-[14px]/[1.2] sml:text-[20px]/[1.1] font-bold">
+                                {{- block.settings.title -}}
+                              </span>
+                              {% comment %}
+                              <span class="text-[12px]/[1.2] sml:text-base text-[#694eb2] font-semibold">
+                                {{- block.settings.offerTitle -}}
+                              </span>
+                                                      {% endcomment %}
+                        <!--  {% unless section.settings.newDesign %}
+                              <span class="mt-px text-[11px]/[1.2] sml:text-[12px]/[1.1] font-[500] text-white bg-[#00d121] rounded-full self-start p-[2px_4px]"
+                                >save  {% unless settings.currency_code_enabled %}{{ product.compare_at_price | minus: product.price | money -}}{% else %}{{ product.compare_at_price | minus: product.price | money_with_currency -}}{% endunless %}
+                              </span>
+                        {% endunless %} -->
+                            </div>
+
+                        <!--{% if section.settings.newDesign %}
+                              <span class="mt-px text-[11px]/[1.2] sml:text-[12px]/[1.1] font-[500] text-white bg-[#00d121] rounded-full self-start p-[2px_4px]"
+                                >save  {% unless settings.currency_code_enabled %}{{ product.compare_at_price | minus: product.price | money -}}{% else %}{{ product.compare_at_price | minus: product.price | money_with_currency -}}{% endunless %}
+                              </span>
+                        {% endif %} -->
+                        
+                            <!-- Product Price -->
+                            <div class="price flex flex-col text-center items-center">
+                              <s class="text-[18px]/[1.1] sml:text-[24px]/[1.1] font-[600] lg:text-[26px] compare-at-price">
+                                 {% unless settings.currency_code_enabled %}{{- product.compare_at_price | money -}}{% else %}{{- product.compare_at_price | money_with_currency -}}{% endunless %}
+                              </s>
+                              <span
+                                style="line-height: 0.85;"
+                                class="text-[14px]/[1.1] sml:text-[16px]/[1.1] md:text-[20px]/[1.1] font-bold tracking-wide text-black"
+                              > 
+                                {% if block.settings.show_full_price  %}
+                                   {% unless settings.currency_code_enabled %}{{- product.price | money -}}{% else %}{{- product.price | money_with_currency -}}{% endunless %}
+                                {% else %}
+                                   {% unless settings.currency_code_enabled %}{{- product.price | divided_by: numberOfItems | money -}}{% else %}{{- product.price | divided_by: numberOfItems | money_with_currency -}}{% endunless %}
+                                  {% if numberOfItems > 1 %}
+                                    <br>
+                                    <span class="text-[10px]">each</span>
+                                  {% endif %}
+                                {% endif %} 
+                              </span>
+                            </div>
+                            <!-- Product Shipping -->
+                        {% if block.settings.variant_pack != blank %}
+                            <div class="text-[14px]/[1.2] text-right text-white ml-auto hidden sml:block md:hidden lgl:block variant-pack">
+                              {{ block.settings.variant_pack }}
+                            </div>
+                        {% endif %}
+                          </div>
+                        </label>
+                      </div>
+   {% endif %}
+                    {% endfor %}
+                  </div>

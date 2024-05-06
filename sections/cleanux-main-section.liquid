@@ -1,0 +1,323 @@
+<style>
+ .mainWrapTop{
+   width:100%;margin:0 0 50px;
+   background-size:cover;background-position:center;
+ } .wrapTextMain {
+    padding: 20px 0 0;
+}
+  .wrapTopMain{
+    display:flex;flex-wrap:wrap
+  }.leftSideMain{
+    width:60%;padding-right:5%
+  }.rightSideMain{
+    width:40%
+  }.textSectionMain p:has(svg) {
+    display: flex;
+    text-align: left;
+}.textSectionMain p:has(svg) svg {
+    flex-shrink: 0;
+    margin: 4px 10px 0 0;
+}.textSectionMain {
+    font-size: 0.9em;
+}.textSectionMain strong {
+    color: black;
+    font-weight: 900;
+}.fixIcon span {
+    display: inline-block;
+    margin: -5px 0 0px 5px;
+}a.fixIcon.button.button--primary {
+    font-weight: 600;
+}p.satisfiedC {
+    font-size: 0.9em;
+}p.satisfiedC svg {
+    margin: 0 5px 0 0;
+    vertical-align: text-top;
+}img.badgesMain {
+    max-width: 250px;
+}.reviewBlockMain {
+    display: flex;
+    flex-direction: column;max-width: 500px;
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+    background: white;
+    padding: 20px;
+    font-size: 0.8em;margin-bottom: 20px;
+}.namePartMain {
+    display: flex;
+} .rightSideMain img{    height: auto;
+    width:100%;object-fit:contain
+  }.namePartMain img {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    object-fit: contain;
+    border-radius: 50%;
+}.namePartMain p {
+    margin: 0;
+}.logoBlockMainSec {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0 100px;
+}.logoBlockMainSec strong {
+    font-weight: 900;
+    color: black;
+    font-size: 1.5em;
+}.logoItem img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    max-height: 30px;
+}.logoItem {
+    min-width: 200px;
+    margin-bottom: 20px;
+    display: flex;
+}p.mainHeading.bundleUpC {
+    padding: 5px 20px;
+    display: block;
+    width: fit-content;
+    font-size: 0.9em;
+    font-weight: 600;
+    border-radius: 25px;
+}
+@media(min-width:1300px)
+  {
+    .wrapTextMain {
+    padding-top: 70px !important;
+}
+  }
+  @media(max-width:767px)
+  {
+    .class{{section.id}} .rightSideMain img {
+width:{{section.settings.sizeA }}% !important;
+    margin: auto;
+    display: block;
+}
+    .logoItem {
+    min-width: 100px;
+ width:50%
+}.logoBlockMainSec { 
+    align-items: center;
+    justify-content: center; 
+}.logoItem img { 
+    max-height: 20px;
+}.logoItem:has(strong) {
+    width: 100%;
+}.logoItem img { 
+    object-position: left;
+}
+    .leftSideMain, .rightSideMain {
+    width: 100%;
+    padding: 0;
+}.wrapTopMain { 
+    flex-direction: column-reverse;
+}.wrapTextMain {
+    padding: 0;
+}.logoBlockMainSec { 
+    padding: 30px 0 20px;
+}.logoItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}.logoItem img {
+    object-position: center;
+}
+  }
+</style>
+<section {% if section.settings.backimage != blank %}style="background-image:url('{{ section.settings.backimage | img_url: 'master' }}')"{% endif %} class="mainWrapTop class{{ section.id }}">
+  <div class="page-width">
+<div class="wrapTopMain">
+<div class="leftSideMain">
+<div class="wrapTextMain" style="{% if section.settings.text == blank %}padding-top:20px !important{% endif %}">
+{% if section.settings.bundlesUp != blank %}
+<p style="background:{{ section.settings.bundlesUpC }}" class="mainHeading bundleUpC">{{ section.settings.bundlesUp }}</p>
+{% endif %} 
+{% if section.settings.heading != blank %}
+<h2 class="mainHeading">{{ section.settings.heading }}</h2>
+{% endif %}
+  {% if section.settings.text != blank %}
+<div class="textSectionMain">
+{{ section.settings.text | replace: '[cross]', '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1.4 14L0 12.6L5.6 7L0 1.4L1.4 0L7 5.6L12.6 0L14 1.4L8.4 7L14 12.6L12.6 14L7 8.4L1.4 14Z" fill="#EE3624"/></svg>' }}
+</div>
+  {% endif %}
+
+{% if section.settings.review != blank %}
+<div class="{% if section.settings.rightSide %}onlyMobile{% endif %} reviewBlockMain">
+{% render 'stars' %}
+{{ section.settings.review }}
+<div class="namePartMain">
+<img src="{{ section.settings.avatar | img_url: '80x'}}" loading="lazy"  width="100%" height="100%" alt="{{ section.settings.avatar.alt }}">
+<p>{{ section.settings.name }}</p>
+</div>
+</div>
+{% endif %} 
+   {% if section.settings.text == blank %}
+<br>
+     {% endif %}
+
+  <div class="centeredMobile">
+{% if section.settings.btn_text != blank %}
+<a href="{{ section.settings.btn_link }}" class="fixIcon button button--primary">
+{{ section.settings.btn_text }}
+</a>
+{% endif %} 
+{% if section.settings.satisfiedCustomers != blank %}
+<p class="satisfiedC">{% render 'stars' %} {{ section.settings.satisfiedCustomers }}</p>
+{% endif %}
+{% if section.settings.badges != blank %}
+<img class="badgesMain" src="{{ section.settings.badges | img_url: 'master' }}" alt="{{ section.settings.badges.alt }}" width="100%" height="100%">
+{% endif %}
+  </div>
+  
+</div>
+</div>
+<div class="rightSideMain">
+  {% if section.settings.rightImage != blank %}
+<img src="{{ section.settings.rightImage | img_url: 'master'}}" width="100%" height="100%" alt="{{ section.settings.rightImage.alt }}">
+  {% endif %}
+
+{% if section.settings.review != blank and section.settings.rightSide %}
+<div class="reviewBlockMain onlyDesktop">
+{% render 'stars' %}
+{{ section.settings.review }}
+<div class="namePartMain">
+<img src="{{ section.settings.avatar | img_url: '80x'}}" loading="lazy"  width="100%" height="100%" alt="{{ section.settings.avatar.alt }}">
+<p>{{ section.settings.name }}</p>
+</div>
+</div>
+{% endif %}
+</div>
+</div>
+
+{% if section.blocks.size > 0 %}
+<div class="logoBlockMainSec">
+<div class="logoItem">
+<strong>{{ section.settings.featured }}</strong>
+</div>
+{% for block in section.blocks %}
+<div class="logoItem">
+<img src="{{ block.settings.logo | img_url: '400x'}}" loading="lazy"  width="100%" height="100%" alt="{{ block.settings.logo.alt }}">
+</div>
+{% endfor %}
+</div>
+{% endif %}
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Cleanux Main Section",
+    "settings": [
+      {
+        "type":"range",
+        "id":"sizeA",
+        "label":"Mobile Image Size (%)",
+        "min":0,
+        "max":100,
+        "default":80
+      }
+      ,
+      {
+        "type":"image_picker",
+        "id":"backimage",
+        "label":"Background Image"
+      },
+      {
+        "type":"image_picker",
+        "id":"rightImage",
+        "label":"Image"
+      },
+      {
+        "type":"text",
+        "id":"bundlesUp",
+        "label":"Bundles Up Text"
+      },
+      {
+        "type":"color",
+        "id":"bundlesUpC",
+        "label":"Bundles Up Text Color"
+      },
+      {
+        "type":"textarea",
+        "id":"heading",
+        "label":"Heading"
+      },
+       {
+        "type":"textarea",
+        "id":"text",
+        "label":"Text"
+      },
+      {
+        "type":"text",
+        "id":"btn_text",
+        "label":"Button Text"
+      },
+      {
+        "type":"url",
+        "id":"btn_link",
+        "label":"Button Link"
+      },
+      {
+        "type":"text",
+        "id":"satisfiedCustomers",
+        "label":"Satisfied Customers",
+        "default":"1291 Satisfied Customers"
+      },
+       {
+        "type":"image_picker",
+        "id":"badges",
+        "label":"Badges"
+      },
+      {
+        "type":"header",
+        "content":"Review"
+      },
+      {
+        "type":"image_picker",
+        "id":"avatar",
+        "label":"Avatar"
+      },
+      {
+        "type":"richtext",
+        "id":"review",
+        "label":"Review"
+      },
+      {
+        "type":"textarea",
+        "id":"name",
+        "label":"Name"
+      },
+      {
+        "type":"checkbox",
+        "id":"rightSide",
+        "label":"Review under image?",
+        "default":true
+      },
+      {
+        "type":"text",
+        "id":"featured",
+        "label":"Featured In Text",
+        "default":"Featured In:"
+      }
+    ],
+    "blocks":[
+      {
+        "type":"image",
+        "name":"Logo",
+        "settings":[
+          {
+            "type":"image_picker",
+            "id":"logo",
+            "label":"Logo"
+          }
+        ]
+      }
+    ],
+    "presets":[
+      {
+        "name":"Cleanux Main Section"
+      }
+    ]
+  }
+{% endschema %} 

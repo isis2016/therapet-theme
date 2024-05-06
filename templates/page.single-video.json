@@ -1,0 +1,33 @@
+{
+  "sections": {
+    "reviews_video_yAXgWn": {
+      "type": "reviews-video",
+      "settings": {
+        "video": "https:\/\/player.vimeo.com\/video\/930525682",
+        "backcolor": "",
+        "heading": "Vet Reveals:",
+        "headingColor": "#2d2d2d",
+        "headingSize": 22,
+        "caption": "Discover the Root Cause of Your Cat's Bad Behaviors",
+        "captionColor": "#0855a4",
+        "captionSize": 22,
+        "ctaEnable": true,
+        "buttonlink": "https:\/\/therapetmd.com\/pages\/step2-adv",
+        "ctaHeader": "Limited Time 50% OFF !",
+        "ctaHeaderColor": "#37306b",
+        "ctaHeaderSize": 22,
+        "ctaText": "Yes, Claim my 50% Discount",
+        "ctaTextColor": "#f5f7f9",
+        "ctaTextSize": 20,
+        "ctaButtonColor": "#37306b",
+        "guarantee-img": "shopify:\/\/shop_images\/satguarantee.webp",
+        "guaranteeTopText": "Try it 30 Day Satisfaction Guarantee",
+        "guaranteeBottomText": "",
+        "payments-img": "shopify:\/\/shop_images\/Payment-Gateway.webp"
+      }
+    }
+  },
+  "order": [
+    "reviews_video_yAXgWn"
+  ]
+}

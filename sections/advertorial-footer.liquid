@@ -1,0 +1,106 @@
+<style>
+  footer {
+    display: none !important
+  }
+  .FooterNEWAaha {
+    font-size: 0.85em;
+    text-align: center;
+    padding: 50px 20px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .FooterNEWAaha p {
+    color: {{ section.settings.color }}
+  }
+
+  .content-footer a {
+    color: white;
+  }
+
+  .content-footer p {
+    color: white;
+  }
+</style>
+
+<section style="background:{{ section.settings.back }};color:{{ section.settings.color }};background: linear-gradient(102.47deg, {{section.settings.gradient1}} 0.87%, {{section.settings.gradient2}} 101.26%);">
+  <div class="container-footer">
+    <img src="{{ section.settings.logo | img_url: '250x'}}" loading="lazy">
+
+    <div class="content-footer">
+      <div class="left-block">
+        <p>{{ section.settings.text }}</p>
+        <img src="{{ section.settings.payments-img | img_url: '250x'}}" loading="lazy">
+      </div>
+      <div class="right-block">
+        {%- if section.settings.menu != blank -%}
+          <ul class="list-unstyled">
+            {%- for link in section.settings.menu.links -%}
+              <li>
+                <a
+                  href="{{ link.url }}"
+                  class="link link--text list-menu__item list-menu__item--link{% if link.active %} list-menu__item--active{% endif %}"
+                >
+                  {{ link.title }}
+                </a>
+              </li>
+            {%- endfor -%}
+          </ul>
+        {%- endif -%}
+        <p>{{ section.settings.copyright }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Advertorial Footer",
+  "settings": [
+    {
+      "type": "color",
+      "id": "gradient1",
+      "label": "Gradient 1",
+      "default": "#5D3891"
+    },
+    {
+      "type": "color",
+      "id": "gradient2",
+      "label": "Gradient 2",
+      "default": "#66347F"
+    },
+    {
+      "type": "color",
+      "id": "color",
+      "label": "Color",
+      "default": "#fff"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Logo"
+    }, {
+      "type": "richtext",
+      "id": "text",
+      "label": "Text"
+    }, {
+      "type": "link_list",
+      "id": "menu",
+      "label": "Menu"
+    }, {
+      "type": "image_picker",
+      "id": "payments-img",
+      "label": "Payments Image"
+    }, {
+      "type": "text",
+      "id": "copyright",
+      "label": "Copyright Text"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Advertorial Footer"
+    }
+  ]
+}
+{% endschema %}

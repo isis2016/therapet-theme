@@ -1,0 +1,354 @@
+{
+  "sections": {
+    "e28a18d1-fdae-4931-918f-dd7312b39356": {
+      "type": "sale-bar",
+      "settings": {
+        "friday-sale-img": "shopify:\/\/shop_images\/black_friday_sale.jpg",
+        "bar-p": "<p><em><strong>Hurry! Ends Soon<\/strong><\/em><\/p>",
+        "pet-dog-img": "shopify:\/\/shop_images\/pet-dog-2_430x_a1cd95ad-eb96-40ac-b3be-8882e27fa959.jpg",
+        "show-countdown": false,
+        "month": "December",
+        "day": "1",
+        "year": "2023",
+        "time": "14:00:00"
+      }
+    },
+    "037595ff-3b2e-41ec-9a35-eb00da12b3d4": {
+      "type": "new-main-product",
+      "blocks": {
+        "6f9b7ceb-fb28-4b6b-8af8-5b46df681ffa": {
+          "type": "seller-tag",
+          "settings": {
+            "heart-icon": "shopify:\/\/shop_images\/Vector.svg",
+            "seller-p": "Bestseller"
+          }
+        },
+        "f713ee50-7f78-42c8-951e-5655dd8e0d71": {
+          "type": "title",
+          "settings": {
+            "product-title": "TheraPet Cat Calming Diffuser",
+            "free-gift": "+Free Gift"
+          }
+        },
+        "fc758a6d-905c-47c9-9e32-59e5200f2d01": {
+          "type": "trustpilot",
+          "settings": {
+            "trust-url": "",
+            "trustpilot-head": "Excellent",
+            "trust-star": "shopify:\/\/shop_images\/rating.svg",
+            "trustpilot-p": "<p>7,971 <em>reviews on<\/em><\/p>",
+            "trustpilot-p2": "<p>7,971 <em>reviews<\/em><\/p>",
+            "trust-logo": "shopify:\/\/shop_images\/trustpilot.svg"
+          }
+        },
+        "b4da498a-f380-4bf8-afd2-f9ade1f108a6": {
+          "type": "parent-review",
+          "settings": {
+            "parent-rating": "<p><em>“We have seen a reduction in the paw-licking, the scratching, and the scooting... I highly, highly suggest trying the Allergy & Immune Soft Chews**”<\/em><\/p>",
+            "quote-icon": "shopify:\/\/shop_images\/quote.svg",
+            "parent-p": "Naniloa's mom"
+          }
+        },
+        "5dd088e7-ec6c-4b10-99a0-78ef6f01fd1b": {
+          "type": "mobile-popup",
+          "settings": {
+            "box-img1mob": "shopify:\/\/shop_images\/4_817bbd7c-c84b-46dc-843e-183d2703a15a.png",
+            "box-head1mob": "FREE gift when you subscribe*",
+            "info-iconmob": "shopify:\/\/shop_images\/information-icon.svg",
+            "box-img2mob": "shopify:\/\/shop_images\/1BC_3326_1_0e081a05-7e10-46cd-8f04-e3a49e181a64.jpg",
+            "box-head2mob": "Quality ingredients",
+            "box-img3mob": "shopify:\/\/shop_images\/pack-1-min.jpg",
+            "box-head3mob": "Tailored formula",
+            "popup1-pmob": "<p>Subscribe today and receive a free pack of Beef Jerky Recipe in your first delivery.<\/p>",
+            "popup-img1mob": "shopify:\/\/shop_images\/TheraPetMdlandingpage-30_1a987586-e03e-4685-941c-a31cad68e303.png",
+            "popup-head1mob": "Premium, researched ingredients your dog will love",
+            "popup2-pmob": "<p>A truly transformative formula containing premium quality ingredients developed by pet health experts.<\/p><ul><li><strong>Our ingredients are third-party tested<\/strong><\/li><li><strong>Vet-reviewed<\/strong><\/li><li><strong>PetLab Co. is NASC-certified<\/strong><\/li><\/ul>",
+            "popup-btnmob": "See Full Ingredients List",
+            "popup-button-iconmob": "shopify:\/\/shop_images\/downwards-arrow.svg",
+            "popup3-textmob": "<p>Customer survey data shows...<\/p>",
+            "popup-i-headmob": "86% of PetLab Co subscribers see results 3 months daily use1",
+            "pet-profile-imgmob": "shopify:\/\/shop_images\/avatar_3_f26240730e.png",
+            "star-rating-imgmob": "shopify:\/\/shop_images\/stars.svg",
+            "verified-iconmob": "shopify:\/\/shop_images\/verified.svg",
+            "verified-textmob": "Verified Buyer",
+            "verified-reviewmob": "<p>Love these!! We have a pittie that has constant yeast infections with his ears. He was always shaking his head. He also licks his paws like crazy. After the first week of these daily chews, all of this has stopped!!! Will forever stay on the subscription. :)<\/p>",
+            "bottom-textmob": "<p>To take advantage of our 25% OFF Subscribe & Save plan for optimal benefits at the best price possible.<\/p>",
+            "bottom-headmob": "Best results are seen after 90 days"
+          }
+        },
+        "53e25067-e4ce-472a-84ac-23e64bb3f5f3": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "5ebea39f-723e-4685-b8ff-27c19de0b6d3": {
+          "type": "reviewed",
+          "settings": {
+            "reviewed-head": "Vet Reviewed",
+            "reviewed-text": "“As a vet, I only wantthe very best for my patients - therefore, Itrust and recommend Therapet MD.”",
+            "reviewed-h5": "Dr. Roxanna Boardbar",
+            "reviewed-h4": "DVM, Vet Consultant to TherapetMD.",
+            "reviewed-img": "shopify:\/\/shop_images\/roxy_vet_e6fb056070.png",
+            "reviewed-img-ipad": "shopify:\/\/shop_images\/reviewed-vet.png"
+          }
+        },
+        "b4a8abb9-6346-4548-8868-cbd46a13a319": {
+          "type": "early-sale",
+          "settings": {
+            "power-icon": "shopify:\/\/shop_images\/lightning.png",
+            "power-head": "Early Black Friday Sale",
+            "power-text": "<p>25% OFF Subscription + FREE Gift<\/p>"
+          }
+        },
+        "b1f90ab2-2928-4706-a41f-46e171d96daf": {
+          "type": "bundle-with-price",
+          "settings": {
+            "bundle-title": "Bundle Up & Save More!",
+            "month": "+ FREE SHIPPING"
+          }
+        },
+        "b9d8cd77-8c3f-4f73-9474-ccf0468e47f4": {
+          "type": "product",
+          "settings": {
+            "product": "therapet-calming-diffuser",
+            "meta-img": "shopify:\/\/shop_images\/pack-1-min-removebg-preview.png",
+            "title": "+2 Refills",
+            "default": true,
+            "badge": "",
+            "numberOfItems": 1,
+            "offerTitle": "3x TheraPet",
+            "show_full_price": false,
+            "variant_pack": "",
+            "background": ""
+          }
+        },
+        "b0b5cf9c-a5b1-4eb3-835b-d9e5d0d29793": {
+          "type": "product",
+          "settings": {
+            "product": "2x-cat-calming-diffuser",
+            "meta-img": "shopify:\/\/shop_images\/pack-2-min-removebg-preview.png",
+            "title": "+4 Refills",
+            "default": false,
+            "badge": "",
+            "numberOfItems": 1,
+            "offerTitle": "2x TheraPet",
+            "show_full_price": false,
+            "variant_pack": "",
+            "background": ""
+          }
+        },
+        "5164a4c0-8446-4955-b183-34592c56385a": {
+          "type": "product",
+          "settings": {
+            "product": "3x-therapet-diffuser",
+            "meta-img": "shopify:\/\/shop_images\/pack-3-min-removebg-preview.png",
+            "title": "+6 Refills",
+            "default": false,
+            "badge": "",
+            "numberOfItems": 1,
+            "offerTitle": "3x TheraPet",
+            "show_full_price": false,
+            "variant_pack": "",
+            "background": ""
+          }
+        },
+        "56b5869c-02e8-4029-bbe8-447b6a63b7da": {
+          "type": "buy_button",
+          "settings": {
+            "amount": "View the correct amount of your dog",
+            "show_dynamic_checkout": false,
+            "payment-icon1": "shopify:\/\/shop_images\/visa.svg",
+            "payment-icon2": "shopify:\/\/shop_images\/mastercard.svg",
+            "payment-icon3": "shopify:\/\/shop_images\/amex.svg",
+            "payment-icon4": "shopify:\/\/shop_images\/paypal.svg",
+            "payment-icon5": "shopify:\/\/shop_images\/discover.svg",
+            "payment-icon6": "shopify:\/\/shop_images\/google-pay.svg",
+            "payment-icon7": "shopify:\/\/shop_images\/apple-pay.svg"
+          }
+        },
+        "3967e73a-ad19-44d6-b016-dfa7e0440d1f": {
+          "type": "free-gift",
+          "settings": {
+            "show-freegift": true,
+            "free-product-img": "shopify:\/\/shop_images\/Beef_Jerky_FRONT_8394ec0871.png",
+            "free-product-p": "FREE gift when you subscribe*",
+            "free-product-head": "Beef Jerky Recipe",
+            "product-stroke-price": "$6.95",
+            "free-product-price": "$0.00",
+            "tip-icon": "shopify:\/\/shop_images\/left-tip.svg",
+            "free-tag": "FREE"
+          }
+        },
+        "3947f142-8afc-4212-b1ce-29184f290af9": {
+          "type": "icon-with-text",
+          "settings": {
+            "dilevery-icon": "shopify:\/\/shop_images\/green-check.svg",
+            "dilevery-text": "<p><strong>FREE<\/strong> <strong>Shipping<\/strong> to your doorstep<\/p>"
+          }
+        },
+        "7940a41e-9fb5-4651-b08d-0f6fe8470b94": {
+          "type": "icon-with-text",
+          "settings": {
+            "dilevery-icon": "shopify:\/\/shop_images\/green-check.svg",
+            "dilevery-text": "<p><strong>30 Day Money Back Guarantee<\/strong><\/p>"
+          }
+        },
+        "6a976b10-f49c-487c-8428-1b02660fec26": {
+          "type": "icon-with-text",
+          "settings": {
+            "dilevery-icon": "shopify:\/\/shop_images\/green-check.svg",
+            "dilevery-text": "<p><strong>30 Day Money Back Guarantee<\/strong><\/p>"
+          }
+        },
+        "f3e3f98d-5f76-4424-bc83-d335fa42e08c": {
+          "type": "custom-product",
+          "settings": {
+            "custom-product": "therapet-calming-spray",
+            "upsell-text": "",
+            "upsell-badge": "54% OFF",
+            "short-desc": "<p>A must have for mucky pups!<\/p>",
+            "enable_quick_add": true
+          }
+        },
+        "cb1b8abf-b9d0-4d5f-83c3-52387db9d230": {
+          "type": "icons",
+          "settings": {
+            "stamp-img1": "shopify:\/\/shop_images\/stamp-icon1.svg",
+            "stamp-img2": "shopify:\/\/shop_images\/stamp-icon2.svg",
+            "stamp-img3": "shopify:\/\/shop_images\/stamp-icon3.svg"
+          }
+        },
+        "d5836b85-b7f4-4e8c-8f39-d059dedbd8b9": {
+          "type": "upsell-collection",
+          "settings": {
+            "collection": "refills"
+          }
+        },
+        "eef16fbb-71c4-4501-9d55-72eba909516e": {
+          "type": "button-popup",
+          "settings": {
+            "popup-btn-url-mobile": "#javascript:;",
+            "trolly-icon": "shopify:\/\/shop_images\/shopping-cart.f5bb839a.png",
+            "popup-btn-url-text": "Choose Package"
+          }
+        },
+        "745e0d3d-d770-446d-82e5-9a3a6ddb7509": {
+          "type": "pop__up",
+          "settings": {
+            "pophead": "For optimum results we recommend you follow the guidance below...",
+            "pop-dog": "shopify:\/\/shop_images\/stamp-icon3.svg",
+            "pop-name": "Under 11kg",
+            "pop-content": "<p>1\/2 soft chew daily 1\/2 soft tubs monthly<\/p>",
+            "pop-dog-icon": "shopify:\/\/shop_images\/Vector_1.svg",
+            "pop-dog2": "shopify:\/\/shop_images\/stamp-icon3.svg",
+            "pop-name2": "Under 11 - 34 kg",
+            "pop-content2": "<p>1 soft chew daily 1 soft tubs monthly<\/p>",
+            "pop-dog-icon2": "shopify:\/\/shop_images\/Vector_1.svg",
+            "pop-dog3": "shopify:\/\/shop_images\/stamp-icon3.svg",
+            "pop-name3": "Under 11 - 34 kg",
+            "pop-content3": "<p>1 soft chew daily 1 soft tubs monthly<\/p>",
+            "pop-dog-icon3": "shopify:\/\/shop_images\/Vector_1.svg",
+            "dogbtn": "click here"
+          }
+        },
+        "a53c7aa4-e78b-4e12-bdad-4d3b5ad649bc": {
+          "type": "shipping",
+          "settings": {
+            "shipping-icon": "shopify:\/\/shop_images\/Ellipse_320.png",
+            "shipping-text": "<p>Ships <strong>Tomorrow, Nov 29<\/strong><\/p>",
+            "remaining-icon": "shopify:\/\/shop_images\/Group_1410119746.png",
+            "remaining-text": "<p>13 Orders <strong>Remain<\/strong><\/p>"
+          }
+        },
+        "421ee480-fb20-421b-9f59-54f8f0e5fc01": {
+          "type": "flyout-popup",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "6f9b7ceb-fb28-4b6b-8af8-5b46df681ffa",
+        "f713ee50-7f78-42c8-951e-5655dd8e0d71",
+        "fc758a6d-905c-47c9-9e32-59e5200f2d01",
+        "b4da498a-f380-4bf8-afd2-f9ade1f108a6",
+        "5dd088e7-ec6c-4b10-99a0-78ef6f01fd1b",
+        "53e25067-e4ce-472a-84ac-23e64bb3f5f3",
+        "5ebea39f-723e-4685-b8ff-27c19de0b6d3",
+        "b4a8abb9-6346-4548-8868-cbd46a13a319",
+        "b1f90ab2-2928-4706-a41f-46e171d96daf",
+        "b9d8cd77-8c3f-4f73-9474-ccf0468e47f4",
+        "b0b5cf9c-a5b1-4eb3-835b-d9e5d0d29793",
+        "5164a4c0-8446-4955-b183-34592c56385a",
+        "56b5869c-02e8-4029-bbe8-447b6a63b7da",
+        "3967e73a-ad19-44d6-b016-dfa7e0440d1f",
+        "3947f142-8afc-4212-b1ce-29184f290af9",
+        "7940a41e-9fb5-4651-b08d-0f6fe8470b94",
+        "6a976b10-f49c-487c-8428-1b02660fec26",
+        "f3e3f98d-5f76-4424-bc83-d335fa42e08c",
+        "cb1b8abf-b9d0-4d5f-83c3-52387db9d230",
+        "d5836b85-b7f4-4e8c-8f39-d059dedbd8b9",
+        "eef16fbb-71c4-4501-9d55-72eba909516e",
+        "745e0d3d-d770-446d-82e5-9a3a6ddb7509",
+        "a53c7aa4-e78b-4e12-bdad-4d3b5ad649bc",
+        "421ee480-fb20-421b-9f59-54f8f0e5fc01"
+      ],
+      "settings": {
+        "bundle-bg": "#ffffff",
+        "bundle-active-bg": "#fae5ee",
+        "bundle-title": "#38306a",
+        "bundle-active-title": "#38306a",
+        "bundle-subtitle": "#38306a",
+        "bundle-active-subtitle": "#38306a",
+        "friday-bg": "",
+        "cover-main-img": "shopify:\/\/shop_images\/TAL_L_OTP_5_d9f2a5f351.png",
+        "box-img1": "shopify:\/\/shop_images\/avif-2.png",
+        "box-head1": "FREE gift when you subscribe*",
+        "burn-icon": "shopify:\/\/shop_images\/fire.svg",
+        "sold-p": "<p><strong>677+ sold<\/strong> in the last 24 hours<\/p>",
+        "info-icon": "shopify:\/\/shop_images\/information-icon.svg",
+        "box-img2": "shopify:\/\/shop_images\/avif-3.png",
+        "box-head2": "Quality ingredients",
+        "box-img3": "shopify:\/\/shop_images\/avif-4.png",
+        "box-head3": "Tailored formula",
+        "popup1-p": "<p>Subscribe today and receive a free pack of Beef Jerky Recipe in your first delivery.<\/p>",
+        "popup-img1": "shopify:\/\/shop_images\/beef_jerky_free_gift_f7d5be7bba_91ecb86467.png",
+        "popup-head1": "Premium, researched ingredients your dog will love",
+        "popup2-p": "<p>A truly transformative formula containing premium quality ingredients developed by pet health experts.<\/p><ul><li><strong>Our ingredients are third-party tested<\/strong><\/li><li><strong>Vet-reviewed<\/strong><\/li><li><strong>PetLab Co. is NASC-certified<\/strong><\/li><\/ul>",
+        "popup-btn": "See Full Ingredients List",
+        "popup-button-icon": "shopify:\/\/shop_images\/downwards-arrow.svg",
+        "popup3-text": "<p>Customer survey data shows...<\/p>",
+        "popup-i-head": "86% of PetLab Co subscribers see results 3 months daily use1",
+        "pet-profile-img": "shopify:\/\/shop_images\/avatar_3_f26240730e.png",
+        "star-rating-img": "shopify:\/\/shop_images\/stars.svg",
+        "verified-icon": "shopify:\/\/shop_images\/verified.svg",
+        "verified-text": "Verified Buyer",
+        "verified-review": "<p>Love these!! We have a pittie that has constant yeast infections with his ears. He was always shaking his head. He also licks his paws like crazy. After the first week of these daily chews, all of this has stopped!!! Will forever stay on the subscription. :)<\/p>",
+        "bottom-text": "<p>To take advantage of our 25% OFF Subscribe & Save plan for optimal benefits at the best price possible.<\/p>",
+        "bottom-head": "Best results are seen after 90 days",
+        "more-product-image1": "shopify:\/\/shop_images\/02_vet_34e11923cf.png",
+        "more-product-image2": "shopify:\/\/shop_images\/03_benefits_1b44076334.png",
+        "more-product-image3": "shopify:\/\/shop_images\/04_tailored_9ea84680ea.png",
+        "more-product-image4": "shopify:\/\/shop_images\/05_target_7d502db7ef.png",
+        "more-product-image5": "shopify:\/\/shop_images\/06_ingredients_c682691003.png",
+        "more-product-image6": "shopify:\/\/shop_images\/07_feeding_30e9bb2302.png",
+        "more-product-image7": "shopify:\/\/shop_images\/08_loved_6ef81a1dd1.png",
+        "showmore-btn": "Show More Images",
+        "enable_sticky_info": true,
+        "media_position": "left",
+        "gallery_layout": "stacked",
+        "media_size": "large",
+        "mobile_thumbnails": "hide",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "product_id": "therapet-cat-flea-collar"
+      }
+    }
+  },
+  "order": [
+    "e28a18d1-fdae-4931-918f-dd7312b39356",
+    "037595ff-3b2e-41ec-9a35-eb00da12b3d4"
+  ]
+}

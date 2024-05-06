@@ -1,0 +1,363 @@
+<style>
+.wrapTables{
+    
+}.wrapItAllTables {
+    padding: 50px 0px;
+    margin: 105px 0 10px;
+}.tableItSelf {
+display: flex;
+    max-width: 820px;
+    margin: auto;
+    padding: 15px 30px 30px;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}.leftSideColumnT img {
+    width: 33.5px;
+    height: 33.5px;
+    object-fit: contain;flex-shrink:0
+}.rightSideColumnT img, .middleColumnT img {
+    width: 27px;
+    height: 27px;flex-shrink:0;
+    object-fit: contain;
+}.leftSideColumnT {
+    width: 60%;
+}.rightSideColumnT,.middleColumnT {
+    width: 20%;padding: 0 25px;
+}.middleColumnT {
+  position: absolute;
+    left: 57%;
+    top: -55px;
+    border-radius: 15px;
+    height: calc(100% + 50px);
+    border: 1.67436px solid rgba(34, 35, 35, 0.15);
+    box-shadow: 0px 0px 33.4872px 8.3718px rgba(0, 0, 0, 0.05);
+    padding-top: 30px;
+}h2.headingTable {
+    font-size: 19px;
+    font-weight: 600;
+    padding: 10px 0;text-transform:uppercase;
+    margin-top: 10px;    height: 70px;    word-break: keep-all;
+}.rightSideColumnT h2.headingTable {
+       margin: 0; 
+    margin-top: -15px; padding-top:0
+}.leftSideColumnT {
+    padding-top: 55px;
+}.tableRowT {
+    height: 60px;
+    display: flex;
+    align-items: center;
+}.tableItSelf img {
+    margin-right: 10px;
+}.leftSideColumnT .tableRowT {
+    font-size: 0.8em;    padding-left: 6%;
+    width: 100%;padding-right:10%
+}.leftSideColumnT .tableRowT:nth-child(1),
+  .leftSideColumnT .tableRowT:nth-child(3),
+  .leftSideColumnT .tableRowT:nth-child(5){
+    background:{{ section.settings.back }}
+}.middleColumnT .tableRowT, .rightSideColumnT .tableRowT {
+    justify-content: center;
+}h2.headingTable {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}.middleColumnT h2.headingTable {
+    color: white;
+} .wrapBlue img{
+  margin:0; width:90%;height:90%;object-fit:contain
+}.wrapBlue {
+    width: 104px;
+    height: 104px;
+    margin: 0 auto;
+    background: {{ section.settings.back }};
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -60px;
+}.rightSideColumnT .wrapBlue {
+    top: -115px;
+}span.textG {
+    font-size: 0.8em;
+    letter-spacing: 0;
+    text-align: center;
+}
+  @media(max-width:1000px)
+  {
+    h2.headingTable {
+    font-size: 16px;
+    }.wrapBlue {
+    width: 85px;
+    height: 85px;
+}
+  }
+  @media(max-width:767px)
+  {.wrapItAllTables { 
+    margin: 30px 0;
+}.rightSideColumnT {
+    padding: 0 10px;
+}
+    .wrapItAllTables {
+    padding-left: 0;
+    padding-right: 0;
+}.wrapTables.container {
+    padding: 0;
+}.tableItSelf { 
+    padding:0; 
+}.tableRowT strong {
+    font-size: 12px;line-height: 1.3;
+}.leftSideColumnT img {
+    width: 20px;
+    height: 20px; 
+    margin-right: 5px !important;
+}.rightSideColumnT, .middleColumnT { 
+    padding: 0 15px;
+}.rightSideColumnT img, .middleColumnT img {
+    width: 16px;
+    height: 16px; 
+    margin-right: 5px !important;
+}h2.headingTable {
+    font-size: 12px; 
+    padding: 10px 0; 
+    margin-top: 20px;
+        height: 50px;
+}.leftSideColumnT { 
+}.middleColumnT {
+    padding: 0; 
+}.middleColumnT .tableRowT {
+    display: flex;
+    justify-content: center;    padding: 0 10px;    
+}.middleColumnT {  
+    top: -20px;
+    height: calc(100% + 40px);  
+}.middleColumnT h2.headingTable {
+    padding: 10px;    margin-bottom: 4px;
+}.tableRowT {
+    height: 60px;
+    font-size: 0.62em !important;
+}
+.leftSideColumnT {
+    padding-top: 45px;
+}.rightSideColumnT h2.headingTable {
+    margin: 0;
+    margin-top: -5px;
+}
+.wrapBlue {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto;
+    background: #deebf1;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -40px;
+    right: 10px;
+}.wrapBlue img {
+    width: 90% !important;
+    height: 85% !important;
+    margin-right: 0 !important;
+}.rightSideColumnT {
+    margin-top: 10px;
+}.rightSideColumnT .wrapBlue {
+    top: -60px;
+}
+  }
+
+  @media(max-width:500px)
+  {
+    h2.headingTable {
+    font-size: 11px; 
+}.wrapBlue { 
+    right: 5px;
+}
+  }
+</style>
+<section>
+<div class="wrapTables container">
+  <div class="page-width">
+<h4 class="benefitFsub" style="width:100%;text-align:center;color:{{ section.settings.headingColor }} !important"">
+{{ section.settings.subheading }}
+</h4>
+<h2 class="image-with-text__heading mainHeading h2" style="color:{{ section.settings.headingColor }} !important">
+{{ section.settings.heading }}
+</h2>
+    
+<div class="wrapItAllTables"> 
+<div class="tableItSelf">
+<div class="leftSideColumnT">
+{% for block in section.blocks %}
+<div class="tableRowT"> 
+<p>{{ block.settings.text }}</p>
+</div>
+{% endfor %}
+</div>
+<div class="middleColumnT" style="background:{{ section.settings.back2 }}">
+  <div class="wrapBlue">
+    <img src="{{ section.settings.main | img_url: '100x' }}" loading="lazy" alt="{{ section.settings.main.alt }}"> 
+  </div>
+  <h2 class="headingTable">{{ section.settings.pluxytext }}</h2>
+{% for block in section.blocks %}
+<div class="tableRowT">
+{% if block.settings.fText != blank %}
+<span class="textG" style="color:{{ section.settings.firstColumnTextColor }}">
+{{ block.settings.fText }}
+</span>
+{% else %}
+{% if block.settings.firstColumn %}
+<img src="{{ section.settings.tick | img_url: '100x' }}" loading="lazy" alt="{{ section.settings.tick.alt }}"> 
+{% else %}
+<img src="{{ section.settings.cross | img_url: '100x' }}" loading="lazy" alt="{{ section.settings.cross.alt }}"> 
+{% endif %}
+{% endif %}
+</div>
+{% endfor %}
+</div>
+<div class="rightSideColumnT">
+  <div class="wrapBlue">
+    <img src="{{ section.settings.comp | img_url: '100x' }}" loading="lazy" alt="{{ section.settings.comp.alt }}"> 
+  </div>
+  
+    <h2 class="headingTable">{{ section.settings.competitortext }}</h2>
+{% for block in section.blocks %}
+<div class="tableRowT">
+{% if block.settings.sText != blank %}
+<span class="textG" style="color:{{ section.settings.secondColumnTextColor }}">
+{{ block.settings.sText }}
+</span>
+{% else %}
+{% if block.settings.secondColumn %}
+<img src="{{ section.settings.tick | img_url: '100x' }}" loading="lazy" alt="{{ section.settings.tick.alt }}"> 
+{% else %}
+<img src="{{ section.settings.cross | img_url: '100x' }}" loading="lazy" alt="{{ section.settings.cross.alt }}"> 
+{% endif %} 
+{% endif %} 
+</div>
+{% endfor %}
+</div>
+</div>
+
+</div>
+  </div>
+</div>
+</section>
+{% schema %}
+  {
+    "name": "Comparisons Table",
+    "settings": [
+       {
+      "type":"color",
+      "id":"headingColor",
+      "label":"Heading Color",
+      "default":"#000000"
+    },
+      {
+        "type":"text",
+        "id":"subheading",
+        "label":"Subheading"
+      },
+      {
+        "type":"text",
+        "id":"heading",
+        "label":"Heading"
+      },
+      {
+        "type":"text",
+        "label":"Main Text",
+        "id":"pluxytext"
+      },
+      {
+        "type":"text",
+        "label":"Competitor Text",
+        "id":"competitortext"
+      },
+      {
+        "type":"color",
+        "label":"Background",
+        "id":"back"
+      },
+       {
+        "type":"color",
+        "label":"Background 2",
+        "id":"back2",
+         "default":"#25478D"
+      },
+      {
+        "type":"color",
+        "id":"firstColumnTextColor",
+        "label":"First Column Text Color",
+        "default":"#ffffff"
+      },
+       {
+        "type":"color",
+        "id":"secondColumnTextColor",
+        "label":"Second Column Text Color",
+        "default":"#ff0000"
+      },
+      {
+        "type":"image_picker",
+        "label":"Tick",
+        "id":"tick"
+      },
+      {
+        "type":"image_picker",
+        "label":"Cross",
+        "id":"cross"
+      },
+       {
+        "type":"image_picker",
+        "label":"Main",
+        "id":"main"
+      },
+      {
+        "type":"image_picker",
+        "label":"Compare",
+        "id":"comp"
+      }
+    ],
+    "blocks":[
+      {
+      "type":"block",
+        "name":"Block",
+        "settings":[ 
+      {
+        "type":"text",
+        "label":"Text",
+        "id":"text"
+      },
+          {
+            "type":"checkbox",
+            "id":"firstColumn",
+            "label":"First Column",
+            "default":true
+          },
+          {
+            "type":"inline_richtext",
+            "id":"fText",
+            "label":"First Column Text"
+          },
+          {
+            "type":"checkbox",
+            "id":"secondColumn",
+            "label":"Second Column",
+            "default":false
+          },
+          {
+            "type":"inline_richtext",
+            "id":"sText",
+            "label":"Second Column Text"
+          }
+      ]
+      }
+    ],
+    "presets":[
+      {
+        "name":"Comparisons Table"
+      }
+    ]
+  }
+{% endschema %} 

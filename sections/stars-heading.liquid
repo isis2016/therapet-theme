@@ -1,0 +1,114 @@
+<style>
+  .starsPortion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85em;
+}.stars {
+    display: flex;
+    margin-right: 10px;
+}.stars svg{
+    margin-right:4px
+}.wrapTopPortion h1,.wrapTopPortion p {
+    text-align: center;
+    margin: 0;
+}.wrapTopPortion h1{
+margin:10px 0 15px;    font-size: 1.7em;   
+}.wrapTopPortion {
+    margin: 70px 0 90px;
+}img.imageMAINa {
+    margin: 20px auto;
+    display: block;width:100%;object-fit:contain;
+    max-height: 450px;
+}@media(max-width:767px)
+  {
+    .wrapTopPortion {
+    margin: 45px 0 50px;
+}.starsPortion { 
+    font-size: 0.75em;
+}.stars { 
+    margin-right: 2px;
+}
+  }
+</style>
+<section>
+  <div class="page-width">
+<div class="wrapTopPortion">
+<div class="starsPortion">
+{% render 'star' %}<span>{{ section.settings.stars }}</span>
+</div>
+<h1>{{ section.settings.title }}</h1>
+{% if section.settings.image1 != blank %}
+<img src="{{ section.settings.image1 | img_url:'700x' }}" class="imageMAINa" alt="{{ section.settings.image1.alt }}">
+{% endif %}
+{{ section.settings.text1 }}
+{% if section.settings.image2 != blank %}
+<img src="{{ section.settings.image2 | img_url:'700x' }}" loading="lazy" class="imageMAINa" alt="{{ section.settings.image2.alt }}">
+{% endif %}
+{{ section.settings.text2 }}
+{% if section.settings.image3 != blank %}
+<img src="{{ section.settings.image3 | img_url:'700x' }}" loading="lazy" class="imageMAINa" alt="{{ section.settings.image3.alt }}">
+{% endif %}
+{{ section.settings.text3 }}
+</div>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Stars Heading",
+    "settings": [
+      {
+        "label":"Stars Text",
+        "id":"stars",
+        "type":"text",
+        "default":"200+ 5 Star Reviews"
+      },
+      {
+        "type":"textarea",
+        "id":"title",
+        "label":"Title",
+        "default":"Still Hunting In Wool Socks?"
+      },
+      {
+"type":"image_picker",
+"id":"image1",
+"label":"Image 1"
+      },
+      {
+        "type":"textarea",
+        "id":"text1",
+        "label":"Text 1",
+        "default":"<p>Here are 5 reasons why these alpaca boot socks are crushing wool socks in every category:</p>"
+      },
+    {
+"type":"image_picker",
+"id":"image2",
+"label":"Image 2"
+      },
+      {
+        "type":"textarea",
+        "id":"text2",
+        "label":"Text 2",
+        "default":"<p>Here are 5 reasons why these alpaca boot socks are crushing wool socks in every category:</p>"
+      },
+    {
+"type":"image_picker",
+"id":"image3",
+"label":"Image 3"
+      },
+
+      {
+        "type":"textarea",
+        "id":"text3",
+        "label":"Text 3",
+        "default":"<p>Here are 5 reasons why these alpaca boot socks are crushing wool socks in every category:</p>"
+      }
+    ],
+    "presets":[
+      {
+        "name":"Stars Heading"
+      }
+    ]
+  }
+{% endschema %}

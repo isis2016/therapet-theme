@@ -1,0 +1,270 @@
+<style>
+  .featuresSectionMain{
+    padding:50px 0 50px;margin:0 !important
+  }
+  .topHeadFeatures{
+    text-align:center
+  }.bottomPortionHeadNew {
+    display: flex;
+    margin: 45px 0 0px;
+   /* box-shadow: 0px 4px 35px 10px rgb(0 0 0 / 8%);  */
+    border-radius: 12px;
+    padding: 30px;
+}.leftSideBox, .rightSideBox {
+    width: 50%;
+}img.whatsBox {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}.rightSideBox {
+    padding-left: 4%;    display: flex;
+    align-items: center;
+}.featureBlockNEW {    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 0;
+}.featureBlockNEW img {
+    width: 100px;
+    height: 100px;    margin-right: 15px;
+    object-fit: cover;
+    border-radius: 50%;
+} p.featuresDesc {
+    width: 100%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+}.topHeadFeatures h2.mainHeading {
+    margin-bottom: 10px;
+}.rightSidefeatureWraP{
+    display:flex;flex-wrap:wrap
+}.featureBlockNEW strong {
+    font-size: 0.85em;
+}.satisfactionBlock img {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+}.satisfactionBlock {
+    padding: 20px;
+    box-shadow: 0px 4px 35px 10px rgb(0 0 0 / 8%);
+    border-radius: 12px;
+    width: 48.5%;
+}.guaranteeSectionPart {
+    display: flex;
+    justify-content: space-between;
+}.satisfactionBlock p {
+    margin: 0;
+    font-size: 0.9em;
+}.satisfactionBlock p strong {
+    font-size: 1.1em;
+    font-weight: 900;
+    margin: 0 0 6px;
+    display: block;
+}span.countitNow {
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    color: white;
+    font-size: 0.9em;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}.featureBlockNEW p {
+    margin: 0px 0 25px;
+}
+  @media(max-width:1000px)
+  {.bottomPortionHeadNew { 
+    flex-direction: column;
+}
+   .leftSideBox, .rightSideBox {
+    width: 100%;
+    padding: 0;
+}img.whatsBox {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    max-width: 500px;
+    margin: auto;
+    display: block;
+    margin-bottom: 40px;
+}.featureBlockNEW img {
+    width: 80px;
+    height: 80px; 
+}.guaranteeSectionPart { 
+    margin-top: 25px;
+}
+    .bottomPortionHeadNew {
+    display: flex; 
+    margin: 30px 0 0px;
+    flex-direction: column;
+    align-items: center;
+} .featuresSectionMain {
+    margin: 100px 0 55px;
+}
+  }
+  @media(max-width:767px)
+  {
+    .bottomPortionHeadNew{
+      padding:0 !important
+}
+ .featureBlockNEW {
+    display: flex;
+    align-items: flex-start;
+    width: 47%;
+    padding-right: 0;
+    margin-bottom: 0;
+    margin-top: 0px;
+}.featureBlockNEW:last-child {  
+}.featureBlockNEW strong {
+    font-size: 0.8em;
+}
+.rightSidefeatureWraP { 
+    justify-content: space-between;
+}
+    .satisfactionBlock { 
+    width: 100%;
+    margin-bottom: 20px;
+}.guaranteeSectionPart {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}span.countitNow {
+     width: 24px;
+    margin-right: 9px;
+    height: 24px;
+    font-size: 0.8em;
+    flex-shrink: 0;
+    }.featureBlockNEW p {
+    display: flex;
+    align-items: flex-start; 
+    margin: 0;    margin-bottom: 15px;
+}
+  }
+</style>
+
+<section id="whatInBox" class="featuresSectionMain" style="background:{{ section.settings.background }}">
+  <div class="page-width">
+<div class="topHeadFeatures">
+<h2 class="mainHeading">{{ section.settings.heading }}</h2>
+<p class="featuresDesc">{{ section.settings.text }}</p>
+</div>
+<div class="bottomPortionHeadNew"> 
+<div class="leftSideBox">
+<img class="whatsBox" loading="lazy" src="{{ section.settings.image | img_url: 'master' }}" alt="{{ section.settings.image.alt }}" width="100%" height="100%">
+
+</div>
+  <div class="rightSideBox"> 
+    
+    <div class="rightSidefeatureWraP">
+{% for block in section.blocks %}
+  {% if block.type == "item" %}
+<div class="featureBlockNEW"> 
+<p>
+  <span class="countitNow" style="background:{{ section.settings.count }}">{{ forloop.index }}</span>
+ <strong>{{ block.settings.label }}</strong> 
+</p> 
+</div>
+    {% endif %}
+{% endfor %}
+    </div>
+  <div class="imageWithTextBottom" style="text-align: left;">
+  {% if section.settings.btn_text != blank %}
+<a href="{{ section.settings.btn_link }}" class="fixIcon button button--primary">
+{{ section.settings.btn_text }}
+</a>
+{% endif %} 
+{% if section.settings.satisfiedCustomers != blank %}
+<p class="satisfiedC">{% render 'stars' %} {{ section.settings.satisfiedCustomers }}</p>
+{% endif %}
+{% if section.settings.badges != blank %}
+<img class="badgesMain" src="{{ section.settings.badges | img_url: 'master' }}" alt="{{ section.settings.badges.alt }}" width="100%" height="100%">
+{% endif %}
+  </div>
+   </div>   
+</div>   
+
+    
+
+   
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "What's in the box New",
+    "settings": [
+      {
+        "type":"text",
+        "label":"Heading",
+        "id":"heading",
+        "default":"INNOVATIVE DESIGN AND FEATURES"
+      },
+      {
+        "type":"textarea",
+        "id":"text",
+        "label":"Heading",
+        "default":"In CLEANUX, we took the best from all sinus relief methods and combined them in one smart device to ensure maximum relief!"
+      },
+       {
+        "type":"image_picker",
+        "label":"Image",
+        "id":"image"
+      }, {
+      "type": "color",
+      "id": "background",
+      "label": "Background Color",
+      "default":"#EAF4FC"
+    },
+    {
+        "type":"text",
+        "id":"btn_text",
+        "label":"Button Text"
+      },
+      {
+        "type":"url",
+        "id":"btn_link",
+        "label":"Button Link"
+      },
+      {
+        "type":"text",
+        "id":"satisfiedCustomers",
+        "label":"Satisfied Customers",
+        "default":"1291 Satisfied Customers"
+      },
+       {
+        "type":"image_picker",
+        "id":"badges",
+        "label":"Badges"
+      },
+      {
+        "type":"color",
+        "id":"count",
+        "label":"Count Color",
+        "default":"#2491C4"
+      }
+    ],
+    "blocks":[
+      {
+        "type":"item",
+        "name":"Box Item", 
+        "settings":[
+         
+         {
+        "type":"text",
+        "label":"Label",
+        "id":"label",
+        "default":"INNOVATIVE DESIGN AND FEATURES"
+      }
+      
+        ]
+      } 
+    ],
+    "presets":[
+      {
+        "name":"What's in the box New"
+      }
+    ]
+  }
+{% endschema %} 

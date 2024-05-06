@@ -1,0 +1,133 @@
+<section class="news">
+        <div class="container">
+            <div class="news__main">
+                {{ section.settings.news-p }}
+                <div class="news__bottom">
+                    <a href="{{ section.settings.text-link }}">{{ section.settings.link-text }}</a>
+                    <a href="{{ section.settings.text-link2 }}">{{ section.settings.link-text2 }}</a>
+                    <a href="{{ section.settings.text-link3 }}">{{ section.settings.link-text3 }}</a>
+                </div>
+            </div>
+        </div>
+    </section>
+{% schema %}
+  {
+    "name": "News section",
+    "settings": [
+      {
+        "type": "richtext",
+        "id": "news-p",
+        "label": "Paragraph",
+        "default": "<p>Add text<p>"
+      },
+      {
+        "type": "url",
+        "id": "text-link",
+        "label": "Url"
+      },
+      {
+        "type": "text",
+        "id": "link-text",
+        "label": "Url Text"
+      },
+      {
+        "type": "url",
+        "id": "text-link2",
+        "label": "Url"
+      },
+      {
+        "type": "text",
+        "id": "link-text2",
+        "label": "Url Text"
+      },
+      {
+        "type": "url",
+        "id": "text-link3",
+        "label": "Url"
+      },
+      {
+        "type": "text",
+        "id": "link-text3",
+        "label": "Url Text"
+      }
+    ],
+        "presets": [
+      {
+        "name": "News section"
+      }
+    ]
+  }
+{% endschema %}
+<style>
+  .news {
+        background: #333333;
+    }
+
+    .news .container {
+        max-width: 1190px;
+        padding-left: 0.625rem;
+        padding-right: 0.625rem;
+        text-align: center;
+        padding-top: 25px;
+        padding-bottom: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .news__main p {
+    font-size: 14px;
+    margin-bottom: 0.625rem;
+    line-height: 1.25rem;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #dadada;
+}
+.news__main p:first-child {
+    color: #c4c4c4;
+}
+.news__main p a {
+    color: #dadada;
+}
+.news__bottom {
+    padding-top: 1.75rem;
+    padding-bottom: 40px;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    text-align: center;
+    margin-top: 30px;
+    display: flex;
+}
+.news__bottom a {
+    width: 33%;
+    display: block;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+}
+  @media (max-width: 767px) {
+    .news__main p {
+    font-size: 12px;
+    padding: 0px 15px;
+      margin: 0 0 0.6rem;
+}
+    .news__main p:first-child {
+    font-size: 15px;
+    padding: 0;
+}
+    .news .container {
+    padding-left: 11px;
+    padding-right: 11px;
+}
+    .news__bottom a {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+    .news__bottom {
+    padding-top: 0px;
+    padding-bottom: 60px;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+  }
+</style>

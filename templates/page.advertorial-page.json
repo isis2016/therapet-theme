@@ -1,0 +1,617 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "new_header_UjTVF3": {
+      "type": "newHeader",
+      "settings": {
+        "top": "<p>Advetorial<\/p>",
+        "top_back": "#f3f3f3",
+        "logo": "shopify:\/\/shop_images\/TheraPetMd_dog_landing_page_logo-37.png",
+        "bottom_back": "#316125",
+        "text_color": "#000000",
+        "text_back": "#d4dfce",
+        "text": "<p>This story will change the way you deal with fleas forever!<\/p>"
+      }
+    },
+    "57fefeca-2806-453d-81d2-024870748dc7": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<!-- Hotjar Tracking Code for CLEANUX CO -->\n<script>\n    (function(h,o,t,j,a,r){\n        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};\n        h._hjSettings={hjid:3438847,hjsv:6};\n        a=o.getElementsByTagName('head')[0];\n        r=o.createElement('script');r.async=1;\n        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;\n        a.appendChild(r);\n    })(window,document,'https:\/\/static.hotjar.com\/c\/hotjar-','.js?sv=');\n<\/script>",
+        "color_scheme": "background-1",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "fc3ffab4-4446-447d-833f-15b02ee37c8e": {
+      "type": "advertorial-section",
+      "blocks": {
+        "60990278-3fd4-407c-ba79-ce130822f492": {
+          "type": "Image",
+          "settings": {
+            "leftheading": "",
+            "center": false,
+            "headingcolor": "#581515",
+            "leftsubheading": "Last Updated: April 21, 2024 Approved",
+            "mainimage": "shopify:\/\/shop_images\/EDITED_PHOTO-08.jpg",
+            "video": "",
+            "imagesubheading": "",
+            "imagesubheadingcolor": "#f5f5f5",
+            "dateStepText": "",
+            "dateStepNum": "",
+            "dateStepColor": "#e15d3a",
+            "dateStepBackground": "#e15d3a",
+            "text": "<p><strong>L<\/strong>etetia D., 61, was at her wit's end. She was a licensed vet tech and passionate rescue advocate, with 5 dogs of her own. But one moment had her worried for her dogs’ health.<br\/><\/p><p>Her dogs had been scratching themselves for almost a year. One of the dogs she boarded had brought fleas into her home and had spread to her dogs. But one day it got so bad Letetia’s dogs were scratching non stop.<\/p><p>\"I was terrified since 2 of my dogs are allergic to fleas,\" Letetia said.<\/p><p>Millions of pet owners face a similar problem: <strong>Flea allergy has been on the rise over the past 10 years, with a 12.5 %increase in dogs.<\/strong>1 Her dogs were biting and scratching so much and Letetia became even more anxious. She was worried they might spread the fleas to other animals!<\/p><p>Once the fleas started, Letetia knew she had to take action.<\/p><p>Sadly, her dogs were still suffering. Her pets scratched and bit at their fur throughout the night, their whines keeping the entire household awake. The constant itching made it difficult for Letetia to feel like the loving pet owner she knew she was.<\/p><p>The invasion got so bad, she had to stop boarding dogs, worried that she was just putting them at risk of getting flea bites!<\/p><p>Finally, with no options left, Letetia decided to try some flea medication. So she started shopping around.<br\/><\/p><p>Unfortunately, <strong>flea medicine<\/strong> is very pricey for most Americans. For all 5 dogs, Linda would need to <strong>spend anywhere from $150 to $575 each month on flea medicine<\/strong>. Plus, flea medication requires regular reapplication to keep up with all the new fleas.<\/p><p>With no way to give her dogs relief, Letetia was <strong>faced with two options<\/strong>: spend her hard-earned money on expensive flea treatments, or continue to watch her beloved pets suffer.<\/p>",
+            "text1": "",
+            "text2": "",
+            "text3": "",
+            "text4": "",
+            "text5": "",
+            "text6": "",
+            "text7": "",
+            "text8": "",
+            "text9": "",
+            "text10": "",
+            "btnlink": "",
+            "btntext": "",
+            "color": "#e15d3a"
+          }
+        },
+        "33392e4a-2c78-4ef3-9bd3-0eb3bee65b58": {
+          "type": "Image",
+          "settings": {
+            "leftheading": "",
+            "center": false,
+            "headingcolor": "#000000",
+            "leftsubheading": "",
+            "mainimage": "shopify:\/\/shop_images\/EDITED_PHOTO-03-min.png",
+            "video": "",
+            "imagesubheading": "",
+            "imagesubheadingcolor": "#ffffff",
+            "dateStepText": "",
+            "dateStepNum": "",
+            "dateStepColor": "#e15d3a",
+            "dateStepBackground": "#e15d3a",
+            "text": "<p>Flea collars at the store were another solution, but the main problem for Letetia was the harsh chemicals they used. More than a staggering 2,700 deaths from pets wearing flea collars were made to the EPA in recent years!2<br\/><\/p><p>For Letetia, exposing her dogs to potentially harsh substances was simply out of the question.<br\/><\/p><p>\"Like everyone else, I'm always looking for ways to keep my pets healthy and happy,\" Letetia said. \"Putting toxic chemicals on them just didn't feel right, but I was running out of options.\"<\/p><p>Letetia faced an almost impossible decision:<br\/><\/p><p>Continue to watch her dogs suffer with fleas, or risk their health with potentially toxic flea treatments…<br\/><\/p><p>Letetia isn't the only one worried about the safety of flea collars. <strong>There’s been a 50% increase in the adverse incidents from the use of them.<\/strong>3<br\/><\/p><p>Of course, regular bathing and grooming can help reduce the number of fleas on a pet, but in reality, who has the time to do that every day?<\/p><p>The good news is, an <strong>extraordinary new product now offers a safe*, powerful, and affordable solution for fleas and ticks that works on contact<\/strong>.<br\/><\/p><p>It works year-round, in any climate, for dogs, cats and more… no matter how many pets you have. This product eliminated fleas, ticks, mites, and their eggs using the revolutionary power of potent, plant-based ingredients.<br\/><\/p><p>It's called BugMD Flea & Tick Concentrate, and the way it eliminates fleas is surprisingly simple yet shockingly effective.<\/p>",
+            "text1": "",
+            "text2": "",
+            "text3": "",
+            "text4": "",
+            "text5": "",
+            "text6": "",
+            "text7": "",
+            "text8": "",
+            "text9": "",
+            "text10": "",
+            "btnlink": "",
+            "btntext": "",
+            "color": "#e15d3a"
+          }
+        },
+        "e2234dc0-da1c-42e1-870f-3cb2e21addfd": {
+          "type": "Image",
+          "settings": {
+            "leftheading": "The genius concentrate that eliminates fleas & ticks with innovative Plant-Powered technology…",
+            "center": false,
+            "headingcolor": "#000000",
+            "leftsubheading": "",
+            "mainimage": "shopify:\/\/shop_images\/visuals_5-12.png",
+            "video": "",
+            "imagesubheading": "",
+            "imagesubheadingcolor": "#ffffff",
+            "dateStepText": "",
+            "dateStepNum": "",
+            "dateStepColor": "#e15d3a",
+            "dateStepBackground": "#e15d3a",
+            "text": "<p>BugMD Flea & Tick Concentrate uses a powerful combination of clove oil and cottonseed oil to create a highly effective, yet gentle solution for flea and tick invasions.<br\/><\/p><p>Once Flea & Tick is sprayed on pets, the potent essential oils get to work. Clove oil acts as a fast-acting insecticide, killing fleas on contact4, while Cottonseed Oil suffocates any remaining pests.5 It also works to kill larvae and eggs, helping disrupt the life cycle of these pests so your pet can get relief.<br\/><\/p><p>It's incredibly easy to use. Just mix the concentrate with water in a spray bottle and apply it directly to your pet's fur, bedding, and any other areas where fleas may be lurking. That's it!<br\/><\/p><p>And since it uses essential oils, it's safe* for dogs and cats.<br\/><\/p><p>No wonder pet groomers recommend essential oils for owners looking for chemical-free flea control.<\/p>",
+            "text1": "",
+            "text2": "",
+            "text3": "",
+            "text4": "",
+            "text5": "",
+            "text6": "",
+            "text7": "",
+            "text8": "",
+            "text9": "",
+            "text10": "",
+            "btnlink": "",
+            "btntext": "",
+            "color": "#e15d3a"
+          }
+        },
+        "05c1c36b-129f-4add-8615-33fdebd822a8": {
+          "type": "Image",
+          "settings": {
+            "leftheading": "",
+            "center": false,
+            "headingcolor": "#000000",
+            "leftsubheading": "",
+            "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/7f683a94dae94849b770be79e5b0decc.mp4",
+            "imagesubheading": "",
+            "imagesubheadingcolor": "#ffffff",
+            "dateStepText": "",
+            "dateStepNum": "",
+            "dateStepColor": "#e15d3a",
+            "dateStepBackground": "#e15d3a",
+            "text": "<p>In fact, did you know that essential oils have been proven to eliminate pests by over 15 different studies conducted by universities and research centers?<\/p>",
+            "text1": "",
+            "text2": "",
+            "text3": "",
+            "text4": "",
+            "text5": "",
+            "text6": "",
+            "text7": "",
+            "text8": "",
+            "text9": "",
+            "text10": "",
+            "btnlink": "",
+            "btntext": "",
+            "color": "#e15d3a"
+          }
+        },
+        "2e40bb7e-0f8a-4ad2-8635-6f2499ae8400": {
+          "type": "Image",
+          "settings": {
+            "leftheading": "",
+            "center": false,
+            "headingcolor": "",
+            "leftsubheading": "",
+            "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/c19b68e24577447aa2495cf2d082e98b.mp4",
+            "imagesubheading": "",
+            "imagesubheadingcolor": "",
+            "dateStepText": "",
+            "dateStepNum": "",
+            "dateStepColor": "#e15d3a",
+            "dateStepBackground": "#e15d3a",
+            "text": "<p>When Letetia heard about BugMD Flea & Tick Concentrate, she was skeptical it would work because she’d already tried everything.<br\/><\/p><p>Also, she’d never heard of it working as a vet tech which made her even more suspicious.<br\/><\/p><p>But after seeing her dogs suffer for over a year, Letetia was willing to try anything. <br\/><\/p><p>When the package arrived, Letetia was super impressed. She mixed the concentrate with water and started spraying it on her dogs.<br\/><\/p><p>Now, we can’t promise that everyone will experience the same results, but Letetia said, “as soon as I sprayed everyone, I was more relaxed.” Pleasantly surprised by how nice it smelled after she sprayed, Letetia said she “noticed a difference within the first day.”<br\/><\/p><p>The combination of essential oils used in BugMD Flea & Tick was killing fleas of all life cycles on her dogs, giving her dogs the relief that she’d been looking for.<br\/><\/p><p>Also, unlike traditional flea collars or drops, BugMD’s formula is completely safe when used as directed, so Letetia no longer had to worry about exposing her dogs to harsh chemicals or harsh substances.<br\/><\/p><p>She could finally say her home was back to being the peaceful oasis for her beloved dogs now that the fleas were under control.<br\/><\/p><p>Within 2 weeks, Letetia said the flea invasion was much better and she was no longer worried everyday. Finally, she was confident she found her go-to flea product.<br\/><\/p><p>\"I’m convinced everyone should use this,\" Letetia said.<br\/><\/p><p>Letetia ordered 3 more bottles of the concentrate to keep incrase another dog brought in fleas.<br\/><\/p><p>Letetia even started boarding dogs again, spraying them with Flea & Tick concentrate when they came to stay.<\/p>",
+            "text1": "",
+            "text2": "",
+            "text3": "",
+            "text4": "",
+            "text5": "",
+            "text6": "",
+            "text7": "",
+            "text8": "",
+            "text9": "",
+            "text10": "",
+            "btnlink": "",
+            "btntext": "",
+            "color": "#e15d3a"
+          }
+        }
+      },
+      "block_order": [
+        "60990278-3fd4-407c-ba79-ce130822f492",
+        "33392e4a-2c78-4ef3-9bd3-0eb3bee65b58",
+        "e2234dc0-da1c-42e1-870f-3cb2e21addfd",
+        "05c1c36b-129f-4add-8615-33fdebd822a8",
+        "2e40bb7e-0f8a-4ad2-8635-6f2499ae8400"
+      ],
+      "settings": {
+        "breadcrumb": "",
+        "advertorial": true,
+        "center": false,
+        "leftheading": "Discover the Vet Tech's Secret to Eliminating Fleas Without Harsh Chemicals",
+        "headingcolor": "#000000",
+        "checkbox": false,
+        "bgcolor": "#3aaa35",
+        "text": "",
+        "bttnlink": "",
+        "bttntext": ""
+      }
+    },
+    "advertorial_section_J6EPyk": {
+      "type": "advertorial-section",
+      "blocks": {
+        "image_7TqUrp": {
+          "type": "Image",
+          "settings": {
+            "leftheading": "Thousands of new customers last year... but is it really worth the hype?",
+            "center": false,
+            "headingcolor": "",
+            "leftsubheading": "",
+            "mainimage": "shopify:\/\/shop_images\/herochewing.jpg",
+            "video": "",
+            "imagesubheading": "",
+            "imagesubheadingcolor": "",
+            "dateStepText": "",
+            "dateStepNum": "",
+            "dateStepColor": "#e15d3a",
+            "dateStepBackground": "#e15d3a",
+            "text": "<p><strong>BugMD Flea & Tick Concentrate was only recently introduced to the market, but it’s already caught-on with Americans nationwide.<\/strong><br\/><\/p><p>Once people learned there’s a safe*, plant-based solution for flea and tick control, they were more than happy to try it.<br\/><\/p><p>Over the winter, BugMD sold much faster than the small, family-owned company was prepared for. Last summer they sold out of their inventory completely. <br\/><\/p><p>Buzz about this breakthrough formula has been spreading through word-of-mouth from satisfied customers.<br\/><\/p><p>Thousands of Americans are already using BugMD and you’ll quickly see why there are over 1,000+ 5-star reviews online from thousands of Americans raving about it!<\/p>",
+            "text1": "",
+            "text2": "",
+            "text3": "",
+            "text4": "",
+            "text5": "",
+            "text6": "",
+            "text7": "",
+            "text8": "",
+            "text9": "",
+            "text10": "",
+            "btnlink": "",
+            "btntext": "",
+            "color": "#e15d3a"
+          }
+        },
+        "social_post_dzV6Kb": {
+          "type": "SocialPost",
+          "settings": {
+            "username": "CatWoman",
+            "userImage": "shopify:\/\/shop_images\/1_b30cc824-6145-4739-bd6c-50113e031d89.png",
+            "postedTime": "2h",
+            "description": "<p>I sprayed this on my cats after carefully mixing the exact amount of water with one bottle as directed and it killed the fleas on contact. I also used my flea comb to remove the dead fleas. I also sprayed the bedding in all rooms and on the floors, counters and furniture. This stuff is great. I look forward to my next order. Thanks Bugmd.<\/p>",
+            "postImage": "shopify:\/\/shop_images\/visuals_5-19.png",
+            "likersName": "Lucia Stones, Adam Johns",
+            "likeCount": "988",
+            "commentsCount": "25"
+          }
+        },
+        "social_post_F7drBw": {
+          "type": "SocialPost",
+          "settings": {
+            "username": "Cal Lover",
+            "userImage": "shopify:\/\/shop_images\/2_b52a687d-30e1-4fd0-88f7-a3ca25c026aa.png",
+            "postedTime": "2h",
+            "description": "<p>Nice Post Desription <\/p>",
+            "postImage": "shopify:\/\/shop_images\/Cokelat_terang_Shadow_Overlay_Skincare_Beauty_11_Static_Feed_Ad.png",
+            "likersName": "Lucia Stones, Adam Johns",
+            "likeCount": "988",
+            "commentsCount": "25"
+          }
+        }
+      },
+      "block_order": [
+        "image_7TqUrp",
+        "social_post_dzV6Kb",
+        "social_post_F7drBw"
+      ],
+      "settings": {
+        "breadcrumb": "",
+        "advertorial": true,
+        "center": false,
+        "leftheading": "",
+        "headingcolor": "",
+        "checkbox": false,
+        "bgcolor": "#c71010",
+        "text": "www",
+        "bttnlink": "",
+        "bttntext": "eee"
+      }
+    },
+    "advertorial_section_L38FMp": {
+      "type": "advertorial-section",
+      "blocks": {
+        "image_8z3rpn": {
+          "type": "Image",
+          "settings": {
+            "leftheading": "I tried BugMD Flea & Tick Concentrate for myself, and here’s what I found:",
+            "center": false,
+            "headingcolor": "",
+            "leftsubheading": "",
+            "mainimage": "shopify:\/\/shop_images\/rehoming.jpg",
+            "video": "",
+            "imagesubheading": "",
+            "imagesubheadingcolor": "",
+            "dateStepText": "WEEK",
+            "dateStepNum": "1",
+            "dateStepColor": "#ffffff",
+            "dateStepBackground": "#37306b",
+            "text": "<p>After suffering from fleas for a few weeks, I was incredibly excited to give BugMD Flea & Tick Concentrate a try.<\/p><p>When the package arrived, I was super impressed by how easy it was to use - just mix with water and spray… that’s it!<br\/><\/p><p>I sprayed my dogs, a golden retriever named Sunny and a terrier mix named Rusty, and my orange cat, Simon.<br\/><\/p><p>I wasn’t expecting much to happen until…<\/p>",
+            "text1": "",
+            "text2": "",
+            "text3": "",
+            "text4": "",
+            "text5": "",
+            "text6": "",
+            "text7": "",
+            "text8": "",
+            "text9": "",
+            "text10": "",
+            "btnlink": "",
+            "btntext": "",
+            "color": "#e15d3a"
+          }
+        }
+      },
+      "block_order": [
+        "image_8z3rpn"
+      ],
+      "settings": {
+        "breadcrumb": "",
+        "advertorial": false,
+        "center": false,
+        "leftheading": "",
+        "headingcolor": "",
+        "checkbox": false,
+        "bgcolor": "",
+        "text": "",
+        "bttnlink": "",
+        "bttntext": ""
+      }
+    },
+    "advertorial_section_KBze3f": {
+      "type": "advertorial-section",
+      "blocks": {
+        "image_L6nJEk": {
+          "type": "Image",
+          "settings": {
+            "leftheading": "",
+            "center": false,
+            "headingcolor": "",
+            "leftsubheading": "",
+            "mainimage": "shopify:\/\/shop_images\/dog_alone.jpg",
+            "video": "",
+            "imagesubheading": "",
+            "imagesubheadingcolor": "",
+            "dateStepText": "Week",
+            "dateStepNum": "2",
+            "dateStepColor": "#ffffff",
+            "dateStepBackground": "#e15d3a",
+            "text": "<p>I couldn't believe the difference in just one week. Sunny and Rusty were scratching less, and I didn't find any new flea dirt in their fur.Even my cat, who has sensitive skin, seemed so much better and I didn’t notice any patches of fur missing from his scratching. Their skin looked healthier, and they seemed more comfortable overall.<br\/><\/p><p>The spray smelled nice and I felt comfortable spraying them since it was made with essential oils.<br\/><\/p><p>I continued to apply BugMD every few days, as directed, and noticed that the fleas were disappearing quickly - it was game-changing.<\/p>",
+            "text1": "",
+            "text2": "",
+            "text3": "",
+            "text4": "",
+            "text5": "",
+            "text6": "",
+            "text7": "",
+            "text8": "",
+            "text9": "",
+            "text10": "",
+            "btnlink": "",
+            "btntext": "",
+            "color": "#e15d3a"
+          }
+        }
+      },
+      "block_order": [
+        "image_L6nJEk"
+      ],
+      "settings": {
+        "breadcrumb": "",
+        "advertorial": false,
+        "center": false,
+        "leftheading": "",
+        "headingcolor": "",
+        "checkbox": false,
+        "bgcolor": "",
+        "text": "",
+        "bttnlink": "",
+        "bttntext": ""
+      }
+    },
+    "advertorial_section_RgawMx": {
+      "type": "advertorial-section",
+      "blocks": {
+        "image_HiiFfw": {
+          "type": "Image",
+          "settings": {
+            "leftheading": "",
+            "center": false,
+            "headingcolor": "",
+            "leftsubheading": "",
+            "mainimage": "shopify:\/\/shop_images\/vet_e941cbd2-a110-4365-bb58-a38d3e108bfd.jpg",
+            "video": "",
+            "imagesubheading": "",
+            "imagesubheadingcolor": "",
+            "dateStepText": "WEEK",
+            "dateStepNum": "5",
+            "dateStepColor": "#f9f9ff",
+            "dateStepBackground": "#37306b",
+            "text": "<p>By the third week, I didn't notice any more fleas crawling on my pets or me! In fact, both my dogs and my cat were back to their playful, happy selves. <br\/><\/p><p>I was amazed at how quickly and effectively BugMD had worked, without any of the side effects I had worried about with traditional flea collars and drops.<br\/><\/p><p>I was so impressed with BugMD Flea & Tick Concentrate that I started recommending it to all my friends, especially those with rescue animals or pets with sensitive skin.<br\/><\/p><p>I even shared it with a few coworkers, and soon enough, everyone was talking about this amazing flea and tick spray.<br\/><\/p><p>Thanks to BugMD, I no longer have to choose between my dogs' comfort and their safety. <\/p>",
+            "text1": "",
+            "text2": "",
+            "text3": "",
+            "text4": "",
+            "text5": "",
+            "text6": "",
+            "text7": "",
+            "text8": "",
+            "text9": "",
+            "text10": "",
+            "btnlink": "",
+            "btntext": "",
+            "color": "#e15d3a"
+          }
+        }
+      },
+      "block_order": [
+        "image_HiiFfw"
+      ],
+      "settings": {
+        "breadcrumb": "",
+        "advertorial": false,
+        "center": false,
+        "leftheading": "",
+        "headingcolor": "",
+        "checkbox": false,
+        "bgcolor": "",
+        "text": "",
+        "bttnlink": "",
+        "bttntext": ""
+      }
+    },
+    "advertorial_section_yFLLfx": {
+      "type": "advertorial-section",
+      "blocks": {
+        "image_9jg4DV": {
+          "type": "Image",
+          "settings": {
+            "leftheading": "My Final Thoughts",
+            "center": false,
+            "headingcolor": "",
+            "leftsubheading": "",
+            "video": "",
+            "imagesubheading": "",
+            "imagesubheadingcolor": "",
+            "dateStepText": "",
+            "dateStepNum": "",
+            "dateStepColor": "#e15d3a",
+            "dateStepBackground": "#e15d3a",
+            "text": "<p>BugMD absolutely changed our lives, and I'm confident that it can do the same for you and your furry family.<br\/><\/p><p>If you're tired of constantly battling fleas and want to keep your pets happy, healthy, and itch-free… switching to BugMD can save you time, money, and stress in the long run.<br\/><\/p><p>Traditional flea control products can cost hundreds of dollars per year, even thousands if you have multiple pets. They also require frequent reapplication and can expose your pets to harsh chemicals and potentially harmful side effects. There's really no comparison.<br\/><\/p><p>BugMD Flea & Tick Concentrate is an affordable, safe*, and effective way to combat fleas in your home. That's why it's quickly becoming increasingly popular with pet owners nationwide.<br\/><\/p><p>I used BugMD for more than a month and can confirm that it effectively eliminates fleas & ticks, providing relief for your pets and your home, which is something traditional flea collars and drops just can’t offer.<br\/><\/p><p>Most importantly, it means you no longer have to put your pets' health at risk with potentially harsh chemicals or expose them to the discomfort and pain of constant itching and scratching.<br\/><\/p><p>And if it doesn't transform your life like it did for me and my pets, don't worry – they offer a <strong>30-day satisfaction guarantee<\/strong> on every purchase.<br\/><\/p><p>If you and your pets are struggling with flea invasions at home,<br\/><\/p><p>or simply want an alternative to flea collars,<br\/><\/p><p>There's no reason not to give BugMD a try.<br\/><\/p><p>Trust me, you’ll thank me later.<\/p>",
+            "text1": "",
+            "text2": "",
+            "text3": "",
+            "text4": "",
+            "text5": "",
+            "text6": "",
+            "text7": "",
+            "text8": "",
+            "text9": "",
+            "text10": "",
+            "btnlink": "",
+            "btntext": "",
+            "color": "#e15d3a"
+          }
+        },
+        "image_tUTzcq": {
+          "type": "Image",
+          "settings": {
+            "leftheading": "How much does it cost? Is it worth it?",
+            "center": false,
+            "headingcolor": "",
+            "leftsubheading": "",
+            "video": "",
+            "imagesubheading": "",
+            "imagesubheadingcolor": "",
+            "dateStepText": "",
+            "dateStepNum": "",
+            "dateStepColor": "#e15d3a",
+            "dateStepBackground": "#e15d3a",
+            "text": "<p>BugMD Flea & Tick Concentrate is regularly priced at $29.97 per bottle – which, at first, might seem a bit steep. But after seeing there was virtually no risk in trying it and thousands of Americans have already experienced life-changing results, I realized it was an incredible value.<br\/><\/p><p><em><strong>*BugMD is currently running a limited-time special offer for even greater savings – March 11, 2024<\/strong><\/em><br\/><\/p><p>Right now, on their official website, BugMD is offering an exclusive \"Bundle & Save” promotion on their Flea & Tick Concentrate. This means you can stock up on this amazing product at a significant discount – up to 55% off retail price – but only while supplies last.<br\/><\/p><p>Right now, on their official website, BugMD is offering an exclusive \"Bundle & Save” promotion on their Flea & Tick Concentrate. This means you can stock up on this amazing product at a significant discount <strong>– up to 55% off retail price – <\/strong>but only while supplies last.<\/p><p>Over the winter, BugMD sold much faster than the small, family-owned company was prepared for.<br\/><\/p><p>Last year they completely sold out of their inventory due to overwhelming demand.<br\/><\/p><p>The time to order BugMD Flea & Tick Concentrate is now – before they run out of stock again.<br\/><\/p><p>You'll quickly see why thousands of Americans have raved about BugMD!<br\/><\/p><p>The icing on the cake is the price. If it's still in stock – definitely make sure you get a bottle before they sell out again.<\/p>",
+            "text1": "",
+            "text2": "",
+            "text3": "",
+            "text4": "",
+            "text5": "",
+            "text6": "",
+            "text7": "",
+            "text8": "",
+            "text9": "",
+            "text10": "",
+            "btnlink": "",
+            "btntext": "",
+            "color": "#e15d3a"
+          }
+        }
+      },
+      "block_order": [
+        "image_9jg4DV",
+        "image_tUTzcq"
+      ],
+      "settings": {
+        "breadcrumb": "",
+        "advertorial": false,
+        "center": false,
+        "leftheading": "",
+        "headingcolor": "",
+        "checkbox": false,
+        "bgcolor": "",
+        "text": "",
+        "bttnlink": "",
+        "bttntext": ""
+      }
+    },
+    "advertorial_section_VgEtar": {
+      "type": "advertorial-section",
+      "blocks": {
+        "informational_cta_TaCThh": {
+          "type": "InformationalCTA",
+          "settings": {
+            "sectionLink": "https:\/\/therapetmd.com\/pages\/single-video-page",
+            "firstBlockText": "<p>*Update:Monday, April 22, 2024 Since this advertorial was originally published, the demand for BugMD Flea & Tick Concentrate has skyrocketed, and the company has struggled to keep up with orders. While they're working hard to restock their inventory, they're still offering their special \"Internet Only\" promotion. (This offer is only available while supplies last.) To find out if BugMD is still in stock, click the button below.<\/p>",
+            "firstBlockIcon": "shopify:\/\/shop_images\/satguarantee.webp",
+            "firstBlockColor": "#ffffff",
+            "firstBlockBackground": "#37306b",
+            "heading": "LIMITED STOCK:",
+            "headingClickable": "CLICK HERE TO CHECK AVAILABILITY",
+            "secondBlockText": "<p>IMPORTANT: Get BugMD for Every Pet You Want to Keep Happy & Healthy<\/p>",
+            "secondBlockIcon": "shopify:\/\/shop_images\/facebook-reactions.png",
+            "secondBlockColor": "#ffffff",
+            "secondBlockBackground": "#15d246",
+            "mainImage": "shopify:\/\/shop_images\/tripleseal_800x_1.jpg",
+            "subheading": "USE",
+            "subheadingClickable": "TherapetMD",
+            "subheading2": "FOR SAFE*, EFFECTIVE FLEA CONTROL",
+            "buttonText": "APPLY DISCOUNT& CHECK INVENTORY >>",
+            "buttonColor": "#3aaa35",
+            "buttonBgColor": "#bc2e3e",
+            "limitedStock": "Limited Inventory Available"
+          }
+        }
+      },
+      "block_order": [
+        "informational_cta_TaCThh"
+      ],
+      "settings": {
+        "breadcrumb": "",
+        "advertorial": false,
+        "center": false,
+        "leftheading": "",
+        "headingcolor": "",
+        "checkbox": false,
+        "bgcolor": "",
+        "text": "",
+        "bttnlink": "",
+        "bttntext": ""
+      }
+    },
+    "171380517964220bee": {
+      "type": "apps",
+      "blocks": {
+        "stamped_product_reviews_ugc_main_widget_JVgfDF": {
+          "type": "shopify:\/\/apps\/stamped-product-reviews-ugc\/blocks\/main-widget\/a103faaf-2125-4b0e-89fa-de5149736723",
+          "settings": {
+            "animation": true,
+            "tags_exclude": "",
+            "tags_include": "",
+            "search": "",
+            "linkify": true,
+            "use_metafields": false,
+            "sku_tagtype": "sku"
+          }
+        }
+      },
+      "block_order": [
+        "stamped_product_reviews_ugc_main_widget_JVgfDF"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "advertorial_footer_QMciGd": {
+      "type": "advertorial-footer",
+      "settings": {
+        "gradient1": "#5d3891",
+        "gradient2": "#66347f",
+        "color": "#ffffff",
+        "logo": "shopify:\/\/shop_images\/TheraPetMd_logo_choisi-03.png",
+        "text": "<p>THIS IS AN ADVERTORIAL AND NOT AN ACTUAL NEWS ARTICLE, BLOG, OR CONSUMER PROTECTION UPDATE.<br\/><br\/>MARKETING DISCLOSURE: This website is owned and operated by Cleanux. The advertorial contains fictitious product reviews that reflect a composite of Cleanux customer's experiences using the product.<br\/><br\/>DISCLAIMER<strong>:<\/strong> These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease. The views and advice expressed by Cleanux are not intended for the purpose of providing medical advice. Always seek the advice of your doctor or other qualified healthcare providers with any questions you may have regarding a medical condition or treatment. Benefits may vary from one person to another.<\/p>",
+        "menu": "policies",
+        "payments-img": "shopify:\/\/shop_images\/Payment-Gateway.webp",
+        "copyright": "© 2024 TherapetMD"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "new_header_UjTVF3",
+    "57fefeca-2806-453d-81d2-024870748dc7",
+    "fc3ffab4-4446-447d-833f-15b02ee37c8e",
+    "advertorial_section_J6EPyk",
+    "advertorial_section_L38FMp",
+    "advertorial_section_KBze3f",
+    "advertorial_section_RgawMx",
+    "advertorial_section_yFLLfx",
+    "advertorial_section_VgEtar",
+    "171380517964220bee",
+    "advertorial_footer_QMciGd"
+  ]
+}

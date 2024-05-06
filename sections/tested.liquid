@@ -1,0 +1,304 @@
+{% style %}
+.section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .section-{{ section.id }}-padding-mob {
+      padding-top: {{ section.settings.padding_top-mob }}px;
+      padding-bottom: {{ section.settings.padding_bottom-mob }}px;
+    }
+  }
+{% endstyle %}
+
+
+<div class="main-tested section-{{ section.id }}-padding section-{{ section.id }}-padding-mob">
+  <div class="page-width">
+    <h2 class="tested-head">{{ section.settings.head }}</h2>
+    <div class="tested-wrap">
+       <div class="tested-image">
+         <img src="{{ section.settings.tested-img | img_url: 'master' }}" alt=" tested img">
+       </div>
+      <div class="tested-content-bar">
+       {% for block in section.blocks %}
+         <div class="tested-cover">
+           <div class="tested-content">
+             <h5>{{ block.settings.tested-head }}</h5>
+             {{ block.settings.tested-p }}
+           </div>
+           <div class="tested-bar">
+            <div class="tested-bar-inner" style="width: {{ block.settings.progress }}%"></div>
+        </div>
+         </div>
+       {% endfor %}        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+{% schema %}
+  {
+    "name": "tested section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "head",
+        "label": "Heading"
+      },
+      {
+        "type": "image_picker",
+        "id": "tested-img",
+        "label": "Tested image"
+      },
+      {
+      "type": "header",
+      "content": "Section Padding on Desktop"
+    },
+    
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Top",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Bottom",
+      "default": 0
+    },
+    {
+      "type": "header",
+      "content": "Section Padding on Mobile"
+    },
+    {
+      "type": "range",
+      "id": "padding_top-mob",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Top",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom-mob",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Bottom ",
+      "default": 0
+    }
+    ],
+    "blocks": [
+      {
+        "type": "block",
+        "name": "Progress bar",
+        "settings": [
+          {
+            "type": "text",
+            "id": "tested-head",
+            "label": "Heading"
+          },
+          {
+            "type": "richtext",
+            "id": "tested-p",
+            "label": "Add text",
+            "default": "<p>Add text<p>"
+          },
+          {
+            "type": "range",
+            "label": "Progress Percentage",
+            "id": "progress",
+            "default": 50,
+            "min": 0,
+            "max": 100,
+            "step": 1
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "tested section"
+      }
+    ]
+  }
+{% endschema %}
+
+<style>
+  .main-tested {
+    padding-bottom: 100px
+}
+   .tested-head {
+    margin: 0px 0px 50px;
+    color: #37306B;
+    text-align: center;
+    font-family: AvertaStd-ExtraBold;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60px;
+}
+  .tested-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 101px;
+}
+  .tested-image {
+    line-height: 0px;
+    width: 50%;
+    height: auto;
+}
+  .tested-content-bar {
+    width: 50%;
+}
+  .tested-cover {
+    margin-bottom: 50px;
+}
+  .tested-cover:last-child {
+    margin-bottom: 0px;
+}
+  .tested-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 21px;
+    margin-bottom: 13px;
+}
+  .tested-content h5 {
+    margin: 0px;
+    color: #F675A8;
+    font-family: Poppins;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+  .tested-content p {
+    margin: 0px;
+    color: #37306B;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+    width: 60%;
+}
+  .tested-bar {
+    width: 100%;
+    height: 20px;
+    background: #E5F1FF;
+    border: solid 1px #E5F1FF;
+    border-radius: 59px;
+    overflow: hidden;
+}
+  .tested-bar-inner {
+    border-radius: 59px;
+    height: 100%;
+    background: #554994;
+    display: block !important;
+}
+
+  @media (max-width: 1100px) {
+    .main-tested {
+    padding-bottom: 80px;
+}
+    .tested-head {
+    margin: 0px 0px 25px;
+    font-size: 40px;
+    line-height: 50px;
+}
+    .tested-wrap {
+    column-gap: 20px;
+    align-items: flex-end;
+}
+    .tested-cover {
+    margin-bottom: 25px;
+}
+    .tested-content h5 {
+    font-size: 21px;
+}
+    .tested-content p {
+    line-height: normal;
+    width: 78%;
+    font-size: 17px;
+}
+    .tested-bar {
+    height: 15px;
+}
+  }
+  @media (max-width: 992px) {
+    .tested-head {
+    margin: 0px 0px 20px;
+    font-size: 30px;
+    line-height: 40px;
+}
+    .tested-wrap {
+    flex-direction: column;
+}
+    .tested-content h5 {
+    font-size: 18px;
+}
+    .tested-content p {
+    font-size: 15px;
+}
+    .tested-image {
+    width: 100%;
+    margin-bottom: 25px;
+}
+    .tested-content-bar {
+    width: 100%;
+}
+  }
+  @media (max-width: 767px) {
+    .main-tested {
+    padding-bottom: 40px;
+}
+    .tested-head {
+    margin: 0px 0px 25px;
+      font-family: AvertaStd-Bold;
+}
+    .tested-content {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    flex-flow: column;
+}
+    .tested-image {
+    margin-bottom: 30px;
+}
+    .tested-content h5 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    line-height: 36px;
+}
+    .tested-content p {
+      font-size: 16px;
+      font-weight: 500;
+      width: 100%;
+      text-align: center;
+}
+  }
+</style>

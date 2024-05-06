@@ -1,0 +1,192 @@
+<style>
+  .featuresSectionMain{
+    margin:120px 0 100px
+  }
+  .topHeadFeatures{
+    text-align:center
+  }.bottomPortionHead {
+    display: flex;
+    justify-content: space-between;
+    margin: 80px 0 50px;
+}.firstColumnF, .thirdColumnF {
+    width: 33%;
+}.secondColumnF {
+    width: 28%;
+}.featureBlock {
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 35px 10px rgb(0 0 0 / 8%);
+    border-radius: 12px;
+    padding: 20px;    margin-bottom: 40px;
+}.featureBlock img {
+    width: 80px;
+    height: 80px;margin-bottom: 10px;
+    object-fit: cover;
+    border-radius: 50%;
+}.featureBlock p {
+    margin: 0;
+    font-size: 0.9em;
+}.featureBlock p strong {
+    margin-bottom: 7px;
+    display: block;
+}.secondColumnF img {
+    max-height: 70vh;
+    object-fit: contain;
+}p.featuresDesc {
+    width: 100%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+}.topHeadFeatures h2.mainHeading {
+    margin-bottom: 10px;
+}.secondColumnF img:nth-child(1) {
+    margin-bottom: 30px;
+}
+  @media(max-width:800px)
+  {.secondColumnF img:nth-child(1) {
+    display:none
+}.secondColumnF img:nth-child(2) {
+    margin-bottom:20px
+}
+   img.forMobileImg {
+    display: block !important;
+    margin-top: 20px;
+}
+    .bottomPortionHead {
+    display: flex; 
+    margin: 30px 0 0px;
+    flex-direction: column;
+    align-items: center;
+}.firstColumnF, .thirdColumnF,.secondColumnF {
+    width: 100%;
+}.featureBlock { 
+    margin-bottom: 25px;
+}secondColumnF img {
+    max-height: 50vh;
+    object-fit: contain;
+    max-width: 60%;
+    margin: 0 auto 25px; 
+}.featuresSectionMain {
+    margin: 100px 0 55px;
+}
+  }
+  @media(max-width:767px)
+  {
+    
+  }
+</style>
+
+<section class="featuresSectionMain"  style="background-color: #f5f7ff">
+  <div class="page-width">
+<div class="topHeadFeatures">
+<h2 class="mainHeading" style="color:{{ section.settings.headingColor }} !important" >{{ section.settings.heading }}</h2>
+<p class="featuresDesc">{{ section.settings.text }}</p>
+
+  <img style="display:none" class="forMobileImg" src="{{ section.settings.image | img_url: '800x' }}" loading="lazy" alt="{{ section.settings.image.alt }}" width="100%" height="auto">
+
+  
+</div>
+<div class="bottomPortionHead">
+<div class="firstColumnF">
+{% for block in section.blocks limit: 2 %}
+<div class="featureBlock">
+<img src="{{ block.settings.image | img_url: '200x' }}" loading="lazy" alt="{{ block.settings.image.alt }}" width="100%" height="auto">
+<p>
+ <strong>{{ block.settings.heading }}</strong> 
+</p>
+<p>
+  {{ block.settings.text }}
+</p>
+</div>
+{% endfor %}
+</div>
+<div class="secondColumnF">
+<img src="{{ section.settings.image | img_url: '800x' }}" loading="lazy" alt="{{ section.settings.image.alt }}" width="100%" height="auto">
+<img src="{{ section.settings.image2 | img_url: '800x' }}" loading="lazy" alt="{{ section.settings.image2.alt }}" width="100%" height="auto">
+</div>
+<div class="thirdColumnF">
+{% for block in section.blocks offset: 2 %}
+<div class="featureBlock">
+<img src="{{ block.settings.image | img_url: '200x' }}" loading="lazy" alt="{{ block.settings.image.alt }}" width="100%" height="auto">
+<p>
+ <strong>{{ block.settings.heading }}</strong> 
+</p>
+<p>
+  {{ block.settings.text }}
+</p>
+</div>
+{% endfor %}
+</div>
+</div>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Features Section",
+    "settings": [
+      {
+      "type":"color",
+      "id":"headingColor",
+      "label":"Heading Color",
+      "default":"#000000"
+    },
+      {
+        "type":"text",
+        "label":"Heading",
+        "id":"heading",
+        "default":"INNOVATIVE DESIGN AND FEATURES"
+      },
+      {
+        "type":"textarea",
+        "id":"text",
+        "label":"Heading",
+        "default":"In CLEANUX, we took the best from all sinus relief methods and combined them in one smart device to ensure maximum relief!"
+      },
+       {
+        "type":"image_picker",
+        "label":"Image",
+        "id":"image"
+      },
+      {
+        "type":"image_picker",
+        "label":"Image 2",
+        "id":"image2"
+      }
+    ],
+    "blocks":[
+      {
+        "type":"text",
+        "name":"Feature",
+        "limit":4,
+        "settings":[
+          {
+        "type":"image_picker",
+        "label":"Image",
+        "id":"image"
+      } ,
+         {
+        "type":"text",
+        "label":"Heading",
+        "id":"heading",
+        "default":"INNOVATIVE DESIGN AND FEATURES"
+      },
+      {
+        "type":"textarea",
+        "id":"text",
+        "label":"Heading",
+        "default":"In CLEANUX, we took the best from all sinus relief methods and combined them in one smart device to ensure maximum relief!"
+      } 
+       
+        ]
+      }
+    ],
+    "presets":[
+      {
+        "name":"Features Section"
+      }
+    ]
+  }
+{% endschema %} 

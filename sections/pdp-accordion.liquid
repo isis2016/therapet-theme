@@ -1,0 +1,187 @@
+<div class="pdpaccordian-section">
+  <div class="page-width">
+    <div class="pdp-head center">
+      <h2>{{ section.settings.pdp-head }}</h2>
+    </div>
+    <div class="pdpaccordian-wrap">
+      <div class="pdpaccordian-image">
+        <img src="{{ section.settings.foot-img | img_url: 'master' }}" alt="Icon">
+      </div>
+      <div class="pdpaccordians">
+        {% for block in section.blocks %}
+        <a class="showBtn">{{ block.settings.accordian-head }}</a>
+        <div class="hideme">
+          {{ block.settings.accordian-para }}
+        </div>    
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "PDP accordians",
+    "settings": [    
+      {
+        "type": "text",
+        "id": "pdp-head",
+        "label": "Heading"
+      },
+      {
+        "type": "image_picker",
+        "id": "foot-img",
+        "label": "Foot image"        
+      }
+    ],
+    "blocks": [
+      {
+        "type": "text",
+        "name": "accordian block",
+        "settings": [
+                  { 
+                    "type": "text",
+                    "id": "accordian-head",
+                    "label": "Accordian Heading"
+                  },
+                  { 
+                    "type": "richtext",
+                    "id": "accordian-para",
+                    "label": "Accordian Content"
+                  }
+        ]
+      }
+    ],
+        "presets": [
+      {
+        "name": "PDP accordians"
+      }
+    ]
+  }
+{% endschema %}
+<style>
+.pdpaccordian-section{
+  padding:100px 0;
+}
+  .pdp-head h2 {
+    font-size: 50px;
+    line-height: 54px;
+    margin: 0;
+    margin-bottom: 50px;
+    color: #37306B;
+}
+.showBtn {
+    display: block;
+    border-bottom: solid 1px rgb(0 0 0 / 10%);
+    width: 100%;
+    margin-bottom: 0;
+    padding: 20px 0;
+    color: #37306B;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+    position:relative;
+}
+.showBtn::after {
+    content: "";
+    background: url(https://cdn.shopify.com/s/files/1/0764/0530/9760/files/fi_chevron-up.svg?v=1698922363) no-repeat;
+    width: 18px;
+    height: 18px;
+    background-size: cover;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(0px, -50%);
+}
+a.showBtn.active {
+    border: 0;
+}
+a.showBtn.active::after {
+    transform: translate(0px, -50%) rotate(180deg);
+}
+a:not([href]) {
+    cursor: unset;
+}
+.hideme {
+   display: none;  
+   padding-bottom: 25px;
+   border-bottom: solid 1px rgb(0 0 0 / 10%);
+}
+.hideme p {
+    color: #555;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin:0;
+}
+.pdpaccordian-wrap {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 56px;
+    align-items: flex-start;
+}
+.pdpaccordian-image {
+    width: 48%;
+}
+.pdpaccordians {
+    width: 49%;
+}
+.pdpaccordian-image img {
+    width: 100%;
+}
+.showBtn:last-child {
+  border-bottom: none;
+}
+  @media (max-width: 1100px) {
+    .pdpaccordian-section {
+    padding: 80px 0;
+}
+    .pdpaccordian-wrap {
+    align-items: center;
+}
+  }
+    @media (max-width: 992px) {
+      .pdpaccordian-wrap {
+    flex-wrap: wrap;
+}
+      .pdpaccordian-image {
+    width: 100%;
+}
+      .pdpaccordians {
+    width: 100%;
+}
+      .showBtn {
+    font-size: 17px;
+    padding: 10px 0px;
+}
+  .pdp-head h2 {
+    font-size: 30px;
+    line-height: 34px;
+    margin-bottom: 30px;
+}
+    }
+
+
+@media screen and (max-width: 767px) {
+  .pdpaccordian-section {
+    padding: 36px 0;
+}
+}
+
+  
+</style>
+<script>
+  $('.showBtn').click(function() {
+  //$('.hideme').hide();  
+  if ($(this).hasClass('active')) {    
+    $(this).removeClass('active');
+    $('.hideme').slideUp();
+  } else {
+    $('.hideme').slideUp();
+    $('.showBtn').removeClass('active');
+    $(this).addClass('active');
+    $(this).next().filter('.hideme').slideDown();
+  }
+});
+</script>

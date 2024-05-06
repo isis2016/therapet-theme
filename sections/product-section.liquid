@@ -1,0 +1,1112 @@
+{{ 'tailwind.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+<style>
+  .class{{ section.id }}.productSection .border {
+    border: 1px solid rgba( var(--color-foreground) ,.08);
+}
+  .class{{ section.id }} span.flex-shrink-0.tracking-\[0\.6px\].px-\[10px\].py-\[5px\].md\:px-\[15px\].md\:py-\[7px\].bg-\[\#7A5EC5\].rounded.text-\[14px\].text-white.leading-\[17px\],
+ .class{{ section.id }} .bg-\[\#604EC2\],.class{{ section.id }} .bg-\[\#604ec2\],.class{{ section.id }} .bg-\[\#7a5ec5\]{
+    background-color:{{section.settings.colorMain}}
+  }.class{{ section.id }}.productSection .border-\[6px\]{border-color:{{section.settings.colorMain}}}
+.class{{ section.id }} .text-\[\#694eb2\]{
+  color:{{section.settings.colorMain}};color:#ffffff
+  }
+ .class{{ section.id }} .\[\&\>\:nth-child\(odd\)\]\:bg-\[\#f2f0ff\]>:nth-child(odd){
+    background-color:{{section.settings.colorLight2}}
+  }.class{{ section.id }} .\[\&\>\:nth-child\(even\)\]\:text-white>:nth-child(2n){
+     background-color:{{section.settings.colorLight1}}
+  }span.mt-px.text-\[11px\]\/\[1\.2\].sml\:text-\[12px\]\/\[1\.1\].font-\[500\].text-white.bg-\[\#00d121\].rounded-full.self-start.p-\[2px_4px\] {
+    background: {{section.settings.badgeColor}};
+}
+s.text-\[18px\]\/\[1\.1\].sml\:text-\[24px\]\/\[1\.1\].font-\[600\].lg\:text-\[26px\].compare-at-price{
+  color:{{section.settings.grayColor}}
+}span.text-\[14px\]\/\[1\.2\].sml\:text-\[20px\]\/\[1\.1\].font-bold, span.text-\[12px\]\/\[1\.2\].sml\:text-base.text-\[\#694eb2\].font-semibold
+  {
+    color:{{section.settings.textColor}}
+  } .text-\[14px\]\/\[1\.2\].text-right.text-white.ml-auto.hidden.sml\:block.md\:hidden.lgl\:block.variant-pack{
+  color:{{section.settings.packColor}}
+  }
+
+  .absolute.fixTopbadge.top-0.left-0.block.origin-bottom-left.bg-\[\#604ec2\].py-\[2px\].text-\[8px\]\/\[1\.2\].font-semibold.uppercase.tracking-wider.text-white{
+    background: {{section.settings.badgeColor1}};color:{{section.settings.badgeColorT}}
+  }
+ .class{{ section.id }} .\[\&\>\:nth-child\(even\)\]\:text-white>:nth-child(3) .absolute.fixTopbadge.top-0.left-0.block.origin-bottom-left.bg-\[\#604ec2\].py-\[2px\].text-\[8px\]\/\[1\.2\].font-semibold.uppercase.tracking-wider.text-white{
+    background: {{section.settings.badgeColor2}};color:{{section.settings.badgeColor2T}}
+  }
+.productSection.newDesign span.mt-px.text-\[11px\]\/\[1\.2\].sml\:text-\[12px\]\/\[1\.1\].font-\[500\].text-white.bg-\[\#00d121\].rounded-full.self-start.p-\[2px_4px\]{
+  color:{{section.settings.colorBadgeBox}}
+}
+  
+{% if section.settings.newDesign %}
+ .class{{ section.id }} .rounded-lg.border.border-\[\#a99dea\].relative label:hover .relative.grid.grid-cols-\[auto_100px_auto_auto_auto\].md\:grid-cols-auto.lgl\:grid-cols-\[30px_80px_auto_140px_60px\].items-center.sml\:gap-6.rounded-lg.px-3.py-2.sml\:px-6.sml\:py-4.md\:px-3.md\:py-2.lgl\:px-6.lgl\:gap-4.lgl\:py-4.cursor-pointer,
+  .class{{ section.id }} .rounded-lg.border.border-\[\#a99dea\].relative input:checked + label .relative.grid.grid-cols-\[auto_100px_auto_auto_auto\].md\:grid-cols-auto.lgl\:grid-cols-\[30px_80px_auto_140px_60px\].items-center.sml\:gap-6.rounded-lg.px-3.py-2.sml\:px-6.sml\:py-4.md\:px-3.md\:py-2.lgl\:px-6.lgl\:gap-4.lgl\:py-4.cursor-pointer{
+    background-color:{{section.settings.selectionColor}}
+  }
+{% endif %} 
+</style>
+{% liquid
+  assign difference = 240 | minus: 200
+  assign random = 'now' | date: '%N' | modulo: difference | plus: 200
+  assign product = section.settings.product_id
+  assign product_form_id = 'product-form-' | append: section.id
+%}
+<div id="{{ section.settings.section_id }}" class="productSection class{{ section.id }} {% if section.settings.newDesign %}newDesign{% endif %}">
+  <div
+    id="MainProduct-{{ section.id }}"
+    data-section="{{ section.id }}"
+    class="px-4 py-10 lg:px-12 lg:py-20"
+  >
+    <div class="max-w-screen-xl mx-auto" id="order-now-section">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div class="product-slider">
+          <!-- slider -->
+          <div id="my-keen-slider" class="keen-slider">
+            {% if product.images.size > 0 %}
+              {% for image in product.images %}
+                <div class="keen-slider__slide">
+                  <div class="aspect-square">
+                    {{ image | image_url: width: 800 | image_tag: class: 'w-full' }}
+                  </div>
+                </div>
+              {% endfor %}
+            {% else %}
+              <div>
+                {{ 'image' | placeholder_svg_tag }}
+              </div>
+            {% endif %}
+          </div>
+          <!-- Navigation Markup -->
+          {% if product.images.size > 1 %}
+            <div class="flex justify-between pt-3">
+              <div class="arrow flex items-center arrow--left rotate-180">
+                {% render 'icon' with 'arrow-right' %}
+              </div>
+              <div class="flex gap-2 items-center justify-center">
+                {% for image in product.images %}
+                  <div class="dot block w-3 h-3 rounded-full bg-[#c5c5c5]"></div>
+                {% endfor %}
+              </div>
+              <div class="arrow flex items-center arrow--right">
+                {% render 'icon' with 'arrow-right' %}
+              </div>
+            </div>
+          {% endif %}
+        </div>
+
+        <div class="product-info">
+          {% for block in section.blocks %}
+            {% case block.type %}
+              {% when 'title' %}
+                <div class="flex items-start justify-between w-full max-w-[500px]">
+                  <h2 class="text-[20px] leading-[24px] md:text-2xl font-extrabold md:leading-7 tracking-[0.6px] md:tracking-wide text-neutral-800 lg:text-3xl">
+                    {{ product.title }}
+                  </h2>
+              {% if block.settings.title_label != blank %}
+                  <span class="flex-shrink-0 tracking-[0.6px] px-[10px] py-[5px] md:px-[15px] md:py-[7px] bg-[#7A5EC5] rounded text-[14px] text-white leading-[17px]">
+                    {{ block.settings.title_label }}
+                  </span>
+              {% endif %}
+                </div>
+
+              {% when 'price' %}
+                <div class="mt-3 flex flex-col md:flex-row gap-1 sm:gap-2 md:gap-4 items-baseline">
+                  {% if product.compare_at_price_max > product.price %}
+                    <p>
+                      <s class="text-neutral-400 text-[28px] leading-[38px] tracking-wider font-bold">
+                        {{ product.compare_at_price_max | money_with_currency }}
+                      </s>
+                    </p>
+                    <p class="text-[24px] leading-[32px]">{{ product.price | money_with_currency }}</p>
+                  {% else %}
+                    <p class="text-neutral-400 text-[28px] leading-[38px] tracking-wider font-bold">
+                      {{ product.price | money_with_currency }}
+                    </p>
+                  {% endif %}
+                </div>
+
+              {% when 'alternate_price' %}
+                <div class="mt-3">
+                  {% if product.compare_at_price_max > product.price %}
+                    {% assign discount = product.compare_at_price_max | minus: product.price %}
+                    <p class="inline-block">
+                      <s class="text-[28px] font-bold leading-[34px] tracking-wider text-neutral-400">
+                        {{ product.compare_at_price_max | money_with_currency }}
+                      </s>
+                    </p>
+                    <p class="inline-block text-[21px] font-bold leading-[25px] tracking-wider">
+                      {{ product.price | money_with_currency }}
+                    </p>
+                    <span class="inline-block text-[20px] font-bold leading-[24px] tracking-wider text-[#39CD59]"
+                      >(YOU SAVE {{ discount | money }})</span
+                    >
+                  {% else %}
+                    <p>{{ product.price | money_with_currency }}</p>
+                  {% endif %}
+                </div>
+
+              {% when 'review_bar' %}
+                <div class="flex gap-1 items-center mt-3">
+                  {% render 'icon' with 'icon-rating' %}
+                  <p>{{ block.settings.review_bar_text }}</p>
+                </div>
+
+              {% when 'emi' %}
+                <div id="emi-box" class="mt-3 max-w-[500px]">
+                  <p class="text-[14px] leading-[27px] text-black tracking-wider font-semibold">
+                    Choose a payment option:
+                  </p>
+                  <div class="grid grid-cols-2 rounded-lg border border-gray-200 mt-1">
+                    <div data-payment-option="pay-now" class="md:px-4 md:py-3 p-2 cursor-pointer">
+                      <div class="flex">
+                        <div
+                          data-option-radio
+                          class="h-5 w-5 rounded-full mt-1 mr-2 border-[6px] border-[#7A5EC5] flex-shrink-0"
+                        ></div>
+                        <div class="w-full">
+                          <p class="text-[15px] leading-[27px] text-black tracking-wider font-semibold">Pay in full</p>
+                          <p
+                            data-element-type="pay-full-price"
+                            class="text-[15px] text-black tracking-wider font-semibold"
+                          >
+                            {{ product.price | money_without_trailing_zeros }}
+                          </p>
+                          <div class="mt-1 pt-1 border-t border-gray-200">
+                            <p class=" text-[11px] leading-[15px] tracking-wider">One-time payment with</p>
+                            <ul>
+                              <li class="inline-flex">
+                                {% render 'icon' with 'processor-amex' %}
+                              </li>
+                              <li class="inline-flex">
+                                {% render 'icon' with 'processor-discover' %}
+                              </li>
+                              <li class="inline-flex">
+                                {% render 'icon' with 'processor-mastercard' %}
+                              </li>
+                              <li class="inline-flex">
+                                {% render 'icon' with 'processor-visa' %}
+                              </li>
+                              <li class="inline-flex">
+                                {% render 'icon' with 'processor-paypal' %}
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      data-payment-option="pay-later"
+                      class="md:px-4 md:py-3 p-2 border-l border-gray-200 cursor-pointer"
+                    >
+                      <div class="flex">
+                        <div
+                          data-option-radio
+                          class="h-5 w-5 rounded-full mt-1 mr-2 border border-[#7A5EC5] flex-shrink-0"
+                        ></div>
+                        <div class="w-full">
+                          <p class="text-[15px] leading-[27px] text-black tracking-wider font-semibold">
+                            Pay today only
+                          </p>
+                          <p
+                            data-element-type="pay-part-price"
+                            class="text-[15px] text-black tracking-wider font-semibold"
+                          >
+                            {{ product.price | divided_by: 4 | money_without_trailing_zeros }}
+                          </p>
+                          <div class="mt-1 pt-1 border-t border-gray-200">
+                            <p class=" text-[11px] leading-[15px] tracking-wider">
+                              Monthly interest-free payments with
+                            </p>
+                            <ul>
+                              <li class="inline-flex">
+                                {% render 'icon' with 'processor-shoppay' %}
+                              </li>
+                              <li class="inline-flex">
+                                {% render 'icon' with 'processor-klarana' %}
+                              </li>
+                              <li class="inline-flex">
+                                {% render 'icon' with 'processor-seezle' %}
+                              </li>
+                              <li class="inline-flex">
+                                {% render 'icon' with 'processor-afterpay' %}
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {{ 'buy-later.js' | asset_url | script_tag }}
+
+              {% when 'buy_button' %}
+
+{% assign showit = false %}
+{% for block in section.blocks %}
+{% if block.type == "product" %}
+{% assign bundleProducts = true %}
+{% endif %}
+{% endfor %}
+{% if bundleProducts %}          
+  {% render 'buyBundle' ,section:section%}
+  <script>
+function buyBundle()
+  {
+  document.querySelector('button.product-form__submit.button.button--full-width.button--primary').classList.add('loading');
+  
+  document.querySelector('input[name="buyBundle"]:checked+label product-form button[type="submit"]').click();
+
+  setTimeout(function(){
+  document.querySelector('button.product-form__submit.button.button--full-width.button--primary').classList.remove('loading');
+  },2000);
+  }
+  </script>
+{% endif %}   
+              
+                <product-form client:idle>
+                  <p
+                    class="text-red-500"
+                    role="alert"
+                    data-error-message
+                    hidden
+                  ></p>
+                  {% form 'product',
+                    product,
+                    id: product_form_id,
+                    class: 'form',
+                    novalidate: 'novalidate',
+                    data-type: 'add-to-cart-form'
+                  %}
+                    <input
+                      type="hidden"
+                      name="id"
+                      value="{{ product.selected_or_first_available_variant.id }}"
+                      disabled
+                    >
+                    <div class="grid items-stretch [&_[aria-hidden]]:hidden [&_button[aria-disabled]]:background-red-500 [&_.shopify-payment-button_>_div]:mt-4">
+                         <button
+                            {% unless bundleProducts %} type="submit"
+                            name="add" {% else %} type="button" onclick="buyBundle()" {% endunless %}
+                            class="product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout %}button--secondary{% else %}button--primary{% endif %}"
+                            {% if product.selected_or_first_available_variant.available == false %}
+                              disabled
+                            {% endif %}
+                          >
+                            <span style="display: flex;align-items: center;">
+                              {%- if product.selected_or_first_available_variant.available -%}
+                               <span style="font-weight:600">ADD TO CART</span>
+                              {%- else -%}
+                                {{ 'products.product.sold_out' | t }}
+                              {%- endif -%}
+                            </span>
+                            <div class="loading-overlay__spinner hidden">
+                              <svg
+                                aria-hidden="true"
+                                focusable="false"
+                                role="presentation"
+                                class="spinner"
+                                viewBox="0 0 66 66"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+                              </svg>
+                            </div>
+                          </button>
+                      {%- if block.settings.show_dynamic_checkout -%}
+                        <div id="shoppay-checkout" class="hidden">
+                          {{ form | payment_button }}
+                        </div>
+                      {%- endif -%}
+                    </div>
+                  {%- endform -%}
+                </product-form>
+
+              {% when 'checkout_button' %}
+                <a
+                  id="checkout-button"
+                  href="/cart/{{ product.selected_or_first_available_variant.id }}:1"
+                  class="font-bold uppercase group relative z-[1] mt-5 block text-center w-full items-center justify-center gap-2 overflow-hidden border-2 border-[#222323] bg-[#222323] px-[20px] py-[17px] text-[16px] leading-[24px] tracking-[1px] text-white hover:border-[#7A5EC5] hover:text-[#7A5EC5] md:w-auto md:px-6 md:py-5 md:text-xl"
+                >
+                  {% if product.selected_or_first_available_variant.available %}
+                    {{ 'products.product.add_to_cart' | t }}
+                  {% else %}
+                    {{ 'products.product.sold_out' | t }}
+                  {% endif %}
+                  <svg
+                    width="18"
+                    height="19"
+                    viewBox="0 0 18 19"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="text-white group-hover:text-[#7A5EC5] w-[18px] h-auto inline"
+                  >
+                    <path d="M7.48633 2.11719C7.0957 2.50781 7.13477 3.09375 7.48633 3.48438L12.2129 7.9375H1.00195C0.455078 7.9375 0.0644531 8.36719 0.0644531 8.875V10.125C0.0644531 10.6719 0.455078 11.0625 1.00195 11.0625H12.2129L7.48633 15.5547C7.13477 15.9453 7.13477 16.5312 7.48633 16.9219L8.3457 17.7812C8.73633 18.1328 9.32227 18.1328 9.67383 17.7812L17.291 10.1641C17.6426 9.8125 17.6426 9.22656 17.291 8.83594L9.67383 1.25781C9.32227 0.90625 8.73633 0.90625 8.3457 1.25781L7.48633 2.11719Z" fill="currentcolor" />
+                  </svg>
+                  <span
+                    data-btn-type="bg"
+                    class="absolute z-[-1] h-0 w-0 rounded-[50%] bg-white [transform:translate(-50%,-50%)] [transition:width_0.5s_ease-in-out,height_0.5s_ease-in-out;] group-hover:h-[562.5px] group-hover:w-[225%]"
+                  ></span>
+                </a>
+
+              {% when 'alternate_buy_button' %}
+                <product-form client:idle>
+                  <p
+                    class="text-red-500"
+                    role="alert"
+                    data-error-message
+                    hidden
+                  ></p>
+                  {% form 'product',
+                    product,
+                    id: product_form_id,
+                    class: 'form',
+                    novalidate: 'novalidate',
+                    data-type: 'add-to-cart-form'
+                  %}
+                    <input
+                      type="hidden"
+                      name="id"
+                      value="{{ product.selected_or_first_available_variant.id }}"
+                      disabled
+                    >
+                    <div class="[&_button[aria-disabled]]:background-red-500 mb-12 grid items-stretch [&_[aria-hidden]]:hidden [&_.shopify-payment-button_>_div]:mt-4">
+                      <button
+                        type="submit"
+                        name="add"
+                        data-btn-type="animate"
+                        class="active:border-[#7A5EC5] active:text-[#7A5EC5] group relative z-[1] mt-7 inline-flex w-max items-center justify-center gap-2 overflow-hidden rounded-2xl border-2 border-[#7A5EC5] bg-[#7A5EC5] px-[15px] py-[20px] text-[14px] uppercase leading-[22px] tracking-[0.6px] text-white hover:border-[#7A5EC5] hover:text-[#7A5EC5] md:px-9 md:py-5 md:text-xl"
+                        {% if product.selected_or_first_available_variant.available == false %}
+                          disabled
+                        {% endif %}
+                      >
+                        {% if product.selected_or_first_available_variant.available %}
+                          {{ block.settings.alternate_button_text }}
+                        {% else %}
+                          {{ 'products.product.sold_out' | t }}
+                        {% endif %}
+                        <svg
+                          width="18"
+                          height="19"
+                          viewBox="0 0 18 19"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="h-[16px] w-auto text-white group-active:text-[#7A5EC5] group-hover:text-[#7A5EC5] sm:h-[18px]"
+                        >
+                          <path d="M7.48633 2.11719C7.0957 2.50781 7.13477 3.09375 7.48633 3.48438L12.2129 7.9375H1.00195C0.455078 7.9375 0.0644531 8.36719 0.0644531 8.875V10.125C0.0644531 10.6719 0.455078 11.0625 1.00195 11.0625H12.2129L7.48633 15.5547C7.13477 15.9453 7.13477 16.5312 7.48633 16.9219L8.3457 17.7812C8.73633 18.1328 9.32227 18.1328 9.67383 17.7812L17.291 10.1641C17.6426 9.8125 17.6426 9.22656 17.291 8.83594L9.67383 1.25781C9.32227 0.90625 8.73633 0.90625 8.3457 1.25781L7.48633 2.11719Z" fill="currentcolor" />
+                        </svg>
+                        <span
+                          data-btn-type="bg"
+                          class="absolute z-[-1] h-0 w-0 rounded-[50%] bg-white [transform:translate(-50%,-50%)] [transition:width_0.5s_ease-in-out,height_0.5s_ease-in-out;] group-hover:h-[562.5px] group-hover:w-[225%] group-active:h-[562.5px] group-active:w-[225%]"
+                        ></span>
+                      </button>
+                      {%- if block.settings.show_dynamic_checkout -%}
+                        <div id="shoppay-checkout" class="hidden">
+                          {{ form | payment_button }}
+                        </div>
+                      {%- endif -%}
+                    </div>
+                  {%- endform -%}
+                </product-form>
+                {{ 'buy-later.js' | asset_url | script_tag }}
+
+              {% when 'description' %}
+                <p class="mt-9 text-[15px] leading-[24px]">
+                  {{ block.settings.product_description }}
+                </p>
+
+              {% when 'feature_list' %}
+                <div class="grid grid-cols-3 gap-5 mt-6 text-[#222323]">
+                  <div class="flex gap-2 items-center">
+                   {% if block.settings.feature_icon_1 != blank %} {{
+                      block.settings.feature_icon_1
+                      | image_url: height: 50
+                      | image_tag: class: 'h-6 sm:h-10 w-auto shrink-0'
+                    }} {% endif %}
+                    <p class="text-[10px] sm:text-[14px] leading-[17px] sm:leading-5 tracking-wider">
+                      {{ block.settings.feature_text_1 }}
+                    </p>
+                  </div>
+                  <div class="flex gap-2 items-center">
+                   {% if block.settings.feature_icon_2 != blank %} {{
+                      block.settings.feature_icon_2
+                      | image_url: height: 50
+                      | image_tag: class: 'h-6 sm:h-10 w-auto shrink-0'
+                    }} {% endif %}
+                    <p class="text-[10px] sm:text-[14px] leading-[17px] sm:leading-5 tracking-wider">
+                      {{ block.settings.feature_text_2 }}
+                    </p>
+                  </div>
+                  <div class="flex gap-2 items-center">
+                   {% if block.settings.feature_icon_3 != blank %} {{
+                      block.settings.feature_icon_3
+                      | image_url: height: 50
+                      | image_tag: class: 'h-6 sm:h-10 w-auto shrink-0'
+                    }} {% endif %}
+                    <p class="text-[10px] sm:text-[14px] leading-[17px] sm:leading-5 tracking-wider">
+                      {{ block.settings.feature_text_3 }}
+                    </p>
+                  </div>
+                </div>
+
+              {% when 'visitor_count' %}
+                <div class="flex gap-4 items-center mt-4">
+                  <div class="relative h-[16px] w-[16px]">
+                    <div class="grid h-[16px] w-[16px] animate-ping place-items-center rounded-full bg-[#7a5ec5] duration-[10s]">
+                      <div style="display:block;" class="h-[10px] w-[10px] rounded-full bg-white"></div>
+                    </div>
+                    <div
+                      style="display:block;"
+                      class="absolute inset-0 m-auto h-[10px] w-[10px] rounded-full bg-[#7a5ec5]"
+                    ></div>
+                  </div>
+                  <p class="animate-fadeInOut tracking-wider text-[13px] leading-[24px]">
+                    <strong class="people-count">{{ random }} people</strong>
+                    are currently looking at this
+                  </p>
+                </div>
+
+              {% when 'items_left' %}
+                <p class="mt-4 text-lg lg:text-xl font-bold text-black">
+                  <span class="text-[#fc0aa3]">231</span>
+                  <span class="text-[#262626e5]">/</span>
+                  <span class="text-[#999]">10000</span>
+                  Discounted pieces left
+                </p>
+
+              {% when 'review' %}
+                <div class="py-4 px-4 mt-6 bg-[#f4f1ec] {% if block.settings.rounded_corners %} rounded-xl{% endif %}">
+                  {{ block.settings.review_text }}
+                </div>
+
+              {% when 'product_bundle' %}
+                {% if block.settings.default_variant == empty %}
+                  {% assign defaultVariant = product.metafields.custom.default_variant
+                    | remove: 'gid://shopify/ProductVariant/'
+                    | plus: 0
+                  %}
+                {% else %}
+                  {% assign defaultVariant = block.settings.default_variant | plus: 0 %}
+                {% endif %}
+                {% unless product.has_only_default_variant %}
+                  <div class="flex flex-col gap-3 mt-4 [&>:nth-child(even)]:bg-[#a99dea] [&>:nth-child(even)]:text-[#4e4194] [&>:nth-child(odd)]:bg-[#f2f0ff] [&>:nth-child(odd)]:text-black">
+                    {% for variant in product.variants %}
+                      <div data-element-type="bundle-selector" class="rounded-lg">
+                        <input
+                          class="sr-only peer"
+                          type="radio"
+                          id="{{ section.id }}-{{ variant.id }}-{{ forloop.index0 }}"
+                          name="{{ variant.title }}"
+                          value="{{ variant.id }}"
+                          form="{{ product_form_id }}"
+                          {% if variant.id == defaultVariant %}
+                            checked
+                          {% endif %}
+                        >
+                        <input
+                          type="hidden"
+                          id="payFullPrice"
+                          name="payFullPrice"
+                          value="{{ variant.price | money }}"
+                        >
+                        <input
+                          type="hidden"
+                          id="payPartPrice"
+                          name="payPartPrice"
+                          value="{{ variant.price | divided_by: 4 | money }}"
+                        >
+                        <label class="label" for="{{ section.id }}-{{ variant.id }}-{{ forloop.index0 }}">
+                          {% assign numberOfItems = variant.metafields.custom.number_of_items %}
+                          <div class="relative grid grid-cols-[auto_1fr_auto] sml:grid-cols-[30px_200px_100px_auto] md:grid-cols-[auto_1fr_auto] lgl:grid-cols-[30px_200px_100px_auto] items-center sml:gap-6 rounded-lg px-3 py-2 sml:px-6 sml:py-4 md:px-3 md:py-2 lgl:px-6 lgl:py-4 cursor-pointer">
+                            <!-- Arrow -->
+                            <div
+                              data-element-type="selected-arrow"
+                              class="{% unless variant.id == defaultVariant %}hidden {% endunless %}absolute top-0 bottom-0 flex items-center translate-x-[-60%] sml:translate-x-[-70%] pointer-events-none"
+                            >
+                              {% render 'selected-arrow' %}
+                            </div>
+                            <!-- Radio Button -->
+                            <div class="mr-1 sml:mr-2 flex h-[20px] w-[20px] sml:h-[25px] sml:w-[25px] flex-shrink-0 items-center justify-center rounded-full bg-white [filter:drop-shadow(0px_1px_4px_rgba(0,0,0,0.25))]">
+                              <div
+                                data-element-type="radio-button"
+                                class="{% unless variant.id == defaultVariant %}hidden {% endunless %}h-[10px] w-[10px] sml:h-[15px] sml:w-[15px] rounded-full bg-[#604EC2]"
+                              ></div>
+                            </div>
+                            <!-- Product Name -->
+                            <div class="flex flex-col items-center text-center">
+                              <span class="text-[16px]/[1.2] sml:text-[20px]/[1.1] font-bold">{{ variant.title }}</span>
+                              <span class="mt-1 sml:mt-3 text-[14px]/[1.1] sml:text-[16px]/[1.1] font-[500] text-[#88ff86] you-save"
+                                >You save {{ variant.compare_at_price | minus: variant.price | money -}}
+                              </span>
+                            </div>
+                            <!-- Product Price -->
+                            <div class="mr-auto flex flex-col items-center text-center">
+                              {% if variant.metafields.custom.variant_badge %}
+                                <span class="inline-flex rounded-full bg-[#c62ab9] px-[10px] py-[2px] text-[8px] text-white">
+                                  {{ variant.metafields.custom.variant_badge }}
+                                </span>
+                              {% endif %}
+                              <s class="text-[22px]/[1.1] sml:text-[24px]/[1.1] font-[600] text-black compare-at-price">
+                                {{- variant.compare_at_price | money -}}
+                              </s>
+                              <span class="text-[14px]/[1.1] sml:text-[16px]/[1.1] font-bold text-white per-unit-price">
+                                {{- variant.price | divided_by: numberOfItems | money -}}
+                                {% unless numberOfItems == 1 %}
+                                  <br>
+                                  each
+                                {% endunless %}
+                                <p>one</p>
+                              </span>
+                            </div>
+                            <!-- Product Shipping -->
+                            {% if variant.metafields.custom.free_shipping %}
+                              <div class="text-[#e0dbfd] ml-auto free-shipping-icon hidden sml:block md:hidden lgl:block">
+                                {% render 'free-shipping' %}
+                              </div>
+                              <span class="rounded-full bg-[#1aad17] px-[10px] py-[2px] text-[8px] text-white sml:hidden md:block lgl:hidden absolute top-0 rotate-[345deg] translate-x-[-15%]">
+                                FREE SHIPPING
+                              </span>
+                            {% else %}
+                              <span class="text-[15px] text-black ml-auto hidden sml:block md:hidden lgl:block"
+                                >+ S&H</span
+                              >
+                              <span class="rounded-full bg-red-500 px-[10px] py-[2px] text-[8px] text-white sml:hidden md:block lgl:hidden absolute top-0 rotate-[345deg] translate-x-[-15%]">
+                                + S&H
+                              </span>
+                            {% endif %}
+                          </div>
+                        </label>
+                      </div>
+                    {% endfor %}
+                  </div>
+                {% endunless %}
+                <script src="{{ 'bundle-selector.js' | asset_url }}" defer></script>
+
+              {% when 'product_bundle_2' %}
+                {% if block.settings.default_variant == empty %}
+                  {% assign defaultVariant = product.metafields.custom.default_variant
+                    | remove: 'gid://shopify/ProductVariant/'
+                    | plus: 0
+                  %}
+                {% else %}
+                  {% assign defaultVariant = block.settings.default_variant | plus: 0 %}
+                {% endif %}
+                {% unless product.has_only_default_variant %}
+                  <div class="flex flex-col gap-3 mt-4 [&>:nth-child(even)]:bg-[#a99dea] [&>:nth-child(even)]:text-white [&>:nth-child(odd)]:bg-[#f2f0ff] [&>:nth-child(odd)]:text-black">
+                    {% for variant in product.variants %}
+                      <div
+                        data-element-type="bundle-selector"
+                        class="rounded-lg border border-[#a99dea] relative"
+                      >
+                        <input
+                          class="sr-only peer"
+                          type="radio"
+                          id="{{ section.id }}-{{ variant.id }}-{{ forloop.index0 }}"
+                          name="{{ variant.title }}"
+                          value="{{ variant.id }}"
+                          form="{{ product_form_id }}"
+                          {% if variant.id == defaultVariant %}
+                            checked
+                          {% endif %}
+                        >
+                        <input
+                          type="hidden"
+                          id="payFullPrice"
+                          name="payFullPrice"
+                          value="{{ variant.price | money }}"
+                        >
+                        <input
+                          type="hidden"
+                          id="payPartPrice"
+                          name="payPartPrice"
+                          value="{{ variant.price | divided_by: 4 | money }}"
+                        >
+
+                        {% if variant.metafields.custom.variant_badge %}
+                          <div class="absolute -left-2 -top-2 aspect-square w-16 overflow-hidden rounded-sm">
+                            <div class="absolute right-0 top-0 h-2 w-2 bg-[#604ec2]"></div>
+                            <div class="absolute bottom-0 left-0 h-2 w-2 bg-[#604ec2]"></div>
+                            <div class="w-square-diagonal absolute bottom-0 left-0 block origin-bottom-left -rotate-45 bg-[#604ec2] py-[2px] text-center text-[8px]/[1.2] font-semibold uppercase tracking-wider text-white">
+                              MOST <br>
+                              POPULAR
+                            </div>
+                          </div>
+                        {% endif %}
+                        <label class="label" for="{{ section.id }}-{{ variant.id }}-{{ forloop.index0 }}">
+                          {% assign numberOfItems = variant.metafields.custom.number_of_items %}
+                          <div class="relative grid grid-cols-[auto_100px_auto_auto_auto] md:grid-cols-auto lgl:grid-cols-[30px_80px_auto_140px_60px] items-center sml:gap-6 rounded-lg px-3 py-2 sml:px-6 sml:py-4 md:px-3 md:py-2 lgl:px-6 lgl:gap-4 lgl:py-4 cursor-pointer">
+                            <!-- Radio Button -->
+                            <div class="mr-1 sml:mr-2 flex h-[20px] w-[20px] sml:h-[25px] sml:w-[25px] flex-shrink-0 items-center justify-center rounded-full bg-white border border-[#a99dea]">
+                              <div
+                                data-element-type="radio-button"
+                                class="{% unless variant.id == defaultVariant %}hidden {% endunless %}h-[10px] w-[10px] sml:h-[15px] sml:w-[15px] rounded-full bg-[#604EC2]"
+                              ></div>
+                            </div>
+                            <!-- Variant Image -->
+                            <div class="shrink-0 flex justify-center">
+                              {{
+                                variant.metafields.custom.variant_image
+                                | image_url: width: 280
+                                | image_tag: class: 'h-16 w-auto'
+                              }}
+                            </div>
+                            <!-- Product Name -->
+                            <div class="flex flex-col text-left">
+                              <span class="text-[14px]/[1.2] sml:text-[20px]/[1.1] font-bold">
+                                {{- variant.metafields.custom.variant_title -}}
+                              </span>
+                              <span class="text-[12px]/[1.2] sml:text-base text-[#694eb2] font-semibold">
+                                {{- variant.metafields.custom.offer_title -}}
+                              </span>
+                              <span class="mt-px text-[11px]/[1.2] sml:text-[12px]/[1.1] font-[500] text-white bg-[#00d121] rounded-full self-start p-[2px_4px]"
+                                >save {{ variant.compare_at_price | minus: variant.price | money -}}
+                              </span>
+                            </div>
+                            <!-- Product Price -->
+                            <div class="flex flex-col text-center items-center">
+                              <s class="text-[18px]/[1.1] sml:text-[24px]/[1.1] font-[600] lg:text-[26px] text-white compare-at-price">
+                                {{- variant.compare_at_price | money -}}
+                              </s>
+                              <span
+                                style="line-height: 0.85;"
+                                class="text-[14px]/[1.1] sml:text-[16px]/[1.1] md:text-[20px]/[1.1] font-bold tracking-wide text-black"
+                              >
+                                {% if block.settings.show_full_price == 'true' or template == 'page.bundle-full' %}
+                                  {{- variant.price | money -}}
+                                {% else %}
+                                  {{- variant.price | divided_by: numberOfItems | money -}}
+                                  {% if numberOfItems > 1 %}
+                                    <br>
+                                    <span class="text-[10px]">each</span>
+                                  {% endif %}
+                                {% endif %}
+                              </span>
+                            </div>
+                            <!-- Product Shipping -->
+                            <div class="text-[14px]/[1.2] text-right text-white ml-auto hidden sml:block md:hidden lgl:block variant-pack">
+                              {{ variant.metafields.custom.variant_pack }}
+                            </div>
+                          </div>
+                        </label>
+                      </div>
+                    {% endfor %}
+                  </div>
+                {% endunless %}
+                <script src="{{ 'bundle-selector.js' | asset_url }}" defer></script>
+            {% endcase %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- prettier-ignore -->
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const minPeople = 200;
+    const maxPeople = 240;
+    const peopleElement = document.querySelector('.people-count');
+    const updateInterval = 7000; // milliseconds
+
+    function getRandomNumber(min, max) {
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+    function updatePeopleCount() {
+      const peopleCount = getRandomNumber(minPeople, maxPeople);
+      peopleElement.textContent = `${peopleCount} people`;
+    }
+
+    setInterval(updatePeopleCount, updateInterval);
+  });
+</script>
+
+<script src="{{ 'keen-slider.min.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'product-slider.js' | asset_url }}" defer="defer"></script>
+
+{% schema %}
+{
+  "name": "Product Section",
+  "settings": [
+    {
+      "type":"checkbox",
+      "id":"newDesign",
+      "label":"New Design",
+      "default":false
+    },
+    {
+      "type":"color",
+      "id":"colorMain",
+      "label":"Main Color",
+      "default":"#bc2e3e"
+    },
+    {
+      "type":"color",
+      "id":"badgeColor",
+      "label":"Sale Badge Color",
+      "default":"#008060"
+    },
+    {
+      "type":"color",
+      "id":"badgeColor1",
+      "label":"Badge Color",
+      "default":"#008060"
+    },
+    {
+      "type":"color",
+      "id":"badgeColorT",
+      "label":"Badge Color Text",
+      "default":"#000000"
+    },
+    {
+      "type":"color",
+      "id":"badgeColor2",
+      "label":"Badge Color 2",
+      "default":"#008060"
+    },
+    {
+      "type":"color",
+      "id":"badgeColor2T",
+      "label":"Badge Color 2 Text",
+      "default":"#000000"
+    },
+    {
+      "type":"color",
+      "id":"textColor",
+      "label":"Text Color",
+      "default":"#000000"
+    },
+    {
+      "type":"color",
+      "id":"grayColor",
+      "label":"Compare Price Color",
+      "default":"#000000"
+    },
+    {
+      "type":"color",
+      "id":"selectionColor",
+      "label":"Selection Color",
+      "default":"#f1fff3"
+    },
+    {
+      "type":"color",
+      "id":"packColor",
+      "label":"Pack Color",
+      "default":"#bc2e3e"
+    },
+    {
+      "type":"color",
+      "id":"colorLight1",
+      "label":"Light Color 1",
+      "default":"#e54759"
+    },
+    {
+      "type":"color",
+      "id":"colorLight2",
+      "label":"Light Color 2",
+      "default":"#ff8997"
+    },
+    {
+      "type":"color",
+      "id":"colorBadgeBox",
+      "label":"Color Badge Price Box",
+      "default":"#ffffff"
+    },
+    {
+      "id": "section_id",
+      "type": "text",
+      "label": "Section Id"
+    },
+    {
+      "type": "product",
+      "id": "product_id",
+      "label": "Select a product"
+    }
+  ],
+  "blocks": [
+    {
+      "type":"product",
+      "name":"Product",
+      "settings":[
+        {
+          "type":"product",
+          "id":"product",
+          "label":"Product"
+        },
+        {
+          "type":"text",
+          "id":"title",
+          "label":"Title",
+          "default":"Title"
+        },
+        {
+          "type":"checkbox",
+          "id":"default",
+          "label":"Default"
+        },
+        {
+          "type":"html",
+          "id":"badge",
+          "label":"Badge"
+        },
+        {
+          "type":"number",
+          "id":"numberOfItems",
+          "label":"Number of Items",
+          "default":1
+        },
+        {
+          "type":"text",
+          "id":"offerTitle",
+          "label":"Offer Title"
+        },
+        {
+          "type":"checkbox",
+          "id":"show_full_price",
+          "label":"Show Full Price",
+          "default":false
+        },
+        {
+          "type":"text",
+          "id":"variant_pack",
+          "label":"Variant Pack"
+        },
+        {
+          "type":"color",
+          "id":"background",
+          "label":"Background Color"
+        }
+      ]
+    },
+    {
+      "type": "title",
+      "name": "Title",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "title_label",
+          "label": "Title Label",
+          "default": "Almost Gone"
+        }
+      ]
+    },
+    {
+      "type": "price",
+      "name": "Price",
+      "limit": 1
+    },
+    {
+      "type": "alternate_price",
+      "name": "Alternate Price",
+      "limit": 1
+    },
+    {
+      "type": "review_bar",
+      "name": "Review Bar",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "review_bar_text",
+          "label": "Total Reviews",
+          "default": "6529 Reviews"
+        }
+      ]
+    },
+    {
+      "type": "buy_button",
+      "name": "Buy Button",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "show_dynamic_checkout",
+          "label": "Show Dynamic Checkout",
+          "default": false
+        }
+      ]
+    },
+    {
+      "type": "checkout_button",
+      "name": "Checkout Button",
+      "limit": 1
+    },
+    {
+      "type": "alternate_buy_button",
+      "name": "Alternate Buy Button",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "alternate_button_text",
+          "label": "Button Text",
+          "default": "ADD TO CART - 35% OFF"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_dynamic_checkout",
+          "label": "Show Dynamic Checkout",
+          "default": false
+        }
+      ]
+    },
+    {
+      "type": "description",
+      "name": "Description",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "product_description",
+          "label": "Product Description",
+          "default": "Product Description"
+        }
+      ]
+    },
+    {
+      "type": "review",
+      "name": "Review",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "review_text",
+          "label": "Review",
+          "default": "This is a review"
+        },
+        {
+          "type": "checkbox",
+          "id": "rounded_corners",
+          "label": "Rounded Corner",
+          "default": true
+        }
+      ]
+    },
+    {
+      "type": "feature_list",
+      "name": "Feature List",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "feature_text_1",
+          "label": "Feature Text 1",
+          "default": "90 Day Money Back Guarantee"
+        },
+        {
+          "type": "image_picker",
+          "id": "feature_icon_1",
+          "label": "Feature Icon 1"
+        },
+        {
+          "type": "text",
+          "id": "feature_text_2",
+          "label": "Feature Text 2",
+          "default": "Free Worldwide Shipping"
+        },
+        {
+          "type": "image_picker",
+          "id": "feature_icon_2",
+          "label": "Feature Icon 2"
+        },
+        {
+          "type": "text",
+          "id": "feature_text_3",
+          "label": "Feature Text 3",
+          "default": "3,000+ 5 Star Reviews"
+        },
+        {
+          "type": "image_picker",
+          "id": "feature_icon_3",
+          "label": "Feature Icon 3"
+        }
+      ]
+    },
+    {
+      "type": "visitor_count",
+      "name": "Visitor Count",
+      "limit": 1
+    },
+    {
+      "type": "items_left",
+      "name": "Items Left",
+      "limit": 1
+    },
+    {
+      "type": "emi",
+      "name": "Installment",
+      "limit": 1
+    },
+    {
+      "type": "product_bundle",
+      "name": "Product Bundle",
+      "settings": [
+        {
+          "type": "text",
+          "id": "default_variant",
+          "label": "Default Variant"
+        }
+      ]
+    },
+    {
+      "type": "product_bundle_2",
+      "name": "Product Bundle 2",
+      "settings": [
+        {
+          "type": "text",
+          "id": "default_variant",
+          "label": "Default Variant"
+        },
+        {
+          "type": "text",
+          "id": "show_full_price",
+          "label": "Show Full Price"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product Section",
+      "blocks": [
+        {
+          "type": "title",
+          "settings": {
+            "title_label": "Almost Gone"
+          }
+        },
+        {
+          "type": "review_bar",
+          "settings": {
+            "review_bar_text": "6529 Reviews"
+          }
+        },
+        {
+          "type": "price"
+        },
+        {
+          "type": "visitor_count"
+        },
+        {
+          "type": "buy_button"
+        },
+        {
+          "type": "feature_list",
+          "settings": {
+            "feature_icon_1": "shopify:\/\/shop_images\/image_29_8757a7c0-292b-42e6-9184-022785343408.png",
+            "feature_icon_2": "shopify:\/\/shop_images\/image_26_aa890277-4f01-4b6d-8a09-4dc396c94af1.png",
+            "feature_icon_3": "shopify:\/\/shop_images\/image_92_f66773cd-3afa-444e-980a-998cea800444.png"
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "review_text": "<p>\n \"I used to work hard to keep my face hair-free and had to tweeze every day or two. Shaving helped, but\n it left a rough sandpaper feeling on my skin. <b>PLUXY<\/b> has made a huge difference - my hair growth\n has slowed down and the hairs that do grow back are finer. In some areas, it hasn't even grown back.\n This thing is a miracle worker!!\" <br>\n <b>- Sara Bennett - USA 🇺🇸<\/b>\n <\/p>"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

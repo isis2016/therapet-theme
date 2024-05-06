@@ -1,0 +1,499 @@
+{
+  "sections": {
+    "37760197-e460-4ab5-af00-3847c3a95436": {
+      "type": "new-banner",
+      "settings": {
+        "back-img": "shopify:\/\/shop_images\/short-bg.png",
+        "banner-head": "Give Your Furball The Peace Of Mind They Deserve!",
+        "banner-p": "<p>We’re here to improve the well-being of our beloved furry best friends from the core to the cuddles.<\/p><p><\/p>",
+        "button-text": "Start Your Pet's Calm Journey!",
+        "button-link": "shopify:\/\/collections\/diffusers",
+        "star-img": "shopify:\/\/shop_images\/rating.svg",
+        "review-p": "4.7 (Excellent)",
+        "trust-p": "4,800+ reviews",
+        "trust-img": "shopify:\/\/shop_images\/trustpilot.svg",
+        "main-img": "shopify:\/\/shop_images\/pets.png"
+      }
+    },
+    "92cb8a90-44a2-496d-80ed-e5ffcd68c92a": {
+      "type": "stamps",
+      "blocks": {
+        "5e405e04-020d-4307-9141-bbafeb8e1f9c": {
+          "type": "column",
+          "settings": {
+            "stamp-img": "shopify:\/\/shop_images\/stamp-1.svg"
+          }
+        },
+        "855d9620-cbd4-4ee2-94cd-5734b56ba28d": {
+          "type": "column",
+          "settings": {
+            "stamp-img": "shopify:\/\/shop_images\/stamp-2.svg"
+          }
+        },
+        "4f6debe4-8014-40fe-b8b6-8ae74881837e": {
+          "type": "column",
+          "settings": {
+            "stamp-img": "shopify:\/\/shop_images\/stamp-3_edited.svg"
+          }
+        }
+      },
+      "block_order": [
+        "5e405e04-020d-4307-9141-bbafeb8e1f9c",
+        "855d9620-cbd4-4ee2-94cd-5734b56ba28d",
+        "4f6debe4-8014-40fe-b8b6-8ae74881837e"
+      ],
+      "settings": {
+      }
+    },
+    "1201cf46-d1a1-4685-9e6a-33d46dc2aaa4": {
+      "type": "shop-selection",
+      "blocks": {
+        "817b51ae-68c0-4345-b87a-e73580aed8c9": {
+          "type": "column",
+          "settings": {
+            "shop-link": "shopify:\/\/collections\/cat",
+            "shop-img": "shopify:\/\/shop_images\/cats.jpg",
+            "shop-p": "View cat collection",
+            "arrow-img": "shopify:\/\/shop_images\/arrow.svg"
+          }
+        },
+        "aa9de9ed-e28f-4f3d-aaf1-1a7a21195bfe": {
+          "type": "column",
+          "settings": {
+            "shop-link": "shopify:\/\/collections\/dog",
+            "shop-img": "shopify:\/\/shop_images\/dogs.jpg",
+            "shop-p": "View dog collection",
+            "arrow-img": "shopify:\/\/shop_images\/arrow.svg"
+          }
+        }
+      },
+      "block_order": [
+        "817b51ae-68c0-4345-b87a-e73580aed8c9",
+        "aa9de9ed-e28f-4f3d-aaf1-1a7a21195bfe"
+      ],
+      "settings": {
+        "bg-img": "shopify:\/\/shop_images\/shop.png",
+        "shop-head": "Custom Care For Every Furball"
+      }
+    },
+    "74a51a09-4ff4-40ae-b05e-7b140c554d6a": {
+      "type": "icon-with-text",
+      "blocks": {
+        "5d42cb24-60c0-472a-bce9-43d7191d2e41": {
+          "type": "column",
+          "settings": {
+            "icon-img": "shopify:\/\/shop_images\/icon-1.svg",
+            "icon-head": "Risk Free Trial",
+            "icon-p": "Covered by a 30 money-back guarantee."
+          }
+        },
+        "1ec637e4-b713-444b-92d2-4f9db115abcb": {
+          "type": "column",
+          "settings": {
+            "icon-img": "shopify:\/\/shop_images\/science_2.png",
+            "icon-head": "Expert Made",
+            "icon-p": "Formulated By Pet Scientists"
+          }
+        },
+        "e17c0d60-b4be-43ee-926e-a19d16c9d5d0": {
+          "type": "column",
+          "settings": {
+            "icon-img": "shopify:\/\/shop_images\/icon-3.svg",
+            "icon-head": "Free Shipping",
+            "icon-p": "Free shipping on orders above $20"
+          }
+        }
+      },
+      "block_order": [
+        "5d42cb24-60c0-472a-bce9-43d7191d2e41",
+        "1ec637e4-b713-444b-92d2-4f9db115abcb",
+        "e17c0d60-b4be-43ee-926e-a19d16c9d5d0"
+      ],
+      "settings": {
+      }
+    },
+    "361b95c8-4fdc-4076-aed5-162f8b7f1fe5": {
+      "type": "category",
+      "blocks": {
+        "cd625cc8-37d9-42da-a356-a90ffc14303e": {
+          "type": "column",
+          "settings": {
+            "category-link": "shopify:\/\/collections\/diffusers",
+            "category-img": "shopify:\/\/shop_images\/web-26-Hamdi_Hassine_r1_04L_7301.jpg",
+            "link-p": "Diffusers",
+            "arrow-img": "shopify:\/\/shop_images\/arrow-2.svg"
+          }
+        },
+        "98e635d9-2209-40c3-a947-7e529c9fa13c": {
+          "type": "column",
+          "settings": {
+            "category-link": "shopify:\/\/collections\/refills",
+            "category-img": "shopify:\/\/shop_images\/web-24-Hamdi_Hassine_r1_04L_7284.jpg",
+            "link-p": "Refills",
+            "arrow-img": "shopify:\/\/shop_images\/arrow-2.svg"
+          }
+        },
+        "5e1c8734-052e-455b-a03c-c235044b2092": {
+          "type": "column",
+          "settings": {
+            "category-link": "shopify:\/\/collections\/others",
+            "category-img": "shopify:\/\/shop_images\/web-37-Hamdi_Hassine_r1_04L_7354.jpg",
+            "link-p": "Calming range",
+            "arrow-img": "shopify:\/\/shop_images\/arrow-2.svg"
+          }
+        }
+      },
+      "block_order": [
+        "cd625cc8-37d9-42da-a356-a90ffc14303e",
+        "98e635d9-2209-40c3-a947-7e529c9fa13c",
+        "5e1c8734-052e-455b-a03c-c235044b2092"
+      ],
+      "settings": {
+        "offer-head": "GET UP TO 50% OFF TODAY",
+        "category-head": "Shop Calming Range & More",
+        "category-p": "From soothing pheromones to calming herbs, our team of pet wellness experts has invested thousands of hours in identifying the most effective, scientifically-backed elements for the TheraPet calming range, designed for both cats and dogs.",
+        "foot-img": "shopify:\/\/shop_images\/Group_39.png"
+      }
+    },
+    "104b5817-8fd5-4e19-adc6-2c0a30640068": {
+      "type": "vet-section",
+      "settings": {
+        "pet-img": "shopify:\/\/shop_images\/vet-with-pet.png",
+        "pet-img-mb": "shopify:\/\/shop_images\/animal-dr.png",
+        "vet-head": "Vet Reviewed & Approved",
+        "vet-text": "<p><em>“<\/em>I’ve seen the impact of stress and anxiety on pets not addressed in time – it affects their well-being and the household harmony. TheraPet’s specialized calming solutions make it effortless to manage your pet’s stress, ensuring consistent relief and care.<em>”<\/em><\/p>",
+        "vet-img": "shopify:\/\/shop_images\/vet.svg",
+        "vet-h6": "Dr. Mark Bradly",
+        "vet-p": "DVM, Consultant to TheraPet"
+      }
+    },
+    "849fb2c4-db2b-4e0e-8a59-280bcee631de": {
+      "type": "new-benefit",
+      "blocks": {
+        "b7fdf40c-ac5a-43ae-8cce-d0b64822a593": {
+          "type": "column",
+          "settings": {
+            "benefit-img": "shopify:\/\/shop_images\/b-1.svg",
+            "benefit-text": "Reduces stress and anxiety",
+            "line-img": "shopify:\/\/shop_images\/line-1.svg"
+          }
+        },
+        "543c22af-cbff-4347-8956-5846d338d2ae": {
+          "type": "column",
+          "settings": {
+            "benefit-img": "shopify:\/\/shop_images\/b-2.svg",
+            "benefit-text": "Creates safe and happy homes",
+            "line-img": "shopify:\/\/shop_images\/line-2.svg"
+          }
+        },
+        "2efa7b1c-3544-4f8a-b9b7-15a7024e77a7": {
+          "type": "column",
+          "settings": {
+            "benefit-img": "shopify:\/\/shop_images\/b-3.svg",
+            "benefit-text": "Helps reduce unwanted behaviours",
+            "line-img": "shopify:\/\/shop_images\/line-3.svg"
+          }
+        },
+        "8bb5b6eb-f730-4215-a6e5-2849c5b06d80": {
+          "type": "column",
+          "settings": {
+            "benefit-img": "shopify:\/\/shop_images\/b-4.svg",
+            "benefit-text": "Improves multi-cat homes harmony"
+          }
+        }
+      },
+      "block_order": [
+        "b7fdf40c-ac5a-43ae-8cce-d0b64822a593",
+        "543c22af-cbff-4347-8956-5846d338d2ae",
+        "2efa7b1c-3544-4f8a-b9b7-15a7024e77a7",
+        "8bb5b6eb-f730-4215-a6e5-2849c5b06d80"
+      ],
+      "settings": {
+        "section_css_class": "",
+        "benefit-head": "Wellbeing benefits",
+        "animal-img": "shopify:\/\/shop_images\/cat-dog.png"
+      }
+    },
+    "3e256217-61a5-4698-b7cb-c3994328e482": {
+      "type": "tested",
+      "blocks": {
+        "a2b141be-066c-4136-9b05-b0bcd4d86c9a": {
+          "type": "block",
+          "settings": {
+            "tested-head": "84%",
+            "tested-p": "<p><strong>Saw a  reduction in random peeing & urine spraying<\/strong><\/p><p><\/p>",
+            "progress": 86
+          }
+        },
+        "ed52ca62-e28f-42c8-9ed7-cf7dae2cd542": {
+          "type": "block",
+          "settings": {
+            "tested-head": "87%",
+            "tested-p": "<p><strong>Saw a reduction in furniture scratching<\/strong><\/p>",
+            "progress": 87
+          }
+        },
+        "4e423222-7cc9-42cf-9cfa-9a9bc8a19002": {
+          "type": "block",
+          "settings": {
+            "tested-head": "89%",
+            "tested-p": "<p><strong>Saw reduction in tension & conflicts between cats<\/strong><\/p>",
+            "progress": 89
+          }
+        },
+        "ef863f1a-6811-496c-b8de-04cc84144a9c": {
+          "type": "block",
+          "settings": {
+            "tested-head": "100%",
+            "tested-p": "<p><strong>Saved at least 40% on their VET bills<\/strong><\/p>",
+            "progress": 100
+          }
+        }
+      },
+      "block_order": [
+        "a2b141be-066c-4136-9b05-b0bcd4d86c9a",
+        "ed52ca62-e28f-42c8-9ed7-cf7dae2cd542",
+        "4e423222-7cc9-42cf-9cfa-9a9bc8a19002",
+        "ef863f1a-6811-496c-b8de-04cc84144a9c"
+      ],
+      "settings": {
+        "head": "Tried and Tested by Fellow Pet Parents",
+        "tested-img": "shopify:\/\/shop_images\/image_41.webp",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_top-mob": 0,
+        "padding_bottom-mob": 0
+      }
+    },
+    "c695fc7d-14b8-429b-9ac3-25de18c882ae": {
+      "type": "superior",
+      "blocks": {
+        "b4c01508-c35a-4c02-a915-6f0f6a53f9ee": {
+          "type": "column",
+          "settings": {
+            "table-img": "shopify:\/\/shop_images\/image_35.webp",
+            "table-p": "Therapet",
+            "table-icon1": "shopify:\/\/shop_images\/checkmark.svg",
+            "table-icon2": "shopify:\/\/shop_images\/checkmark.svg",
+            "table-icon3": "shopify:\/\/shop_images\/checkmark.svg",
+            "table-icon4": "shopify:\/\/shop_images\/checkmark.svg",
+            "table-icon5": "shopify:\/\/shop_images\/checkmark.svg",
+            "table-icon6": "shopify:\/\/shop_images\/checkmark.svg"
+          }
+        },
+        "e4d53986-f01a-4abf-988a-887632f2b255": {
+          "type": "column",
+          "settings": {
+            "table-img": "shopify:\/\/shop_images\/TheraPetMd_dog_landing_page_elements-29.png",
+            "table-p": "Others solution",
+            "table-icon1": "shopify:\/\/shop_images\/close.svg",
+            "table-icon2": "shopify:\/\/shop_images\/close.svg",
+            "table-icon3": "shopify:\/\/shop_images\/close.svg",
+            "table-icon4": "shopify:\/\/shop_images\/close.svg",
+            "table-icon5": "shopify:\/\/shop_images\/close.svg",
+            "table-icon6": "shopify:\/\/shop_images\/close.svg"
+          }
+        }
+      },
+      "block_order": [
+        "b4c01508-c35a-4c02-a915-6f0f6a53f9ee",
+        "e4d53986-f01a-4abf-988a-887632f2b255"
+      ],
+      "settings": {
+        "superior-back-img": "shopify:\/\/shop_images\/superior-bg.png",
+        "superior-h5": "What Makes TheraPet",
+        "superior-h2": "Far Superior to Others",
+        "superior-p1": "<p><strong>Dual-Soothe Blend:<\/strong> Dual pheromones for double the tranquility.<\/p>",
+        "superior-p2": "<p><strong>Two Months Peace:<\/strong> 60 days of harmony per TheraPet.<\/p><p><\/p>",
+        "superior-p3": "<p><strong>Pure, Safe Comfort:<\/strong> No odors, no irritants, just natural calm.<\/p><p><\/p>",
+        "superior-p4": "<p><strong>Medical-Grade Build:<\/strong> Minimal power usage for an energy-efficient solution.<\/p><p><\/p>",
+        "superior-p5": "<p><strong>Eco-Friendly:<\/strong> No odors, no irritants, just natural calm.<\/p><p><\/p>",
+        "superior-p6": "<p><strong>No-Risk, All Reward:<\/strong> Rest easy with our 30-day money-back guarantee.<\/p>"
+      }
+    },
+    "226b7035-9d05-4267-9e2f-404e9a070f4b": {
+      "type": "million",
+      "blocks": {
+        "bfc3e169-1ec5-40cd-a368-16b874096d67": {
+          "type": "column",
+          "settings": {
+            "rating-img": "shopify:\/\/shop_images\/heart.svg",
+            "million-text": "<p>My one-year-old tabby started spraying and peeing outside the box. We've been using TheraPet for nearly 6 months now. I truly recommend it. She's now using her litter box appropriately and seems so much happier and at ease.<\/p><p><\/p>",
+            "million-h6": "Martha M",
+            "million-btn": "Peeing",
+            "million-link": "",
+            "tooltip-img": "shopify:\/\/shop_images\/tool-tip.svg",
+            "million-img": "shopify:\/\/shop_images\/cat-1.svg"
+          }
+        },
+        "820833c3-4a6b-414d-b3d7-1e86bc9614d9": {
+          "type": "column",
+          "settings": {
+            "rating-img": "shopify:\/\/shop_images\/heart.svg",
+            "million-text": "<p>I have a 13-year-old Siamese cat. She thinks she's still a happy little kitten, but her constant scratching said otherwise. She's been around TheraPet diffuser for a few months, and her excessive scratching has noticeably<br\/>decreased. She's calmer and more relaxed now, it's like she's her old self again.<\/p>",
+            "million-h6": "Coonie K",
+            "million-btn": "Scratching",
+            "million-link": "",
+            "tooltip-img": "shopify:\/\/shop_images\/tool-tip.svg",
+            "million-img": "shopify:\/\/shop_images\/cat-2.svg"
+          }
+        },
+        "e5a5bd5e-b8d1-4d5c-8bfb-4e93e28398de": {
+          "type": "column",
+          "settings": {
+            "rating-img": "shopify:\/\/shop_images\/heart.svg",
+            "million-text": "<p>My one-year-old tabby started spraying and peeing outside the box. We've been using TheraPet for nearly 6 months now. I truly recommend it. She's now using her litter box appropriately and seems so much happier and at ease.<\/p>",
+            "million-h6": "Martha M",
+            "million-btn": "Peeing",
+            "million-link": "",
+            "tooltip-img": "shopify:\/\/shop_images\/tool-tip.svg",
+            "million-img": "shopify:\/\/shop_images\/cat-1.svg"
+          }
+        }
+      },
+      "block_order": [
+        "bfc3e169-1ec5-40cd-a368-16b874096d67",
+        "820833c3-4a6b-414d-b3d7-1e86bc9614d9",
+        "e5a5bd5e-b8d1-4d5c-8bfb-4e93e28398de"
+      ],
+      "settings": {
+        "million-head": "Thousands Of Happy & Healthy Families!",
+        "section_css_class": ""
+      }
+    },
+    "88e7a19b-e46f-41a0-9a77-8ff5e8afbed1": {
+      "type": "collapsible-content",
+      "blocks": {
+        "template--21697751613760__88e7a19b-e46f-41a0-9a77-8ff5e8afbed1-collapsible_row-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How does it work?",
+            "icon": "none",
+            "row_content": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<\/p>",
+            "page": ""
+          }
+        },
+        "f7e91be9-28ad-467a-899f-0d28479b2820": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How long will it take to work?",
+            "icon": "none",
+            "row_content": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<\/p>",
+            "page": ""
+          }
+        },
+        "dcde6074-f0c5-4aeb-8673-a433afe4972e": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Will Therapetmd affect people or other animals in my house?",
+            "icon": "none",
+            "row_content": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<\/p>",
+            "page": ""
+          }
+        },
+        "8fb2648a-9e9f-4954-ac49-c3c2cdf8571e": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Are there any adverse side effects?",
+            "icon": "none",
+            "row_content": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<\/p>",
+            "page": ""
+          }
+        },
+        "6ba31bac-1dfa-4d08-995a-a6773c12a145": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Where should i plug the diffuser in?",
+            "icon": "none",
+            "row_content": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<\/p>",
+            "page": ""
+          }
+        },
+        "60da8cff-7d7a-466e-b28d-41fbcbf917af": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How long should a refill last?",
+            "icon": "none",
+            "row_content": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<\/p>",
+            "page": ""
+          }
+        },
+        "bc182982-cc63-4eb9-9b99-754dcbe01396": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Is the diffuser recyclable?",
+            "icon": "none",
+            "row_content": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<\/p>",
+            "page": ""
+          }
+        },
+        "19fba0e5-8038-44fe-8d7e-ba0df337d802": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How does your sat-itch-faction guarantee work?",
+            "icon": "none",
+            "row_content": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<\/p>",
+            "page": ""
+          }
+        },
+        "a96f8fd5-080a-40aa-96de-f6698159ab8d": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What are the benefits of building a pet wellness plan?",
+            "icon": "none",
+            "row_content": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--21697751613760__88e7a19b-e46f-41a0-9a77-8ff5e8afbed1-collapsible_row-1",
+        "f7e91be9-28ad-467a-899f-0d28479b2820",
+        "dcde6074-f0c5-4aeb-8673-a433afe4972e",
+        "8fb2648a-9e9f-4954-ac49-c3c2cdf8571e",
+        "6ba31bac-1dfa-4d08-995a-a6773c12a145",
+        "60da8cff-7d7a-466e-b28d-41fbcbf917af",
+        "bc182982-cc63-4eb9-9b99-754dcbe01396",
+        "19fba0e5-8038-44fe-8d7e-ba0df337d802",
+        "a96f8fd5-080a-40aa-96de-f6698159ab8d"
+      ],
+      "disabled": true,
+      "settings": {
+        "caption": "",
+        "heading": "Frequently Asked Questions",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": true,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
+    "18942c5f-1303-48e5-88e9-b24f44486626": {
+      "type": "need-help",
+      "settings": {
+        "backColor": "#e8f1f7",
+        "heading": "Need help? Questions? Concerns?",
+        "text": "<p>Please do not hesitate to email us at support@TheraPetMD.com<\/p>"
+      }
+    }
+  },
+  "order": [
+    "37760197-e460-4ab5-af00-3847c3a95436",
+    "92cb8a90-44a2-496d-80ed-e5ffcd68c92a",
+    "1201cf46-d1a1-4685-9e6a-33d46dc2aaa4",
+    "74a51a09-4ff4-40ae-b05e-7b140c554d6a",
+    "361b95c8-4fdc-4076-aed5-162f8b7f1fe5",
+    "104b5817-8fd5-4e19-adc6-2c0a30640068",
+    "849fb2c4-db2b-4e0e-8a59-280bcee631de",
+    "3e256217-61a5-4698-b7cb-c3994328e482",
+    "c695fc7d-14b8-429b-9ac3-25de18c882ae",
+    "226b7035-9d05-4267-9e2f-404e9a070f4b",
+    "88e7a19b-e46f-41a0-9a77-8ff5e8afbed1",
+    "18942c5f-1303-48e5-88e9-b24f44486626"
+  ]
+}

@@ -1,0 +1,286 @@
+<div class="vet-section">
+  <div class="page-width new-pw">
+    <div class="vet-wrap">
+      <div class="pet-vet-image desktop">
+      <img src="{{ section.settings.pet-img | img_url: 'master' }}" alt=" Pet img">
+      </div>
+      <div class="pet-vet-image mobile">
+      <img src="{{ section.settings.pet-img-mb | img_url: 'master' }}" alt=" Pet img">
+      </div>
+      <div class="vet-content">
+        <h3>{{ section.settings.vet-head }}</h3>
+        <div class="vet-text">{{ section.settings.vet-text }}</div>
+        <div class="vet-info-wrap">
+          <div class="vet-image">
+            <img src="{{ section.settings.vet-img | img_url: 'master' }}" alt=" Vet img">
+          </div>
+          <div class="vet-info">
+            <h6>{{ section.settings.vet-h6 }}</h6>
+            <p>{{ section.settings.vet-p }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "vet section",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "pet-img",
+        "label": "Main image"
+      }, 
+      {
+        "type": "image_picker",
+        "id": "pet-img-mb",
+        "label": "Main mobile image"
+      },
+      {
+        "type": "text",
+        "id": "vet-head",
+        "label": "Heading"
+      },      
+      {
+        "type": "richtext",
+        "id": "vet-text",
+        "label": "Text",
+        "default": "<p>“As a vet, I only wantthe very best for my patients - therefore, Itrust and recommend PetLab Co.”<p>"
+      },
+      {
+        "type": "image_picker",
+        "id": "vet-img",
+        "label": "Vet image"
+      },      
+      {
+        "type": "text",
+        "id": "vet-h6",
+        "label": "Name"
+      },      
+      {
+        "type": "text",
+        "id": "vet-p",
+        "label": "Profession"
+      }
+    ],
+        "presets": [
+      {
+        "name": "vet section"
+      }
+    ]
+  }
+{% endschema %}
+<style>
+  .mobile {
+    display: none;
+  }
+  .vet-section {
+    padding: 56px 0px 0px 0px;
+    background: #F675A8;
+}
+  .new-pw {
+    padding-left: 0px;
+    max-width: 1630px;
+  }
+  .vet-wrap {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 211px;
+}
+  .pet-vet-image {
+    width: 50%;
+    height: auto;
+    line-height: 0px;
+}
+  .vet-content {
+    width: 35%;
+}
+  .vet-content h3 {
+    margin: 0px 0px 25px 0px;
+    color: #FFF;
+    font-family: AvertaStd-Bold;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60px;
+}
+  .vet-text {
+    margin: 0px 0px 30px 0px;
+}
+  .vet-text p {
+    border-radius: 10px;
+    background: #FFF;
+    padding: 25px 30px;
+    margin: 0px;
+    color: #37306B;
+    font-family: Poppins;
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 34px;
+}
+  .vet-info-wrap {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 15px
+}
+  .vet-image {
+    width: 13%;
+    height: auto;
+    line-height: 0px;
+}
+  .vet-info h6 {
+    margin: 0px 0px 7px 0px;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+}
+  .vet-info p {
+    margin: 0px;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+  @media (max-width: 1440px) {
+    .vet-wrap {
+    column-gap: 50px;
+}    
+    .vet-content {
+    width: 50%;
+}
+     .vet-text p {
+    padding: 20px;
+    font-size: 19px;
+  }
+  }
+  @media (max-width: 1100px) {
+    .vet-wrap {
+    column-gap: 20px;
+}
+    .vet-content {
+    width: 50%;
+}
+    .vet-content h3 {
+    font-size: 40px;
+    line-height: 50px;
+}
+    .vet-text {
+    margin: 0px 0px 25px 0px;
+}
+    .vet-text p {
+    font-size: 17px;
+    line-height: normal;
+    padding: 15px 25px;
+}
+    .vet-info h6 {
+    margin: 0px;
+    font-size: 20px;
+    line-height: normal;
+}
+    .vet-info p {
+    font-size: 17px;
+    line-height: normal;
+}
+  }
+  @media (max-width: 992px) {
+    .vet-section {
+    padding: 36px 0px;
+}
+    .vet-content h3 {
+    margin: 0px 0px 20px;
+    font-size: 30px;
+    line-height: 40px;
+}
+    .benefit-animal-image {
+    top: -2.45em !important;
+}
+    .vet-content {
+    padding-bottom: 45px;
+}
+    .vet-text {
+    margin: 0px 0px 5px 0px;
+}
+    .vet-text p {
+    font-size: 15px;
+    padding: 15px;
+}
+    .vet-info h6 {
+    font-size: 16px;
+}
+    .vet-info p {
+    font-size: 15px;
+}
+    .mobile {
+    display: block;
+}
+    .desktop {
+    display: none;
+}
+  }
+  @media (max-width: 767px) {
+    .vet-section {
+    padding: 40px 0px 0;
+}
+    .vet-content h3 {
+    margin: 0px 0px 20px;
+    font-size: 30px;
+    line-height: 38px;
+}
+    .vet-wrap {
+    flex-direction: column-reverse;
+}
+    .vet-info-wrap {
+    justify-content: center;
+    flex-flow: column;
+}
+    .pet-vet-image.desktop {
+    display: block;
+}
+    .pet-vet-image.mobile {
+    display: none;
+}
+    .pet-vet-image {
+    width: 100%;
+}
+    .vet-content {
+    width: 90%;
+      margin: 0 auto;
+      text-align: center;
+}
+    .vet-text {
+    margin: 0px 0px 20px 0px;
+}
+    .vet-image {
+    width: 60px;
+    margin-bottom: 15px;
+}
+    .vet-text p {
+    font-size: 16px;
+}
+    .vet-info p {
+    font-size: 16px;
+}
+  }
+</style>
+<script>
+function removeClassOnLoad() {
+  var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+  var divElement = document.querySelector('.page-width.new-pw');
+
+  if (screenWidth <= 1880 && divElement) {
+    divElement.classList.remove('new-pw');
+  }
+}
+
+document.addEventListener('DOMContentLoaded', removeClassOnLoad);
+
+</script>

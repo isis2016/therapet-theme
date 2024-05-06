@@ -1,0 +1,223 @@
+<style>
+  .introductionSec {
+    padding: 60px 0
+  }
+  .RightInto {
+    text-align: center
+  }
+  .cleanuxInto {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .LeftIntro {
+    width: 45%;
+  }
+  .LeftIntro img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 15px;
+  }
+
+  .LeftIntro.show-mobile{
+    display: none;
+  }
+
+  .RightInto {
+    width: 55%;
+    padding: 0 0 0 5%;
+    color: white;
+  }
+  img.introLogo {
+    width: 74px;
+    height: auto;
+    object-fit: contain;
+    max-width: 100%;
+  }
+  img.introLogoMain {
+    width: 265px;
+    max-width: 52%;
+  }
+  .wrapTheBlocks {
+    display: flex;
+    justify-content: space-between;
+  }
+  img.borderLogo {
+    width: 90%;
+    max-width: 290px;
+    display: block;
+    margin: auto;
+  }
+  p.introT {
+    font-size: 0.8em;
+    margin: 0;
+  }
+  .innerBoundary.fixpad {
+    padding: 10px;
+    width: 23%;
+  }
+  .RightInto p {
+    font-size: 0.9em;
+  }
+  @media(max-width: 767px) {
+    .LeftIntro,
+    .RightInto {
+      padding: 0;
+      width: 100%;
+    }
+    .LeftIntro img {
+      width: 100%;
+      height: auto;
+      max-width: 400px;
+      margin: 0 auto 20px;
+      display: block;
+    }
+
+    .LeftIntro.show-mobile{
+      display: block;
+    }
+
+    .LeftIntro.hide-mobile{
+      display: none;
+    }
+
+
+    .cleanuxInto {
+      flex-direction: column;
+    }
+    .introductionSec {
+      padding: 50px 0;
+    }
+    .innerBoundary.fixpad {
+      padding: 5px;
+    }
+  }
+</style>
+
+<section
+  class="introductionSec"
+  {% if section.settings.backimage != blank %}
+  style="background-image:url('{{ section.settings.backimage | img_url: 'master' }}')"
+  {% endif %}>
+  <div class="page-width">
+    <div class="cleanuxInto">
+      <div class="LeftIntro {% if section.settings.heading_top_mobile %} hide-mobile {% endif %}">
+        <img
+          src="{{ section.settings.imagem | img_url: '700x' }}"
+          loading="lazy"
+          alt="{{ section.settings.imagem.alt }}"
+          width="100%"
+          height="auto">
+      </div>
+      <div class="RightInto">
+        <p class="introT">{{ section.settings.intro }}</p>
+        <img
+          class="introLogoMain"
+          src="{{ section.settings.logo | img_url: '400x' }}"
+          loading="lazy"
+          alt="{{ section.settings.logo.alt }}"
+          width="100%"
+          height="auto">
+        <img
+          class="borderLogo"
+          src="{{ section.settings.border | img_url: '600x' }}"
+          loading="lazy"
+          alt="{{ section.settings.border.alt }}"
+          width="100%"
+          height="auto">
+
+        <div class="LeftIntro {% if section.settings.heading_top_mobile %}  show-mobile {% else %} hidden {% endif %}">
+          <img
+            src="{{ section.settings.imagem | img_url: '700x' }}"
+            loading="lazy"
+            alt="{{ section.settings.imagem.alt }}"
+            width="100%"
+            height="auto">
+        </div>
+
+        
+        {{ section.settings.text }}
+        <div class="wrapTheBlocks">
+          {% for block in section.blocks %}
+            <div class="innerBoundary fixpad">
+              <img
+                class="introLogo"
+                src="{{ block.settings.logo | img_url: '400x' }}"
+                loading="lazy"
+                alt="{{ block.settings.logo.alt }}"
+                width="100%"
+                height="auto">
+              <p>{{ block.settings.text }}</p>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Introduction",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "backimage",
+        "label": "Background Image"
+      },
+      {
+        "type": "image_picker",
+        "id": "imagem",
+        "label": "Image"
+      },
+      {
+        "type": "checkbox",
+        "id": "heading_top_mobile",
+        "default": false,
+        "label": "Show Heading at Top on Mobile"
+      },
+      {
+        "type": "image_picker",
+        "id": "border",
+        "label": "Border"
+      },
+      {
+        "type": "text",
+        "id": "intro",
+        "label": "Introduction"
+      }, {
+        "type": "image_picker",
+        "id": "logo",
+        "label": "Logo"
+      }, {
+        "type": "richtext",
+        "id": "text",
+        "label": "Text"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Introduction"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "block",
+        "name": "Block",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "logo",
+            "label": "Logo"
+          }, {
+            "type": "text",
+            "id": "text",
+            "label": "Text"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

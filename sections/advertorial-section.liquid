@@ -1,0 +1,1363 @@
+<style>
+  .wrapperMaindiv {
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+  .leftSideMainWrap {
+    width: 73%;
+  }
+  .rightSideMainWrap {
+    width: 25%;
+  }
+  p.breadC {
+    font-size: 12px;
+    margin: 20px 0 0;
+  }
+  .center {
+    text-align: center !important
+  }
+  .imageWithText {
+    margin-bottom: 50px;
+  }
+  p.textLeftHeading.fixSpacesSub {
+    margin: 10px 0 20px;
+  }
+  .mainMotaBlock {
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px solid;
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 25px;
+  }
+  a.buttonLast {
+    width: 100%;
+    max-width: 281px;
+    padding: 10px 25px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 3px;
+    box-shadow: inset 1px 1px 0 0 hsla(0, 0%, 100%, 0.2);
+    color: white;
+    font-weight: 400;
+    display: block;
+    margin: auto;
+  }
+  .stickyClassInside {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    position: sticky;
+    top: 40px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(99, 106, 123);
+    padding: 20px;
+  }
+  .bulletPoint {
+    display: flex;
+    width: 100%;
+    margin: 6px 0;
+    align-items: center;
+  }
+  img.reviewImage {
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 20px 30px;
+    flex-shrink: 0;
+  }
+  .singleReviewWrap {
+    display: flex;
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px dashed;
+  }
+  span.nameRV {
+    margin-top: 20px;
+    display: block;
+  }
+  .rightheading {
+    font-size: 22px;
+    padding: 10px 0;
+  }
+  .starimage {
+    max-width: 100px;
+    padding-bottom: 10px;
+  }
+  .reviewtext {
+    font-size: 14px;
+  }
+  .rightSideheading {
+    font-size: 20px;
+    padding: 8px 0;
+  }
+  .Mainimage {
+    max-width: 250px;
+  }
+  p.textLeftHeading {
+    font-size: 0.9em;
+  }
+  .wrapFeaturesSection {
+    display: flex;
+    margin: 20px 0 50px;
+    border: 3px dashed;
+    padding: 0 15px 15px;
+    justify-content: space-between;
+  }
+  .rightbutton {
+    box-shadow: rgba(37, 42, 50, 0.32) 0 1px 4px 1px;
+    border-radius: 50px;
+    margin: 10px 10px 20px;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  h1.leftSideHeading.h2 {
+    margin-bottom: 20px;
+  }
+  .tickimage {
+    max-width: 20px;
+    margin-right: 10px;
+  }
+  .texttexttext {
+    font-size: 12px;
+  }
+  .mediaElementLEFT {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+    margin: 15px 0;
+  }
+  .newBullet {
+    font-size: 1em;
+    margin: 5px 0;
+  }
+  .tickimage.image2 {
+    margin-right: 15px;
+    width: 30px;
+    max-width: 100%;
+  }
+  .wrapFeaturesSection img {
+    width: 48%;
+    height: fit-content;
+    border-radius: 10px;
+    object-fit: contain;
+  }
+  .rightSideWrapF {
+    width: 49%;
+  }
+  .wrapLEFTmediaCap {
+    border-radius: 10px;
+    margin-top: 35px;
+  }
+  .wrapLEFTmediaCap .mediaElementLEFT {
+    margin-top: -15px;
+  }
+  .wrapLEFTmediaCap p.subHeadCap {
+    padding: 0 10px 15px;
+    font-size: 0.9em;
+    font-weight: 600;
+    margin-top: -10px;
+  }
+  .pictureReviews {
+    margin-bottom: 30px;
+    display: block;
+  }
+  .pictureReview {
+    width: 100%;
+    display: block;
+    margin: 20px auto;
+    max-width: 600px;
+  }
+  .day-step-text {
+    font-size: 16px;
+    line-height: 20px;
+    display: block;
+  }
+  .day-step {
+    width: 60px;
+    float: left;
+    background-color: var(--dark-green);
+    color: var(--white);
+    text-align: center;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    padding: 5px 0 5px 2px;
+    font-size: 2.5em;
+    line-height: 1em;
+    position: relative;
+    bottom: -5px;
+  }
+
+  @media(max-width: 1200px) {
+    .leftSideMainWrap {
+      width: 65%;
+    }
+    .rightSideMainWrap {
+      width: 33%;
+    }
+  }
+
+  @media(max-width: 850px) {
+    .rightSideMainWrap {
+      display: none;
+    }
+    .leftSideMainWrap {
+      width: 100%;
+    }
+    .wrapFeaturesSection img {
+      width: 100%;
+    }
+    .rightSideWrapF {
+      width: 100%;
+    }
+    .wrapFeaturesSection {
+      flex-direction: column;
+    }
+    img.reviewImage {
+      margin: 15px 15px 0 4px;
+    }
+  }
+
+  /*! CSS Used for Facebook Post */
+
+  .facebook-post {
+    max-width: 600px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 30px auto;
+    padding: 15px 20px 20px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .dots {
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+  }
+  .post-meta {
+    align-items: center;
+    margin-bottom: 10px;
+    display: flex;
+    position: relative;
+  }
+  .postime {
+    align-items: center;
+    display: flex;
+  }
+  .likes-comments {
+    justify-content: space-between;
+    display: flex;
+  }
+  .post-text {
+    color: #212121;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .emojis {
+    cursor: pointer;
+    display: flex;
+  }
+  .name {
+    color: #3658a6;
+    margin-top: 0;
+    margin-bottom: 1px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19px;
+  }
+  .user-picture {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    margin-right: 8px;
+  }
+  .likers {
+    cursor: pointer;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    justify-content: space-around;
+    margin-top: 10px;
+    padding: 8px 20px;
+    display: flex;
+  }
+  .numcount {
+    color: #a0a0a0;
+    cursor: pointer;
+    margin-left: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+  .comments-block {
+    display: flex;
+  }
+  .emoji-reaction {
+    width: 18px;
+    height: 18px;
+  }
+  .post-time-num {
+    color: #65676b;
+    margin-right: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+  .post-time-img {
+    width: 16px;
+    height: 16px;
+    opacity: 0.8;
+  }
+  .post-image {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  @media screen and (max-width: 767px) {
+    .hideme {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 479px) {
+    .likers {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+
+  /*! CSS Used for Informational  */
+
+  .w-button {
+    display: inline-block;
+    padding: 9px 15px;
+  }
+  .notify_1 {
+    background-color: green;
+    color: #fff;
+    margin-bottom: 15px;
+    padding: 10px;
+  }
+  .action-button {
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 40px;
+    box-shadow: 0 18px 3px -10px rgba(249, 144, 53, 0.31);
+  }
+  .notify_2 {
+    border: 0 solid var(--midnight-blue);
+    background-color: var(--light-steel-blue);
+    color: var(--midnight-blue);
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    display: flex;
+  }
+  .notify_2.border-1 {
+    color: var(--dark-green);
+    background-color: #d4dfce;
+    border-width: 1px;
+  }
+  .text-block {
+    text-align: center;
+  }
+  .link-block {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+  }
+  .center-text {
+    text-align: center;
+    margin-top: 18px;
+    font-size: 12px;
+  }
+</style>
+
+<section class="page-width">
+  {% if section.settings.breadcrumb != blank %}
+    <p class="breadC">{{ section.settings.breadcrumb }}</p>
+  {% endif %}
+  <div class="wrapperMaindiv">
+    {% render 'leftSideMainWrap' %}
+    {% render 'rightSideMainWrap' %}
+  </div>
+</section>
+
+{% if section.settings.checkbox %}
+  {% render 'stickybtn' %}
+{% endif %}
+
+{% if section.settings.advertorial %}
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+
+      var reviewBlockCheck = document.querySelector('.advertorial-container');
+      if (!reviewBlockCheck) {
+        mainContent = document.querySelector("main#MainContent");
+
+        advertorialContainer = document.createElement('div');
+        advertorialContainer.classList.add('sections-container');
+
+        sectionsContainer = document.createElement('div');
+        sectionsContainer.classList.add('advertorial-container');
+
+        sectionsContainer.append(...mainContent.childNodes);
+
+        reviewBlock = document.createElement('div');
+        reviewBlock.classList.add('reviews-block');
+        reviewBlock.innerHTML = `
+          <div class="ratings-titler">About This Article</div>
+            <div class="ratings-meta">
+              <div class="ratings-col wborder">
+                <i class="stamped-fa stamped-fa-star "></i><i class="stamped-fa stamped-fa-star "></i><i class="stamped-fa stamped-fa-star "></i><i class="stamped-fa stamped-fa-star "></i><i class="stamped-fa stamped-fa-star-half-o "></i>
+                <div class="stars-text">4.62 Based on 1,161 reviews</div>
+              </div>
+              <div class="ratings-col">
+                <div class="stars-text">Views: <strong>114,479</strong></div>
+              </div>
+              <img src="https://about.bugmd.com/co/lp/f&amp;t-A3-LD/images/arrow-left_1arrow-left.png" loading="lazy" alt="" class="arrow">
+            </div>
+          </div>
+        `;
+
+      advertorialContainer.appendChild(sectionsContainer);
+      advertorialContainer.appendChild(reviewBlock);
+      
+      mainContent.appendChild(advertorialContainer);
+      mainContent.appendChild(document.querySelector(".container-footer").parentNode.parentNode);
+      mainContent.insertBefore(document.querySelector(".topBARS").parentNode, mainContent.firstChild);
+
+      }
+    });
+  </script>
+
+  <style>
+    .shopify-section:has( > .topBARS) {
+      width: 100%;
+    }
+
+    .shopify-section:has(.container-footer) {
+      width: 100%;
+    }
+
+    .page-width {
+      background-color: #fff;
+      border-radius: 5px;
+      margin-bottom: 15px;
+      padding: 10px 30px;
+    }
+
+    .rightSideMainWrap {
+      width: 25%;
+      display: none;
+    }
+
+    .leftSideMainWrap {
+      width: auto !important;
+    }
+
+    .reviews-block {
+      position: sticky;
+      top: 20px;
+      border: 1px solid #efebe4;
+      border-radius: 5px;
+      height: fit-content;
+    }
+
+    .sections-container {
+      display: grid;
+      grid-template-columns: 66% 33%;
+      justify-content: center;
+      grid-gap: 1rem;
+      max-width: 1024px;
+      padding-bottom: 10px;
+    }
+
+    main#MainContent {
+      overflow-x: unset;
+      background-color: #f3f3f3;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    img.arrow {
+      position: absolute;
+      top: 4rem;
+      left: -1.6rem;
+      width: 25px;
+      aspect-ratio: 1 / 1;
+    }
+
+    .ratings-titler {
+      background-color: #efefef;
+      color: #686868;
+      font-weight: 500;
+      padding: 0.5rem 1.2rem;
+    }
+
+    .ratings-meta {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: white;
+    }
+
+    .ratings-col.wborder {
+      border-right: 1px solid #dcdcdc;
+      margin-block: 10px;
+    }
+    .ratings-col {
+      padding: 0 1.2rem;
+    }
+
+    .ratings-meta > * {
+      flex: 1 1 50%;
+    }
+
+    .stars-text {
+      font-size: 14px;
+      line-height: 16px;
+    }
+
+    .wrapperMaindiv {
+      margin-bottom: 0 !important;
+    }
+
+
+    /* Css of Uss */
+    .notify_2.border-1 img {
+      width: 3rem;
+      margin-left: 5px;
+    }
+
+    .notify_2.border-1 p {
+      color: white;
+    }
+
+    .notify_2 {
+      border-width: 1px;
+      background: #818cf8;
+      color: #312e81;
+      border: 1px solid #1e1b4b;
+      gap: 1rem;
+    }
+
+    .w-embed.w-script {
+      font-size: 16px;
+    }
+
+    a.link-6,
+    a.link-7,
+    .action-button {
+      text-decoration: none;
+    }
+
+    .notify_1 {
+      background-color: #5d3891;
+      color: #fff;
+      margin-bottom: 15px;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .notify_1 .w-embed.w-script p {
+      font-weight: 600;
+      color: #FFF;
+      font-size: 1.5rem;
+      margin: 0;
+    }
+
+    .center-text {
+      text-align: center;
+      margin-top: 18px;
+      font-size: 12px;
+      line-height: 26px;
+    }
+
+    .left-block p,
+    .right-block:is(p, li > a) {
+      font-size: 13px;
+      color: white;
+    }
+
+    .right-block:is(li > a:hover) {
+      color: #ddd;
+    }
+
+    .content-footer {
+      display: grid;
+      grid-template-columns: 1fr 0.5fr;
+      grid-gap: 2rem;
+    }
+
+    .container-footer {
+      max-width: 1024px;
+      margin-inline: auto;
+      padding: 3.5rem 0;
+    }
+
+    .image-13 {
+      width: 250px;
+    }
+
+    @media screen and (max-width: 767px) {
+
+      .sections-container {
+        grid-template-columns: 1fr !important;
+      }
+
+    }
+  </style>
+{% endif %}
+
+<script>
+       Object.defineProperty(HTMLMediaElement.prototype, 'playing', {
+  get: function () {
+  return !!(this.currentTime > 0 && !this.paused && !this.ended && this.readyState > 2);
+  }});
+  document.body.addEventListener("click", playVideoOnLowPower);
+  document.body.addEventListener("touchstart", playVideoOnLowPower);
+  function playVideoOnLowPower(){
+  try{
+  const videoElements = document.querySelectorAll("video[autoplay]");
+  for (i = 0; i < videoElements.length; i++) {
+  if (videoElements[i].playing) {
+  // video is already playing so do nothing
+  console.log('Playing');}
+  else {
+  // video is not playing so play video now
+  videoElements[i].play();
+  console.log('Not Playing');
+  }}}
+  catch(err) {
+  console.log(err);
+  }}
+</script>
+{% schema %}
+{
+  "name": "Advertorial Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "breadcrumb",
+      "label": "Breadcrumb",
+      "default": "Health & Fitness > Product Review"
+    },
+
+    {
+      "type": "checkbox",
+      "id": "advertorial",
+      "label": "Is This Page Advertorial With Rating?",
+      "default": false
+    },
+
+    {
+      "type": "checkbox",
+      "id": "center",
+      "label": "Center",
+      "default": false
+    },
+    {
+      "type": "text",
+      "id": "leftheading",
+      "label": "Heading"
+    }, {
+      "type": "color",
+      "id": "headingcolor",
+      "label": "Heading Color"
+    }, {
+      "type": "checkbox",
+      "id": "checkbox",
+      "label": "Add Sticky Button",
+      "default": true
+    }, {
+      "type": "color",
+      "id": "bgcolor",
+      "label": "Color"
+    }, {
+      "type": "text",
+      "id": "text",
+      "label": "Text"
+    }, {
+      "type": "url",
+      "id": "bttnlink",
+      "label": "Link"
+    }, {
+      "type": "text",
+      "id": "bttntext",
+      "label": "Button Text"
+    }
+  ],
+
+
+  "blocks": [
+
+    {
+      "type": "reviews",
+      "name": "Reviews",
+      "settings": [
+        {
+          "type": "text",
+          "id": "leftheading",
+          "label": "Heading"
+        },
+        {
+          "type": "color",
+          "id": "color",
+          "label": "Color"
+        },
+        {
+          "type": "color",
+          "id": "bcolor",
+          "label": "Border Color"
+        },
+        {
+          "type": "image_picker",
+          "id": "mainimage1",
+          "label": "Image"
+        }, {
+          "type": "richtext",
+          "id": "text1",
+          "label": "Text"
+        }, {
+          "type": "text",
+          "id": "name1",
+          "label": "Name"
+        }, {
+          "type": "image_picker",
+          "id": "mainimage2",
+          "label": "Image"
+        }, {
+          "type": "richtext",
+          "id": "text2",
+          "label": "Text"
+        }, {
+          "type": "text",
+          "id": "name2",
+          "label": "Name"
+        }, {
+          "type": "image_picker",
+          "id": "mainimage3",
+          "label": "Image"
+        }, {
+          "type": "richtext",
+          "id": "text3",
+          "label": "Text"
+        }, {
+          "type": "text",
+          "id": "name3",
+          "label": "Name"
+        }, {
+          "type": "image_picker",
+          "id": "mainimage4",
+          "label": "Image"
+        }, {
+          "type": "richtext",
+          "id": "text4",
+          "label": "Text"
+        }, {
+          "type": "text",
+          "id": "name4",
+          "label": "Name"
+        }, {
+          "type": "image_picker",
+          "id": "mainimage5",
+          "label": "Image"
+        }, {
+          "type": "richtext",
+          "id": "text5",
+          "label": "Text"
+        }, {
+          "type": "text",
+          "id": "name5",
+          "label": "Name"
+        }
+      ]
+    },
+
+
+    {
+      "type": "features",
+      "name": "Features",
+      "settings": [
+        {
+          "type": "text",
+          "id": "leftheading",
+          "label": "Heading"
+        },
+        {
+          "type": "color",
+          "id": "color",
+          "label": "Color"
+        },
+        {
+          "type": "color",
+          "id": "bcolor",
+          "label": "Border Color"
+        },
+        {
+          "type": "image_picker",
+          "id": "mainimage",
+          "label": "Image"
+        }, {
+          "type": "text",
+          "id": "video",
+          "label": "Video"
+        }, {
+          "type": "richtext",
+          "id": "text",
+          "label": "Text"
+        }, {
+          "type": "header",
+          "content": "Bullet Points"
+        }, {
+          "type": "image_picker",
+          "id": "tickimage",
+          "label": "Bullets"
+        }, {
+          "type": "richtext",
+          "id": "text1",
+          "label": "Text"
+        }, {
+          "type": "richtext",
+          "id": "text2",
+          "label": "Text"
+        }, {
+          "type": "richtext",
+          "id": "text3",
+          "label": "Text"
+        }, {
+          "type": "richtext",
+          "id": "text4",
+          "label": "Text"
+        }, {
+          "type": "richtext",
+          "id": "text5",
+          "label": "Text"
+        }
+
+      ]
+    },
+
+    {
+      "type": "titleAndReviews",
+      "name": "Title + reviews",
+      "settings": [
+        {
+          "type": "text",
+          "id": "leftheading",
+          "label": "Heading"
+        },
+        {
+          "type": "checkbox",
+          "id": "center",
+          "label": "Center",
+          "default": false
+        },
+
+        {
+          "type": "color",
+          "id": "headingcolor",
+          "label": "Color"
+        },
+        {
+          "type": "text",
+          "id": "leftsubheading",
+          "label": "Subheading"
+        }, {
+          "type": "image_picker",
+          "id": "mainimage",
+          "label": "Image"
+        }, {
+          "type": "text",
+          "id": "video",
+          "label": "Video"
+        }, {
+          "type": "text",
+          "id": "imagesubheading",
+          "label": "Image sub-heading"
+        }, {
+          "type": "color",
+          "id": "imagesubheadingcolor",
+          "label": "Background Color"
+        }, {
+          "type": "richtext",
+          "id": "text",
+          "label": "Text"
+        }, {
+          "type": "header",
+          "content": "Bullet Points"
+        }, {
+          "type": "image_picker",
+          "id": "tickimage",
+          "label": "Bullets"
+        }, {
+          "type": "richtext",
+          "id": "text1",
+          "label": "Text"
+        }, {
+          "type": "richtext",
+          "id": "text2",
+          "label": "Text"
+        }, {
+          "type": "richtext",
+          "id": "text3",
+          "label": "Text"
+        }, {
+          "type": "richtext",
+          "id": "text4",
+          "label": "Text"
+        }, {
+          "type": "richtext",
+          "id": "text5",
+          "label": "Text"
+        }, {
+          "type": "richtext",
+          "id": "text6",
+          "label": "Text"
+        }, {
+          "type": "richtext",
+          "id": "text7",
+          "label": "Text"
+        }, {
+          "type": "richtext",
+          "id": "text8",
+          "label": "Text"
+        }, {
+          "type": "richtext",
+          "id": "text9",
+          "label": "Text"
+        }, {
+          "type": "richtext",
+          "id": "text10",
+          "label": "Text"
+        }, {
+          "type": "image_picker",
+          "id": "image1",
+          "label": "Image 1"
+        }, {
+          "type": "image_picker",
+          "id": "image2",
+          "label": "Image 2"
+        }, {
+          "type": "image_picker",
+          "id": "image3",
+          "label": "Image 3"
+        }, {
+          "type": "image_picker",
+          "id": "image4",
+          "label": "Image 4"
+        }, {
+          "type": "image_picker",
+          "id": "image5",
+          "label": "Image 5"
+        }, {
+          "type": "image_picker",
+          "id": "image6",
+          "label": "Image 6"
+        }, {
+          "type": "image_picker",
+          "id": "image7",
+          "label": "Image 7"
+        }
+
+
+      ]
+
+    },
+
+
+    {
+      "type": "Image",
+      "name": "Image/video with Text",
+      "settings": [
+        {
+          "type": "text",
+          "id": "leftheading",
+          "label": "Heading"
+        },
+        {
+          "type": "checkbox",
+          "id": "center",
+          "label": "Center",
+          "default": false
+        },
+
+        {
+          "type": "color",
+          "id": "headingcolor",
+          "label": "Color"
+        },
+        {
+          "type": "text",
+          "id": "leftsubheading",
+          "label": "Subheading"
+        }, {
+          "type": "image_picker",
+          "id": "mainimage",
+          "label": "Image"
+        }, {
+          "type": "text",
+          "id": "video",
+          "label": "Video"
+        }, {
+          "type": "text",
+          "id": "imagesubheading",
+          "label": "Image sub-heading"
+        }, {
+          "type": "color",
+          "id": "imagesubheadingcolor",
+          "label": "Background Color"
+        }, {
+          "type": "text",
+          "id": "dateStepText",
+          "label": "Step Date Text"
+        }, {
+          "type": "text",
+          "id": "dateStepNum",
+          "label": "Step Date Number"
+        }, {
+          "type": "color",
+          "id": "dateStepColor",
+          "label": "Step Date Color",
+          "default": "#FFFFFF"
+        }, {
+          "type": "color",
+          "id": "dateStepBackground",
+          "label": "Step Date Background",
+          "default": "#e15d3a"
+        }, {
+          "type": "richtext",
+          "id": "text",
+          "label": "Text"
+        }, {
+          "type": "header",
+          "content": "Bullet Points"
+        }, {
+          "type": "image_picker",
+          "id": "tickimage",
+          "label": "Bullets"
+        }, {
+          "type": "richtext",
+          "id": "text1",
+          "label": "Text"
+        }, {
+          "type": "richtext",
+          "id": "text2",
+          "label": "Text"
+        }, {
+          "type": "richtext",
+          "id": "text3",
+          "label": "Text"
+        }, {
+          "type": "richtext",
+          "id": "text4",
+          "label": "Text"
+        }, {
+          "type": "richtext",
+          "id": "text5",
+          "label": "Text"
+        }, {
+          "type": "richtext",
+          "id": "text6",
+          "label": "Text"
+        }, {
+          "type": "richtext",
+          "id": "text7",
+          "label": "Text"
+        }, {
+          "type": "richtext",
+          "id": "text8",
+          "label": "Text"
+        }, {
+          "type": "richtext",
+          "id": "text9",
+          "label": "Text"
+        }, {
+          "type": "richtext",
+          "id": "text10",
+          "label": "Text"
+        }, {
+          "type": "url",
+          "id": "btnlink",
+          "label": "Link"
+        }, {
+          "type": "text",
+          "id": "btntext",
+          "label": "Button Text"
+        }, {
+          "type": "color",
+          "id": "color",
+          "label": "Color",
+          "default": "#e15d3a"
+        }
+
+      ]
+    }, {
+      "type": "last",
+      "name": "Last Block",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading"
+        },
+        {
+          "type": "text",
+          "id": "subheading",
+          "label": "Subheading"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Text"
+        },
+        {
+          "type": "url",
+          "id": "btnlink",
+          "label": "Link"
+        }, {
+          "type": "text",
+          "id": "btntext",
+          "label": "Button Text"
+        }, {
+          "type": "color",
+          "id": "back",
+          "label": "Background",
+          "default": "#edf9ff"
+        }, {
+          "type": "color",
+          "id": "color",
+          "label": "Color",
+          "default": "#e15d3a"
+        }
+      ]
+    }, {
+      "type": "Section",
+      "name": "Right Section",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "rightheading",
+          "label": "Heading"
+        },
+        {
+          "type": "image_picker",
+          "id": "starimage",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "reviewtext",
+          "label": "Text"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading"
+        }, {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }, {
+          "type": "color",
+          "id": "buttncolor",
+          "label": "Button Color"
+        }, {
+          "type": "url",
+          "id": "buttnlink",
+          "label": "Link"
+        }, {
+          "type": "text",
+          "id": "buttntext",
+          "label": "Text"
+        }, {
+          "type": "image_picker",
+          "id": "tickimage",
+          "label": "Bullets"
+        }, {
+          "type": "richtext",
+          "id": "text1",
+          "label": "Text"
+        }, {
+          "type": "richtext",
+          "id": "text2",
+          "label": "Text"
+        }, {
+          "type": "richtext",
+          "id": "text3",
+          "label": "Text"
+        }, {
+          "type": "richtext",
+          "id": "text4",
+          "label": "Text"
+        }, {
+          "type": "richtext",
+          "id": "text5",
+          "label": "Text"
+        }
+      ]
+    }, {
+      "type": "SocialPost",
+      "name": "Social Media Post",
+      "settings": [
+        {
+          "type": "text",
+          "id": "username",
+          "label": "User Name",
+          "default": "#e15d3a"
+        },
+        {
+          "type": "image_picker",
+          "id": "userImage",
+          "label": "User Profile Image"
+        },
+        {
+          "type": "text",
+          "id": "postedTime",
+          "label": "Post Time",
+          "default": "2h"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Post Description"
+        }, {
+          "type": "image_picker",
+          "id": "postImage",
+          "label": "Post Image"
+        }, {
+          "type": "text",
+          "id": "likersName",
+          "label": "Users Liked Names",
+          "default": "Lucia Stones, Adam Johns"
+        }, {
+          "type": "text",
+          "id": "likeCount",
+          "label": "Number Of Likes",
+          "default": "988"
+        }, {
+          "type": "text",
+          "id": "commentsCount",
+          "label": "Number Of Comments",
+          "default": "25"
+        }
+      ]
+    }, {
+      "type": "InformationalCTA",
+      "name": "Informational CTA block",
+      "settings": [
+        {
+          "type": "url",
+          "id": "sectionLink",
+          "label": "Section Link"
+        },
+        {
+          "type": "richtext",
+          "id": "firstBlockText",
+          "label": "First Block Text"
+        },
+        {
+          "type": "image_picker",
+          "id": "firstBlockIcon",
+          "label": "First Block Icon"
+        },
+        {
+          "type": "color",
+          "id": "firstBlockColor",
+          "label": "First Block Color",
+          "default": "#f0f0f0"
+        }, {
+          "type": "color",
+          "id": "firstBlockBackground",
+          "label": "First Block Background",
+          "default": "#f0f0f0"
+        }, {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading Text"
+        }, {
+          "type": "text",
+          "id": "headingClickable",
+          "label": "Heading Clickable Text"
+        }, {
+          "type": "richtext",
+          "id": "secondBlockText",
+          "label": "Second Block Text"
+        }, {
+          "type": "image_picker",
+          "id": "secondBlockIcon",
+          "label": "Second Block Icon"
+        }, {
+          "type": "color",
+          "id": "secondBlockColor",
+          "label": "Second Block Color",
+          "default": "#f0f0f0"
+        }, {
+          "type": "color",
+          "id": "secondBlockBackground",
+          "label": "Second Block Background",
+          "default": "#f0f0f0"
+        }, {
+          "type": "image_picker",
+          "id": "mainImage",
+          "label": "Main Image"
+        }, {
+          "type": "text",
+          "id": "subheading",
+          "label": "Subeading Text"
+        }, {
+          "type": "text",
+          "id": "subheadingClickable",
+          "label": "Subheading Clickable Text"
+        }, {
+          "type": "text",
+          "id": "subheading2",
+          "label": "Subeading Second Text"
+        }, {
+          "type": "text",
+          "id": "buttonText",
+          "label": "Button Text"
+        }, {
+          "type": "color",
+          "id": "buttonColor",
+          "label": "Button Color"
+        }, {
+          "type": "color",
+          "id": "buttonBgColor",
+          "label": "Button Background"
+        }, {
+          "type": "text",
+          "id": "limitedStock",
+          "label": "Limited Stock Text"
+        }
+      ]
+    }
+
+  ],
+  "presets": [
+    {
+      "name": "Advertorial Section"
+    }
+  ]
+}
+{% endschema %}

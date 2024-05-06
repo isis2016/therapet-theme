@@ -1,0 +1,15 @@
+{
+  "parent": "page.bfcm.json",
+  "context": {
+    "market": "us"
+  },
+  "sections": {
+    "5f859064-7221-486d-a60a-60545bf6d6f6": {
+      "settings": {
+        "subheading": "BLACK FRIDAY UP TO 50% OFF TODAY."
+      },
+      "blocks": {
+      }
+    }
+  }
+}

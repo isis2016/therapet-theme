@@ -1,0 +1,497 @@
+<style>
+ .mainWrapTop{
+   width:100%;margin:0 0 0px;
+   background-size:cover;background-position:center;
+ } .wrapTextMain {
+    padding: 20px 0 0;
+}p.italicSubHeading {
+    margin: 0;
+    font-size: 0.9em;
+}.leftSideMain .wrapTextMain h2.mainHeading { 
+    margin: 0 0 10px;    color: {{section.settings.headingColor}} !important;
+}.whiteWRAP {
+    background: #f2f7fe 100%;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px 0;
+    font-size: 0.8em;
+    line-height: 1.5;
+    color: black;
+}body, .color-background-1, .color-background-2, .color-inverse, .color-accent-1, .color-accent-2 {
+    color: rgba(var(--color-foreground),1); 
+}h2.image-with-text__heading.mainHeading.h2 {
+    text-align: center;
+}div#order-now-section {
+    margin-top: 0 !important;margin-bottom: 0 !important;
+}.designMeNew{border:none !important;
+   border-bottom: 1px solid #ededed !important;
+}
+  .wrapTopMain{
+    display:flex;flex-wrap:wrap
+  }.leftSideMain{
+    width:60%;padding-right:5%
+  }.rightSideMain{
+    width:40%
+  }.textSectionMain p:has(svg) {
+    display: flex;
+    text-align: left;
+}.textSectionMain p:has(svg) svg {
+    flex-shrink: 0;
+    margin: 4px 10px 0 0;
+}.textSectionMain {
+    font-size: 0.9em;
+}.textSectionMain strong {
+    color: black;
+    font-weight: 900;
+}.fixIcon span {
+    display: inline-block;
+    margin: -5px 0 0px 5px;
+}a.fixIcon.button.button--primary {
+    font-weight: 600;width:80%
+}p.satisfiedC {
+    font-size: 0.9em;
+}p.satisfiedC svg {
+    margin: 0 5px 0 0;
+    vertical-align: text-top;
+}img.badgesMain {
+    max-width: 250px;
+}.reviewBlockMain {
+    display: flex;
+    flex-direction: column;max-width: 500px;
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+    background: white;
+    padding: 20px;
+    font-size: 0.8em;margin-bottom: 20px;
+}.namePartMain {
+    display: flex;
+} .rightSideMain img{    height: 100% !important;
+    width:100%;object-fit:contain;object-position:bottom !important
+  }.namePartMain img {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    object-fit: contain;
+    border-radius: 50%;
+}.namePartMain p {
+    margin: 0;
+}.logoBlockMainSec {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0 100px;
+}.logoBlockMainSec strong {
+    font-weight: 900;
+    color: black;
+    font-size: 1.5em;
+}.logoItem img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    max-height: 30px;
+}.logoItem {
+    min-width: 200px;
+    margin-bottom: 20px;
+    display: flex;
+}p.mainHeading.bundleUpC {
+    padding: 5px 20px;
+    display: block;
+    width: fit-content;
+    font-size: 0.9em;
+    font-weight: 600;
+    border-radius: 25px;
+}.logoItemNEWM img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+}.wrapTheseNow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}.wrapTheseNow .logoItemNEWM {
+    background: linear-gradient(102.47deg, {{section.settings.gradient1}} 0.87%, {{section.settings.gradient2}} 101.26%);
+    padding: 7px;width: calc(25% - 15px);
+}.wrapTheseNow .logoItemNEWM .justWhiteBoundary {
+    border: 1px solid white;
+    padding: 5px 10px;height:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+}.logoBlockMainSecNEW {
+    margin-bottom: 30px;    width: 80%;
+}a.fixIcon.button.button--primary {
+    border-radius: 15px;border:1.5px solid white
+}.page-width, .stamped-container {
+    max-width: 1170px !important; padding-left: 20px !important;padding-right:20px !important
+}
+  a.fixIcon.button.button--primary::before,a.fixIcon.button.button--primary::after {
+    border-radius: 15px;
+}.reviewBlockMain.NEW {
+    max-width: 100%;
+    margin: 40px 0;
+    text-align: center;    padding: 0;
+    background: transparent;
+    border: none;
+}.reviewTop p,.reviewBottom p{margin:0}.reviewTop,.reviewBottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    width: fit-content;
+    margin: auto;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}.reviewTop p {
+    margin-left: 10px;
+}.mainWrapTop .page-width {
+    padding-bottom: 1px;
+}.logoItemNEW.whiteWRAP {
+    width: 80%;
+}p.smallReview img {
+    display: inline-block;
+    width: 1em;
+    height: 1em;margin-right:6px;
+    object-fit: contain;
+}.smallReview {
+    font-style: italic;
+    font-size: 0.9em;
+    display: flex;    margin: 5px 0 0;
+    align-items: center;
+}.textSectionMain {
+    font-weight: 600;
+    line-height: 1.4;
+}.reviewTop, .reviewBottom{
+    color: {{section.settings.headingColor}};font-size:14px
+}
+  @media(max-width:1400px)
+  {
+    .leftSideMain {
+    padding-right: 0 !important; 
+}.rightSideMain img{  object-position:center !important
+  }
+  }
+@media(min-width:1300px)
+  {
+    .wrapTextMain {
+    padding-top: 70px !important;
+}
+  }
+   @media(max-width:900px)
+  {
+  .leftSideMain { 
+    width: 70% !important;
+}.rightSideMain {
+    width: 30% !important;
+}
+  } 
+  @media(max-width:767px)
+  {.smallReview { 
+    justify-content: center;
+}.textSectionMain { 
+    font-style: italic;
+}.whiteWRAP { 
+    line-height: 1.3; 
+}p.italicSubHeading {
+    display: none;
+}
+    .class{{section.id}} .rightSideMain img { 
+    margin: auto;
+    display: block;
+} .leftSideMain {
+    width: 100% !important;
+    padding-top: 30px !important;
+}.reviewBlockMain.NEW { 
+    margin: 30px 0 20px;
+    }.logoBlockMainSecNEW {
+    width: 100%;
+    margin-top: 30px;
+}.rightPortionMobile {
+    display: block !important;
+    width: 40%;
+}.wrapImageAndText {
+    display: flex;
+}.leftPoprtionA {
+    width: 60%;
+}.rightPortionMobile img {
+    object-fit: contain;
+}.logoItemNEW.whiteWRAP {
+    width: 90%;margin:20px 0 0
+}a.fixIcon.button.button--primary {
+    font-weight: 600;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;    font-size: 0.9em;
+}
+  .rightSideMain {
+     
+}.onlyDesktop{display:none !important;}
+    .class{{ section.id }}{
+background-image:url('{{ section.settings.backimagem | img_url: 'master' }}') !important
+    }
+    
+    .logoItem {
+    min-width: 100px;
+ width:50%
+}.logoBlockMainSec { 
+    align-items: center;
+    justify-content: center; 
+}.logoItem img { 
+    max-height: 20px;
+}.logoItem:has(strong) {
+    width: 100%;
+}.logoItem img { 
+    object-position: left;
+}
+    .leftSideMain, .rightSideMain {
+    width: 100%;
+    padding: 0;
+}.wrapTopMain { 
+    flex-direction: column-reverse;
+}.wrapTextMain {
+    padding: 0;
+}.logoBlockMainSec { 
+    padding: 30px 0 20px;
+}.logoItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}.logoItem img {
+    object-position: center;
+}.wrapTheseNow .logoItemNEWM:nth-child(7), .wrapTheseNow .logoItemNEWM:nth-child(8) {
+    display: none;
+}.wrapTheseNow .logoItemNEWM { 
+    width: calc(33% - 13px);
+}.wrapTheseNow .logoItemNEWM .justWhiteBoundary { 
+    padding: 5px 3px;
+    }.reviewTop, .reviewBottom {  
+}
+  }
+</style>
+<section {% if section.settings.backimage != blank %}style="background-image:url('{{ section.settings.backimage | img_url: 'master' }}')"{% endif %} class="mainWrapTop class{{ section.id }}">
+  <div class="page-width">
+<div class="wrapTopMain">
+<div class="leftSideMain">
+<div class="wrapTextMain" style="{% if section.settings.text == blank %}padding-top:20px !important{% endif %}">
+{% if section.settings.bundlesUp != blank %}
+<p style="font-style:italic" class="italicSubHeading">{{ section.settings.bundlesUp }}</p>
+{% endif %} 
+
+  
+{% if section.settings.heading != blank %}
+<h2 class="mainHeading">{{ section.settings.heading }}</h2>
+{% endif %}
+
+  
+<div class="wrapImageAndText">
+  <div class="leftPoprtionA">
+    {% if section.settings.text != blank %}
+<div class="textSectionMain">
+{{ section.settings.text | replace: '[cross]', '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1.4 14L0 12.6L5.6 7L0 1.4L1.4 0L7 5.6L12.6 0L14 1.4L8.4 7L14 12.6L12.6 14L7 8.4L1.4 14Z" fill="#EE3624"/></svg>' }}
+</div>
+  {% endif %}
+  
+<div class="logoItemNEW whiteWRAP" style="background:{{ section.settings.backgroundWrap }}">
+ {{ section.settings.featured }} 
+</div>
+  </div>
+<div class="rightPortionMobile" style="display:none"> 
+   {% if section.settings.rightImage != blank %}
+<img src="{{ section.settings.rightImage | img_url: '400x'}}" width="100%" height="100%" alt="{{ section.settings.rightImage.alt }}">
+     {% endif %}
+</div>
+</div>
+
+  
+  {% if section.blocks.size > 0 %}
+<div class="logoBlockMainSecNEW"> 
+  <div class="wrapTheseNow">
+{% for block in section.blocks %}
+<div class="logoItemNEWM">
+<div class="justWhiteBoundary">
+<img src="{{ block.settings.logo | img_url: '100x'}}" loading="lazy"  width="100%" height="100%" alt="{{ block.settings.logo.alt }}">
+<span>{{ block.settings.text }}</span>
+</div>
+</div>
+{% endfor %}
+  </div>
+</div>
+{% endif %}
+
+  
+  <div class="centeredMobile">
+{% if section.settings.btn_text != blank %}
+<a href="{{ section.settings.btn_link }}" class="fixIcon button button--primary">
+{{ section.settings.btn_text }}
+</a>
+{% endif %}  
+    {% if  section.settings.guaranteeImg != blank %}
+<p class="smallReview"> 
+<img src="{{ section.settings.guaranteeImg | img_url: '60x' }}" alt="{{ section.settings.guaranteeImg.alt }}" width="100%" height="100%">
+<span>{{ section.settings.guaranteeText }}</span>
+</p> 
+      {% endif %}
+{% if section.settings.badges != blank %}
+<img class="badgesMain" src="{{ section.settings.badges | img_url: 'master' }}" alt="{{ section.settings.badges.alt }}" width="100%" height="100%">
+{% endif %}
+  </div>
+  
+</div>
+</div>
+<div class="rightSideMain onlyDesktop">
+  {% if section.settings.rightImage != blank %}
+<img src="{{ section.settings.rightImage | img_url: 'master'}}" width="100%" height="100%" alt="{{ section.settings.rightImage.alt }}">
+  {% endif %}
+ 
+</div>
+</div>
+
+
+    {% if section.settings.review != blank %}
+<div class="reviewBlockMain NEW">
+<div class="reviewTop">{% render 'stars' %}
+<strong>{{ section.settings.review }}</strong></div>
+  <div class="reviewBottom">
+{{ section.settings.review2 }}  
+  </div>
+</div>
+{% endif %}
+
+
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "New Design Main",
+    "settings": [ 
+      {
+        "type":"color",
+        "id":"headingColor",
+        "label":"Heading Color",
+        "default":"#000000"
+      },
+      {
+        "type":"color",
+        "id":"gradient1",
+        "label":"Gradient 1",
+        "default":"#5D3891"
+      },
+      {
+        "type":"color",
+        "id":"gradient2",
+        "label":"Gradient 2",
+        "default":"#66347F"
+      },
+      {
+        "type":"color",
+        "id":"backgroundWrap",
+        "label":"Background bar text",
+        "default":"#f2f7fe"
+      },
+      {
+        "type":"image_picker",
+        "id":"backimage",
+        "label":"Background Image"
+      }, 
+      {
+        "type":"image_picker",
+        "id":"backimagem",
+        "label":"Background Image Mobile"
+      }, 
+      {
+        "type":"image_picker",
+        "id":"rightImage",
+        "label":"Image at right"
+      },
+      {
+        "type":"text",
+        "id":"bundlesUp",
+        "label":"Subheading"
+      }, 
+      {
+        "type":"textarea",
+        "id":"heading",
+        "label":"Heading"
+      },
+       {
+        "type":"textarea",
+        "id":"text",
+        "label":"Text"
+      },
+      {
+        "type":"text",
+        "id":"btn_text",
+        "label":"Button Text"
+      },
+      {
+        "type":"url",
+        "id":"btn_link",
+        "label":"Button Link"
+      },
+       {
+        "type":"image_picker",
+        "id":"guaranteeImg",
+        "label":"Guarantee Image"
+      },
+      {
+        "type":"text",
+        "id":"guaranteeText",
+        "label":"Guarantee Text"
+      },
+       {
+        "type":"image_picker",
+        "id":"badges",
+        "label":"Badges"
+      },
+      {
+        "type":"header",
+        "content":"Review"
+      }, 
+      {
+        "type":"richtext",
+        "id":"review",
+        "label":"Review Label"
+      } ,
+      {
+        "type":"richtext",
+        "id":"review2",
+        "label":"Review"
+      } ,
+      {
+        "type":"html",
+        "id":"featured",
+        "label":"Blocks Heading",
+        "default":"Featured In:"
+      }
+    ],
+    "blocks":[
+      {
+        "type":"image",
+        "name":"Block",
+        "settings":[
+          {
+            "type":"image_picker",
+            "id":"logo",
+            "label":"Logo"
+          },
+           {
+            "type":"text",
+            "id":"text",
+            "label":"Text"
+          }
+        ]
+      }
+    ],
+    "presets":[
+      {
+        "name":"New Design Main"
+      }
+    ]
+  }
+{% endschema %} 

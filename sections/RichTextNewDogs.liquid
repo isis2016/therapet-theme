@@ -1,0 +1,73 @@
+<style>
+  .wrapNeedHelpNEW {
+    padding: 50px 0; 
+    text-align: center;color:white
+}.wrapNeedHelpNEW h2 {
+    font-size: 1.8em;
+}.wrapNeedHelpNEW a {
+    font-weight: 900;
+    text-decoration: none; 
+}.wrapNeedHelpNEW p {
+    font-size: 0.9em;margin-bottom:0
+}.guaranteeImageNEW{
+    width:90%;max-width:280px;margin:0 auto 20px;display:block;object-fit:contain
+}
+</style>
+
+<section style="background: linear-gradient(102.47deg, #1585b6 0.87%, #71c3bc 101.26%);">
+<div class="page-width">
+<div class="wrapNeedHelpNEW">
+  {% if section.settings.image  != blank %}
+  <img src="{{ section.settings.image | img_url: '500x' }}" class="guaranteeImageNEW" loading="lazy" alt="{{ section.settings.image.alt }}" width="100%" height="auto">
+{% endif %}
+  
+<h3 style="color:white;    margin-top: 0;">{{ section.settings.heading }}</h3>
+{{ section.settings.text }}
+
+  {% if section.settings.btn_text != blank %}
+    <br>
+<a style="width: 100%;" href="{{ section.settings.btn_link }}" class="fixIcon button button--primary">
+{{ section.settings.btn_text }}
+</a>
+{% endif %} 
+</div>
+</div>
+</section>
+
+
+{% schema %}
+  {
+    "name": "Rich Text New Dogs",
+    "settings": [ 
+      {
+        "type":"image_picker",
+        "label":"Image",
+        "id":"image"
+      },
+      {
+        "type":"textarea",
+        "id":"heading",
+        "label":"Heading"
+      },
+      {
+        "type":"richtext",
+        "id":"text",
+        "label":"Text"
+      },{
+        "type":"text",
+        "id":"btn_text",
+        "label":"Button Text"
+      },
+      {
+        "type":"url",
+        "id":"btn_link",
+        "label":"Button Link"
+      }
+    ],
+    "presets":[
+      {
+        "name":"Rich Text New Dogs"
+      }
+    ]
+  }
+{% endschema %} 

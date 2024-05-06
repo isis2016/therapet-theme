@@ -1,0 +1,675 @@
+{
+  "sections": {
+    "e28a18d1-fdae-4931-918f-dd7312b39356": {
+      "type": "sale-bar",
+      "settings": {
+        "friday-sale-img": "shopify:\/\/shop_images\/black_friday_sale.jpg",
+        "bar-p": "<p><em><strong>Hurry! Ends Soon<\/strong><\/em><\/p>",
+        "pet-dog-img": "shopify:\/\/shop_images\/pet-dog-2_430x_a1cd95ad-eb96-40ac-b3be-8882e27fa959.jpg",
+        "show-countdown": false,
+        "month": "December",
+        "day": "1",
+        "year": "2023",
+        "time": "14:00:00"
+      }
+    },
+    "037595ff-3b2e-41ec-9a35-eb00da12b3d4": {
+      "type": "new-main-product",
+      "blocks": {
+        "6f9b7ceb-fb28-4b6b-8af8-5b46df681ffa": {
+          "type": "seller-tag",
+          "settings": {
+            "heart-icon": "shopify:\/\/shop_images\/Vector.svg",
+            "seller-p": "Bestseller"
+          }
+        },
+        "f713ee50-7f78-42c8-951e-5655dd8e0d71": {
+          "type": "title",
+          "settings": {
+            "product-title": "",
+            "free-gift": "+Free Gift"
+          }
+        },
+        "fc758a6d-905c-47c9-9e32-59e5200f2d01": {
+          "type": "trustpilot",
+          "settings": {
+            "trust-url": "",
+            "trustpilot-head": "Excellent",
+            "trust-star": "shopify:\/\/shop_images\/rating.svg",
+            "trustpilot-p": "<p>7,971 <em>reviews on<\/em><\/p>",
+            "trustpilot-p2": "<p>7,971 <em>reviews<\/em><\/p>",
+            "trust-logo": "shopify:\/\/shop_images\/trustpilot.svg"
+          }
+        },
+        "b4da498a-f380-4bf8-afd2-f9ade1f108a6": {
+          "type": "parent-review",
+          "settings": {
+            "parent-rating": "<p><em>“We have seen a reduction in the paw-licking, the scratching, and the scooting... I highly, highly suggest trying the Allergy & Immune Soft Chews**”<\/em><\/p>",
+            "quote-icon": "shopify:\/\/shop_images\/quote.svg",
+            "parent-p": "Naniloa's mom"
+          }
+        },
+        "5dd088e7-ec6c-4b10-99a0-78ef6f01fd1b": {
+          "type": "mobile-popup",
+          "settings": {
+            "box-img1mob": "shopify:\/\/shop_images\/avif-2.png",
+            "box-head1mob": "FREE gift when you subscribe*",
+            "info-iconmob": "shopify:\/\/shop_images\/information-icon.svg",
+            "box-img2mob": "shopify:\/\/shop_images\/avif-3.png",
+            "box-head2mob": "Quality ingredients",
+            "box-img3mob": "shopify:\/\/shop_images\/avif-4.png",
+            "box-head3mob": "Tailored formula",
+            "popup1-pmob": "<p>Subscribe today and receive a free pack of Beef Jerky Recipe in your first delivery.<\/p>",
+            "popup-img1mob": "shopify:\/\/shop_images\/beef_jerky_free_gift_f7d5be7bba_91ecb86467.png",
+            "popup-head1mob": "Premium, researched ingredients your dog will love",
+            "popup2-pmob": "<p>A truly transformative formula containing premium quality ingredients developed by pet health experts.<\/p><ul><li><strong>Our ingredients are third-party tested<\/strong><\/li><li><strong>Vet-reviewed<\/strong><\/li><li><strong>PetLab Co. is NASC-certified<\/strong><\/li><\/ul>",
+            "popup-btn-urlmob": "",
+            "popup-btnmob": "See Full Ingredients List",
+            "popup-button-iconmob": "shopify:\/\/shop_images\/downwards-arrow.svg",
+            "popup3-textmob": "<p>Customer survey data shows...<\/p>",
+            "popup-i-headmob": "86% of PetLab Co subscribers see results 3 months daily use1",
+            "pet-profile-imgmob": "shopify:\/\/shop_images\/cat-1.svg",
+            "star-rating-imgmob": "shopify:\/\/shop_images\/stars.svg",
+            "verified-iconmob": "shopify:\/\/shop_images\/verified.svg",
+            "verified-textmob": "Verified Buyer",
+            "verified-reviewmob": "<p>Love these!! We have a pittie that has constant yeast infections with his ears. He was always shaking his head. He also licks his paws like crazy. After the first week of these daily chews, all of this has stopped!!! Will forever stay on the subscription. :)<\/p>",
+            "bottom-textmob": "<p>To take advantage of our 25% OFF Subscribe & Save plan for optimal benefits at the best price possible.<\/p>",
+            "bottom-headmob": "Best results are seen after 90 days"
+          }
+        },
+        "53e25067-e4ce-472a-84ac-23e64bb3f5f3": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "5ebea39f-723e-4685-b8ff-27c19de0b6d3": {
+          "type": "reviewed",
+          "settings": {
+            "reviewed-head": "Vet Reviewed",
+            "reviewed-text": "“As a vet, I only wantthe very best for my patients - therefore, Itrust and recommend Therapet MD.”",
+            "reviewed-h5": "Dr. Roxanna Boardbar",
+            "reviewed-h4": "DVM, Vet Consultant to TherapetMD.",
+            "reviewed-img": "shopify:\/\/shop_images\/roxy_vet_e6fb056070.png",
+            "reviewed-img-ipad": "shopify:\/\/shop_images\/reviewed-vet.png"
+          }
+        },
+        "b4a8abb9-6346-4548-8868-cbd46a13a319": {
+          "type": "early-sale",
+          "settings": {
+            "power-icon": "shopify:\/\/shop_images\/lightning.png",
+            "power-head": "Early Black Friday Sale",
+            "power-text": "<p>25% OFF Subscription + FREE Gift<\/p>"
+          }
+        },
+        "b1f90ab2-2928-4706-a41f-46e171d96daf": {
+          "type": "bundle-with-price",
+          "settings": {
+            "bundle-title": "Bundle Up & Save More!",
+            "month": "+ FREE SHIPPING"
+          }
+        },
+        "b9d8cd77-8c3f-4f73-9474-ccf0468e47f4": {
+          "type": "product",
+          "settings": {
+            "product": "therapet-calming-diffuser",
+            "meta-img": "shopify:\/\/shop_images\/pack-1-min-removebg-preview.png",
+            "title": "+ 2 Refills",
+            "default": true,
+            "badge": "",
+            "numberOfItems": 1,
+            "offerTitle": "1x Diffuser",
+            "show_full_price": false,
+            "variant_pack": "",
+            "background": ""
+          }
+        },
+        "b0b5cf9c-a5b1-4eb3-835b-d9e5d0d29793": {
+          "type": "product",
+          "settings": {
+            "product": "2x-cat-calming-diffuser",
+            "meta-img": "shopify:\/\/shop_images\/pack-2-min-removebg-preview.png",
+            "title": "+ 4 Refills",
+            "default": false,
+            "badge": "",
+            "numberOfItems": 1,
+            "offerTitle": "2x Diffuser",
+            "show_full_price": false,
+            "variant_pack": "",
+            "background": ""
+          }
+        },
+        "5164a4c0-8446-4955-b183-34592c56385a": {
+          "type": "product",
+          "settings": {
+            "product": "3x-therapet-diffuser",
+            "meta-img": "shopify:\/\/shop_images\/pack-3-min-removebg-preview.png",
+            "title": "+ 6 Refills",
+            "default": false,
+            "badge": "",
+            "numberOfItems": 1,
+            "offerTitle": "3x Diffuser",
+            "show_full_price": false,
+            "variant_pack": "",
+            "background": ""
+          }
+        },
+        "56b5869c-02e8-4029-bbe8-447b6a63b7da": {
+          "type": "buy_button",
+          "settings": {
+            "amount": "View the correct amount of your dog",
+            "show_dynamic_checkout": false,
+            "payment-icon1": "shopify:\/\/shop_images\/visa.svg",
+            "payment-icon2": "shopify:\/\/shop_images\/mastercard.svg",
+            "payment-icon3": "shopify:\/\/shop_images\/amex.svg",
+            "payment-icon4": "shopify:\/\/shop_images\/paypal.svg",
+            "payment-icon5": "shopify:\/\/shop_images\/discover.svg",
+            "payment-icon6": "shopify:\/\/shop_images\/google-pay.svg",
+            "payment-icon7": "shopify:\/\/shop_images\/apple-pay.svg"
+          }
+        },
+        "f3e3f98d-5f76-4424-bc83-d335fa42e08c": {
+          "type": "custom-product",
+          "settings": {
+            "custom-product": "therapet-calming-spray",
+            "upsell-text": "",
+            "upsell-badge": "54% Off",
+            "short-desc": "<p>Lorem Ipsum Spoil Your Pup With Our Protein-Rich Organic Turkey Jerky Recipe Dog Treats.<\/p>",
+            "enable_quick_add": true
+          }
+        },
+        "cb1b8abf-b9d0-4d5f-83c3-52387db9d230": {
+          "type": "icons",
+          "settings": {
+            "stamp-img1": "shopify:\/\/shop_images\/stamp-icon1.svg",
+            "stamp-img2": "shopify:\/\/shop_images\/stamp-icon2.svg",
+            "stamp-img3": "shopify:\/\/shop_images\/stamp-icon3.svg"
+          }
+        },
+        "d5836b85-b7f4-4e8c-8f39-d059dedbd8b9": {
+          "type": "upsell-collection",
+          "settings": {
+            "collection": "refills"
+          }
+        },
+        "745e0d3d-d770-446d-82e5-9a3a6ddb7509": {
+          "type": "pop__up",
+          "settings": {
+            "pophead": "For optimum results we recommend you follow the guidance below...",
+            "pop-dog": "shopify:\/\/shop_images\/stamp-icon3.svg",
+            "pop-name": "Under 11kg",
+            "pop-content": "<p>1\/2 soft chew daily 1\/2 soft tubs monthly<\/p>",
+            "pop-dog-icon": "shopify:\/\/shop_images\/Vector_1.svg",
+            "pop-dog2": "shopify:\/\/shop_images\/stamp-icon3.svg",
+            "pop-name2": "Under 11 - 34 kg",
+            "pop-content2": "<p>1 soft chew daily 1 soft tubs monthly<\/p>",
+            "pop-dog-icon2": "shopify:\/\/shop_images\/Vector_1.svg",
+            "pop-dog3": "shopify:\/\/shop_images\/stamp-icon3.svg",
+            "pop-name3": "Under 11 - 34 kg",
+            "pop-content3": "<p>1 soft chew daily 1 soft tubs monthly<\/p>",
+            "pop-dog-icon3": "shopify:\/\/shop_images\/Vector_1.svg",
+            "dogbtn": "click here",
+            "doglink": ""
+          }
+        },
+        "a7250c48-a130-4f24-ae0a-ff2a7e8f4364": {
+          "type": "button-popup",
+          "settings": {
+            "popup-btn-url-mobile": "",
+            "trolly-icon": "shopify:\/\/shop_images\/shopping-cart.f5bb839a.png",
+            "popup-btn-url-text": "Choose Package"
+          }
+        },
+        "d7763844-5aed-4d75-a64d-26752713d2f2": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "none",
+            "content": "",
+            "page": ""
+          }
+        },
+        "6b0de94c-86ac-4d2a-ad70-14bbc7613f09": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "none",
+            "content": "",
+            "page": ""
+          }
+        },
+        "61802ce9-8e98-4f07-a38c-782178f4d293": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "none",
+            "content": "",
+            "page": ""
+          }
+        },
+        "aa01b687-27f4-4004-a6ac-7b89dae03a05": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "none",
+            "content": "",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "6f9b7ceb-fb28-4b6b-8af8-5b46df681ffa",
+        "f713ee50-7f78-42c8-951e-5655dd8e0d71",
+        "fc758a6d-905c-47c9-9e32-59e5200f2d01",
+        "b4da498a-f380-4bf8-afd2-f9ade1f108a6",
+        "5dd088e7-ec6c-4b10-99a0-78ef6f01fd1b",
+        "53e25067-e4ce-472a-84ac-23e64bb3f5f3",
+        "5ebea39f-723e-4685-b8ff-27c19de0b6d3",
+        "b4a8abb9-6346-4548-8868-cbd46a13a319",
+        "b1f90ab2-2928-4706-a41f-46e171d96daf",
+        "b9d8cd77-8c3f-4f73-9474-ccf0468e47f4",
+        "b0b5cf9c-a5b1-4eb3-835b-d9e5d0d29793",
+        "5164a4c0-8446-4955-b183-34592c56385a",
+        "56b5869c-02e8-4029-bbe8-447b6a63b7da",
+        "f3e3f98d-5f76-4424-bc83-d335fa42e08c",
+        "cb1b8abf-b9d0-4d5f-83c3-52387db9d230",
+        "d5836b85-b7f4-4e8c-8f39-d059dedbd8b9",
+        "745e0d3d-d770-446d-82e5-9a3a6ddb7509",
+        "a7250c48-a130-4f24-ae0a-ff2a7e8f4364",
+        "d7763844-5aed-4d75-a64d-26752713d2f2",
+        "6b0de94c-86ac-4d2a-ad70-14bbc7613f09",
+        "61802ce9-8e98-4f07-a38c-782178f4d293",
+        "aa01b687-27f4-4004-a6ac-7b89dae03a05"
+      ],
+      "settings": {
+        "bundle-bg": "#ffffff",
+        "bundle-active-bg": "#fae5ee",
+        "bundle-title": "#38306a",
+        "bundle-active-title": "",
+        "bundle-subtitle": "#38306a",
+        "bundle-active-subtitle": "",
+        "cover-main-img": "shopify:\/\/shop_images\/TAL_L_OTP_5_d9f2a5f351.png",
+        "box-img1": "shopify:\/\/shop_images\/avif-2.png",
+        "box-head1": "FREE gift when you subscribe*",
+        "burn-icon": "shopify:\/\/shop_images\/fire.svg",
+        "sold-p": "<p><strong>677+ sold<\/strong> in the last 24 hours<\/p>",
+        "info-icon": "shopify:\/\/shop_images\/information-icon.svg",
+        "box-img2": "shopify:\/\/shop_images\/avif-3.png",
+        "box-head2": "Quality ingredients",
+        "box-img3": "shopify:\/\/shop_images\/avif-4.png",
+        "box-head3": "Tailored formula",
+        "popup1-p": "<p>Subscribe today and receive a free pack of Beef Jerky Recipe in your first delivery.<\/p>",
+        "popup-img1": "shopify:\/\/shop_images\/beef_jerky_free_gift_f7d5be7bba_91ecb86467.png",
+        "popup-head1": "Premium, researched ingredients your dog will love",
+        "popup2-p": "<p>A truly transformative formula containing premium quality ingredients developed by pet health experts.<\/p><ul><li><strong>Our ingredients are third-party tested<\/strong><\/li><li><strong>Vet-reviewed<\/strong><\/li><li><strong>PetLab Co. is NASC-certified<\/strong><\/li><\/ul>",
+        "popup-btn-url": "",
+        "popup-btn": "See Full Ingredients List",
+        "popup-button-icon": "shopify:\/\/shop_images\/downwards-arrow.svg",
+        "popup3-text": "<p>Customer survey data shows...<\/p>",
+        "popup-i-head": "86% of PetLab Co subscribers see results 3 months daily use1",
+        "pet-profile-img": "shopify:\/\/shop_images\/cat-2.svg",
+        "star-rating-img": "shopify:\/\/shop_images\/stars.svg",
+        "verified-icon": "shopify:\/\/shop_images\/verified.svg",
+        "verified-text": "Verified Buyer",
+        "verified-review": "<p>Love these!! We have a pittie that has constant yeast infections with his ears. He was always shaking his head. He also licks his paws like crazy. After the first week of these daily chews, all of this has stopped!!! Will forever stay on the subscription. :)<\/p>",
+        "bottom-text": "<p>To take advantage of our 25% OFF Subscribe & Save plan for optimal benefits at the best price possible.<\/p>",
+        "bottom-head": "Best results are seen after 90 days",
+        "more-product-image1": "shopify:\/\/shop_images\/02_vet_34e11923cf.png",
+        "more-product-image2": "shopify:\/\/shop_images\/03_benefits_1b44076334.png",
+        "more-product-image3": "shopify:\/\/shop_images\/04_tailored_9ea84680ea.png",
+        "more-product-image4": "shopify:\/\/shop_images\/05_target_7d502db7ef.png",
+        "more-product-image5": "shopify:\/\/shop_images\/06_ingredients_c682691003.png",
+        "more-product-image6": "shopify:\/\/shop_images\/07_feeding_30e9bb2302.png",
+        "more-product-image7": "shopify:\/\/shop_images\/08_loved_6ef81a1dd1.png",
+        "showmore-btn": "",
+        "enable_sticky_info": true,
+        "media_position": "left",
+        "gallery_layout": "stacked",
+        "media_size": "large",
+        "mobile_thumbnails": "hide",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "product_id": "therapet-cat-flea-collar"
+      }
+    },
+    "e1cd6145-ac4b-4b0d-b32b-3d7a89a3f508": {
+      "type": "product-banner",
+      "settings": {
+        "qhero-img": "shopify:\/\/shop_images\/web-c1-Hamdi_Hassine_r1_04H_9442.jpg",
+        "hide-img": false,
+        "qhero-img2": "shopify:\/\/shop_images\/Screenshot_at_Nov_18_11-52-33.png",
+        "qhero-img3": "shopify:\/\/shop_images\/Screenshot_at_Nov_18_11-52-33.png",
+        "hide-headline": false,
+        "qhero-head": "The Solution That Is Bringing Anxious Cats Back to Their Playful Kitty Days! 😻",
+        "hide-text": false,
+        "qhero-p": "<p>Is your cat often tense or edgy, acting aggressive, spraying, or hiding? Sadly, These are <strong>clear<\/strong> <strong>signs of stress 😿<\/strong><br\/><br\/>But what if you could turn back time and help them <strong>relive those carefree kitten days<\/strong> in just a few days... <strong>Would you?<\/strong><\/p><p><strong> <\/strong><\/p>",
+        "red-btn": "#stats-block",
+        "red-text": "Find Out More",
+        "blue-btn": "#question-two",
+        "blue-text": "Skip"
+      }
+    },
+    "b3526ef6-b8b8-4535-839f-d66a4122b919": {
+      "type": "seasonal",
+      "settings": {
+        "videoOpt": "",
+        "hide-seasonal-video": false,
+        "bg": "",
+        "custom-id": "stats-block",
+        "seasonal-head": "Anxiety is a debilitating issue that can rob cats of their happiness and joy 😢",
+        "hide-seasonal-head": false,
+        "seasonal-p": "<p>According to a study conducted in the US, <strong>1 in 4 cats suffer from anxiety<\/strong>, and at least 20% of those cats feel extreme separation anxiety. Roughly 67% of cats with anxiety aren’t treated for it, and <strong>the longer<\/strong> this issue goes untreated, <strong>the worse it gets. <\/strong><br\/><br\/>This is what eats away at their fun, playful nature, turning them into shadows of the joyful, cute kitties we thought we adopted to bring more happiness into our lives…<\/p>",
+        "red-btn": "#problem-two",
+        "red-text": "How Does It Happen?!",
+        "blue-btn": "",
+        "blue-text": "",
+        "seasonal-img": "shopify:\/\/shop_images\/tumblr_inline_p5ym1oxqog1u0huaa_1280.jpg",
+        "hide-seasonal-img": false,
+        "section_css_class": "stats"
+      }
+    },
+    "fc5b06f3-2e66-4f55-8cb9-b9aeee743390": {
+      "type": "seasonal",
+      "settings": {
+        "videoOpt": "",
+        "hide-seasonal-video": false,
+        "bg": "#f5f7ff",
+        "custom-id": "problem-two",
+        "seasonal-head": "It All Boils Down To The 'Stressed-Cat' Instincts… 🙀",
+        "hide-seasonal-head": false,
+        "seasonal-p": "<p>You see, the furry feline cats we love and adore in our home, are descendants of wild jungle cats...<br\/><br\/>As a result, they have dormant<strong> “Stressed-Cat\" Instincts<\/strong> that when activated by factors beyond your control…<\/p><p>It can suddenly make them <strong>HYPER-SENSITIVE<\/strong>, uncomfortable and <span style=\"text-decoration:underline\">change how they perceive their environment and react to stress...<\/span><\/p><p>Where before they’d be calm, happy, and peaceful...<\/p><p>These instincts can be triggered by subtle changes like <strong>moving to a new home, new people, noises, new furniture, or a harmless stray cat…<\/strong><\/p>",
+        "red-btn": "#problem-three",
+        "red-text": "Continue reading",
+        "blue-btn": "",
+        "blue-text": "",
+        "seasonal-img": "shopify:\/\/shop_images\/b9ad0dfa-e058-4af5-8bf0-ffb4a35cf637.webp",
+        "hide-seasonal-img": false,
+        "section_css_class": "problem-two"
+      }
+    },
+    "cfd18b69-0c41-4ee7-b030-5f25661a9ac6": {
+      "type": "seasonal",
+      "settings": {
+        "videoOpt": "",
+        "hide-seasonal-video": false,
+        "bg": "",
+        "custom-id": "problem-three",
+        "seasonal-head": "What's more concerning is the cascade of effects resulting from their high-stress levels, leading to more serious health problems.",
+        "hide-seasonal-head": false,
+        "seasonal-p": "<p>According to the <strong>National Institutes of Health*,<\/strong> ongoing stress can seriously weaken our cats' immune systems, opening them up to <strong>all sorts of health issues!<\/strong><br\/><br\/>You see, When cats are tense, <strong>their health suffers<\/strong>. Why? It boils down to cortisol...<br\/><br\/>This stress hormone <strong>lowers their immunity<\/strong>, making them an <strong>easy target for infections and diseases<\/strong> like <strong>UTIs, skin disorders, and digestive problems.<\/strong><br\/><br\/>So in essence, <strong>a stressed cat is a venerable cat, <\/strong>which probably means <strong>more vet visits<\/strong> than you’d expect.<\/p>",
+        "red-btn": "#symptoms",
+        "red-text": "What are the symptoms?",
+        "blue-btn": "",
+        "blue-text": "",
+        "seasonal-img": "shopify:\/\/shop_images\/nihstudy_91b62b5d-f7fe-4769-a71a-ebadb464a66d.png",
+        "hide-seasonal-img": false,
+        "section_css_class": "problem-three"
+      }
+    },
+    "166469fc-b179-4ede-8b27-b963d1ab65f3": {
+      "type": "seasonal",
+      "settings": {
+        "videoOpt": "",
+        "hide-seasonal-video": false,
+        "bg": "#f5f7ff",
+        "custom-id": "symptoms",
+        "seasonal-head": "How Can You Spot This?!",
+        "hide-seasonal-head": false,
+        "seasonal-p": "<p>You see, your cat won’t wear a sign saying they're stressed. Instead, they express it through 'unwanted' behaviors like:<\/p><ul><li><strong>Not using their litter box<\/strong><\/li><li><strong>Spraying pee to mark their spot<\/strong><\/li><li><strong>Fighting with other cats or dogs<\/strong><\/li><li><strong>Scratching your furniture<\/strong><\/li><li><strong>Meowing a lot and loudly<\/strong><\/li><li><strong>Hiding or not liking being touched.<\/strong><br\/><\/li><\/ul><p>All these are huge red flags that your cat is asking for help, and they need it now.<\/p>",
+        "red-btn": "#solution-one",
+        "red-text": "What's The Solution?",
+        "blue-btn": "#question-one",
+        "blue-text": "Skip",
+        "seasonal-img": "shopify:\/\/shop_images\/behaviors.jpg",
+        "hide-seasonal-img": false,
+        "section_css_class": "symptoms"
+      }
+    },
+    "b6b321e3-0cbb-477a-8914-53abe85154f2": {
+      "type": "seasonal",
+      "settings": {
+        "videoOpt": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/8b03c700715a4721a404c67b4909038b.mp4",
+        "hide-seasonal-video": false,
+        "bg": "",
+        "custom-id": "solution-one",
+        "seasonal-head": "Get To The Root Of Your Cat's Stress & Anxiety – With This Breakthrough Cat Calming Diffuser",
+        "hide-seasonal-head": false,
+        "seasonal-p": "<p>If you've noticed your cat showing any of these troubling behaviors, chances are you've tried some fixes...<br\/> <br\/>But let's be honest, they probably just covered up the problem for a short while <strong>without really getting to the heart of it…<br\/><br\/>That's why we decided to make the solution ourselves.<\/strong><\/p><p>We worked with pet scientists and industry experts to formulate a cat-first calming diffuser that focuses on <strong>potency, purity, and power.<\/strong><\/p>",
+        "red-btn": "#solution-two",
+        "red-text": "Continue reading",
+        "blue-btn": "",
+        "blue-text": "",
+        "hide-seasonal-img": false,
+        "section_css_class": "solution-one"
+      }
+    },
+    "d10aa53c-dc8d-47ff-9581-15d2be2118af": {
+      "type": "seasonal",
+      "settings": {
+        "videoOpt": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/401e5e50099848eab0038d1d64f0cff4.mp4",
+        "hide-seasonal-video": false,
+        "bg": "#f5f7ff",
+        "custom-id": "solution-two",
+        "seasonal-head": "The moment you plug in TheraPet, it starts its magic!",
+        "hide-seasonal-head": false,
+        "seasonal-p": "<p>It releases gentle \"All Clear Signals\" throughout your cat’s surroundings. <br\/><br\/>These signals are a carefully crafted mix of the <strong>most powerful cat-calming pheromones.<\/strong><\/p><p>When your cat picks up on these, they can <strong>quickly and easily feel calm and safe…<\/strong><\/p><p>This means no more stress-related misbehavior, improved relationships with other cats, reduced anxiety around people, and an end to marking or damaging your home. <br\/><br\/><strong>It's just the peaceful, happy life that both you and your cat deserve.<\/strong><\/p>",
+        "red-btn": "#shopify-section",
+        "red-text": "Continue reading",
+        "blue-btn": "",
+        "blue-text": "",
+        "hide-seasonal-img": false,
+        "section_css_class": "solution-two"
+      }
+    },
+    "c3261476-a1d0-4e81-a1e0-cc06ca574b4b": {
+      "type": "video-blog",
+      "blocks": {
+        "e06d30e6-4c2c-4d77-8a7b-d41209f369a9": {
+          "type": "Blocks",
+          "settings": {
+            "videoOpt": "",
+            "hide-uppervideo": false,
+            "BlockImage": "shopify:\/\/shop_images\/blog-img-1.webp",
+            "hide-upperimage": false,
+            "BlockText": "Feline Facial Pheromones",
+            "hide-upperblocktext": false,
+            "BlockrichText": "<p>Facial Pheromones are what cats <strong>naturally produce when they're feeling good<\/strong> and want to mark their territory as safe. It's like their way of giving a \"thumbs up\" to a particular spot. When your cat senses these pheromones in the air, they'll <strong>understand it as a sign of comfort and safety.<\/strong><\/p>",
+            "content": ""
+          }
+        },
+        "72ff439e-323c-4369-9d63-1a1d87f2e037": {
+          "type": "Blocks",
+          "settings": {
+            "videoOpt": "",
+            "hide-uppervideo": false,
+            "BlockImage": "shopify:\/\/shop_images\/blog-img-2.webp",
+            "hide-upperimage": false,
+            "BlockText": "Maternal Appeasing Pheromones",
+            "hide-upperblocktext": false,
+            "BlockrichText": "<p>These scents are the same ones that mother cats naturally emit to <strong>calm and reassure their kittens.<\/strong> They act as nurturing and calming signals, <strong>creating an environment of peace and security.<\/strong> This comforting aroma is <strong>familiar and deeply soothing<\/strong>, helping to ease stress and anxiety in <strong>cats of all ages. <\/strong><\/p>",
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "e06d30e6-4c2c-4d77-8a7b-d41209f369a9",
+        "72ff439e-323c-4369-9d63-1a1d87f2e037"
+      ],
+      "settings": {
+        "custom-id": "",
+        "BlockColor": "#ffffff",
+        "Text": "The Science Behind The Magic",
+        "hide-upperhead": false,
+        "richText": "<p>Backed by over 25 years of scientific research, cat pheromones have been proven to effortlessly soothe stressed and anxious felines. It’s like pressing a 'relax' button, transforming tense, anxious behavior into calm and contentment.<\/p>",
+        "vscheckbox": false,
+        "vscolor": "",
+        "vstext": "",
+        "red-btn": "#featured-one",
+        "red-text": "Continue"
+      }
+    },
+    "f28ef85b-09f2-4d79-87f8-0b0306abed7e": {
+      "type": "probiotic",
+      "disabled": true,
+      "settings": {
+        "bg": "#f5f7ff",
+        "custom-id": "probiotic",
+        "survey-head": "84% of TheraPet customers surveyed are seeing results after an average of 10 days!",
+        "survey-img": "shopify:\/\/shop_images\/survey-img.webp",
+        "red-btn": "#featured-one",
+        "red-text": "Continue",
+        "survey-p": "<p><em>*Results based on Calming Diffuser buyers' internal feedback survey conducted in August 2023 (n=300)<\/em><\/p><p><\/p>"
+      }
+    },
+    "16e3d6b3-f10a-4d9a-8921-09da29e14ce2": {
+      "type": "featured",
+      "blocks": {
+        "15957e30-b56d-4e75-9b4d-eba509c13beb": {
+          "type": "column",
+          "settings": {
+            "featured-head": "Vet-reviewed...",
+            "hide-featuredhead": false,
+            "featured-img": "shopify:\/\/shop_images\/visuals_5-03.png",
+            "hide-featuredimg": false
+          }
+        },
+        "4f0d6955-997f-4798-8beb-8e2dff247fde": {
+          "type": "column",
+          "settings": {
+            "featured-head": "Loved by pet parents...",
+            "hide-featuredhead": false,
+            "featured-img": "shopify:\/\/shop_images\/visuals_5-01.png",
+            "hide-featuredimg": false
+          }
+        },
+        "d7e130f6-00dd-4b62-8b36-8c2511224c31": {
+          "type": "column",
+          "settings": {
+            "featured-head": "...And thousands of cats worldwide!",
+            "hide-featuredhead": false,
+            "featured-img": "shopify:\/\/shop_images\/visuals_5-02.png",
+            "hide-featuredimg": false
+          }
+        }
+      },
+      "block_order": [
+        "15957e30-b56d-4e75-9b4d-eba509c13beb",
+        "4f0d6955-997f-4798-8beb-8e2dff247fde",
+        "d7e130f6-00dd-4b62-8b36-8c2511224c31"
+      ],
+      "settings": {
+        "bg": "#ffffff",
+        "custom-id": "featured-one",
+        "red-btn": "#question-one",
+        "red-text": "Continue",
+        "section_css_class": "world"
+      }
+    },
+    "e8bea94a-07b2-4d1b-9ea0-06775f07389d": {
+      "type": "question",
+      "blocks": {
+        "59d05855-7f21-4eec-82e8-563906e8a21b": {
+          "type": "column",
+          "settings": {
+            "blue-btn": "#question-two",
+            "blue-text": "One"
+          }
+        },
+        "bc153449-bf1d-4c47-8151-af1e5b8e4172": {
+          "type": "column",
+          "settings": {
+            "blue-btn": "#question-two",
+            "blue-text": "Two"
+          }
+        },
+        "69435b0a-5587-4580-9be8-373561b07088": {
+          "type": "column",
+          "settings": {
+            "blue-btn": "#question-two",
+            "blue-text": "Three"
+          }
+        },
+        "b9b0209a-1fe3-4263-a215-357b2352ff17": {
+          "type": "column",
+          "settings": {
+            "blue-btn": "#question-two",
+            "blue-text": "Four or more"
+          }
+        }
+      },
+      "block_order": [
+        "59d05855-7f21-4eec-82e8-563906e8a21b",
+        "bc153449-bf1d-4c47-8151-af1e5b8e4172",
+        "69435b0a-5587-4580-9be8-373561b07088",
+        "b9b0209a-1fe3-4263-a215-357b2352ff17"
+      ],
+      "settings": {
+        "custom-id": "question-one",
+        "section_css_class": "",
+        "question-head": "How many cats do you have at home?"
+      }
+    },
+    "b10c87e9-ac74-4d21-a284-a9a2c181efed": {
+      "type": "question",
+      "blocks": {
+        "c55f2b37-3d70-4af7-8c52-28e483573d2d": {
+          "type": "column",
+          "settings": {
+            "blue-btn": "https:\/\/therapetmd.com\/pages\/step2-adv",
+            "blue-text": "Rarely"
+          }
+        },
+        "3f17d015-36b1-426a-9c04-d028d18e0d51": {
+          "type": "column",
+          "settings": {
+            "blue-btn": "https:\/\/therapetmd.com\/pages\/step2-adv",
+            "blue-text": "Sometimes"
+          }
+        },
+        "114b3eeb-1d2b-479e-ab71-7aeb87cd954f": {
+          "type": "column",
+          "settings": {
+            "blue-btn": "https:\/\/therapetmd.com\/pages\/step2-adv",
+            "blue-text": "Often"
+          }
+        },
+        "aa40e87e-96b4-419e-abe0-38d3721ba923": {
+          "type": "column",
+          "settings": {
+            "blue-btn": "https:\/\/therapetmd.com\/pages\/step2-adv",
+            "blue-text": "All the time"
+          }
+        }
+      },
+      "block_order": [
+        "c55f2b37-3d70-4af7-8c52-28e483573d2d",
+        "3f17d015-36b1-426a-9c04-d028d18e0d51",
+        "114b3eeb-1d2b-479e-ab71-7aeb87cd954f",
+        "aa40e87e-96b4-419e-abe0-38d3721ba923"
+      ],
+      "settings": {
+        "custom-id": "question-two",
+        "section_css_class": "",
+        "question-head": "How often do you notice them showing unwanted behaviors?\u2028"
+      }
+    }
+  },
+  "order": [
+    "e28a18d1-fdae-4931-918f-dd7312b39356",
+    "037595ff-3b2e-41ec-9a35-eb00da12b3d4",
+    "e1cd6145-ac4b-4b0d-b32b-3d7a89a3f508",
+    "b3526ef6-b8b8-4535-839f-d66a4122b919",
+    "fc5b06f3-2e66-4f55-8cb9-b9aeee743390",
+    "cfd18b69-0c41-4ee7-b030-5f25661a9ac6",
+    "166469fc-b179-4ede-8b27-b963d1ab65f3",
+    "b6b321e3-0cbb-477a-8914-53abe85154f2",
+    "d10aa53c-dc8d-47ff-9581-15d2be2118af",
+    "c3261476-a1d0-4e81-a1e0-cc06ca574b4b",
+    "f28ef85b-09f2-4d79-87f8-0b0306abed7e",
+    "16e3d6b3-f10a-4d9a-8921-09da29e14ce2",
+    "e8bea94a-07b2-4d1b-9ea0-06775f07389d",
+    "b10c87e9-ac74-4d21-a284-a9a2c181efed"
+  ]
+}

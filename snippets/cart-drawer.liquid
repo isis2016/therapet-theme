@@ -1,0 +1,452 @@
+{% comment %}
+    Renders cart drawer
+
+    Usage:
+    {% render 'cart-drawer' %}
+{% endcomment %}
+
+<script src="{{ 'cart.js' | asset_url }}" defer="defer"></script>
+
+<style>
+  .drawer {
+    visibility: hidden;
+  }
+</style>
+
+<cart-drawer class="drawer{% if cart == empty %} is-empty{% endif %}">
+  <div id="CartDrawer" class="cart-drawer">
+    <div id="CartDrawer-Overlay"class="cart-drawer__overlay"></div>
+    <div class="drawer__inner" role="dialog" aria-modal="true" aria-label="{{ 'sections.cart.title' | t }}" tabindex="-1">
+       {%- if cart == empty -%}
+        <div class="drawer__inner-empty">
+          <div class="cart-drawer__warnings center{% if settings.cart_drawer_collection != blank %} cart-drawer__warnings--has-collection{% endif %}">
+            <div class="cart-drawer__empty-content"> 
+             <h2 class="drawer__heading">{{ 'sections.cart.title' | t }}</h2>
+              
+              <img class="emptyCart" src="{{ settings.cart_empty | img_url: '600x' }}" loading="lazy" alt="{{ settings.cart_empty.alt }}">
+ 
+              <h2 class="cart__empty-text">{{ 'sections.cart.empty' | t }}</h2>
+              <p>{{ settings.cart_empty_p }}</p>
+              
+              <button class="drawer__close" type="button" onclick="this.closest('cart-drawer').close()" aria-label="{{ 'accessibility.close' | t }}">{% render 'icon-close' %}</button>
+              <a href="#order-now-section" onclick="this.closest('cart-drawer').close()" class="button button--full-width">
+                {{ 'general.continue_shopping' | t }}
+              </a>
+
+              {%- if shop.customer_accounts_enabled and customer == nil -%}
+                <p class="cart__login-title h3">{{ 'sections.cart.login.title' | t }}</p>
+                <p class="cart__login-paragraph">
+                  {{ 'sections.cart.login.paragraph_html' | t: link: routes.account_login_url }}
+                </p>
+              {%- endif -%}
+            </div>
+          </div>
+          {%- if settings.cart_drawer_collection != blank -%}
+            <div class="cart-drawer__collection">
+              {% render 'card-collection',
+                card_collection: settings.cart_drawer_collection,
+                columns: 1
+              %}
+            </div>
+          {%- endif -%}
+        </div>
+      {%- endif -%}
+      <div class="drawer__header">
+        <h2 class="drawer__heading">{{ 'sections.cart.title' | t }}</h2>
+        <button class="drawer__close" type="button" onclick="this.closest('cart-drawer').close()" aria-label="{{ 'accessibility.close' | t }}">{% render 'icon-close' %}</button>
+      </div>
+
+ 
+{% if settings.topBarSvg != blank and cart != empty %}
+<div class="cartTopBar">
+{{ settings.topBarSvg }}{{ settings.topBar }}
+</div>
+{% endif %}
+
+      
+      <cart-drawer-items {% if cart == empty %}class=" is-empty"{% endif %}>
+        <form action="{{ routes.cart_url }}" id="CartDrawer-Form" class="cart__contents cart-drawer__form" method="post">
+          <div id="CartDrawer-CartItems" class="drawer__contents js-contents">
+            {%- if cart != empty -%}
+              <div class="drawer__cart-items-wrapper">
+                <table class="cart-items" role="table">
+                  <thead role="rowgroup">
+                    <tr role="row">
+                      <th id="CartDrawer-ColumnProductImage" role="columnheader"><span class="visually-hidden">{{ 'sections.cart.headings.image' | t }}</span></th>
+                      <th id="CartDrawer-ColumnProduct" class="caption-with-letter-spacing" scope="col" role="columnheader">{{ 'sections.cart.headings.product' | t }}</th>
+                      <th id="CartDrawer-ColumnTotal" class="right caption-with-letter-spacing" scope="col" role="columnheader">{{ 'sections.cart.headings.total' | t }}</th>
+                      <th id="CartDrawer-ColumnQuantity" role="columnheader"><span class="visually-hidden">{{ 'sections.cart.headings.quantity' | t }}</span></th>
+                    </tr>
+                  </thead>
+
+                  <tbody role="rowgroup">
+                    {%- for item in cart.items -%}
+                      <tr id="CartDrawer-Item-{{ item.index | plus: 1 }}" class="cart-item" role="row">
+                        <td class="cart-item__media" role="cell" headers="CartDrawer-ColumnProductImage">
+                          {% if item.image %}
+                            {% comment %} Leave empty space due to a:empty CSS display: none rule {% endcomment %}
+                            <a href="{{ item.url }}" class="cart-item__link" tabindex="-1" aria-hidden="true"> </a>
+                            <img class="cart-item__image"
+                              src="{{ item.image | image_url: width: 300 }}"
+                              alt="{{ item.image.alt | escape }}"
+                              loading="lazy"
+                              width="150"
+                              height="{{ 150 | divided_by: item.image.aspect_ratio | ceil }}"
+                            >
+                          {% endif %}
+                        </td>
+
+                        <td class="cart-item__details" role="cell" headers="CartDrawer-ColumnProduct">
+                          {%- if settings.show_vendor -%}
+                            <p class="caption-with-letter-spacing light">{{ item.product.vendor }}</p>
+                          {%- endif -%}
+
+                          <a href="{{ item.url }}" class="cart-item__name h4 break">{{ item.product.title | escape }}</a>
+
+                          {%- if item.original_price != item.final_price -%}
+                            <div class="cart-item__discounted-prices">
+                              <span class="visually-hidden">
+                                {{ 'products.product.price.regular_price' | t }}
+                              </span>
+                              <s class="cart-item__old-price product-option">
+                            {% if settings.currency_code_enabled %}{{- item.original_price | money_with_currency -}}{% else %}{{- item.original_price | money -}}{% endif %}
+                              </s>
+                              <span class="visually-hidden">
+                                {{ 'products.product.price.sale_price' | t }}
+                              </span>
+                              <strong class="cart-item__final-price product-option">
+                                {% if settings.currency_code_enabled %}{{ item.final_price | money_with_currency }}{% else %}{{ item.final_price | money }}{% endif %}
+                              </strong>
+                            </div>
+                          {%- else -%}
+                            <div class="product-option">
+                            {% if item.product.compare_at_price > item.product.price %}
+                              <span class="comPrice">{% if settings.currency_code_enabled %}{{ item.product.compare_at_price | money_with_currency}}{% else %}{{ item.product.compare_at_price | money}}{% endif %}</span>
+                            {% endif %}
+                            <span class="normalPrice">{% if settings.currency_code_enabled %}{{ item.original_price | money_with_currency }}{% else %}{{ item.original_price | money }}{% endif %}</span>
+                            </div>
+                          {%- endif -%}
+
+                          {%- if item.product.has_only_default_variant == false or item.properties.size != 0 or item.selling_plan_allocation != nil -%}
+                            <dl>
+                              {%- if item.product.has_only_default_variant == false -%}
+                                {%- for option in item.options_with_values -%}
+                                  <div class="product-option">
+                                    <dt>{{ option.name }}: </dt>
+                                    <dd>{{ option.value }}{% unless forloop.last %}, {% endunless %}</dd>
+                                  </div>
+                                {%- endfor -%}
+                              {%- endif -%}
+
+                              {%- for property in item.properties -%}
+                                {%- assign property_first_char = property.first | slice: 0 -%}
+                                {%- if property.last != blank and property_first_char != '_' -%}
+                                  <div class="product-option">
+                                    <dt>{{ property.first }}: </dt>
+                                    <dd>
+                                      {%- if property.last contains '/uploads/' -%}
+                                        <a href="{{ property.last }}" class="link" target="_blank" aria-describedby="a11y-new-window-message">
+                                          {{ property.last | split: '/' | last }}
+                                        </a>
+                                      {%- else -%}
+                                        {{ property.last }}
+                                      {%- endif -%}
+                                    </dd>
+                                  </div>
+                                {%- endif -%}
+                              {%- endfor -%}
+                            </dl>
+
+                            <p class="product-option">{{ item.selling_plan_allocation.selling_plan.name }}</p>
+                          {%- endif -%}
+
+                          <ul class="discounts list-unstyled" role="list" aria-label="{{ 'customer.order.discount' | t }}">
+                            {%- for discount in item.discounts -%}
+                              <li class="discounts__discount">
+                                {%- render 'icon-discount' -%}
+                                {{ discount.title }}
+                              </li>
+                            {%- endfor -%}
+                          </ul>
+                        </td>
+
+                        <td class="cart-item__totals right" role="cell" headers="CartDrawer-ColumnTotal">
+                          <div class="loading-overlay hidden">
+                            <div class="loading-overlay__spinner">
+                              <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                                <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+                              </svg>
+                            </div>
+                          </div>
+
+                          <div class="cart-item__price-wrapper">
+                            {%- if item.original_line_price != item.final_line_price -%}
+                              <div class="cart-item__discounted-prices">
+                                <span class="visually-hidden">
+                                  {{ 'products.product.price.regular_price' | t }}
+                                </span>
+                                <s class="cart-item__old-price price price--end">
+                                  {% if settings.currency_code_enabled %}{{ item.original_line_price | money_with_currency }}{% else %}{{ item.original_line_price | money }}{% endif %}
+                                </s>
+                                <span class="visually-hidden">
+                                  {{ 'products.product.price.sale_price' | t }}
+                                </span>
+                                <span class="price price--end">
+                                  {% if settings.currency_code_enabled %}{{ item.final_line_price | money_with_currency }}{% else %}{{ item.final_line_price | money }}{% endif %}
+                                </span>
+                              </div>
+                            {%- else -%}
+                              <span class="price price--end">
+                                {% if settings.currency_code_enabled %}{{ item.original_line_price | money_with_currency }}{% else %}{{ item.original_line_price | money }}{% endif %}
+                              </span>
+                            {%- endif -%}
+
+                            {%- if item.variant.available and item.unit_price_measurement -%}
+                              <div class="unit-price caption">
+                                <span class="visually-hidden">{{ 'products.product.price.unit_price' | t }}</span>
+                                {% if settings.currency_code_enabled %}{{ item.variant.unit_price | money_with_currency }}{% else %}{{ item.variant.unit_price | money }}{% endif %}
+                                <span aria-hidden="true">/</span>
+                                <span class="visually-hidden">&nbsp;{{ 'accessibility.unit_price_separator' | t }}&nbsp;</span>
+                                {%- if item.variant.unit_price_measurement.reference_value != 1 -%}
+                                  {{- item.variant.unit_price_measurement.reference_value -}}
+                                {%- endif -%}
+                                {{ item.variant.unit_price_measurement.reference_unit }}
+                              </div>
+                            {%- endif -%}
+                          </div>
+                        </td>
+
+                        <td class="cart-item__quantity" role="cell" headers="CartDrawer-ColumnQuantity">
+                          <div class="cart-item__quantity-wrapper">
+                            <quantity-input class="quantity">
+                              <button class="quantity__button no-js-hidden" name="minus" type="button">
+                                <span class="visually-hidden">{{ 'products.product.quantity.decrease' | t: product: item.product.title | escape }}</span>
+                                {% render 'icon-minus' %}
+                              </button>
+                              <input class="quantity__input"
+                                type="number"
+                                name="updates[]"
+                                value="{{ item.quantity }}"
+                                min="0"
+                                aria-label="{{ 'products.product.quantity.input_label' | t: product: item.product.title | escape }}"
+                                id="Drawer-quantity-{{ item.index | plus: 1 }}"
+                                data-index="{{ item.index | plus: 1 }}"
+                              >
+                              <button class="quantity__button no-js-hidden" name="plus" type="button">
+                                <span class="visually-hidden">{{ 'products.product.quantity.increase' | t: product: item.product.title | escape }}</span>
+                                {% render 'icon-plus' %}
+                              </button>
+                            </quantity-input>
+
+                            <cart-remove-button id="CartDrawer-Remove-{{ item.index | plus: 1 }}" data-index="{{ item.index | plus: 1 }}">
+                              <button type="button" class="button button--tertiary" aria-label="{{ 'sections.cart.remove_title' | t: title: item.title }}">
+                                <!--{% render 'icon-remove' %}--> Remove
+                              </button>
+                            </cart-remove-button>
+                          </div>
+
+                          <div id="CartDrawer-LineItemError-{{ item.index | plus: 1 }}" class="cart-item__error" role="alert">
+                            <small class="cart-item__error-text"></small>
+                            <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-error" viewBox="0 0 13 13">
+                              <circle cx="6.5" cy="6.50049" r="5.5" stroke="white" stroke-width="2"/>
+                              <circle cx="6.5" cy="6.5" r="5.5" fill="#EB001B" stroke="#EB001B" stroke-width="0.7"/>
+                              <path d="M5.87413 3.52832L5.97439 7.57216H7.02713L7.12739 3.52832H5.87413ZM6.50076 9.66091C6.88091 9.66091 7.18169 9.37267 7.18169 9.00504C7.18169 8.63742 6.88091 8.34917 6.50076 8.34917C6.12061 8.34917 5.81982 8.63742 5.81982 9.00504C5.81982 9.37267 6.12061 9.66091 6.50076 9.66091Z" fill="white"/>
+                              <path d="M5.87413 3.17832H5.51535L5.52424 3.537L5.6245 7.58083L5.63296 7.92216H5.97439H7.02713H7.36856L7.37702 7.58083L7.47728 3.537L7.48617 3.17832H7.12739H5.87413ZM6.50076 10.0109C7.06121 10.0109 7.5317 9.57872 7.5317 9.00504C7.5317 8.43137 7.06121 7.99918 6.50076 7.99918C5.94031 7.99918 5.46982 8.43137 5.46982 9.00504C5.46982 9.57872 5.94031 10.0109 6.50076 10.0109Z" fill="white" stroke="#EB001B" stroke-width="0.7">
+                            </svg>
+                          </div>
+                        </td>
+                      </tr>
+                    {%- endfor -%}
+                  </tbody>
+                </table>
+              </div>
+            {%- endif -%}
+            <p id="CartDrawer-LiveRegionText" class="visually-hidden" role="status"></p>
+            <p id="CartDrawer-LineItemStatus" class="visually-hidden" aria-hidden="true" role="status">{{ 'accessibility.loading' | t }}</p>
+          </div>
+          <div id="CartDrawer-CartErrors" role="alert"></div>
+        </form>
+
+        
+{% if cart != empty %}                             
+ <hr>
+{% assign firstPr = settings.product1.id %}{% assign firstShowed = false %}
+{% assign second = settings.product2.id %}{% assign secondShowed = false %}
+{% assign third = settings.product3.id %}{% assign thirdShowed = false %}
+ {% for pr in cart.items %}
+{% if pr.product.id == firstPr %}{% assign firstShowed = true %}{% endif %}
+{% if pr.product.id == second %}{% assign secondShowed = true %}{% endif %}
+{% if pr.product.id == third %}{% assign thirdShowed = true %}{% endif %}
+ {% endfor %}
+
+{% if settings.product1 == blank %}{% assign firstShowed = true %}{% endif %}
+{% if settings.product2 == blank %}{% assign secondShowed = true %}{% endif %}
+{% if settings.product3 == blank %}{% assign thirdShowed = true %}{% endif %}
+<div class="BoostResultsCart" {% if firstShowed and secondShowed and thirdShowed %}style="display:none"{% endif %}>
+<p class="labelHeading">{{ settings.UpsellHeading }}</p>
+{% if settings.product1 != blank %}
+{% render 'upsellProduct' , product: settings.product1, showed:firstShowed %}
+{% endif %}
+{% if settings.product2 != blank %}
+{% render 'upsellProduct' , product: settings.product2, showed:secondShowed %}
+{% endif %}
+{% if settings.product3 != blank %}
+{% render 'upsellProduct' , product: settings.product3,showed: thirdShowed %}
+{% endif %}
+</div>  
+{% endif %}
+                                
+      </cart-drawer-items>
+                          
+      <div class="drawer__footer">
+        {%- if settings.show_cart_note -%}
+          <details id="Details-CartDrawer">
+            <summary>
+              <span class="summary__title">
+                {{ 'sections.cart.note' | t }}
+                {% render 'icon-caret' %}
+              </span>
+            </summary>
+            <cart-note class="cart__note field">
+              <label class="visually-hidden" for="CartDrawer-Note">{{ 'sections.cart.note' | t }}</label>
+              <textarea id="CartDrawer-Note" class="text-area text-area--resize-vertical field__input" name="note" placeholder="{{ 'sections.cart.note' | t }}">{{ cart.note }}</textarea>
+            </cart-note>
+          </details>
+        {%- endif -%}
+
+        <!-- Start blocks-->
+        <!-- Subtotals-->
+
+        <div class="cart-drawer__footer" {{ block.shopify_attributes }}>
+          <div class="totals" role="status">
+            <h2 class="totals__subtotal">{{ 'sections.cart.subtotal' | t }}</h2>
+            <p class="totals__subtotal-value">{{ cart.total_price | money_with_currency }}</p>
+          </div>
+
+          <div>
+            {%- if cart.cart_level_discount_applications.size > 0 -%}
+              <ul class="discounts list-unstyled" role="list" aria-label="{{ 'customer.order.discount' | t }}">
+                {%- for discount in cart.cart_level_discount_applications -%}
+                  <li class="discounts__discount discounts__discount--end">
+                    {%- render 'icon-discount' -%}
+                    {{ discount.title }}
+                    (-{{ discount.total_allocated_amount | money }})
+                  </li>
+                {%- endfor -%}
+              </ul>
+            {%- endif -%}
+          </div>
+
+          <small class="tax-note caption-large rte">
+            {%- if cart.taxes_included and shop.shipping_policy.body != blank -%}
+              {{ 'sections.cart.taxes_included_and_shipping_policy_html' | t: link: shop.shipping_policy.url }}
+            {%- elsif cart.taxes_included -%}
+              {{ 'sections.cart.taxes_included_but_shipping_at_checkout' | t }}
+            {%- elsif shop.shipping_policy.body != blank -%}
+              {{ 'sections.cart.taxes_and_shipping_policy_at_checkout_html' | t: link: shop.shipping_policy.url }}
+            {%- else -%}
+              {{ 'sections.cart.taxes_and_shipping_at_checkout' | t }}
+            {%- endif -%}
+          </small>
+        </div>
+
+        <!-- CTAs -->
+
+        <div class="cart__ctas" {{ block.shopify_attributes }}>
+          <noscript>
+            <button type="submit" class="cart__update-button button button--secondary" form="CartDrawer-Form">
+              {{ 'sections.cart.update' | t }}
+            </button>
+          </noscript>
+
+          <button type="button" onClick="sendToCheckoutAfterTracking()" id="CartDrawer-Checkout" class="cart__checkout-button button" name="checkout" form="CartDrawer-Form"{% if cart == empty %} disabled{% endif %}>
+            {{ 'sections.cart.checkout' | t }} -   {% if settings.currency_code_enabled %}{{ cart.total_price | money_with_currency }}{% else %}{{ cart.total_price | money }}{% endif %}
+          </button>
+<script>
+function sendToCheckoutAfterTracking()
+  { 
+     $.ajax({
+            url: "/cart.js",
+            type: 'GET',
+            dataType: 'json', // added data type
+            success: function(res) {
+var totalPrice = Shopify.formatMoney(res.total_price, Shopify.money_format).replace('<span class=money>', '').replace('</span>', '');;
+
+  var _learnq = window._learnq || [];
+  var cart = {
+    total_price: totalPrice,
+    $value: totalPrice,
+    original_total_price: totalPrice,
+    items: res.item_count,
+  };
+  _learnq.push(['track', 'Added to Cart', cart]);
+
+window.parent.location.href="/checkout";
+              },
+       error: function()
+         { window.parent.location.href="/checkout";
+         }
+               
+          }); 
+     
+  }
+</script>
+          
+        </div>
+{% if settings.shipsText %}
+ 
+
+{% assign seconds = 1 | times: 24 | times: 60 | times: 60 %}
+{% assign dateFinal = 'now' | date: "%s" | plus: seconds | date: "%b %d" %} 
+
+        
+<div id="shipsText">
+<!--
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19" height="19" viewBox="0 0 19 19" fill="none">
+<rect width="19" height="19" fill="url(#pattern0)"/>
+<defs>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_148_145" transform="scale(0.00195312)"/>
+</pattern>
+<image id="image0_148_145" width="512" height="512" xlink:href="data:image/png;base64,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"/>
+</defs>
+</svg>
+-->
+Ships <span class="blueColor"> Tomorrow, {{ dateFinal | replace: "Jan", "January" | replace: "Feb", "February"}} </span> if Ordered Within <span class="blueColor" id="dateDrawer"></span>
+</div>
+<script>
+
+</script>
+{% endif %}
+
+{% if settings.bottomBar != blank %}
+<div class="cartBottomBar">
+{{ settings.bottomBar }}
+</div>
+{% endif %}
+      </div>
+    </div>
+  </div>
+</cart-drawer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    function isIE() {
+      const ua = window.navigator.userAgent;
+      const msie = ua.indexOf('MSIE ');
+      const trident = ua.indexOf('Trident/');
+
+      return (msie > 0 || trident > 0);
+    }
+
+    if (!isIE()) return;
+    const cartSubmitInput = document.createElement('input');
+    cartSubmitInput.setAttribute('name', 'checkout');
+    cartSubmitInput.setAttribute('type', 'hidden');
+    document.querySelector('#cart').appendChild(cartSubmitInput);
+    document.querySelector('#checkout').addEventListener('click', function(event) {
+      document.querySelector('#cart').submit();
+    });
+  });
+</script>
+

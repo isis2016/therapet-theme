@@ -1,0 +1,409 @@
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+<div class="million-section {{ section.settings.section_css_class }}">
+  <div class="page-width">
+    <h2>{{ section.settings.million-head }}</h2>
+    <div class="million-wrap multiple-items">
+      {% for block in section.blocks %}
+        <div class="million-cover">
+        <div class="million-content">
+          <div class="million-rating">
+            <img src="{{ block.settings.rating-img | img_url: 'master' }}" alt=" Rating img">
+          </div>
+          {{ block.settings.million-text }}
+          <div class="million-info">
+          <h6>{{ block.settings.million-h6 }}</h6>
+          <div class="million-btn">
+            <a href="{{ block.settings.million-link }}">{{ block.settings.million-btn }}</a>
+          </div>
+          </div>
+        </div>
+        <div class="million-tip">
+          <img src="{{ block.settings.tooltip-img | img_url: 'master' }}" alt=" Tooltip img">
+        </div>
+        <div class="million-image">
+           <img src="{{ block.settings.million-img | img_url: 'master' }}" alt=" Million img">
+        </div>          
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "million section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "million-head",
+        "label": "Heading"
+      },
+      {
+        "type": "text",
+        "id": "section_css_class",
+        "label": "Custom Class"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "column",
+        "name": "review column",
+        "settings": [
+      {
+        "type": "image_picker",
+        "id": "rating-img",
+        "label": "Rating image"        
+      },
+      {
+        "type": "richtext",
+        "id": "million-text",
+        "label": "Text",
+        "default": "<p>Add text<p>"
+      },
+      {
+        "type": "text",
+        "id": "million-h6",
+        "label": "Name"
+      },
+      {
+        "type": "text",
+        "id": "million-btn",
+        "label": "Button text"
+      },      
+      {
+        "type": "url",
+        "id": "million-link",
+        "label": "Button link"
+      },
+      {
+        "type": "image_picker",
+        "id": "tooltip-img",
+        "label": "Tool Tip image"        
+      },    
+      {
+        "type": "image_picker",
+        "id": "million-img",
+        "label": "Million image"        
+      }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "million section"
+      }
+    ]
+  }
+{% endschema %}
+<style>
+  .million-section {
+    padding: 100px 0px 90px 0px;
+}
+  .million-section h2 {
+    margin: 0px auto 50px;
+    color: #37306B;
+    text-align: center;
+    font-family: AvertaStd-ExtraBold;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60px;
+    width: 70%;
+}
+  .million-wrap {
+    width: 100%;
+    margin: 0 auto;
+}
+  .million-cover {
+    /* width: 31%!important; */
+    margin-right: 40px;
+    position: relative;
+}
+  .million-cover:last-child {
+    margin-right: 0px;
+}
+  .million-content {
+    border-radius: 15px;
+    border: 1px solid #BEC8FD;
+    background: #FFF;
+    padding: 25px 30px 25px 25px;
+    margin-bottom: 33px;
+    filter: drop-shadow(0px 10px 54px rgba(0, 0, 0, 0.05));
+}
+  .million-rating {
+    width: 35%;
+    height: auto;
+    line-height: 0px;
+    margin-bottom: 15px;
+}
+  .million-content p {
+    margin: 0px;
+    color: #37306B;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 15px;
+}
+  .million-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  .million-info h6 {
+    margin: 0px;
+    color: #37306B;
+    font-family: AvertaStd-Bold;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+  .million-info a {
+    border-radius: 25px;
+    background: #50B27F;
+    padding: 6px 24px;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+    text-decoration: none;
+}
+  .million-tip {
+    position: absolute;
+    bottom: 5.2em;
+    width: 6%;
+    height: auto;
+    left: 1.5em;
+    filter: drop-shadow(0px 10px 54px rgba(0, 0, 0, 0.05));
+}
+  .million-image {
+    width: 21%;
+    height: auto;
+    line-height: 0px;
+}
+.change--background {
+    background: #DBE1FF;
+}
+
+  @media (max-width: 1280px) {
+    .million-tip {
+    bottom: 4.5em;
+}
+  .million-info a {
+    padding: 6px 15px;
+}
+  }
+  @media (max-width: 1100px) {
+    .million-section {
+    padding: 80px 0px;
+}
+    .million-section h2 {
+    margin: 0px 0px 25px;
+    font-size: 40px;
+    line-height: 50px;
+    width: 100%;
+}
+    .million-wrap {
+    width: 100%;
+    column-gap: 20px;
+}
+    .million-cover {
+    /* width: 32%!important; */
+    margin-right: 15px;
+}
+    .million-rating {
+    width: 50%;
+}
+    .million-content p {
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+    .million-info h6 {
+    line-height: normal;
+}
+    .million-info a {
+    padding: 6px 12px;
+    font-size: 15px;
+    line-height: normal;
+}
+    .million-tip {
+    bottom: 5.3em;
+}
+    .million-image {
+    width: 30%;
+}
+  }
+  @media (max-width: 992px) {
+    .million-section h2 {
+    margin: 0px 0px 20px;
+    font-size: 30px;
+    line-height: 40px;
+}
+    .million-cover {
+    /* width: 6.87%!important; */
+    margin: 1px 7px;
+}
+    .million-content p {
+    font-size: 15px;
+}
+    .million-info h6 {
+    font-size: 16px;
+}
+    .million-rating {
+    width: 25%;
+}
+    .million-tip {
+    bottom: 7.4em;
+    width: 3%;
+    left: 2.5em;
+}
+    .million-image {
+    width: 20%;
+}
+    .slick-dots {
+    list-style: none;
+    display: block;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+    .slick-dots li {
+    width: 8px;
+    position: relative;
+    display: inline-block;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+}
+    .slick-dots li button {
+    height: 8px;
+    padding: 3px;
+    color: #37306B;
+    border: 0;
+    background: transparent;
+    display: block;
+    width: 20px;
+    line-height: 0px;
+    font-size: 0px;
+    cursor: pointer;
+}
+    .slick-dots li button::before {
+    content: "";  
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    font-size: 0px;
+    line-height: 20px;
+    text-align: center;
+    opacity: 0.41;
+    border-radius: 4px;
+    background-color: #37306B;
+}
+    .slick-active button::before {
+    background-color: #37306B!important;
+    width: 10px;
+    height: 10px;
+}
+  .change--background .million-tip {
+    bottom: 6.8em;
+    width: 4%;
+}
+  }
+  @media (max-width: 767px) {
+    .million-section {
+    padding: 40px 0px;
+}
+    .million-section h2 {
+    margin: 0px 0px 25px;
+      font-family: AvertaStd-Bold;
+}
+  .million-wrap {
+    width: 90%;
+    margin: 0 auto;
+}
+  .million-content {
+    padding: 20px;
+    box-shadow: 0 0 4px 1px #0000002b;
+    filter: none;
+}
+  .million-rating {
+    width: 120px;
+}
+  .million-content p {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 500;
+}
+  .million-info a {
+    font-size: 14px;
+}
+  .million-image {
+    width: 80px;
+}
+    .million-cover {
+    /* width: 14%!important; */
+    margin: 0px 5px;
+}
+  .million-tip {
+    bottom: 5.2em;
+    width: 7%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+  .million-image {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  .million-image img {
+    width: 80px;
+}
+   
+    .change--background .million-tip {
+    bottom: 4.5em;
+    left: 1.3em;
+}
+  }
+</style>
+<script> 
+  $('.multiple-items').slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+    arrows: false,
+    responsive: [
+        {
+            breakpoint: 992,
+            settings: {
+                infinite: true,
+                dots: true,
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000
+            }
+        },
+        {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centermode: true,
+          dots: true,
+          infinite: true,
+          autoplay: true,
+          autoplaySpeed: 2000
+        }
+      }
+  ]
+});
+</script>

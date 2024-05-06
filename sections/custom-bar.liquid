@@ -1,0 +1,47 @@
+<style>
+*{
+  padding: 0px;
+  margin: 0;
+  text-decoration: none;
+}
+main#MainContent {
+    overflow: unset;
+}
+div#shopify-section-announcement-bar, div#shopify-section-header {
+  display: none !important;
+}
+
+.MainCustomBar {
+  background-color: {{ section.settings.color }};
+  padding: 8px;
+  width: 100%;
+}
+
+.MainCustomBar p{
+  color: #ffffff;
+  font-size: 14px;
+}
+</style>
+
+<div class="MainCustomBar announcement-bar__message center h5">
+  <p>{{ section.settings.text }}</p>
+</div>
+
+{% schema %}
+  {
+    "name": "Custom Bar",
+    "settings": [
+  {
+    "type":"text",
+    "id":"text",
+    "label":"Text"
+  },
+  {
+    "type":"color",
+    "id":"color",
+    "label":"Color"
+  }
+  ],
+  "presets":[{"name":"Custom Bar"}]
+  }
+{% endschema %} 

@@ -1,0 +1,30 @@
+<div class="rightSideMainWrap">
+
+{% for block in section.blocks %} 
+ {% if block.type == 'Section' %} 
+    <div class="stickyClassInside"> 
+     <h2 class="rightheading">{{ block.settings.rightheading }}</h2>
+     <img class="starimage" src="{{ block.settings.starimage | img_url: '300x' }}" loading="lazy" alt="{{ block.settings.starimage.alt | escape }}" width="100%" height="100%"/>
+     <p class="reviewtext">{{ block.settings.reviewtext }}</p>
+     <h3 class="rightSideheading"  style="text-align:center">{{ block.settings.heading }}</h3>
+
+{% for i in (1..5) %}
+{% capture text %}text{{ i }}{% endcapture %}
+{% if block.settings[text] != blank %}
+ <div class="bulletPoint">
+ <img class="tickimage" src="{{ block.settings.tickimage | img_url: '50x' }}" loading="lazy" alt="{{ block.settings.tickimage.alt | escape }}" width="100%" height="100%"/>
+ <div class="texttexttext">{{ block.settings[text] }}</div>
+ </div>
+{% endif %}
+{% endfor %}
+ 
+     <img class="Mainimage" src="{{ block.settings.image | img_url: '600x' }}" loading="lazy" alt="{{ block.settings.image.alt | escape }}" width="100%" height="100%"/>
+     {% if block.settings.buttntext != blank %}
+      <a class="rightbutton" style="background-color: {{ block.settings.buttncolor }};" href="{{ block.settings.buttnlink }}">{{ block.settings.buttntext }}</a>
+    {% endif %}
+       </div> 
+  {% endif %}
+{% endfor %}
+
+
+</div>

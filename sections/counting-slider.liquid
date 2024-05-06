@@ -1,0 +1,398 @@
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+{% style %}
+.section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .section-{{ section.id }}-padding-mob {
+      padding-top: {{ section.settings.padding_top-mob }}px;
+      padding-bottom: {{ section.settings.padding_bottom-mob }}px;
+    }
+  }
+{% endstyle %}
+
+
+{% if section.settings.bg != blank %}
+<style>
+  #shopify-section-{{ section.id }}{
+    background-color:{{- section.settings.bg -}};
+    
+  }
+</style>
+{% endif %}
+
+<div class="main-counting section-{{ section.id }}-padding section-{{ section.id }}-padding-mob">
+  <div class="page-width">
+    <div class="counting-head">
+      <h2>{{ section.settings.counting-head }}</h2>
+    </div>
+    <div class="counting-wrap multiple-items">
+      {% for block in section.blocks %}
+        <div class="counting">
+          {% if block.settings.image %}
+          <div class="count-main-image">
+            <img src="{{ block.settings.image | img_url: 'master' }}">
+          </div>
+          {% endif %}  
+          <div class="count-content">
+            <div class="count-name">
+              <p>{{ block.settings.name }}</p>
+            </div>
+            {% if block.settings.stars %}
+            <div class="count-stars">
+              <img src="{{ block.settings.stars | img_url: 'master' }}">
+            </div>
+            {% endif %}  
+            <div class="count-text">
+              {{ block.settings.para }}
+            </div>
+            {% if block.settings.bottom-tag %}
+            <div class="bottom-tag">
+              <p>{{ block.settings.bottom-tag }}</p>
+            </div>
+            {% endif %} 
+          </div>
+        </div>
+        {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Counting Slider",
+    "settings": [
+      {
+        "type": "color",
+        "id": "bg",
+        "label": "background Color"
+      },
+      {
+        "type": "text",
+        "id": "counting-head",
+        "label": "Heading"
+      },
+      {
+      "type": "header",
+      "content": "Section Padding on Desktop"
+    },
+    
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Top",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Bottom",
+      "default": 0
+    },
+    {
+      "type": "header",
+      "content": "Section Padding on Mobile"
+    },
+    {
+      "type": "range",
+      "id": "padding_top-mob",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Top",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom-mob",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Bottom ",
+      "default": 0
+    },
+      {
+        "type": "text",
+        "id": "section_css_class",
+        "label": "Custom Class"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "column",
+        "name": "review column",
+        "settings": [
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Main Image"        
+      },
+       {
+        "type": "text",
+        "id": "name",
+        "label": "Name"
+      },   
+      {
+        "type": "image_picker",
+        "id": "stars",
+        "label": "Stars"        
+      },    
+      {
+        "type": "richtext",
+        "id": "para",
+        "label": "Text",
+        "default": "<p><p>"
+      },
+      {
+        "type": "text",
+        "id": "bottom-tag",
+        "label": "Tag"
+      }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Counting Slider"
+      }
+    ]
+  }
+{% endschema %}
+<style>
+  .counting-head h2 {
+    margin: 0px auto 50px;
+    color: #37306B;
+    text-align: center;
+    font-family: AvertaStd-ExtraBold;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60px;
+    width: 70%;
+}
+  .counting-wrap {
+    width: 100%;
+    margin: 0 auto;
+}
+  .count-main-image {
+    line-height: 0;
+}
+  .counting {
+    /* width: 31%!important; */
+    margin: 0px 10px;
+    position: relative;
+    position: relative;
+    border-radius: 15px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border: 1px solid #BEC8FD;
+    background: #FFF;
+    margin-bottom: 0px;
+    /* filter: drop-shadow(0px 10px 54px rgba(0, 0, 0, 0.05)); */
+}
+  .counting:last-child {
+    margin-right: 0px;
+}
+  .count-content {
+    padding: 20px 25px 25px 25px;
+}
+  .count-name p {
+    margin: 0;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 10px;
+    color: #37306B;
+    font-family: AvertaStd-ExtraBold;
+}
+  .count-stars {
+    width: 100px;
+    line-height: 0;
+    margin-bottom: 10px;
+}
+  .count-text p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 15px;
+    color: #555555;
+}
+  .bottom-tag p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    display: inline-block;
+    background: green;
+    padding: 6px 20px;
+    border-radius: 20px;
+    color: #fff;
+}
+  .count-main-image img {
+    width: 100%;
+}
+  
+
+
+  @media (max-width: 1100px) {
+    .counting-head h2 {
+    margin: 0px 0px 25px;
+    font-size: 40px;
+    line-height: 50px;
+    width: 100%;
+}
+   .count-content {
+    padding: 20px 20px 20px 25px;
+}
+  }
+  @media (max-width: 767px) {
+    .counting-head h2 {
+    margin: 0px 0px 20px;
+    font-size: 30px;
+    line-height: 40px;
+}
+   .counting {
+    margin: 0px 2px;
+}
+    .count-content {
+    padding: 20px 15px;
+}
+    .count-text p {
+    font-size: 15px;
+    line-height: 24px;
+}
+    .bottom-tag p {
+    font-size: 15px;
+    padding: 4px 20px;
+}
+    .slick-dots {
+    list-style: none;
+    display: block;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+    .slick-dots li {
+    width: 8px;
+    position: relative;
+    display: inline-block;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+}
+    .slick-dots li button {
+    height: 8px;
+    padding: 3px;
+    color: #000;
+    border: 0;
+    background: transparent;
+    display: block;
+    width: 20px;
+    line-height: 0px;
+    font-size: 0px;
+    cursor: pointer;
+}
+    .slick-dots li button::before {
+    content: "";  
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    font-size: 0px;
+    line-height: 20px;
+    text-align: center;
+    opacity: 0.41;
+    border-radius: 4px;
+    background-color: #000;
+}
+    .slick-active button::before {
+    background-color: #000!important;
+}
+  }
+ 
+</style>
+<script>
+  $('.multiple-items').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    dots: false,
+    loop: true,
+    arrows: false,
+    autoplay: true,
+//     autoplaySpeed: 0,
+//     speed: 7000,
+    cssEase: "linear",
+    infinite: true,
+    pauseOnHover: false,
+    responsive: [
+      {
+        breakpoint: 1100,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+        }
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          dots: true,
+          infinite: true,
+        }
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true,
+          infinite: true,
+        }
+      }
+    ]
+  });
+
+
+  
+//   $('.multiple-items').slick({
+//   infinite: true,
+//   slidesToShow: 3,
+//   slidesToScroll: 1,
+//     arrows: false,
+//     responsive: [
+//         {
+//             breakpoint: 992,
+//             settings: {
+//                 infinite: true,
+//                 dots: true,
+//                 slidesToShow: 1,
+//                 slidesToScroll: 1,
+//                 autoplay: true,
+//                 autoplaySpeed: 2000
+//             }
+//         },
+//   ]
+// });
+</script>

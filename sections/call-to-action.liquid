@@ -1,0 +1,167 @@
+<style>
+.CallToActionBlock {
+    background-color: white;
+    background-image: none;
+    border: 1px #cecaca;
+    border-radius: 15px;
+    box-shadow: 1px 0 20px -3px rgba(0,0,0,.47);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 0;
+    margin-top: 0;
+    max-width: 100%;
+    width: 1000px;
+    margin: auto;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;margin-bottom: 100px;
+}img.imageATC {
+    width: 40%;
+}.rightSideATC {
+    width: 60%;
+    padding-left: 7%;padding-right:2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}.titlePortion p {
+    margin: 0;
+    font-size: 1.2em;
+}.titlePortion+p{
+     font-size: 0.9em;
+    margin-top: 15px; 
+}.CallToActionBlock a.button--full-width.button.button--primary {
+    font-weight: 800;padding-left:0;padding-right:0
+}.CallToActionBlock p strong {
+    font-weight: 900;
+}.backPortion {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 0.8em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 30px;    border-radius: 25px;
+}.backPortion svg {
+    height: 1.3em;
+    display: inline-block;
+    width: auto;
+    margin-right: 4px;
+}.backPortion span {
+    display: flex;
+}.backPortion span strong {
+    color: red;
+    margin-left: 5px;
+}
+  @media(max-width:767px)
+  {
+    .CallToActionBlock {
+flex-direction:column
+    }img.imageATC {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+}.rightSideATC {
+    padding: 0;
+    width: 100%;
+}.backPortion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}.backPortion span {
+    display: flex;
+    margin: 5px 0;
+}
+    .CallToActionBlock { 
+    margin-bottom: 80px;
+}
+  }
+</style>
+<section>
+  <div class="page-width">
+<div class="CallToActionBlock" id="callToAction">
+<img class="imageATC" src="{{ section.settings.image | img_url: '700x' }}" loading="lazy" alt="{{ section.settings.image.alt }}" width="100%" height="100%">
+<div class="rightSideATC">
+<div class="titlePortion">
+{{ section.settings.title }}
+</div>
+{{ section.settings.text }}
+
+<a href="{{ section.settings.link }}" class="button--full-width button button--primary">
+{{ section.settings.btn }}
+</a>
+<div class="backPortion" style="background:{{ section.settings.color }}">
+<span>{{ section.settings.risk }}<strong>{{ section.settings.riskHigh }}</strong></span>
+
+<span>
+<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="1em" height="1em" viewBox="0 0 32 32"><path d="M 0 6 L 0 8 L 19 8 L 19 23 L 12.84375 23 C 12.398438 21.28125 10.851563 20 9 20 C 7.148438 20 5.601563 21.28125 5.15625 23 L 4 23 L 4 18 L 2 18 L 2 25 L 5.15625 25 C 5.601563 26.71875 7.148438 28 9 28 C 10.851563 28 12.398438 26.71875 12.84375 25 L 21.15625 25 C 21.601563 26.71875 23.148438 28 25 28 C 26.851563 28 28.398438 26.71875 28.84375 25 L 32 25 L 32 16.84375 L 31.9375 16.6875 L 29.9375 10.6875 L 29.71875 10 L 21 10 L 21 6 Z M 1 10 L 1 12 L 10 12 L 10 10 Z M 21 12 L 28.28125 12 L 30 17.125 L 30 23 L 28.84375 23 C 28.398438 21.28125 26.851563 20 25 20 C 23.148438 20 21.601563 21.28125 21.15625 23 L 21 23 Z M 2 14 L 2 16 L 8 16 L 8 14 Z M 9 22 C 10.117188 22 11 22.882813 11 24 C 11 25.117188 10.117188 26 9 26 C 7.882813 26 7 25.117188 7 24 C 7 22.882813 7.882813 22 9 22 Z M 25 22 C 26.117188 22 27 22.882813 27 24 C 27 25.117188 26.117188 26 25 26 C 23.882813 26 23 25.117188 23 24 C 23 22.882813 23.882813 22 25 22 Z"/></svg>
+{{ section.settings.shipping }}
+</span>
+</div>
+</div>
+</div>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Call to Action",
+    "settings": [
+      {
+        "type":"image_picker",
+        "label":"Image",
+        "id":"image"
+      },
+      {
+        "type":"richtext",
+        "id":"title",
+        "label":"Title"
+      },
+      {
+        "type":"richtext",
+        "id":"text",
+        "label":"Text"
+      },
+      {
+        "type":"text",
+        "id":"btn",
+        "label":"Button Text"
+      },
+      {
+        "type":"url",
+        "id":"link",
+        "label":"Button Link"
+      },
+
+      {
+        "type":"color",
+        "id":"color",
+        "label":"Background Color"
+      },
+      {
+        "type":"text",
+        "id":"risk",
+        "label":"Risk Text"
+      },
+      {
+        "type":"text",
+        "id":"riskHigh",
+        "label":"Risk Text (High)"
+      },
+      {
+        "type":"text",
+        "id":"shipping",
+        "label":"Shipping Text"
+      }
+    ],
+  "presets":[
+    {
+      "name":"Call to Action"
+    }
+  ]
+  }
+{% endschema %} 

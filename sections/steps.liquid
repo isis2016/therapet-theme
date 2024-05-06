@@ -1,0 +1,109 @@
+<div class="steps-section {{ section.settings.section_css_class }}">
+  <div class="page-width">
+    <div class="benefit-wrap">
+      {% for block in section.blocks %}
+            <div class="steps-cover">
+              <div class="steps-image">
+                <img src="{{ block.settings.benefit-img | img_url: 'master' }}" alt="steps image">
+              </div>
+              <p>{{ block.settings.benefit-text }}</p>
+            </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Steps section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "section_css_class",
+        "label": "Custom Class"
+      }     
+    ],
+    "blocks": [
+      {
+        "type": "column",
+        "name": "Steps block",
+        "settings": [
+      {
+        "type": "image_picker",
+        "id": "benefit-img",
+        "label": "Steps image"        
+      },      
+      {
+        "type": "text",
+        "id": "benefit-text",
+        "label": "Steps text"
+      }
+        ]
+      }
+    ],
+        "presets": [
+      {
+        "name": "Steps section"
+      }
+    ]
+  }
+{% endschema %}
+<style>
+  img {
+    width: 100%;
+    height: 100%;
+  }
+  .steps-image {
+    width: 105px;
+    height: 105px;
+    flex-shrink: 0;
+    margin: 0 auto;
+}
+.steps-section {
+    padding: 50px 0;
+    text-align: center;
+}
+.benefit-wrap {
+    display: flex;
+    justify-content: center;
+    column-gap: 140px;
+}
+.steps-cover p {
+    margin: 15px 0 0;
+    color: #38306A;
+    font-family: AvertaStd-Bold;
+    font-size: 20px;
+    font-weight: 400;
+}
+      @media (max-width: 1100px) {
+  .steps-cover p {
+    font-size: 15px;
+} 
+      }
+  @media (max-width: 992px) {
+    .steps-cover {
+    margin-bottom: 20px;
+}
+    .change--background .steps-image {
+    width: 95px;
+    height: 95px;
+    margin: 0 auto;
+}
+  }
+  @media (max-width: 976px) {
+    .steps-section .benefit-wrap {
+    column-gap: 40px;
+}
+    .steps-image {
+    width: 100px;
+    height: 100px;
+}
+  }
+
+
+
+  @media screen and (max-width: 767px) {
+    .steps-section {
+    padding: 36px 0;
+}
+  }
+</style>

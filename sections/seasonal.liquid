@@ -1,0 +1,344 @@
+<style>
+  #shopify-section-{{ section.id }} {
+    background-color: {{- section.settings.bg -}};
+
+  }
+</style>
+<section class="twocol--section {{ section.settings.section_css_class }}" id="{{ section.settings.custom-id }}">
+  <div class="twocol__cover">
+    <div class="twocol__wrap">
+      <div class="twocol__content">
+        <div class="{% if section.settings.hide-seasonal-head %} hide {% endif %}">
+          <h2>{{ section.settings.seasonal-head }}</h2>
+        </div>
+        {{ section.settings.seasonal-p }}
+        <div class="two__btns show__btns">
+          {% if section.settings.red-btn != blank %}
+            <a href="{{ section.settings.red-btn }}" class="btn-pet show">{{ section.settings.red-text }}</a>
+          {% endif %}
+          {% if section.settings.blue-btn != blank %}
+            <a href="{{ section.settings.blue-btn }}" class="btn-pet blue show2">{{ section.settings.blue-text }}</a>
+          {% endif %}
+        </div>
+      </div>
+      <div class="twocol__image">
+        <div class="{% if section.settings.hide-seasonal-img %} hide {% endif %}">
+          {% if section.settings.seasonal-img != blank %}
+            <img
+              src="{{ section.settings.seasonal-img | img_url: 'master' }}"
+              alt="Seasonal img"
+              loading="lazy">
+          {% endif %}
+        </div>
+        <div class="{% if section.settings.hide-seasonal-video %} hide {% endif %}">
+          {% if section.settings.videoOpt != blank %}
+            <video
+              src="{{ section.settings.videoOpt }}"
+              type="video/mp4"
+              class="BLOCKIMAGE"
+              loop
+              muted
+              playsinline
+              autoplay
+              disablepictureinpicture
+              controlslist="nodownload"
+              height="auto"
+              style="margin:auto;width:100%;"></video>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% schema %}
+  {
+    "name": "Seasonal section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "videoOpt",
+        "label": "Add mp4 video"
+      },
+      {
+        "type": "checkbox",
+        "id": "hide-seasonal-video",
+        "label": "Hide video on mobile",
+        "default": false
+      },
+      {
+        "type": "color",
+        "id": "bg",
+        "label": "background colour"
+      },
+      {
+        "type": "text",
+        "id": "custom-id",
+        "label": "Custom Id"
+      }, {
+        "type": "text",
+        "id": "seasonal-head",
+        "label": "Heading"
+      }, {
+        "type": "checkbox",
+        "id": "hide-seasonal-head",
+        "label": "Hide heading on mobile",
+        "default": false
+      }, {
+        "type": "richtext",
+        "id": "seasonal-p",
+        "label": "Paragraph",
+        "default": "<p>Add text<p>"
+      }, {
+        "type": "url",
+        "id": "red-btn",
+        "label": "First button url"
+      }, {
+        "type": "text",
+        "id": "red-text",
+        "label": "First button text"
+      }, {
+        "type": "url",
+        "id": "blue-btn",
+        "label": "Second button url"
+      }, {
+        "type": "text",
+        "id": "blue-text",
+        "label": "Second button text"
+      }, {
+        "type": "image_picker",
+        "id": "seasonal-img",
+        "label": "Seasonal image"
+      }, {
+        "type": "checkbox",
+        "id": "hide-seasonal-img",
+        "label": "Hide Image on mobile",
+        "default": false
+      }, {
+        "type": "text",
+        "id": "section_css_class",
+        "label": "Custom Class"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Seasonal section"
+      }
+    ]
+  }
+{% endschema %}
+<style>
+  .twocol--section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+  }
+  .twocol__cover {
+    display: flex;
+    align-items: center;
+  }
+  .twocol__wrap {
+    max-width: 1440px;
+    margin: 0 1.5rem;
+    padding: 0 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .twocol__content {
+    width: 49%;
+  }
+  .twocol__image {
+    width: 49%;
+  }
+  .twocol__image img {
+    width: 100%;
+  }
+  .twocol__content h2 {
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: 700;
+    padding-bottom: 2vw;
+    margin: 0;
+    letter-spacing: normal;
+    font-family: 'Inter'
+    , sans-serif;
+  }
+  .twocol__content p {
+    font-size: 18px;
+    line-height: 25.2px;
+    color: #333;
+    padding-bottom: 1.5rem;
+    margin: 0;
+    font-family: 'Inter'
+    , sans-serif;
+  }
+  .twocol__content ul {
+    margin: 0;
+    padding-bottom: 1.5rem;
+    list-style: none;
+    padding-left: 0;
+  }
+  .twocol__content li {
+    font-size: 18px;
+    line-height: 25.2px;
+    color: #333;
+    margin: 0;
+    padding-left: 28px;
+    position: relative;
+    padding-bottom: 0.25rem;
+    letter-spacing: normal;
+    font-family: 'Inter'
+    , sans-serif;
+  }
+  .twocol__content li::after {
+    content: "";
+    position: absolute;
+    background-image: url("https://cdn.shopify.com/s/files/1/0764/0530/9760/files/sign.svg?v=1700222556");
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    left: 0;
+    top: 50%;
+    transform: translate(0px, -50%);
+  }
+  .yeast .twocol__content p {
+    padding-bottom: 0.75rem;
+  }
+  .yeast .show__btns {
+    column-gap: 0.5rem;
+  }
+  .twocol--section .show {
+    min-width: 71%;
+  }
+  .yeast .show {
+    min-width: 70% !important;
+  }
+  .yeast .show2 {
+    min-width: 30% !important;
+  }
+  .twocol--section.test .two__btns {
+    width: 80%;
+  }
+  @media (max-width: 1100px) {
+    .twocol__content h2 {
+      font-size: 2vw;
+      line-height: 2.5vw;
+    }
+
+
+    /*
+   .twocol__content li::after {
+   width: 12.2px;
+   height: 12.2px;
+   top: 0px;
+   transform: none;
+   }
+*/
+    .twocol--section.bg-grey .twocol__wrap {
+      align-items: flex-start;
+    }
+  }
+  @media (max-width: 992px) {
+    .twocol__content li::after {
+      width: 22px;
+      height: 22px;
+      top: 0;
+      transform: none;
+    }
+    .twocol__wrap {
+      align-items: flex-start;
+    }
+    .twocol--section.test .two__btns {
+      width: 100%;
+    }
+    .twocol--section.test .two__btns .show {
+      min-width: 65%;
+    }
+    .twocol--section.test .two__btns .show2 {
+      min-width: 30%;
+    }
+  }
+  @media (max-width: 767px) {
+    .twocol--section {
+      padding: 2.5rem 0;
+      height: auto;
+    }
+    .twocol__wrap {
+      flex-flow: column-reverse;
+      margin: 0;
+      justify-content: center;
+    }
+    .twocol__content {
+      width: 100%;
+    }
+    .twocol__content h2 {
+      font-size: 24px;
+      line-height: 28px;
+      padding-bottom: 1.5rem;
+    }
+    .twocol__image {
+      width: 100%;
+      padding: 1.5rem 0;
+    }
+    .gut h2 {
+      display: none;
+    }
+    .twocol--section .show {
+      min-width: 100%;
+    }
+    .yeast .twocol__image {
+      display: none;
+    }
+    .yeast .twocol__content h2 {
+      font-size: 24px;
+      line-height: 28px;
+      padding-bottom: 1.5rem;
+    }
+    .yeast .twocol__content p {
+      padding-bottom: 1.5rem;
+    }
+    .twocol--section.bg-grey .twocol__image {
+      display: none;
+    }
+    .twocol--section.bg-grey .twocol__content h2 {
+      font-size: 24px;
+      line-height: 28px;
+      padding-bottom: 1.5rem;
+    }
+    .twocol--section.bg-grey .twocol__content p {
+      padding-bottom: 1.5rem;
+    }
+    .twocol__content li::after {
+      width: 23px;
+      height: 23px;
+    }
+    .twocol--section.test .two__btns {
+      justify-content: center;
+    }
+    .twocol--section.test .two__btns .show2 {
+      min-width: 25%;
+    }
+    .twocol--section.test .two__btns .show {
+      min-width: 70%;
+    }
+    .twocol--section.stats {
+      height: 100vh;
+    }
+  }
+  @media (max-width: 360px) {
+    .twocol--section.stats {
+      height: auto;
+    }
+  }
+</style>
+
+{%- if page.template_suffix == "qvd-sa-v1" -%}
+  <style>
+    @media (max-width: 767px) {
+      .twocol--section.stats {
+        height: auto !important;
+      }
+    }
+
+  </style>
+{%- endif -%}

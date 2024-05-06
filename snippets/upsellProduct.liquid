@@ -1,0 +1,13 @@
+<div class="upsellItem product{{ product.id }} {{ showed }}">
+<img class="upsellImage" src="{{ product.featured_image | img_url: '300x' }}" alt="{{ product.featured_image.alt }}" loading="lazy">
+<div class="rightSideImage">
+<p class="cart-item__name h5 break">{{ product.title }}</p>
+ <div class="product-option">
+ {% if product.compare_at_price > product.price %}
+ <span class="comPrice">{% if settings.currency_code_enabled %}{{ product.compare_at_price | money_with_currency}}{% else %}{{ product.compare_at_price | money}}{% endif %}</span>
+ {% endif %}
+ <strong class="normalPriceU">{% if settings.currency_code_enabled %}{{ product.price | money_with_currency }}{% else %}{{ product.price | money }}{% endif %}</strong>
+ </div>
+{% render 'formButton' ,product: product %}
+</div>
+</div>

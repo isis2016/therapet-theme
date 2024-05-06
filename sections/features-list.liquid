@@ -1,0 +1,238 @@
+<style>
+  .featuresSectionMainNEW{
+    background-size: cover;
+    margin: 0;padding:50px 0
+  }
+  .topHeadFeatures{
+    text-align:center
+  } .firstColumnFNEW, .thirdColumnFNEW {
+    width: 33%;
+}.secondColumnFNEW {
+    width: 28%;
+} .secondColumnF img {
+    max-height: 70vh;
+    object-fit: contain;
+}p.featuresDesc {
+    width: 100%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+}.topHeadFeatures h2.mainHeading {
+    margin-bottom: 10px;
+} .NEWBLOCK img {
+    width: 48px;
+    height: 48px;
+}.NEWBLOCK.right{text-align:right}
+.NEWBLOCK.left{text-align:left}
+  .NEWBLOCK {
+    display: flex;
+}.innerBoundary {
+    border: 1px solid white;
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    flex-shrink: 0;
+}.outerBoundary{width: 100px;
+    flex-shrink: 0;
+        background: linear-gradient(102.47deg, #3D5A80 0.87%, #2491C4 101.26%);
+    padding: 7px;
+}.innerBoundary p {
+    margin: 0;
+}.veryBottom {
+    text-align: center;
+    max-width: 900px;
+    margin: auto;
+}
+.wrapTex{
+      font-size: 0.8em;
+    margin: 0;
+}.NEWBLOCK.left p.wrapTex {
+    margin-left: 12px;
+}.NEWBLOCK.right p.wrapTex {
+    margin-right: 12px;
+}.NEWBLOCK {
+    text-align: right;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}.NEWBLOCK.right{
+  
+    flex-direction: row-reverse;
+}.bottomPortionHeadNEW {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+  @media(max-width:900px)
+  {
+    .firstColumnFNEW, .thirdColumnFNEW, .secondColumnFNEW {
+    width: 100%;
+}
+    .secondColumnF img:nth-child(1) {
+    display:none
+}.secondColumnF img:nth-child(2) {
+    margin-bottom:20px
+}
+   img.forMobileImg {
+    display: block !important;
+    margin-top: 20px;
+}
+    .secondColumnF img {
+    max-height: 50vh;
+    object-fit: contain;
+    max-width: 60%;
+    margin: 0 auto 25px; 
+}.featuresSectionMainNEW { 
+}.NEWBLOCK.right {
+    flex-direction: row;
+    text-align: left;
+}.NEWBLOCK.right p.wrapTex {
+    margin-right: 0;
+    margin-left: 12px;
+}.NEWBLOCK.left {
+    flex-direction: row-reverse;
+    text-align: right;
+}.NEWBLOCK.left p.wrapTex {
+    margin-left: 0;
+    margin-right: 12px;
+}.secondColumnFNEW {
+    margin: 10px 0 25px;
+}
+  }
+  @media(max-width:767px)
+  {
+    
+  }
+</style>
+
+<section class="featuresSectionMainNEW" {% if section.settings.backimage != blank %}style="background-image:url('{{ section.settings.backimage | img_url: 'master' }}')"{% endif %}>
+  <div class="page-width">
+<div class="topHeadFeatures">
+<h2 class="mainHeading">{{ section.settings.heading }}</h2>
+<p class="featuresDesc">{{ section.settings.text }}</p>
+ 
+  
+</div>
+<div class="bottomPortionHeadNEW">
+<div class="firstColumnFNEW">
+{% for block in section.blocks limit: 3 %}
+<div class="NEWBLOCK right">
+<div class="outerBoundary">
+  <div class="innerBoundary">
+  <img src="{{ block.settings.image | img_url: '200x' }}" loading="lazy" alt="{{ block.settings.image.alt }}" width="100%" height="auto">
+<p> {{ block.settings.heading }} 
+</p>
+</div>
+</div>
+  
+  <p class="wrapTex">
+  {{ block.settings.text }}
+</p>
+</div>
+{% endfor %}
+</div>
+<div class="secondColumnFNEW">
+<img src="{{ section.settings.image | img_url: '800x' }}" loading="lazy" alt="{{ section.settings.image.alt }}" width="100%" height="auto"> 
+</div>
+<div class="thirdColumnFNEW">
+{% for block in section.blocks offset: 3 %}
+<div class="NEWBLOCK left">
+<div class="outerBoundary">
+  <div class="innerBoundary">
+  <img src="{{ block.settings.image | img_url: '200x' }}" loading="lazy" alt="{{ block.settings.image.alt }}" width="100%" height="auto">
+<p> {{ block.settings.heading }} 
+</p>
+</div>
+</div>
+
+  
+<p class="wrapTex">
+  {{ block.settings.text }}
+</p>
+</div>
+{% endfor %}
+</div>
+</div>
+<div class="veryBottom">
+ {{ section.settings.textw }} 
+<h3>{{ section.settings.bottom }}</h3>
+</div>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Features List",
+    "settings": [
+      {
+        "type":"image_picker",
+        "label":"Image",
+        "id":"backimage"
+      } ,{
+        "type":"text",
+        "label":"Heading",
+        "id":"heading",
+        "default":"INNOVATIVE DESIGN AND FEATURES"
+      },
+      {
+        "type":"textarea",
+        "id":"text",
+        "label":"Heading",
+        "default":"In CLEANUX, we took the best from all sinus relief methods and combined them in one smart device to ensure maximum relief!"
+      },
+       {
+        "type":"image_picker",
+        "label":"Image",
+        "id":"image"
+      } ,
+       {
+        "type":"richtext",
+        "label":"Warning Text",
+        "id":"textw"
+      } ,
+      {
+        "type":"richtext",
+        "label":"Bottom Text",
+        "id":"bottom"
+      }
+    ],
+    "blocks":[
+      {
+        "type":"text",
+        "name":"Feature",
+        "limit":6,
+        "settings":[
+          {
+        "type":"image_picker",
+        "label":"Image",
+        "id":"image"
+      } ,
+         {
+        "type":"text",
+        "label":"Heading",
+        "id":"heading",
+        "default":"INNOVATIVE DESIGN AND FEATURES"
+      },
+      {
+        "type":"textarea",
+        "id":"text",
+        "label":"Heading",
+        "default":"In CLEANUX, we took the best from all sinus relief methods and combined them in one smart device to ensure maximum relief!"
+      } 
+       
+        ]
+      }
+    ],
+    "presets":[
+      {
+        "name":"Features List"
+      }
+    ]
+  }
+{% endschema %} 

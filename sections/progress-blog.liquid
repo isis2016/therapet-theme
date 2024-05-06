@@ -1,0 +1,429 @@
+<style>
+  #shopify-section-{{ section.id }}{
+    background-color:{{- section.settings.bg -}};
+    
+  }
+</style>
+{% style %}
+.section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .section-{{ section.id }}-padding-mob {
+      padding-top: {{ section.settings.padding_top-mob }}px;
+      padding-bottom: {{ section.settings.padding_bottom-mob }}px;
+    }
+  }
+{% endstyle %}
+
+
+<div class="main-tested progress-sec section-{{ section.id }}-padding section-{{ section.id }}-padding-mob" id="{{ section.settings.custom-id }}">
+  <div class="page-width">
+    <div class="{% if section.settings.hide-progress-head %} hide {% endif %}">
+    <h2 class="tested-head progress-head">{{ section.settings.head }}</h2>
+   </div>
+    <div class="tested-wrap progress-wrap">
+       <div class="tested-image {% if section.settings.hide-testedimg %} hide {% endif %}">
+         <img src="{{ section.settings.tested-img | img_url: 'master' }}" alt=" tested img" loading="lazy">
+       </div>
+      <div class="tested-content-bar">
+       {% for block in section.blocks %}
+         <div class="tested-cover">
+           <div class="tested-content">
+             <h5>{{ block.settings.tested-head }}</h5>
+             {{ block.settings.tested-p }}
+           </div>
+           <div class="tested-bar">
+            <div class="tested-bar-inner" style="width: {{ block.settings.progress }}%"></div>
+        </div>
+         </div>
+       {% endfor %}        
+      </div>
+    </div>
+    <div class="featured__cta survey">
+      <a href="{{ section.settings.pro-btn }}" class="btn-pet short">{{ section.settings.pro-text }}</a>
+    </div>
+    <div class="progress-text">{{ section.settings.pro-p }}</div>
+  </div>
+</div>
+
+
+
+
+{% schema %}
+  {
+    "name": "Progress blog",
+    "settings": [
+      {
+        "type": "text",
+        "id": "custom-id",
+        "label": "Custom Id"
+      },
+      {
+        "type": "color",
+        "id": "bg",
+        "label": "background colour"
+      },
+      {
+        "type": "text",
+        "id": "head",
+        "label": "Heading"
+      },
+      {
+        "type": "checkbox",
+        "id": "hide-progress-head",
+        "label": "Hide heading on mobile",
+        "default": false
+      },
+      {
+        "type": "image_picker",
+        "id": "tested-img",
+        "label": "Tested image"
+      },
+      {
+        "type": "checkbox",
+        "id": "hide-testedimg",
+        "label": "Hide Image on mobile",
+        "default": false
+      },
+      {
+        "type": "url",
+        "id": "pro-btn",
+        "label": "button url"
+      }, 
+      {
+        "type": "text",
+        "id": "pro-text",
+        "label": "button text"
+      },
+      {
+        "type": "richtext",
+        "id": "pro-p",
+        "label": "Text",
+        "default": "<p>Add text</p>"
+      },
+      {
+      "type": "header",
+      "content": "Section Padding on Desktop"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Top",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Bottom",
+      "default": 0
+    },
+    {
+      "type": "header",
+      "content": "Section Padding on Mobile"
+    },
+    {
+      "type": "range",
+      "id": "padding_top-mob",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Top",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom-mob",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Bottom ",
+      "default": 0
+    }
+    ],
+    "blocks": [
+      {
+        "type": "block",
+        "name": "Progress bar",
+        "settings": [
+          {
+            "type": "text",
+            "id": "tested-head",
+            "label": "Heading"
+          },
+          {
+            "type": "richtext",
+            "id": "tested-p",
+            "label": "Add text",
+            "default": "<p>Add text<p>"
+          },
+          {
+            "type": "range",
+            "label": "Progress Percentage",
+            "id": "progress",
+            "default": 50,
+            "min": 0,
+            "max": 100,
+            "step": 1
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "progress blog"
+      }
+    ]
+  }
+{% endschema %}
+
+<style>
+  .main-tested.progress-sec {
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+  }
+  .main-tested {
+    padding-bottom: 100px
+}
+   .tested-head {
+    margin: 0px 0px 50px;
+    color: #37306B;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 50px;
+    font-style: normal;
+    line-height: 60px;
+}
+  .tested-head.progress-head {
+    margin: 0 auto;
+    width: 50%;
+    font-size: 32px;
+    padding-bottom: 2vw;
+    color: #333;
+    line-height: 38px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: normal;
+    font-family: 'Inter', sans-serif;
+}
+  .tested-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 101px;
+}
+  .tested-wrap.progress-wrap {
+    padding-bottom: 2vw;
+  }
+  .tested-image {
+    line-height: 0px;
+    width: 50%;
+    height: auto;
+}
+  .tested-content-bar {
+    width: 50%;
+}
+  .tested-cover {
+    margin-bottom: 50px;
+}
+  .tested-cover:last-child {
+    margin-bottom: 0px;
+}
+  .tested-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 21px;
+    margin-bottom: 13px;
+}
+  .tested-content h5 {
+    margin: 0px;
+    color: #F675A8;
+    font-family: 'Inter', sans-serif;
+    font-size: 50px;
+    font-style: normal;
+    line-height: normal;
+}
+  .tested-content p {
+    margin: 0px;
+    color: #37306B;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    line-height: 30px;
+    width: 60%;
+}
+  .tested-bar {
+    width: 100%;
+    height: 20px;
+    background: #E5F1FF;
+    border: solid 1px #E5F1FF;
+    border-radius: 59px;
+    overflow: hidden;
+}
+  .tested-bar-inner {
+    border-radius: 59px;
+    height: 100%;
+    background: #554994;
+    display: block !important;
+}
+  .progress-text {
+    padding-bottom: 2vw;
+  }
+  .progress-text p {
+    font-size: 14px;
+    text-align: center;
+    line-height: 22px;
+    font-style: italic;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+  }
+    .featured__cta.survey {
+        text-align: center;
+        padding-bottom: 1.5rem;
+    }
+  .short {
+        min-width: 160px;
+    }
+
+  @media (max-width: 1100px) {
+    .main-tested {
+    padding-bottom: 80px;
+}
+    .tested-head {
+    margin: 0px 0px 25px;
+    font-size: 40px;
+    line-height: 50px;
+}
+    .tested-wrap {
+    column-gap: 20px;
+    align-items: flex-end;
+}
+    .tested-cover {
+    margin-bottom: 25px;
+}
+    .tested-content h5 {
+    font-size: 21px;
+}
+    .tested-content p {
+    line-height: normal;
+    width: 78%;
+    font-size: 17px;
+}
+    .tested-bar {
+    height: 15px;
+}
+    .tested-wrap.progress-wrap {
+      align-items: center;
+  }
+    .tested-head.progress-head {
+    font-size: 2vw;
+    line-height: 2.5vw;
+    width: 82%;
+}
+  }
+  @media (max-width: 992px) {
+    .main-tested.progress-sec .page-width {
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+    .tested-head {
+    margin: 0px 0px 20px;
+    font-size: 30px;
+    line-height: 40px;
+}
+    .tested-wrap {
+    flex-direction: column;
+}
+    .tested-content h5 {
+    font-size: 18px;
+}
+    .tested-content p {
+    font-size: 15px;
+}
+    .tested-image {
+    width: 100%;
+    margin-bottom: 25px;
+}
+    .tested-content-bar {
+    width: 100%;
+}
+    .tested-head.progress-head {
+    width: 100%;
+    font-size: 24px;
+    line-height: 28px;
+}
+  }
+  @media (max-width: 767px) {
+    .main-tested.progress-sec .page-width {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+    .main-tested {
+    padding-bottom: 40px;
+}
+    .tested-head {
+    margin: 0px 0px 25px;
+    font-family: 'Inter', sans-serif;
+}
+    .tested-content {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    flex-flow: column;
+}
+    .tested-image {
+    margin-bottom: 30px;
+}
+    .tested-content h5 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    line-height: 36px;
+}
+    .tested-content p {
+      font-size: 16px;
+      width: 100%;
+      text-align: center;
+}
+    .tested-head.progress-head {
+    text-align: left;
+    padding-bottom: 1.5rem;
+}
+    .tested-wrap.progress-wrap {
+    padding-bottom: 5vw;
+}
+    .progress-head {
+    text-align: left;
+    padding-bottom: 1.5rem;
+}
+      .progress-text {
+    padding-bottom: 1.5rem;
+}
+      .progress-text p {
+    font-size: 10px;
+    text-align: left;
+    line-height: 20px;
+}
+    .short {
+    min-width: 100%;
+}
+  }
+</style>

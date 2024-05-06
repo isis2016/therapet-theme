@@ -1,0 +1,8 @@
+{
+  "parent": "page.offer3-buy2get1.json",
+  "context": {
+    "market": "australia"
+  },
+  "sections": {
+  }
+}

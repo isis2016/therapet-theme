@@ -1,0 +1,225 @@
+<style> 
+  section.reviewsSlider {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 70px 0;
+  }
+
+  section.reviewsSlider h2.image-with-text__heading.mainHeading.h2 {
+    text-align: center;
+    margin-bottom: 35px;
+  }
+
+  .reviewsWrap {
+    display: flex;
+  }
+
+  .reviewCard {
+    padding: 15px;
+    font-size: 0.9em;
+    border-radius: 10px;
+    flex: 1;
+  }
+
+  img.avatarB {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  img.reviewImg {
+    margin-bottom: 15px;
+    aspect-ratio: 1 / 1;
+    height: auto;
+    object-fit: cover;
+    
+  }
+
+  .trustpilotImg {
+    width: 35%;
+    height: auto;
+  }
+
+  .avatarBlock {
+    margin-top: 11px;
+    display: block;
+  }
+
+  .reviewCard p {
+    margin: 0 0 5px;
+  }
+
+  .reviewText {
+    font-size: 0.8em;
+
+  }
+
+  .readMore {
+    text-decoration: underline;
+    color: blue;
+    cursor: pointer;
+  }
+
+  .visibleReview {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  p.avaName {
+    font-size: 0.8em;
+    display: flex;
+    flex-direction: unset;
+    gap: 5px;
+  }
+
+  .avaName a{
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  @media(max-width:1000px) {
+    .reviewCard {
+      padding: 11px;
+      margin: 30px 8px 40px;
+    }
+  }
+
+  @media(max-width:767px) {
+    section.reviewsSlider {
+      padding-top: 40px;
+      padding-bottom: 25px;
+      margin: 60px 0;
+    }
+
+    section.reviewsSlider h2.image-with-text__heading.mainHeading.h2 {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    .reviewsWrap {
+      display: block;
+    }
+  }
+</style>
+
+<script>
+  function expandReview(e){
+    e.style.display = "none";
+    e.parentNode.querySelector(".visibleReview").classList.remove("visibleReview")
+  }
+</script>
+
+
+<link rel="preload" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" as="style"> 
+<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" as="style"> 
+<link rel="preload" href="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" as="script"> 
+
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" media="none" onload="if(media!='all')media='all'">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" media="none" onload="if(media!='all')media='all'">
+
+
+
+<section class="reviewsSlider" id="reviewSlider" style="background:{{ section.settings.backcolor }}">
+  <div class="page-width">
+     <h2 class="image-with-text__heading mainHeading h2">
+                {{ section.settings.heading }}
+ </h2>
+    
+<div class="reviewsWrap"> 
+{% for block in section.blocks %}
+<div class="reviewCard">
+<img class="reviewImg"  src="{{ block.settings.image | img_url: '400x' }}" loading="lazy" alt="{{ block.settings.image.alt }}" width="100%" height="auto">
+<img class="trustpilotImg"  src="https://cdn.shopify.com/s/files/1/0764/0530/9760/files/reviewstars-1024x192.png" loading="lazy"  width="100%" height="auto">
+<p><strong>{{ block.settings.heading }}</strong></p>
+<p class="reviewText">
+  <span class="visibleReview">{{ block.settings.text }}</span>
+  <span class="readMore"  onclick="expandReview(this)">Read more</span>
+</p>
+<div class="avatarBlock">
+
+<p class="avaName">
+  <strong>- {{ block.settings.name }}</strong>
+  <span> Verified Buyer</span>
+</p>
+
+<p class="avaName">
+  <strong>Purchased: </strong>
+  <a href="#order-now-section" >
+        {{ block.settings.product.title | escape }}
+  </a>
+</p>
+
+</div>
+</div>
+{% endfor %}
+</div>
+  </div>
+</section>
+
+
+
+{% schema %}
+  {
+    "name": "Reviews Slider Trustpilot",
+    "settings": [
+      {
+        "type":"textarea",
+        "id":"heading",
+        "label":"Heading"
+      },
+      {
+        "type":"color",
+        "id":"backcolor",
+        "label":"Background Color",
+        "default":"#F5F7F9"
+      }
+    ],
+    "blocks":[
+      {
+        "name":"Review",
+        "type":"Review",
+        "settings":[
+          {
+            "type": "product",
+            "id": "product",
+            "label": "Product"
+          },
+          {
+            "type":"image_picker",
+            "id":"image",
+            "label":"Image"
+          },
+          {
+            "type":"text",
+            "label":"Heading",
+            "id":"heading",
+            "default":"Thrilled with this product! No more snoring!"
+          },
+          {
+            "type":"textarea",
+            "id":"text",
+            "label":"Review",
+            "default":"I was snoring pretty bad and I've been trying different methods of trying to correct it non surgically before I take that step. This worked wonderfully to clear my nasal passages and make breathing so much easier!"
+          },
+          {
+            "type":"text",
+            "id":"name",
+            "label":"Name",
+            "default":"Valery S."
+          }
+        ]
+      }
+    ],
+    "presets":[
+      {
+        "name":"Reviews Slider Trustpilot"
+      }
+    ]
+  }
+{% endschema %} 

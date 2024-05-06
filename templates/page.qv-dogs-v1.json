@@ -1,0 +1,353 @@
+{
+  "sections": {
+    "e1cd6145-ac4b-4b0d-b32b-3d7a89a3f508": {
+      "type": "product-banner",
+      "settings": {
+        "qhero-img": "shopify:\/\/shop_images\/LAOpSGY.jpg",
+        "hide-img": false,
+        "qhero-img2": "shopify:\/\/shop_images\/Screenshot_at_Nov_18_11-52-33.png",
+        "qhero-img3": "shopify:\/\/shop_images\/Screenshot_at_Nov_18_11-52-33.png",
+        "hide-headline": false,
+        "qhero-head": "If You Spot Your Dog Spraying, Marking, Or Peeing Inside Your Home, This Science-Driven Solution Is A Must. Here’s Why.",
+        "hide-text": false,
+        "qhero-p": "<p><strong>What if you get rid of your dog’s urine marks and the smell of their pee all over your house without training, scolding, or cleaning... would you?<\/strong><\/p>",
+        "red-btn": "#stats-block",
+        "red-text": "Find Out More",
+        "blue-btn": "#question-two",
+        "blue-text": "Skip"
+      }
+    },
+    "b3526ef6-b8b8-4535-839f-d66a4122b919": {
+      "type": "seasonal",
+      "settings": {
+        "videoOpt": "",
+        "hide-seasonal-video": false,
+        "bg": "",
+        "custom-id": "stats-block",
+        "seasonal-head": "Anxiety is a debilitating issue that can rob dogs of their happiness and joy 😢",
+        "hide-seasonal-head": false,
+        "seasonal-p": "<p>In the US, around 70% of dogs show <strong>urine marking or submissive peeing behaviors<\/strong>, often due to stress or environmental changes. Unfortunately, most don't receive proper intervention, which makes it worse over time.<\/p>",
+        "red-btn": "#problem-two",
+        "red-text": "How Does It Happen?!",
+        "blue-btn": "",
+        "blue-text": "",
+        "seasonal-img": "shopify:\/\/shop_images\/fixing-submissive-excitement-urination-1118271-01-e472d2394d024b53877b4d3c7647c851.webp",
+        "hide-seasonal-img": false,
+        "section_css_class": "stats"
+      }
+    },
+    "fc5b06f3-2e66-4f55-8cb9-b9aeee743390": {
+      "type": "seasonal",
+      "settings": {
+        "videoOpt": "",
+        "hide-seasonal-video": false,
+        "bg": "#f5f7ff",
+        "custom-id": "problem-two",
+        "seasonal-head": "Dogs Use Their Pee Smell As A Coping Mechanism",
+        "hide-seasonal-head": false,
+        "seasonal-p": "<p>When a dog is experiencing stress and anxiety, it can affect their <strong>whole body, not just their behavior.<\/strong> This constant state of stress can make your dog overly reactive to everyday stimuli, leading to unwanted behaviors and <strong>discomfort for your pup...<\/strong><\/p>",
+        "red-btn": "#problem-two2",
+        "red-text": "Continue reading",
+        "blue-btn": "",
+        "blue-text": "",
+        "seasonal-img": "shopify:\/\/shop_images\/20dec13.jpg",
+        "hide-seasonal-img": true,
+        "section_css_class": "stats"
+      }
+    },
+    "0131b186-29ef-44d4-ab5a-9f474a33e35c": {
+      "type": "seasonal",
+      "settings": {
+        "videoOpt": "",
+        "hide-seasonal-video": false,
+        "bg": "#ffffff",
+        "custom-id": "problem-two2",
+        "seasonal-head": "What's more concerning is the cascade of effects resulting from their high-stress levels, leading to more serious health problems.",
+        "hide-seasonal-head": true,
+        "seasonal-p": "<p><strong>According to the National Institutes of Health*, chronic stress can significantly harm dogs' immune systems, leading to various health issues.<\/strong><br\/><br\/>This is due to cortisol, the stress hormone that <strong>lowers their immunity<\/strong>, which makes them <strong>vulnerable<\/strong> to <strong>infections, UTIs, skin issues, and digestive problems.<\/strong><\/p>",
+        "red-btn": "#symptoms",
+        "red-text": "What are the symptoms?",
+        "blue-btn": "",
+        "blue-text": "",
+        "seasonal-img": "shopify:\/\/shop_images\/nihstudy.jpg",
+        "hide-seasonal-img": false,
+        "section_css_class": "stats"
+      }
+    },
+    "166469fc-b179-4ede-8b27-b963d1ab65f3": {
+      "type": "seasonal",
+      "custom_css": [
+        "a.btn-pet.show {width: 70%;}",
+        "a.btn-pet.blue.show2 {width: 30%;}",
+        "@media screen and (max-width: 767px) {a.btn-pet.show {width: 70%; } a.btn-pet.blue.show2 {width: 25%; }}"
+      ],
+      "settings": {
+        "videoOpt": "",
+        "hide-seasonal-video": false,
+        "bg": "#f5f7ff",
+        "custom-id": "symptoms",
+        "seasonal-head": "What Are The Signs of Stress and Anxiety in Dogs?",
+        "hide-seasonal-head": true,
+        "seasonal-p": "<p>Here are some key signs of stress and anxiety to watch for in your dog:<\/p><ul><li><strong>Excessive barking or whining<\/strong><\/li><li><strong>Irregular bathroom habits<\/strong><\/li><li><strong>Constant paw licking or chewing<\/strong><\/li><li><strong>Shaking or trembling<\/strong><\/li><li><strong>Hiding or avoiding people<\/strong><\/li><li><strong>Ears laid back and tail tucked<\/strong><\/li><li><strong>Pacing or restlessness<\/strong><\/li><li><strong>Changes in eating habits<\/strong><\/li><\/ul>",
+        "red-btn": "#solution-one",
+        "red-text": "What's The Solution?",
+        "blue-btn": "#question-one",
+        "blue-text": "Skip",
+        "seasonal-img": "shopify:\/\/shop_images\/behaviors2_45081fb1-74f3-41c6-a7ad-570bb38cee45.jpg",
+        "hide-seasonal-img": false,
+        "section_css_class": "stats test"
+      }
+    },
+    "b6b321e3-0cbb-477a-8914-53abe85154f2": {
+      "type": "seasonal",
+      "settings": {
+        "videoOpt": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/ba6a3fd84eba40eba4f88435d3547714.mp4",
+        "hide-seasonal-video": false,
+        "bg": "",
+        "custom-id": "solution-one",
+        "seasonal-head": "Get To The Root Of Your Dog's Stress & Anxiety – With This Breakthrough Dog Calming Diffuser",
+        "hide-seasonal-head": false,
+        "seasonal-p": "<p>We worked with pet scientists and industry experts to formulate a dog-first calming diffuser that focuses on <strong>potency, purity, and power.<\/strong><\/p>",
+        "red-btn": "#solution-two",
+        "red-text": "Continue reading",
+        "blue-btn": "",
+        "blue-text": "",
+        "hide-seasonal-img": false,
+        "section_css_class": "stats"
+      }
+    },
+    "d10aa53c-dc8d-47ff-9581-15d2be2118af": {
+      "type": "seasonal",
+      "settings": {
+        "videoOpt": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/eb0e51e4a46442e3a96903fd124c62b8.mp4",
+        "hide-seasonal-video": false,
+        "bg": "#f5f7ff",
+        "custom-id": "solution-two",
+        "seasonal-head": "The moment you plug it in, it starts its magic!",
+        "hide-seasonal-head": true,
+        "seasonal-p": "<p><strong>TheraPet releases natural and drug-free \"All Clear Signals\" throughout your cat’s surroundings...<\/strong><br\/><br\/>These signals are a carefully crafted mix of the <strong>most powerful dog-calming pheromones.<\/strong><\/p><p>These pheromones are scentless and safe for humans, yet they work wonders on dogs. <\/p>",
+        "red-btn": "#solution-three",
+        "red-text": "Continue reading",
+        "blue-btn": "",
+        "blue-text": "",
+        "hide-seasonal-img": false,
+        "section_css_class": "stats"
+      }
+    },
+    "eacfc3c9-106a-4e00-b123-f94d653255a0": {
+      "type": "seasonal",
+      "settings": {
+        "videoOpt": "",
+        "hide-seasonal-video": false,
+        "bg": "",
+        "custom-id": "solution-three",
+        "seasonal-head": "The Science Behind The Magic",
+        "hide-seasonal-head": true,
+        "seasonal-p": "<p><strong>Backed by over 25 years of scientific research, dog pheromones have been proven to soothe stressed and anxious puppies effortlessly and quickly.<\/strong><\/p><p>These are natural chemical signals that dogs use to communicate with each other, they tap into <strong>your dog's “Calm Instincts”<\/strong> guiding them into <strong>a state of Puppy Zen...<\/strong><\/p><p>Think of it as <strong>flipping a switch to tranquility!<\/strong><\/p>",
+        "red-btn": "#survey",
+        "red-text": "Continue reading",
+        "blue-btn": "",
+        "blue-text": "",
+        "seasonal-img": "shopify:\/\/shop_images\/pherdetection_d88e1a9e-9a48-4b82-9167-a6ea81c5e170.jpg",
+        "hide-seasonal-img": false,
+        "section_css_class": "stats"
+      }
+    },
+    "0244b9e8-ef39-441f-a4f1-9e584b70f10b": {
+      "type": "progress-blog",
+      "blocks": {
+        "0a55cb2c-e5a3-41c2-b176-1050af23df85": {
+          "type": "block",
+          "settings": {
+            "tested-head": "89%",
+            "tested-p": "<p><strong>Saw a reduction in Marking & Indoor Peeing<\/strong><\/p>",
+            "progress": 89
+          }
+        },
+        "22a4cb7b-0bee-4d21-b89e-003ae099ece6": {
+          "type": "block",
+          "settings": {
+            "tested-head": "84%",
+            "tested-p": "<p><strong>Saw a reduction in Excessive Barking<\/strong><\/p>",
+            "progress": 84
+          }
+        },
+        "3b70b77a-f50b-45be-b241-315bab5c29b1": {
+          "type": "block",
+          "settings": {
+            "tested-head": "87%",
+            "tested-p": "<p><strong>Saw a reduction in Destructive Behaviors<\/strong><\/p>",
+            "progress": 87
+          }
+        },
+        "ff9091a8-f8b0-4aeb-97bd-7d77a17f369a": {
+          "type": "block",
+          "settings": {
+            "tested-head": "100%",
+            "tested-p": "<p><strong>Saved at least 40% on their VET bills<\/strong><\/p>",
+            "progress": 100
+          }
+        }
+      },
+      "block_order": [
+        "0a55cb2c-e5a3-41c2-b176-1050af23df85",
+        "22a4cb7b-0bee-4d21-b89e-003ae099ece6",
+        "3b70b77a-f50b-45be-b241-315bab5c29b1",
+        "ff9091a8-f8b0-4aeb-97bd-7d77a17f369a"
+      ],
+      "settings": {
+        "custom-id": "survey",
+        "bg": "#ffffff",
+        "head": "84% of TheraPet customers saw results after just the first month!",
+        "hide-progress-head": false,
+        "tested-img": "shopify:\/\/shop_images\/TheraPetMd_dog_landing_page_elements-11-min.png",
+        "hide-testedimg": true,
+        "pro-btn": "#featured-one",
+        "pro-text": "Continue",
+        "pro-p": "<p><em>*Results based on Calming Diffuser buyers' internal feedback survey conducted in August 2023 (n=300)<\/em><\/p>",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_top-mob": 0,
+        "padding_bottom-mob": 0
+      }
+    },
+    "16e3d6b3-f10a-4d9a-8921-09da29e14ce2": {
+      "type": "featured",
+      "blocks": {
+        "15957e30-b56d-4e75-9b4d-eba509c13beb": {
+          "type": "column",
+          "settings": {
+            "featured-head": "Vet-reviewed...",
+            "hide-featuredhead": false,
+            "featured-img": "shopify:\/\/shop_images\/vet.jpg",
+            "hide-featuredimg": false
+          }
+        },
+        "4f0d6955-997f-4798-8beb-8e2dff247fde": {
+          "type": "column",
+          "settings": {
+            "featured-head": "Loved by pet parents...",
+            "hide-featuredhead": false,
+            "featured-img": "shopify:\/\/shop_images\/rev.jpg",
+            "hide-featuredimg": false
+          }
+        },
+        "d7e130f6-00dd-4b62-8b36-8c2511224c31": {
+          "type": "column",
+          "settings": {
+            "featured-head": "...And thousands of cats worldwide!",
+            "hide-featuredhead": false,
+            "featured-img": "shopify:\/\/shop_images\/visuals_5-02.png",
+            "hide-featuredimg": false
+          }
+        }
+      },
+      "block_order": [
+        "15957e30-b56d-4e75-9b4d-eba509c13beb",
+        "4f0d6955-997f-4798-8beb-8e2dff247fde",
+        "d7e130f6-00dd-4b62-8b36-8c2511224c31"
+      ],
+      "settings": {
+        "bg": "#ffffff",
+        "custom-id": "featured-one",
+        "red-btn": "#question-one",
+        "red-text": "Continue",
+        "section_css_class": "world"
+      }
+    },
+    "e8bea94a-07b2-4d1b-9ea0-06775f07389d": {
+      "type": "question",
+      "blocks": {
+        "59d05855-7f21-4eec-82e8-563906e8a21b": {
+          "type": "column",
+          "settings": {
+            "blue-btn": "#question-two",
+            "blue-text": "1 to 12 Months"
+          }
+        },
+        "bc153449-bf1d-4c47-8151-af1e5b8e4172": {
+          "type": "column",
+          "settings": {
+            "blue-btn": "#question-two",
+            "blue-text": "1 to 2 Years"
+          }
+        },
+        "69435b0a-5587-4580-9be8-373561b07088": {
+          "type": "column",
+          "settings": {
+            "blue-btn": "#question-two",
+            "blue-text": "More than 2 Years"
+          }
+        }
+      },
+      "block_order": [
+        "59d05855-7f21-4eec-82e8-563906e8a21b",
+        "bc153449-bf1d-4c47-8151-af1e5b8e4172",
+        "69435b0a-5587-4580-9be8-373561b07088"
+      ],
+      "settings": {
+        "custom-id": "question-one",
+        "section_css_class": "",
+        "question-head": "How Old Is Your Dog?"
+      }
+    },
+    "b10c87e9-ac74-4d21-a284-a9a2c181efed": {
+      "type": "question",
+      "blocks": {
+        "c55f2b37-3d70-4af7-8c52-28e483573d2d": {
+          "type": "column",
+          "settings": {
+            "blue-btn": "https:\/\/therapetmd.com\/pages\/step2-adv",
+            "blue-text": "Rarely"
+          }
+        },
+        "3f17d015-36b1-426a-9c04-d028d18e0d51": {
+          "type": "column",
+          "settings": {
+            "blue-btn": "https:\/\/therapetmd.com\/pages\/step2-adv",
+            "blue-text": "Sometimes"
+          }
+        },
+        "114b3eeb-1d2b-479e-ab71-7aeb87cd954f": {
+          "type": "column",
+          "settings": {
+            "blue-btn": "https:\/\/therapetmd.com\/pages\/step2-adv",
+            "blue-text": "Often"
+          }
+        },
+        "aa40e87e-96b4-419e-abe0-38d3721ba923": {
+          "type": "column",
+          "settings": {
+            "blue-btn": "https:\/\/therapetmd.com\/pages\/step2-adv",
+            "blue-text": "All the time"
+          }
+        }
+      },
+      "block_order": [
+        "c55f2b37-3d70-4af7-8c52-28e483573d2d",
+        "3f17d015-36b1-426a-9c04-d028d18e0d51",
+        "114b3eeb-1d2b-479e-ab71-7aeb87cd954f",
+        "aa40e87e-96b4-419e-abe0-38d3721ba923"
+      ],
+      "settings": {
+        "custom-id": "question-two",
+        "section_css_class": "",
+        "question-head": "How often does your dog pee inside or show other stress behaviors?"
+      }
+    }
+  },
+  "order": [
+    "e1cd6145-ac4b-4b0d-b32b-3d7a89a3f508",
+    "b3526ef6-b8b8-4535-839f-d66a4122b919",
+    "fc5b06f3-2e66-4f55-8cb9-b9aeee743390",
+    "0131b186-29ef-44d4-ab5a-9f474a33e35c",
+    "166469fc-b179-4ede-8b27-b963d1ab65f3",
+    "b6b321e3-0cbb-477a-8914-53abe85154f2",
+    "d10aa53c-dc8d-47ff-9581-15d2be2118af",
+    "eacfc3c9-106a-4e00-b123-f94d653255a0",
+    "0244b9e8-ef39-441f-a4f1-9e584b70f10b",
+    "16e3d6b3-f10a-4d9a-8921-09da29e14ce2",
+    "e8bea94a-07b2-4d1b-9ea0-06775f07389d",
+    "b10c87e9-ac74-4d21-a284-a9a2c181efed"
+  ]
+}

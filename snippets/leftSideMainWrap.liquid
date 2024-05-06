@@ -1,0 +1,478 @@
+<div class="leftSideMainWrap">
+  <h1
+    class="leftSideHeading h2 {% if section.settings.center %}center{% endif %}"
+    style=" color: {{section.settings.headingcolor }};"
+  >
+    {{ section.settings.leftheading }}
+  </h1>
+
+  {% for block in section.blocks %}
+    {% if block.type == 'Image' %}
+      <div class="imageWithText">
+        <h2
+          class="leftSideHeading {% if block.settings.center %}center{% endif %}"
+          style=" color: {{ block.settings.headingcolor }};"
+        >
+          {{ block.settings.leftheading }}
+        </h2>
+        <p class="textLeftHeading">{{ block.settings.leftsubheading }}</p>
+
+        {% if block.settings.imagesubheading != blank %}
+          <div class="wrapLEFTmediaCap" style="background:{{ block.settings.imagesubheadingcolor }}">
+        {% endif %}
+
+        {% if block.settings.video == blank and block.settings.mainimage != blank %}
+          <img
+            class="mediaElementLEFT {% if forloop.index == 2 %}removeLoadingLazy{% endif %}"
+            src="{{ block.settings.mainimage | img_url: '800x' }}"
+            {% unless forloop.index == 2 %}
+              loading="lazy"
+            {% endunless %}
+            alt="{{ block.settings.mainimage.alt | escape }}"
+            width="100%"
+            height="100%"
+          >
+        {% else %}
+          {% if block.settings.video != blank %}
+            <video
+              src="{{ block.settings.video }}"
+              type="video/mp4"
+              class="mediaElementLEFT"
+              loop
+              muted
+              playsinline
+              autoplay
+              disablepictureinpicture
+              controlslist="nodownload"
+              height="auto"
+              style="width:100%;"
+            ></video>
+          {% endif %}
+        {% endif %}
+
+        {% if block.settings.imagesubheading != blank %}
+          <p class="subHeadCap">{{ block.settings.imagesubheading }}</p>
+          </div>
+        {% endif %}
+
+        {% if block.settings.dateStepText != blank %}
+          <div
+            class="day-step"
+            style="background:{{ block.settings.dateStepBackground }}; color:{{ block.settings.dateStepColor }}"
+          >
+            <span class="day-step-text">{{ block.settings.dateStepText }}</span>{{ block.settings.dateStepNum }}
+          </div>
+        {% endif %}
+
+        <div class="textPartA">
+          {{ block.settings.text }}
+        </div>
+
+        {% for i in (1..10) %}
+          {% capture text %}text{{ i }}{% endcapture %}
+          {% if block.settings[text] != blank %}
+            {% if forloop.first %}<br>{% endif %}
+            <div class="bulletPoint">
+              <img
+                class="tickimage image2"
+                src="{{ block.settings.tickimage | img_url: '50x' }}"
+                loading="lazy"
+                alt="{{ block.settings.tickimage.alt | escape }}"
+                width="100%"
+                height="100%"
+              >
+              <div class="newBullet">{{ block.settings[text] }}</div>
+            </div>
+          {% endif %}
+        {% endfor %}
+
+        {% if block.settings.btntext != blank %}
+          <a
+            class="buttonLast"
+            style="
+              background:{{ block.settings.color }};border-color:{{ block.settings.color }};text-align: center;
+              max-width: 100%;
+              margin-top: 20px;
+            "
+            href="{{ block.settings.btnlink }}"
+          >
+            {{ block.settings.btntext }}
+          </a>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    {% if block.type == 'features' %}
+      <div class="featureSectionWrap">
+        <h2 class="leftSideHeading">{{ block.settings.leftheading }}</h2>
+        <div
+          class="wrapFeaturesSection"
+          style="background:{{ block.settings.color }};border-color:{{ block.settings.bcolor }}"
+        >
+          {% if block.settings.video == blank and block.settings.mainimage != blank %}
+            <img
+              class="mediaElementLEFT"
+              src="{{ block.settings.mainimage | img_url: '800x' }}"
+              loading="lazy"
+              alt="{{ block.settings.mainimage.alt | escape }}"
+              width="100%"
+              height="100%"
+            >
+          {% else %}
+            {% if block.settings.video != blank %}
+              <video
+                src="{{ block.settings.video }}"
+                type="video/mp4"
+                class="mediaElementLEFT"
+                loop
+                muted
+                playsinline
+                autoplay
+                disablepictureinpicture
+                controlslist="nodownload"
+                height="auto"
+                style="width:100%;"
+              >
+            {% endif %}
+          {% endif %}
+          <div class="rightSideWrapF">
+            {% for i in (1..5) %}
+              {% capture text %}text{{ i }}{% endcapture %}
+              {% if block.settings[text] != blank %}
+                <div class="bulletPoint">
+                  <img
+                    class="tickimage image2"
+                    src="{{ block.settings.tickimage | img_url: '50x' }}"
+                    loading="lazy"
+                    alt="{{ block.settings.tickimage.alt | escape }}"
+                    width="100%"
+                    height="100%"
+                  >
+                  <div class="newBullet">{{ block.settings[text] }}</div>
+                </div>
+              {% endif %}
+            {% endfor %}
+
+            {{ block.settings.text }}
+          </div>
+        </div>
+      </div>
+    {% endif %}
+
+    {% if block.type == 'titleAndReviews' %}
+      <div class="imageWithText">
+        <h2
+          class="leftSideHeading {% if block.settings.center %}center{% endif %}"
+          style=" color: {{ block.settings.headingcolor }};"
+        >
+          {{ block.settings.leftheading }}
+        </h2>
+        <p class="textLeftHeading">{{ block.settings.leftsubheading }}</p>
+
+        {% if block.settings.imagesubheading != blank %}
+          <div class="wrapLEFTmediaCap" style="background:{{ block.settings.imagesubheadingcolor }}">
+        {% endif %}
+
+        {% if block.settings.video == blank and block.settings.mainimage != blank %}
+          <img
+            class="mediaElementLEFT {% if forloop.index == 2 %}removeLoadingLazy{% endif %}"
+            src="{{ block.settings.mainimage | img_url: '800x' }}"
+            {% unless forloop.index == 2 %}
+              loading="lazy"
+            {% endunless %}
+            alt="{{ block.settings.mainimage.alt | escape }}"
+            width="100%"
+            height="100%"
+          >
+        {% else %}
+          {% if block.settings.video != blank %}
+            <video
+              src="{{ block.settings.video }}"
+              type="video/mp4"
+              class="mediaElementLEFT"
+              loop
+              muted
+              playsinline
+              autoplay
+              disablepictureinpicture
+              controlslist="nodownload"
+              height="auto"
+              style="width:100%;"
+            ></video>
+          {% endif %}
+        {% endif %}
+
+        {% if block.settings.imagesubheading != blank %}
+          <p class="subHeadCap">{{ block.settings.imagesubheading }}</p>
+          </div>
+        {% endif %}
+
+        <div class="textPartA">
+          {{ block.settings.text }}
+        </div>
+
+        {% for i in (1..10) %}
+          {% capture text %}text{{ i }}{% endcapture %}
+          {% if block.settings[text] != blank %}
+            {% if forloop.first %}<br>{% endif %}
+            <div class="bulletPoint">
+              <img
+                class="tickimage image2"
+                src="{{ block.settings.tickimage | img_url: '50x' }}"
+                loading="lazy"
+                alt="{{ block.settings.tickimage.alt | escape }}"
+                width="100%"
+                height="100%"
+              >
+              <div class="newBullet">{{ block.settings[text] }}</div>
+            </div>
+          {% endif %}
+        {% endfor %}
+
+        <div class="pictureReviews">
+          {% if block.settings.image1 != blank %}
+            <img
+              src="{{ block.settings.image1 | img_url: '700x'}}"
+              class="pictureReview"
+              alt="{{ block.settings.image1.alt }}"
+              loading="lazy"
+            >
+          {% endif %}
+          {% if block.settings.image2 != blank %}
+            <img
+              src="{{ block.settings.image2 | img_url: '700x'}}"
+              class="pictureReview"
+              alt="{{ block.settings.image2.alt }}"
+              loading="lazy"
+            >
+          {% endif %}
+          {% if block.settings.image3 != blank %}
+            <img
+              src="{{ block.settings.image3 | img_url: '700x'}}"
+              class="pictureReview"
+              alt="{{ block.settings.image3.alt }}"
+              loading="lazy"
+            >
+          {% endif %}
+          {% if block.settings.image4 != blank %}
+            <img
+              src="{{ block.settings.image4 | img_url: '700x'}}"
+              class="pictureReview"
+              alt="{{ block.settings.image4.alt }}"
+              loading="lazy"
+            >
+          {% endif %}
+          {% if block.settings.image5 != blank %}
+            <img
+              src="{{ block.settings.image5 | img_url: '700x'}}"
+              class="pictureReview"
+              alt="{{ block.settings.image5.alt }}"
+              loading="lazy"
+            >
+          {% endif %}
+          {% if block.settings.image6 != blank %}
+            <img
+              src="{{ block.settings.image6 | img_url: '700x'}}"
+              class="pictureReview"
+              alt="{{ block.settings.image6.alt }}"
+              loading="lazy"
+            >
+          {% endif %}
+          {% if block.settings.image7 != blank %}
+            <img
+              src="{{ block.settings.image7 | img_url: '700x'}}"
+              class="pictureReview"
+              alt="{{ block.settings.image7.alt }}"
+              loading="lazy"
+            >
+          {% endif %}
+        </div>
+      </div>
+    {% endif %}
+
+    {% if block.type == 'reviews' %}
+      <div class="reviewsSectionWrap">
+        <h2 class="leftSideHeading">{{ block.settings.leftheading }}</h2>
+        <div class="wrapReviewsSection">
+          {% for i in (1..5) %}
+            {% capture image %}mainimage{{ i }}{% endcapture %}
+            {% capture text %}text{{ i }}{% endcapture %}
+            {% capture name %}name{{ i }}{% endcapture %}
+            {% if block.settings[image] != blank %}
+              <div
+                class="singleReviewWrap"
+                style="background:{{ block.settings.color }};border-color:{{ block.settings.bcolor }}"
+              >
+                <img
+                  class="reviewImage"
+                  src="{{ block.settings[image] | img_url: '300x' }}"
+                  loading="lazy"
+                  alt="{{ block.settings.mainimage.alt | escape }}"
+                  width="100%"
+                  height="100%"
+                >
+
+                <div class="rightSideReview">
+                  {{ block.settings[text] }}
+                  <span class="nameRV">{{ block.settings[name] }}</span>
+                </div>
+              </div>
+            {% endif %}
+
+            {% if forloop.last %}
+              <br>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    {% endif %}
+
+    {% if block.type == 'SocialPost' %}
+      <div class="facebook-post">
+        <div class="post-meta">
+          <img src="{{ block.settings.userImage | img_url: '50x' }}" loading="lazy" alt="" class="user-picture">
+          <div>
+            <h5 class="name">
+              <strong>{{ block.settings.username }}</strong>
+            </h5>
+            <div class="postime">
+              <div class="post-time-num">{{ block.settings.postedTime }}</div>
+              <img
+                src="https://cdn.shopify.com/s/files/1/0764/0530/9760/files/6014d5e48670b653f8bc7878_globe.png"
+                loading="lazy"
+                alt=""
+                class="post-time-img"
+              >
+            </div>
+          </div>
+          <img
+            src="https://cdn.shopify.com/s/files/1/0764/0530/9760/files/6014d5e48670b65539bc7847_dots.png"
+            loading="lazy"
+            alt=""
+            class="dots"
+          >
+        </div>
+        <div class="post-text">{{ block.settings.description }}</div>
+        <img
+          src="{{ block.settings.postImage | img_url: '800x' }}"
+          loading="lazy"
+          sizes="(max-width: 479px) 100vw, (max-width: 767px) 82vw, 558px"
+          alt=""
+          class="post-image"
+        >
+        <div class="likes-comments">
+          <div class="emojis">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0764/0530/9760/files/facebook-reactions.png?v=1713783000"
+              loading="lazy"
+              alt=""
+              class="emoji-reaction"
+            >
+            <img
+              src="https://cdn.shopify.com/s/files/1/0764/0530/9760/files/facebook-reactions_1.png?v=1713783000"
+              loading="lazy"
+              alt=""
+              class="emoji-reaction"
+            >
+            <img
+              src="https://cdn.shopify.com/s/files/1/0764/0530/9760/files/p.png?v=1713783000"
+              loading="lazy"
+              alt=""
+              class="emoji-reaction"
+            >
+            <div class="numcount">
+              <span class="hideme">{{ block.settings.likersName }} and {{ block.settings.likeCount }} others</span>
+            </div>
+          </div>
+          <div class="comments-block">
+            <div class="numcount">{{ block.settings.commentsCount }} Comments</div>
+          </div>
+        </div>
+        <div class="likers">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0764/0530/9760/files/6014d5e48670b6ef16bc784b_like.png"
+            loading="lazy"
+            alt=""
+          >
+          <img
+            src="https://cdn.shopify.com/s/files/1/0764/0530/9760/files/6014d5e48670b662e6bc7861_comment.png"
+            loading="lazy"
+            alt=""
+          >
+          <img
+            src="https://cdn.shopify.com/s/files/1/0764/0530/9760/files/6014d5e48670b66600bc7865_share.png"
+            loading="lazy"
+            alt=""
+          >
+        </div>
+      </div>
+    {% endif %}
+
+    {% if block.type == 'InformationalCTA' %}
+      <div class="article-row">
+        <div
+          class="notify_2 border-1"
+          style="background:{{ block.settings.firstBlockBackground }}; color:{{ block.settings.firstBlockColor }}"
+        >
+          <div><img src="{{ block.settings.firstBlockIcon | img_url: '50x' }}" loading="lazy" alt="" class=""></div>
+          <div class="w-embed w-script">{{ block.settings.firstBlockText }}</div>
+        </div>
+        <h3 class="limited-text">
+          {{ block.settings.heading }}
+          <a href="{{ block.settings.sectionLink }}" target="_blank" class="link-7">
+            {{- block.settings.headingClickable -}}
+          </a>
+        </h3>
+        <div
+          class="notify_1"
+          style="background:{{ block.settings.secondBlockBackground }}; color:{{ block.settings.secondBlockColor }}"
+        >
+          <div><img src="{{ block.settings.secondBlockIcon | img_url: '50x' }}" loading="lazy" alt="" class=""></div>
+          <div class="w-embed w-script">{{ block.settings.secondBlockText }}</div>
+        </div>
+        <div class="product-showcase">
+          <div class="w-layout-grid grid-4">
+            <a href="{{ block.settings.sectionLink }}" target="_blank" class="link-block w-inline-block">
+              <img src="{{ block.settings.mainImage | img_url: '50x' }}" loading="lazy" alt="" class="image-13">
+            </a>
+            <h3 class="text-block">
+              {{ block.settings.subheading }}
+              <a href="{{ block.settings.sectionLink }}" target="_blank" class="link-6">
+                {{ block.settings.subheadingClickable -}}
+              </a>
+              {{ block.settings.subheading2 }}
+            </h3>
+            <div class="div-block-2" style="background:{{ block.settings.buttonBgColor }}; border-radius: 5px;">
+              <a
+                href="{{ block.settings.sectionLink }}"
+                target="_blank"
+                class="action-button w-button"
+                style=" color:{{ block.settings.buttonColor }}"
+              >
+                {{- block.settings.buttonText -}}
+              </a>
+            </div>
+          </div>
+        </div>
+        <p class="center-text">{{ block.settings.limitedStock }}</p>
+      </div>
+    {% endif %}
+
+    {% if block.type == 'last' %}
+      <div class="lastSectionWrap">
+        <h2 class="leftSideHeading">{{ block.settings.heading }}</h2>
+        <p class="textLeftHeading fixSpacesSub">{{ block.settings.subheading }}</p>
+        <div class="mainMotaBlock" style="background:{{ block.settings.back }};border-color:{{ block.settings.color }}">
+          {{ block.settings.text }}
+        </div>
+        <a
+          class="buttonLast"
+          style="background:{{ block.settings.color }};border-color:{{ block.settings.color }}"
+          href="{{ block.settings.btnlink }}"
+        >
+          {{ block.settings.btntext }}
+        </a>
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>

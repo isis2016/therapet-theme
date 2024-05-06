@@ -1,0 +1,149 @@
+<style>
+  .worksItem img {
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    object-fit: cover;
+}.HowItWorks {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}.topHeadPartWorks p {
+    margin: 0 auto 30px;
+    max-width: 650px;
+}.topHeadPartWorks h2.orderNowHeadWorks.mainHeading {
+    margin-bottom: 8px;
+}.bottomHeadPartWorks {
+    display: flex;position:relative;
+    flex-wrap: wrap;justify-content: space-between;
+}.bottomHeadPartWorks .worksItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 23%;
+}strong.workNumber {
+    color: {{section.settings.headingColor}};
+    font-weight: 900;
+    font-size: 1.2em;
+}
+  .topHeadPartWorks p{
+    color: {{section.settings.headingColor}};
+  }.textBlock {
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 20px;
+    font-size: 0.9em;
+    line-height: 1.4;
+    padding: 15px;    margin-top: 17px;
+    min-height: 110px;
+}.bottomHeadPartWorks:before {
+    content: '';
+    position: absolute;
+    width: 80%;
+    height: 10px;
+    left: 50%;
+    top: 30%;
+    transform: translateX(-50%);
+    z-index: -1;
+    border-top: 4px dashed #3c597e;
+}
+@media(max-width:1200px)
+  {
+ .bottomHeadPartWorks:before {
+   display:none
+ }.bottomHeadPartWorks .worksItem { 
+    width: 48%;
+}
+  } 
+  @media(max-width:750px)
+  { .bottomHeadPartWorks .worksItem { 
+    width: 100%;    margin-bottom: 20px;
+}.textBlock { 
+    min-height: 10px;
+        min-height: 10px;
+    width: 80%;
+}
+  }
+</style>
+
+{% assign dividedBy = 1 %} 
+<section id="HowItWorks" class="shopify-section section HowItWorks" style="background: linear-gradient(102.47deg, {{section.settings.gradient1}} 0.87%, {{section.settings.gradient2}} 101.26%);"  >
+<div class="main-{{ section.id}} page-width" style=""> 
+<div class="topHeadPartWorks"> 
+<h2 class="orderNowHeadWorks mainHeading" style="color:{{ section.settings.headingColor }} !important" >{{ section.settings.heading }}</h2>
+<p>{{ section.settings.text }}</p>
+</div>
+<div class="bottomHeadPartWorks">
+{% for block in section.blocks %}
+<div class="worksItem">
+<img src="{{ block.settings.image | img_url: '500x' }}" width="100%" alt="{{ block.settings.image.alt }}" loading="lazy">
+<strong class="workNumber">0{{ forloop.index }}.</strong>
+<div class="textBlock">
+{{ block.settings.text }}
+</div>
+</div>
+{% endfor %}
+</div>
+</div> 
+</section>
+ 
+{% schema %}
+  {
+    "name": "How It Works",
+    "settings": [
+       {
+      "type":"color",
+      "id":"headingColor",
+      "label":"Heading Color",
+      "default":"#000000"
+    },
+{
+        "type":"color",
+        "id":"gradient1",
+        "label":"Gradient 1",
+        "default":"#5D3891"
+      },
+      {
+        "type":"color",
+        "id":"gradient2",
+        "label":"Gradient 2",
+        "default":"#66347F"
+      },
+      {
+        "type":"text",
+        "id":"heading",
+        "label":"Heading",
+        "default":"NO COUPON CODE NEEDED."
+      } ,
+      {
+        "type":"text",
+        "id":"text",
+        "label":"Text",
+        "default":"NO COUPON CODE NEEDED."
+      } 
+    ],
+    "blocks":[
+      {
+        "type":"step",
+        "name":"Step",
+        "limit":4,
+        "settings":[
+          {
+            "type":"image_picker",
+            "id":"image",
+            "label":"Image"
+          },
+          {
+            "type":"textarea",
+            "id":"text",
+            "label":"Text"
+          }
+        ]
+      }
+    ],
+    "presets":[
+      {
+        "name":"How It Works"
+      }
+    ]
+  }
+{% endschema %} 

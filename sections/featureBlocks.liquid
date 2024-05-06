@@ -1,0 +1,119 @@
+<style>
+.iconBolocksSectionNEW{
+ 
+}.wrapBlocksNEW{
+  display:flex;flex-wrap:wrap;justify-content: space-between;
+}.iconBlockNEW { 
+    border-radius: 12px;
+    padding: 20px;    text-align: center;
+     width: 30.5%;
+}.iconBlockNEW img{
+  width:80px;height:80px;object-fit:contain
+}.iconBlockNEW p {
+    margin: 0;font-size:0.9em;color:white
+}.iconBlockNEW p strong {
+    margin: 10px 0 10px;
+    display: block;
+}.iconBlockNEW strong {
+    color: #F3BE2B;
+}.bottomTx{
+  font-size:0.8em !important;color:white
+}section.iconBolocksSectionNEW {
+    padding: 50px 0;
+}section.iconBolocksSectionNEW h2 {
+   margin:0
+}
+  @media(max-width:1000px)
+  {
+    .iconBlockNEW { 
+    width: 48.5%;
+}
+  }
+  @media(max-width:767px)
+  {
+    .iconBlockNEW { 
+    width: 100%;
+}section.featuresSectionMain.fixpad {
+    margin-top: 0 !important;
+}
+  }
+</style>
+
+<section class="iconBolocksSectionNEW" style="background: linear-gradient(102.47deg, {{section.settings.gradient1}} 0.87%, {{section.settings.gradient2}} 101.26%);">
+ <h2 class="image-with-text__heading mainHeading h2">
+                {{ section.settings.heading1 }}
+ </h2>
+  
+  <div class="page-width">
+<div class="wrapBlocksNEW"> 
+{% for block in section.blocks %}
+<div class="iconBlockNEW">
+<img src="{{ block.settings.image | img_url: '200x' }}" loading="lazy" alt="{{ block.settings.image.alt }}" width="100%" height="auto">
+<p>
+ <strong>{{ block.settings.heading }}</strong> 
+</p>
+<p class="bottomTx">
+  {{ block.settings.text }}
+</p>
+</div>
+{% endfor %} 
+</div>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Feature Blocks",
+    "settings": [ 
+      {
+        "type":"textarea",
+        "id":"heading1",
+        "label":"heading"
+      },{
+        "type":"color",
+        "id":"gradient1",
+        "label":"Gradient 1",
+        "default":"#5D3891"
+      },
+      {
+        "type":"color",
+        "id":"gradient2",
+        "label":"Gradient 2",
+        "default":"#66347F"
+      }
+      
+    ],
+    "blocks":[
+      {
+        "type":"text",
+        "name":"Block",
+        "limit":3,
+        "settings":[
+          {
+        "type":"image_picker",
+        "label":"Image",
+        "id":"image"
+      } ,
+         {
+        "type":"text",
+        "label":"Heading",
+        "id":"heading",
+        "default":"INNOVATIVE DESIGN AND FEATURES"
+      },
+      {
+        "type":"textarea",
+        "id":"text",
+        "label":"Heading",
+        "default":"In CLEANUX, we took the best from all sinus relief methods and combined them in one smart device to ensure maximum relief!"
+      } 
+       
+        ]
+      }
+    ],
+    "presets":[
+      {
+        "name":"Feature Blocks"
+      }
+    ]
+  }
+{% endschema %} 

@@ -1,0 +1,45 @@
+{
+  "parent": "page.offer3-buy2get1.json",
+  "context": {
+    "market": "us"
+  },
+  "sections": {
+    "33f8fc7f-ff65-4d0c-a79e-75a81eda5b58": {
+      "settings": {
+        "newDesign": false,
+        "badgeColor2T": "#ffffff",
+        "badgeColorT": "#ffffff"
+      },
+      "blocks": {
+        "564d97c7-38e7-414b-a2a5-b438cd3bce42": {
+          "settings": {
+            "numberOfItems": 3,
+            "offerTitle": "+6 Refill",
+            "badge": "BEST SELLER"
+          }
+        },
+        "c68d5dc7-6455-4279-ae42-afb1a56a9ae3": {
+          "settings": {
+            "numberOfItems": 5,
+            "offerTitle": "+10 Refill",
+            "badge": "BIG SAVE"
+          }
+        },
+        "0169b17c-4cb6-4a1b-ac99-cdcd67f9ef9a": {
+          "settings": {
+            "title": "BUY 1",
+            "offerTitle": "+2 Refill",
+            "badge": ""
+          }
+        }
+      }
+    },
+    "ff2d26d5-d321-4dfb-8c47-d9d807002543": {
+      "settings": {
+        "subheading": "BUY 2 GET 1 FREE"
+      },
+      "blocks": {
+      }
+    }
+  }
+}

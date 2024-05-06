@@ -1,0 +1,1020 @@
+{
+  "sections": {
+    "9cb78ee0-8d59-49cc-b61b-45b391185f36": {
+      "type": "new-design-main",
+      "blocks": {
+        "ca674cd5-3b78-4d07-a0ec-db674c2a1a4c": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/TheraPetMd_landing_page-03_b78a3b1e-7dfa-4d5e-b9e3-430be2ca076b.png",
+            "text": "<b>Reduces Stress & Anxiety<\/b>"
+          }
+        },
+        "ad66102f-29c4-4ed8-bb85-901bcaf2d14b": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/TheraPetMd_landing_page-05_22dcc4ec-8a6b-4352-a25b-702d48c85a4d.png",
+            "text": "<b>Improves Emotional Wellbeing<\/b>"
+          }
+        },
+        "289c538f-7506-48d0-87cb-93a0f348db19": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/TheraPetMd_landing_page-09_79f52325-c628-4472-a04b-a6269aa7729b.png",
+            "text": "<b>Increases Confidence & Security<\/b>"
+          }
+        },
+        "6e1e25b1-f596-461b-91b8-821ea98c1a4d": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/TheraPetMd_landing_page-06_0e339f89-de0e-4e81-b9da-110bf17f20a5.png",
+            "text": "<b>Eliminates Urine Marking<\/b>"
+          }
+        },
+        "f36df904-46c2-4146-b418-6c6ca294e88c": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/TheraPetMd_landing_page-07_114b0ce5-2bfa-4eb1-9d75-bf8233529500.png",
+            "text": "<b>Decreases Destructive Behaviors<\/b>"
+          }
+        },
+        "bd5e56ce-99aa-4834-bdbd-472586b7b5e9": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/TheraPetMd_landing_page-08_f73e8c03-c15f-4ba9-8d2c-df2aee69995b.png",
+            "text": "<b>Reduces Territorial Aggression<\/b>"
+          }
+        },
+        "c50a9685-8a0c-4ea8-abb7-91caa19f914d": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/TheraPetMd_landing_page-04_8e58bfd2-e188-4f58-baf9-71523a6aeabd.png",
+            "text": "<b>Enhances Bonding &Affection<\/b>"
+          }
+        },
+        "62e363b4-2566-4a4a-ab92-c52ca8d2b984": {
+          "type": "image",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/TheraPetMd_landing_page-10_aec5ec31-7d30-476a-8d72-d8c4fa1ad87b.png",
+            "text": "<b>Easier Changes Adaptation<\/b>"
+          }
+        }
+      },
+      "block_order": [
+        "ca674cd5-3b78-4d07-a0ec-db674c2a1a4c",
+        "ad66102f-29c4-4ed8-bb85-901bcaf2d14b",
+        "289c538f-7506-48d0-87cb-93a0f348db19",
+        "6e1e25b1-f596-461b-91b8-821ea98c1a4d",
+        "f36df904-46c2-4146-b418-6c6ca294e88c",
+        "bd5e56ce-99aa-4834-bdbd-472586b7b5e9",
+        "c50a9685-8a0c-4ea8-abb7-91caa19f914d",
+        "62e363b4-2566-4a4a-ab92-c52ca8d2b984"
+      ],
+      "settings": {
+        "headingColor": "#000000",
+        "gradient1": "#5d3891",
+        "gradient2": "#66347f",
+        "backgroundWrap": "#f2f7fe",
+        "backimage": "shopify:\/\/shop_images\/TheraPetMd_landing_page-02.png",
+        "backimagem": "shopify:\/\/shop_images\/TheraPetMd_landing_page-01.png",
+        "bundlesUp": "#1 Vet-Recommended Solution for  Cats",
+        "heading": "From Stress To Serenity: Give Your Cat The Peace Of Mind They Deserve!",
+        "text": "",
+        "btn_text": "I WANT TO RELIEVE MY CAT’S STRESS! ",
+        "btn_link": "#order-now-section",
+        "guaranteeText": "30-Day Money Back Guarantee",
+        "review": "<p>+9000 Verified Reviews<\/p>",
+        "review2": "<p><em>“I have two cats that play\/fight rather aggressively and I figured this might help calm them down. It’s super easy to use. There is no odor I can smell a day later so that’s good, and the cats are licking each other! It is truly a game-changer!” - <\/em><strong>Augustine J., TheraPet™ Customer<\/strong><\/p>",
+        "featured": "Experience the power of TheraPet™ in reducing your cat’s anxiety, Without resorting to <span class=\"red\"><b><i> ❌ Expensive VET trips, Training, Toys, Medications, or Supplements!<\/i><\/b><\/span>"
+      }
+    },
+    "1b3082e6-e4fe-480d-963a-16731cc75474": {
+      "type": "featureBlocks",
+      "blocks": {
+        "69da2773-e54f-47f1-ae18-546c49931315": {
+          "type": "text",
+          "settings": {
+            "heading": "$10 MILLION+ In Sales!",
+            "text": ""
+          }
+        },
+        "8c3869f3-897e-4278-9015-c9585af930a8": {
+          "type": "text",
+          "settings": {
+            "heading": "4400 +5-Star Reviews",
+            "text": ""
+          }
+        },
+        "32bc4746-91d3-4be5-a508-e949a75daa4d": {
+          "type": "text",
+          "settings": {
+            "heading": "30-Day Money Back Guarantee",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "69da2773-e54f-47f1-ae18-546c49931315",
+        "8c3869f3-897e-4278-9015-c9585af930a8",
+        "32bc4746-91d3-4be5-a508-e949a75daa4d"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading1": "",
+        "gradient1": "#5d3891",
+        "gradient2": "#66347f"
+      }
+    },
+    "8b9681e7-2542-43c0-8107-bea19ee66e5b": {
+      "type": "richTextNew",
+      "settings": {
+        "gradient1": "#5d3891",
+        "gradient2": "#66347f",
+        "heading": "<i>A Ph.D. VET warns: 1 in 4 Cats Suffer from anxiety in the U.S.<\/i>",
+        "text": "<p>According to a study conducted in the US, 24% of cats suffer from anxiety, and at least 20% of those cats feel extreme separation anxiety. Roughly 67% of cats with anxiety aren’t treated for it, and the longer this issue goes untreated, the worse it gets! <em><strong>But this is all set to change with <\/strong><\/em><strong>TheraPet™ — <\/strong><em><strong>on a mission to offer a stress-free environment for cats worldwide!<\/strong><\/em><\/p>",
+        "btn_text": "",
+        "btn_link": ""
+      }
+    },
+    "aa3113d8-10fd-4952-ae79-1135faf2ffd7": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--19044223844672__aa3113d8-10fd-4952-ae79-1135faf2ffd7-1683726190edd5355e-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Is your cat often on edge, trembling with fear, or seemingly overwhelmed by stress?",
+            "heading_size": "h2"
+          }
+        },
+        "template--19044223844672__aa3113d8-10fd-4952-ae79-1135faf2ffd7-1683726190edd5355e-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>As a caring cat parent, you've probably asked yourself, <strong>\"Why is my cat hiding?\"<\/strong> or <strong>\"How can I help my kitty feel calm?\"<\/strong> You're not alone—many pet parents share these worries. We often focus on our cats' physical health, But here's the thing: <strong>their emotional well-being is just as crucial—and often neglected.<\/strong><\/p><p>Imagine your once vibrant and affectionate cat, now <strong>timidly hiding under the bed<\/strong>, <strong>too<\/strong> <strong>scared to even purr.<\/strong> Your heart breaks, and you feel helpless. <strong>Despite all your efforts<\/strong>—extra cuddles, new toys, vet visits, even pricey medications—<strong>the anxiety remains.<\/strong><\/p><p>Cat stress can stem from various factors—<strong>environment changes, new pets, loud noises, or routine shifts. <\/strong>Understanding these is key to their comfort. That's where TheraPet comes in, your ally in <strong>tackling cat anxiety and restoring peace in your home!<\/strong><\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--19044223844672__aa3113d8-10fd-4952-ae79-1135faf2ffd7-1683726190edd5355e-0",
+        "template--19044223844672__aa3113d8-10fd-4952-ae79-1135faf2ffd7-1683726190edd5355e-1"
+      ],
+      "settings": {
+        "headingColor": "#000000",
+        "image": "shopify:\/\/shop_images\/problem.jpg",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-2",
+        "mobile_content_alignment": "left",
+        "padding_top": 60,
+        "padding_bottom": 8
+      }
+    },
+    "f9b6148f-ca59-4f35-a9fc-59992b0ae349": {
+      "type": "faq-section-new",
+      "blocks": {
+        "6f1c80c6-abc1-4a2b-8c1e-a3b2e71f65da": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Does Your Cat Scratch Too Much?",
+            "icon": "none",
+            "row_content": "<p>Is your cat scratching where he isn't supposed to? Is he destroying your furniture or shredding your carpet? While scratching is natural for kitties, you can direct that energy toward more appropriate targets.<\/p>",
+            "page": ""
+          }
+        },
+        "86edf87d-35d9-4ecc-8702-b84d3daadcc3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Is Your Cat Peeing Outside the Litter Box?",
+            "icon": "none",
+            "row_content": "<p>Walking into a room and being hit with the distinctive odor of cat pee can be quite unpleasant. Unfortunately, stressed kitties might pee in lots of places where they shouldn't.<\/p>",
+            "page": ""
+          }
+        },
+        "template--15731761184924__f9b6148f-ca59-4f35-a9fc-59992b0ae349-1676754232bbeca43b-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Are Your Cats\/Pets Fighting?",
+            "icon": "none",
+            "row_content": "<p>Sometimes cats don't get along from the get-go. But other times, cats that used to get along are suddenly hissing and swatting with claws. How do you create peace in all this tension? PetCalmer is the answer!<\/p>",
+            "page": ""
+          }
+        },
+        "template--15731761184924__f9b6148f-ca59-4f35-a9fc-59992b0ae349-1676754232bbeca43b-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Is Your Cat Hiding All the Time?",
+            "icon": "none",
+            "row_content": "<p>Cats are social creatures. If you notice your sweet kitty has started hiding and acting weird, you might feel a little sad. Sometimes cats just need a break from the noise, and that's OK. But if the problem persists, this might be a sign of stress.<\/p>",
+            "page": ""
+          }
+        },
+        "template--15731761184924__f9b6148f-ca59-4f35-a9fc-59992b0ae349-1676754232bbeca43b-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Is Your Cat Not Eating as Much?",
+            "icon": "none",
+            "row_content": "<p>Cats usually jump at the chance to nom on some treats. If your cat has stopped eating, it can be a serious issue you shouldn't ignore.<\/p>",
+            "page": ""
+          }
+        },
+        "template--15731761184924__f9b6148f-ca59-4f35-a9fc-59992b0ae349-1676754232bbeca43b-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Is Your Cat Overgrooming?",
+            "icon": "none",
+            "row_content": "<p>It's normal for your cat to groom herself multiple times a day. But sometimes, cats become fixated and may even groom so much they leave bald spots or sores.<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "6f1c80c6-abc1-4a2b-8c1e-a3b2e71f65da",
+        "86edf87d-35d9-4ecc-8702-b84d3daadcc3",
+        "template--15731761184924__f9b6148f-ca59-4f35-a9fc-59992b0ae349-1676754232bbeca43b-1",
+        "template--15731761184924__f9b6148f-ca59-4f35-a9fc-59992b0ae349-1676754232bbeca43b-0",
+        "template--15731761184924__f9b6148f-ca59-4f35-a9fc-59992b0ae349-1676754232bbeca43b-2",
+        "template--15731761184924__f9b6148f-ca59-4f35-a9fc-59992b0ae349-1676754232bbeca43b-3"
+      ],
+      "settings": {
+        "headingColor": "#000000",
+        "color": "#f5f7ff",
+        "subheading": "WHY DO YOU NEED THERAPET",
+        "caption": "If the answer is yes to any of these questions …TheraPet Is a Must Have!",
+        "heading": "It's time to show your cat you care, <br>With TheraPet™ Diffuser",
+        "heading_size": "h2",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 32,
+        "padding_bottom": 48,
+        "bottom": "Look No More! Let TheraPet create a more comfortable, calming home for you and your cat!"
+      }
+    },
+    "52eaad7f-3fd1-494c-9a6e-4ac0cd95745d": {
+      "type": "introduction",
+      "blocks": {
+        "25a0d281-5551-4d1b-8a21-aa43205400be": {
+          "type": "block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/TheraPetMd_landing_page-14.png",
+            "text": "<b>78% Reduction In Urine Spraying<\/b>"
+          }
+        },
+        "acc14f3e-81ee-4a8a-92c4-4320b15df2c8": {
+          "type": "block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/TheraPetMd_landing_page-13.png",
+            "text": "<b>74% Reduction in Scratching & Changes<\/b>"
+          }
+        },
+        "678aeb5d-fefd-4f25-a344-05d248b201cb": {
+          "type": "block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/TheraPetMd_landing_page-12.png",
+            "text": "<b>83% Reduction in Tension & Conflicts<\/b>"
+          }
+        },
+        "2595a8f4-1829-4b42-98a2-b563bbacc481": {
+          "type": "block",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/TheraPetMd_landing_page-33.png",
+            "text": "<b>86% Reduction in Hiding & Fears<\/b>"
+          }
+        }
+      },
+      "block_order": [
+        "25a0d281-5551-4d1b-8a21-aa43205400be",
+        "acc14f3e-81ee-4a8a-92c4-4320b15df2c8",
+        "678aeb5d-fefd-4f25-a344-05d248b201cb",
+        "2595a8f4-1829-4b42-98a2-b563bbacc481"
+      ],
+      "settings": {
+        "backimage": "shopify:\/\/shop_images\/backintro.jpg",
+        "imagem": "shopify:\/\/shop_images\/TheraPetMd_landing_page_new_diffuser-01_1.png",
+        "border": "shopify:\/\/shop_images\/image_1012_600x_8a68f252-cc43-49aa-b51f-9b7d93b6705c.webp",
+        "intro": "INTRODUCING",
+        "logo": "shopify:\/\/shop_images\/TheraPetMd_logo_choisi-04.png",
+        "text": "<p>TheraPet™ Diffuser is your hassle-free solution for a calmer, happier cat. It diffuses a natural, calming scent—called pheromones—that only cats can detect. These pheromones are like <strong>comforting messages, telling your kitty, \"You're safe and loved.\"<\/strong><\/p><p>TheraPet™ helps curb stress-driven behaviors like scratching and urine marking, giving your home—and your cat—a sense of peace. It's like <strong>whispering soothing words to your furry friend<\/strong>, all day, every day.<\/p><p>With TheraPet™, your home becomes a <strong>haven of comfort for your cat<\/strong>. It's more than just a diffuser; it's a daily dose of kindness for your feline friend, <strong>ensuring harmony and a stronger bond.<\/strong> Trust TheraPet to make home feel like home, always.<\/p>"
+      }
+    },
+    "482d3967-4f26-4fc2-91c9-ab3b5d3e865c": {
+      "type": "vs-blocks",
+      "blocks": {
+        "92ac95a5-491a-47d2-ada0-0e2451cf4e24": {
+          "type": "Blocks",
+          "settings": {
+            "videoOpt": "",
+            "BlockImage": "shopify:\/\/shop_images\/sparkling_effect-01.png",
+            "BlockText": "Feline Facial Pheromones",
+            "BlockrichText": "<p>Facial Pheromones are what cats <strong>naturally produce when they're feeling good<\/strong> and want to mark their territory as safe. It's like their way of giving a \"thumbs up\" to a particular spot. When your cat senses these pheromones in the air, they'll <strong>understand it as a sign of comfort and safety.<\/strong><\/p>",
+            "content": "<li>[Tick] Boosts Security — Mimics 'all-clear' signals to reduce stress and foster a sense of safety.<\/li>\n<li>[Tick] Lessens Marking — Helps decrease stress-related behaviors like territory marking.<\/li>\n<li>[Tick] Encourages Play — Promotes an environment for natural curiosity and playfulness.<\/li>"
+          }
+        },
+        "738fc78b-3bb1-4180-9e00-b8e909c0f259": {
+          "type": "Blocks",
+          "settings": {
+            "videoOpt": "",
+            "BlockImage": "shopify:\/\/shop_images\/sparkling_effect-02.png",
+            "BlockText": "Maternal Appeasing Pheromones",
+            "BlockrichText": "<p>TheraPet™ contains Maternal Appeasing Pheromones too, these are the same comforting scents <strong>mother cats emit to reassure their kittens<\/strong>. It's a nurturing, calming signal that <strong>brings peace and contentment to cats of all ages.<\/strong><\/p>",
+            "content": "<li>[Tick] Soothes and Calms — Provides a comforting and calming influence, reducing fear and stress.<\/li>\n<li>[Tick] Promotes Bonding — Fosters familiarity and bonding, beneficial in multi-cat households.<\/li>\n<li>[Tick] Eases Transition — Offers support during stressful transitions or changes in the environment.<\/li>"
+          }
+        }
+      },
+      "block_order": [
+        "92ac95a5-491a-47d2-ada0-0e2451cf4e24",
+        "738fc78b-3bb1-4180-9e00-b8e909c0f259"
+      ],
+      "settings": {
+        "BlockColor": "#ffffff",
+        "Text": "What Makes TheraPet So Special?",
+        "richText": "<p>It's all in our unique Dual Blend of Feline Facial Pheromones and Cat Appeasing Pheromones. <\/p><p>Sounds complicated? Don't worry, it's not!<\/p>",
+        "vscheckbox": false,
+        "vscolor": "#eeefc6",
+        "vstext": "PLUS"
+      }
+    },
+    "2113bc22-8a62-4a14-b3d8-8c10771b0621": {
+      "type": "richTextNew",
+      "settings": {
+        "gradient1": "#5d3891",
+        "gradient2": "#66347f",
+        "image": "shopify:\/\/shop_images\/guaratees.png",
+        "heading": "GET 50% OFF + 60 DAYS REFILLS TODAY!",
+        "text": "<p>You haven't truly seen your cat at their <strong>happiest and most relaxed <\/strong>until you've tried TheraPet™!<\/p><p>This will be the most seamless and effective way to enhance your cat's emotional well-being. <strong>Because your furry friend deserves the comfort and peace they crave!<\/strong><\/p>",
+        "btn_text": "CLAIM YOUR DISCOUNT NOW!",
+        "btn_link": "#order-now-section"
+      }
+    },
+    "381e61a9-3a1a-4f29-bf0a-5a23cdaf2b6e": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--19044223844672__381e61a9-3a1a-4f29-bf0a-5a23cdaf2b6e-1683887730aa7d971d-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "A comforting ambiance that wraps your kitty in a warm, invisible hug of reassurance!",
+            "heading_size": "h2"
+          }
+        },
+        "template--19044223844672__381e61a9-3a1a-4f29-bf0a-5a23cdaf2b6e-1683887730aa7d971d-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Think of TheraPet as it's like whispering in their ear, telling them that <strong>their world is a safe haven<\/strong>, a place where they can let their guard down and <strong>simply enjoy being a cat.<\/strong><\/p><p>But it's not just about curbing those unwanted behaviors—<strong>it's about seeing your cat's true, joyful nature emerge!<\/strong> Imagine witnessing more of those <strong>heartwarming purrs<\/strong>, the content napping in the sunny spots, the <strong>playful moments<\/strong> that make you laugh.<\/p><p>And the best part? <strong>You won't find TheraPet's powerful blend anywhere else<\/strong>. Our diffuser is the only one on the market that offers this unique pheromones combination. That's what makes it a game-changer for any cat owner looking to create <strong>a happier, calmer home for their feline friend!<\/strong><\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--19044223844672__381e61a9-3a1a-4f29-bf0a-5a23cdaf2b6e-1683887730aa7d971d-0",
+        "template--19044223844672__381e61a9-3a1a-4f29-bf0a-5a23cdaf2b6e-1683887730aa7d971d-1"
+      ],
+      "settings": {
+        "headingColor": "#5d3891",
+        "image": "shopify:\/\/shop_images\/TheraPetMd_landing_page_new_diffuser-06_1.png",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 56,
+        "padding_bottom": 0
+      }
+    },
+    "d94d84d0-0224-4c64-855b-44f4726ad3cc": {
+      "type": "features-section",
+      "blocks": {
+        "6409377b-f8c3-4c3b-bef5-e6fa95daf85f": {
+          "type": "text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/TheraPetMd_landing_page-18.png",
+            "heading": "Safe & Drug-Free Relief",
+            "text": "TheraPet™ is a non-invasive, drug-free solution that respects your cat's normal routine. No side effects, no dietary changes—just a happier, calmer cat."
+          }
+        },
+        "ca1d3b08-4567-4d41-a6f6-2da663fc2a44": {
+          "type": "text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/TheraPetMd_landing_page-21.png",
+            "heading": "Around-the-Clock Calming",
+            "text": "TheraPet™ works 24\/7, turning your home into a calm oasis for your feline, ensuring consistent peace day and night."
+          }
+        },
+        "13c34edf-0703-4d6d-83a6-11110e6c7cb7": {
+          "type": "text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/TheraPetMd_landing_page-19.png",
+            "heading": "Customizable Comfort",
+            "text": "TheraPet™ respects your cat's uniqueness, customizing its calming effect to fit your feline's specific tranquility needs."
+          }
+        },
+        "db39819b-f7ef-4b95-afbe-dc824458b4eb": {
+          "type": "text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/TheraPetMd_landing_page-20.png",
+            "heading": "Ideal for Multi-Cat Homes",
+            "text": "Got more than one furball? No problem! TheraPet works its magic on all your kitties, ensuring a peaceful, harmonious household."
+          }
+        }
+      },
+      "block_order": [
+        "6409377b-f8c3-4c3b-bef5-e6fa95daf85f",
+        "ca1d3b08-4567-4d41-a6f6-2da663fc2a44",
+        "13c34edf-0703-4d6d-83a6-11110e6c7cb7",
+        "db39819b-f7ef-4b95-afbe-dc824458b4eb"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "headingColor": "#5d3891",
+        "heading": "Experience the TheraPet Advantage:<br>Designed with Care, Engineered for Calm",
+        "text": "TheraPet™ is more than a diffuser—it's a pledge to your cat's tranquility. It's where nature's wisdom meets feline understanding, creating a harmony your cat will love.",
+        "image": "shopify:\/\/shop_images\/TheraPetMd_landing_page_new_diffuser-02.png",
+        "image2": "shopify:\/\/shop_images\/TheraPetMd_landing_page_new_diffuser-03.png"
+      }
+    },
+    "e63e90ff-94a1-4e71-b825-a692d261ffb6": {
+      "type": "richTextNew",
+      "settings": {
+        "gradient1": "#5d3891",
+        "gradient2": "#66347f",
+        "image": "shopify:\/\/shop_images\/guaratees.png",
+        "heading": "GET 50% OFF + 60 DAYS REFILLS TODAY!",
+        "text": "<p>You haven't truly seen your cat at their <strong>happiest and most relaxed <\/strong>until you've tried TheraPet™!<\/p><p>This will be the most seamless and effective way to enhance your cat's emotional well-being. <strong>Because your furry friend deserves the comfort and peace they crave!<\/strong><\/p>",
+        "btn_text": "CLAIM YOUR DISCOUNT NOW!",
+        "btn_link": "#order-now-section"
+      }
+    },
+    "ef818d8e-ffb9-4d92-ac5b-6d95ea3fec82": {
+      "type": "picture-reviews",
+      "settings": {
+        "headingColor": "#000000",
+        "backColor": "",
+        "heading": "Don't Just Take Our Word For It! Hear from Our Happy TheraPet Families!",
+        "image1": "shopify:\/\/shop_images\/3_11f616c1-66d2-49a7-ad40-1e9697a4a7e7.png",
+        "image2": "shopify:\/\/shop_images\/2_04453f0c-2886-47ff-be04-3e0527847f4d.png",
+        "image3": "shopify:\/\/shop_images\/5.png",
+        "image4": "shopify:\/\/shop_images\/7.png",
+        "image5": "shopify:\/\/shop_images\/1.png",
+        "image6": "shopify:\/\/shop_images\/6.png",
+        "image7": "shopify:\/\/shop_images\/4.png",
+        "image8": "shopify:\/\/shop_images\/8.png"
+      }
+    },
+    "fe0f2cf5-e6d2-4198-8e30-3131e7b1408b": {
+      "type": "how-it-works",
+      "blocks": {
+        "652fc414-1ba9-425a-a788-97ecacf0605b": {
+          "type": "step",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/TheraPetMd_landing_page-24_7ae106c1-c994-4e01-8021-273a94ae5915.png",
+            "text": "<b>Find the Perfect Spot<\/b>\n<br>Find a spot in your cat's favorite room and make sure it's not hidden—your TheraPet needs space to spread its magic!"
+          }
+        },
+        "48f83e86-2114-4126-94a9-57f9c0badd83": {
+          "type": "step",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/TheraPetMd_landing_page_new_diffuser-04.png",
+            "text": "<b>Power It Up<\/b>\n<br>Now, simply plug it in! Your TheraPet will start spreading its soothing pheromone blend right away. No extra settings, no hassle."
+          }
+        },
+        "42edea17-ab59-43d8-9353-677d766638f7": {
+          "type": "step",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/TheraPetMd_landing_page_new_diffuser-05.png",
+            "text": "<b>Let It Do Its Thing!<\/b>\n<br>TheraPet is designed to work all on its own. It'll continuously spread calming vibes, keeping your kitty relaxed and joyful."
+          }
+        },
+        "60ddef40-1c51-4ef6-bb68-77aed74ffde5": {
+          "type": "step",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/TheraPetMd_landing_page-27_3cc9c108-22fe-4cca-a808-a4fb2f1cdaac.png",
+            "text": "<b>Enjoy the Tranquility.<\/b>\n<br>Experience the TheraPet magic! It turns your home into a 24\/7 kitty oasis. Just don't forget the monthly refill for sustained serenity!"
+          }
+        }
+      },
+      "block_order": [
+        "652fc414-1ba9-425a-a788-97ecacf0605b",
+        "48f83e86-2114-4126-94a9-57f9c0badd83",
+        "42edea17-ab59-43d8-9353-677d766638f7",
+        "60ddef40-1c51-4ef6-bb68-77aed74ffde5"
+      ],
+      "settings": {
+        "headingColor": "#ffffff",
+        "gradient1": "#5d3891",
+        "gradient2": "#66347f",
+        "heading": "Your Effortless Path to Purr-fect Peace",
+        "text": "TheraPet isn't just about bringing tranquility to your cat—it's about making your life easier too!"
+      }
+    },
+    "495952d2-4bf1-4655-9b50-0f5735ddce40": {
+      "type": "comparison-table",
+      "blocks": {
+        "681362ed-ab68-43f5-b887-95f74c3543c0": {
+          "type": "block",
+          "settings": {
+            "text": "<b>2-In-1 Pheromones Unique Potent Blend<\/b>",
+            "firstColumn": true,
+            "fText": "",
+            "secondColumn": false,
+            "sText": "Single Pheromone"
+          }
+        },
+        "d31d1a38-02a6-4885-8a12-4aefa62f5c99": {
+          "type": "block",
+          "settings": {
+            "text": "<b>Two Months Peace: 60 days of harmony per TheraPet.<\/b>",
+            "firstColumn": true,
+            "fText": "",
+            "secondColumn": false,
+            "sText": "Lasts Only One Month"
+          }
+        },
+        "6439c15a-2d4e-4e8f-8706-d12b0fc37f7f": {
+          "type": "block",
+          "settings": {
+            "text": "<b>Cost-effective & Doesn't break the bank<\/b>",
+            "firstColumn": true,
+            "fText": "Costs $0.5\/day",
+            "secondColumn": false,
+            "sText": "Costs $1\/day"
+          }
+        },
+        "30366896-4d45-4625-9e9b-dc9e07b90064": {
+          "type": "block",
+          "settings": {
+            "text": "<b>Medical-Grade Build: Sturdy enough to stand up to curious kitties.<\/b>",
+            "firstColumn": true,
+            "fText": "",
+            "secondColumn": false,
+            "sText": "Burns, breaks fast"
+          }
+        },
+        "e0428fc4-e374-4400-b96f-df24015234a0": {
+          "type": "block",
+          "settings": {
+            "text": "<b>Eco-Friendly: Minimal power usage for an energy-efficient solution.<\/b>",
+            "firstColumn": true,
+            "fText": "",
+            "secondColumn": false,
+            "sText": ""
+          }
+        },
+        "3c58127d-05c8-45e0-ac38-d84ab308612e": {
+          "type": "block",
+          "settings": {
+            "text": "<b>No-Risk, All Reward: Covered with a 30-day money-back guarantee.<\/b>",
+            "firstColumn": true,
+            "fText": "",
+            "secondColumn": false,
+            "sText": ""
+          }
+        }
+      },
+      "block_order": [
+        "681362ed-ab68-43f5-b887-95f74c3543c0",
+        "d31d1a38-02a6-4885-8a12-4aefa62f5c99",
+        "6439c15a-2d4e-4e8f-8706-d12b0fc37f7f",
+        "30366896-4d45-4625-9e9b-dc9e07b90064",
+        "e0428fc4-e374-4400-b96f-df24015234a0",
+        "3c58127d-05c8-45e0-ac38-d84ab308612e"
+      ],
+      "settings": {
+        "headingColor": "#66347f",
+        "subheading": "Why TheraPet Is In a League Of Its Own",
+        "heading": "Half the Price, Double Calming Effect",
+        "pluxytext": "TheraPet",
+        "competitortext": "OTHERS",
+        "back": "#c6cbef",
+        "back2": "#37306b",
+        "firstColumnTextColor": "#ffffff",
+        "secondColumnTextColor": "#ff0000",
+        "tick": "shopify:\/\/shop_images\/yes_100x_7be8875a-175f-4f55-9096-7a9544f74e4d.png",
+        "cross": "shopify:\/\/shop_images\/no.png",
+        "main": "shopify:\/\/shop_images\/TheraPetMd_landing_page-29-29.png",
+        "comp": "shopify:\/\/shop_images\/TheraPetMd_landing_page-28.png"
+      }
+    },
+    "ea97f637-07b3-4afd-9b40-505558abeeb0": {
+      "type": "richTextNew",
+      "settings": {
+        "gradient1": "#5d3891",
+        "gradient2": "#66347f",
+        "image": "shopify:\/\/shop_images\/image_1011_500x_3c3c5c0f-788b-4764-af20-103e1b8142b6.webp",
+        "heading": "30-Day Peace & Purr-fect Satisfaction Promise",
+        "text": "<p>From the moment your TheraPet™ package lands on your doorstep, <strong>you have a full 30 days <\/strong>to witness its transformative power. Take your time, let your cat adjust, and observe the changes.<\/p><p>If, for any reason, you don't see a positive shift in your cat's behavior, or if TheraPet Diffuser doesn't live up to your expectations in any way, <strong>we're here to make things right<\/strong>. Just reach out to our friendly customer support team at support@therapetmd.com, <strong>and we'll swiftly process a 100% refund, no questions asked.<\/strong><\/p>",
+        "btn_text": "",
+        "btn_link": ""
+      }
+    },
+    "ff2d26d5-d321-4dfb-8c47-d9d807002543": {
+      "type": "new-richText",
+      "settings": {
+        "headingColor": "#000000",
+        "announcement": "",
+        "subheading": "GET UP TO 50% OFF TODAY.",
+        "heading": "NO COUPON CODE NEEDED.",
+        "text": "Hurry! This Cyber Monday offer is only available while supplies last.",
+        "padding_top": 60,
+        "padding_bottom": 0
+      }
+    },
+    "33f8fc7f-ff65-4d0c-a79e-75a81eda5b58": {
+      "type": "product-section",
+      "blocks": {
+        "template--21542042009920__33f8fc7f-ff65-4d0c-a79e-75a81eda5b58-title-1": {
+          "type": "title",
+          "settings": {
+            "title_label": "<b>Almost Gone<\/b>"
+          }
+        },
+        "template--21542042009920__33f8fc7f-ff65-4d0c-a79e-75a81eda5b58-review_bar-1": {
+          "type": "review_bar",
+          "settings": {
+            "review_bar_text": "+9000 Reviews"
+          }
+        },
+        "4c02aefe-31cc-45cf-a63e-a816bb62b23e": {
+          "type": "items_left",
+          "settings": {
+          }
+        },
+        "template--21542042009920__33f8fc7f-ff65-4d0c-a79e-75a81eda5b58-buy_button-1": {
+          "type": "buy_button",
+          "settings": {
+            "show_dynamic_checkout": false
+          }
+        },
+        "template--21542042009920__33f8fc7f-ff65-4d0c-a79e-75a81eda5b58-feature_list-1": {
+          "type": "feature_list",
+          "settings": {
+            "feature_text_1": "30 Day Money Back Guarantee",
+            "feature_icon_1": "shopify:\/\/shop_images\/image_29_8757a7c0-292b-42e6-9184-022785343408.png",
+            "feature_text_2": "Free Worldwide Shipping",
+            "feature_icon_2": "shopify:\/\/shop_images\/image_26_aa890277-4f01-4b6d-8a09-4dc396c94af1.png",
+            "feature_text_3": "9,000+ 5 Star Reviews",
+            "feature_icon_3": "shopify:\/\/shop_images\/image_92_f66773cd-3afa-444e-980a-998cea800444.png"
+          }
+        },
+        "0169b17c-4cb6-4a1b-ac99-cdcd67f9ef9a": {
+          "type": "product",
+          "settings": {
+            "product": "therapet-calming-diffuser",
+            "title": "1x Diffuser + 2 Refills",
+            "default": false,
+            "badge": "33% OFF",
+            "numberOfItems": 1,
+            "offerTitle": "1 Room",
+            "show_full_price": true,
+            "variant_pack": "",
+            "background": ""
+          }
+        },
+        "564d97c7-38e7-414b-a2a5-b438cd3bce42": {
+          "type": "product",
+          "settings": {
+            "product": "2x-cat-calming-diffuser",
+            "title": "2x Diffuser + 4 Refills",
+            "default": true,
+            "badge": "44% OFF",
+            "numberOfItems": 2,
+            "offerTitle": "2 Rooms",
+            "show_full_price": false,
+            "variant_pack": "",
+            "background": ""
+          }
+        },
+        "c68d5dc7-6455-4279-ae42-afb1a56a9ae3": {
+          "type": "product",
+          "settings": {
+            "product": "3x-therapet-diffuser",
+            "title": "3x Diffuser + 6 Refills",
+            "default": false,
+            "badge": "50% OFF",
+            "numberOfItems": 3,
+            "offerTitle": "House (for multicats)",
+            "show_full_price": false,
+            "variant_pack": "",
+            "background": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--21542042009920__33f8fc7f-ff65-4d0c-a79e-75a81eda5b58-title-1",
+        "template--21542042009920__33f8fc7f-ff65-4d0c-a79e-75a81eda5b58-review_bar-1",
+        "4c02aefe-31cc-45cf-a63e-a816bb62b23e",
+        "template--21542042009920__33f8fc7f-ff65-4d0c-a79e-75a81eda5b58-buy_button-1",
+        "template--21542042009920__33f8fc7f-ff65-4d0c-a79e-75a81eda5b58-feature_list-1",
+        "0169b17c-4cb6-4a1b-ac99-cdcd67f9ef9a",
+        "564d97c7-38e7-414b-a2a5-b438cd3bce42",
+        "c68d5dc7-6455-4279-ae42-afb1a56a9ae3"
+      ],
+      "settings": {
+        "newDesign": false,
+        "colorMain": "#bc2e3e",
+        "badgeColor": "#008060",
+        "badgeColor1": "#008060",
+        "badgeColorT": "#000000",
+        "badgeColor2": "#008060",
+        "badgeColor2T": "#000000",
+        "textColor": "#000000",
+        "grayColor": "#ff2121",
+        "selectionColor": "#f1fff3",
+        "packColor": "#bc2e3e",
+        "colorLight1": "#d9bfff",
+        "colorLight2": "#f4ecff",
+        "colorBadgeBox": "#ffffff",
+        "section_id": "",
+        "product_id": "copy-of-therapet™-diffuser"
+      }
+    },
+    "55377324-4cfe-4ace-b430-05d0f485d6d9": {
+      "type": "rich-text",
+      "blocks": {
+        "template--15731761184924__55377324-4cfe-4ace-b430-05d0f485d6d9-1677226622d4145aef-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Real Reviews from Real Cat Parents!<\/p>",
+            "heading_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "template--15731761184924__55377324-4cfe-4ace-b430-05d0f485d6d9-1677226622d4145aef-0"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 60,
+        "padding_bottom": 0
+      }
+    },
+    "16772265663741e36d": {
+      "type": "apps",
+      "blocks": {
+        "d17baafa-cd83-4913-bfc2-acc3f8f18836": {
+          "type": "shopify:\/\/apps\/stamped-product-reviews-ugc\/blocks\/main-widget\/a103faaf-2125-4b0e-89fa-de5149736723",
+          "settings": {
+            "animation": false,
+            "tags_exclude": "",
+            "tags_include": "",
+            "search": "",
+            "linkify": false,
+            "use_metafields": false,
+            "sku_tagtype": "sku"
+          }
+        }
+      },
+      "block_order": [
+        "d17baafa-cd83-4913-bfc2-acc3f8f18836"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "d736d065-12ce-464c-a650-42d75363f117": {
+      "type": "featureBlocks",
+      "blocks": {
+        "b56188f4-4a74-4df5-98cb-ac609bd1b81c": {
+          "type": "text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/002-buttocks_200x_31ed4ce5-792b-496c-a23a-213e487b49b4.webp",
+            "heading": "30 Day Trial",
+            "text": "Try it risk-free for 30 days! Don’t like it? Get a full refund."
+          }
+        },
+        "5652b496-4155-42fe-a588-9b45d2cc4be3": {
+          "type": "text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_22_1_200x_731896c3-ae11-4998-af30-185943b12f85.webp",
+            "heading": "Free Shipping & Returns",
+            "text": "We proudly offer Fast & FREE shipping across the U.S., UK, Australia, and Canada."
+          }
+        },
+        "30177869-d18e-4fae-b5d6-5d8ec3bcb127": {
+          "type": "text",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/tel_200x_fbeb370b-0b32-4a6e-a664-53d6f2df12e1.webp",
+            "heading": "World-class Customer Support",
+            "text": "Need help? Questions? Concerns? Email us at support@TheraPetMD.com"
+          }
+        }
+      },
+      "block_order": [
+        "b56188f4-4a74-4df5-98cb-ac609bd1b81c",
+        "5652b496-4155-42fe-a588-9b45d2cc4be3",
+        "30177869-d18e-4fae-b5d6-5d8ec3bcb127"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "heading1": "",
+        "gradient1": "#5d3891",
+        "gradient2": "#66347f"
+      }
+    },
+    "93a8a084-03fb-4658-b0c1-b6930690a6ed": {
+      "type": "faq-section",
+      "blocks": {
+        "f254dcf4-4da2-42f6-b36f-461688c7a318": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Will my dog or people in my home be affected by TheraPet?",
+            "icon": "none",
+            "row_content": "<p>Since pheromones are species-specific,, you don’t have to be worried about dogs, other animals or humans being affected by the TheraPet diffusers.<\/p>",
+            "page": ""
+          }
+        },
+        "374eb10a-269b-4dc2-a6de-9eac38311de9": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What are the ingredients?",
+            "icon": "none",
+            "row_content": "<p>Pheromones are a mixture of fatty acids. Our products also contain a solvent, which helps dissolve the pheromones so they can be sprayed or diffused.<\/p>",
+            "page": ""
+          }
+        },
+        "template--15698234605724__93a8a084-03fb-4658-b0c1-b6930690a6ed-1671718955a93ab1e7-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How long will it take to see results?",
+            "icon": "none",
+            "row_content": "<p>For the diffuser, you will start to see your cat become calmer and more relaxed over the course of at least seven days of continuous use.<\/p>",
+            "page": ""
+          }
+        },
+        "d8833f80-168c-45de-9e5c-b4d81b957534": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What kind of plug does this diffuser use?",
+            "icon": "none",
+            "row_content": "<p>Based on your shipping destination, we'll automatically send you the appropriate plug. So, if you order from the US, you'll get a US plug; if from Australia, an AU plug, and so on.<\/p>",
+            "page": ""
+          }
+        },
+        "f18a507c-f77d-41d5-a1a5-770c810f289f": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Where should I use the diffuser?",
+            "icon": "none",
+            "row_content": "<p>The plug-in should be used in rooms where your cat spends most of its time. Avoid using outlets that are under windows, near air vents or close to doors as drafts will impair the ,proper diffusion of the pheromones. DO NOT plug the diffuser into a power strip or surge protector. The vial should always be directly below the plug-in unit for proper diffusion and to prevent leakage. To ensure the vial is always below the plug-in unit, there is a swivel function on the prongs for outlets with horizontal orientations.<\/p>",
+            "page": ""
+          }
+        },
+        "template--15698234605724__93a8a084-03fb-4658-b0c1-b6930690a6ed-1671718955a93ab1e7-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "When should I use the diffuser?",
+            "icon": "none",
+            "row_content": "<p>The diffuser should be used around your home continuously when you notice your cat displaying signs of stress such as: spraying, hiding, fighting, peeing outside the litter box, and scratching. The diffuser will help your cat feel more comfortable when unexpected disruptions in your life occur such as visitors, storms, or loud noises.<\/p>",
+            "page": ""
+          }
+        },
+        "0bab3027-d4fa-4d08-b5c0-a534c605169e": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Is the smell normal?",
+            "icon": "none",
+            "row_content": "<p>The pheromones are diffused when the plug-in unit heats up. As with any heating element, a slight smell may be present and is totally normal. If you find your diffuser has a stronger smell, please call us and we will be happy to troubleshoot with you!<\/p>",
+            "page": ""
+          }
+        },
+        "template--15698234605724__93a8a084-03fb-4658-b0c1-b6930690a6ed-1671718955a93ab1e7-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Should I unplug the diffuser at night?",
+            "icon": "none",
+            "row_content": "<p>To keep the good vibes flowing, you should keep your diffuser plugged in at all times. If you notice your diffuser collecting dust, please unplug and follow the cleaning instructions in the user manual found in every box.<\/p>",
+            "page": ""
+          }
+        },
+        "template--15698234605724__93a8a084-03fb-4658-b0c1-b6930690a6ed-1671718955a93ab1e7-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How often should I replace the diffuser?",
+            "icon": "none",
+            "row_content": "<p>We recommend replacing the refill vial every 30 days or when the liquid runs out. The plug-in unit should be replaced after 6 months of use or after you have used three refill vials (whichever comes first!)<\/p>",
+            "page": ""
+          }
+        },
+        "0b0e86c5-9e35-4207-b084-e4b318311758": {
+          "type": "collapsible_row",
+          "disabled": true,
+          "settings": {
+            "heading": "What is the correct way to plug in the diffuser?",
+            "icon": "none",
+            "row_content": "<p>Plug the diffuser into an outlet in the UPRIGHT position. The vial must always be below the plug. The diffuser must be plugged into a 110 V wall outlet continuously for the recommended duration of use. Do not plug the diffuser into a power strip, or surge protector, or use an adapter.<\/p>",
+            "page": ""
+          }
+        },
+        "68de7289-174d-4d9d-9226-64088b11c4db": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "In what currency are the prices listed on the store ?",
+            "icon": "none",
+            "row_content": "<p>All prices listed on our store are in United States Dollars (USD)<\/p>",
+            "page": ""
+          }
+        },
+        "81cd0322-1101-4734-bffc-8c001d5c3d90": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Is TheraPet available on retail shops or marketplaces like Amazon and eBay?",
+            "icon": "none",
+            "row_content": "<p>No, TheraPet is exclusively sold on our official store with a 30-day money-back guarantee and warranty.<\/p><p>Beware of unauthorized, low-quality copycats on Amazon, eBay, and other platforms. For authentic, top-quality Pheromones, buy only from our official store.<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "f254dcf4-4da2-42f6-b36f-461688c7a318",
+        "374eb10a-269b-4dc2-a6de-9eac38311de9",
+        "template--15698234605724__93a8a084-03fb-4658-b0c1-b6930690a6ed-1671718955a93ab1e7-1",
+        "d8833f80-168c-45de-9e5c-b4d81b957534",
+        "f18a507c-f77d-41d5-a1a5-770c810f289f",
+        "template--15698234605724__93a8a084-03fb-4658-b0c1-b6930690a6ed-1671718955a93ab1e7-2",
+        "0bab3027-d4fa-4d08-b5c0-a534c605169e",
+        "template--15698234605724__93a8a084-03fb-4658-b0c1-b6930690a6ed-1671718955a93ab1e7-3",
+        "template--15698234605724__93a8a084-03fb-4658-b0c1-b6930690a6ed-1671718955a93ab1e7-0",
+        "0b0e86c5-9e35-4207-b084-e4b318311758",
+        "68de7289-174d-4d9d-9226-64088b11c4db",
+        "81cd0322-1101-4734-bffc-8c001d5c3d90"
+      ],
+      "settings": {
+        "headingColor": "#000000",
+        "color": "#ededed",
+        "caption": "Need help to find an answer to your question? Ask our customer support at support@TheraPetMD.com",
+        "heading": "FREQUENTLY ASKED QUESTIONS",
+        "heading_size": "h2",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 64,
+        "padding_bottom": 92
+      }
+    },
+    "3a12e570-589c-40ec-ae98-767101c3ebc2": {
+      "type": "richTextNew",
+      "settings": {
+        "gradient1": "#5d3891",
+        "gradient2": "#66347f",
+        "image": "shopify:\/\/shop_images\/guaratees.png",
+        "heading": "GET UP TO 50% OFF + FREE REFILLS TODAY!",
+        "text": "<p>You haven't truly seen your cat at their <strong>happiest and most relaxed <\/strong>until you've tried TheraPet™!<\/p><p>This will be the most seamless and effective way to enhance your cat's emotional well-being. <strong>Because your furry friend deserves the comfort and peace they crave!<\/strong><\/p>",
+        "btn_text": "CLAIM YOUR DISCOUNT NOW!",
+        "btn_link": "#order-now-section"
+      }
+    },
+    "194c6aa8-a223-4de1-85e9-c7c2caa6b1ee": {
+      "type": "need-help",
+      "settings": {
+        "backColor": "#e8f1f7",
+        "heading": "Need help? Questions? Concerns?",
+        "text": "<p>Please do not hesitate to email us at support@TheraPetMD.com<\/p>"
+      }
+    }
+  },
+  "order": [
+    "9cb78ee0-8d59-49cc-b61b-45b391185f36",
+    "1b3082e6-e4fe-480d-963a-16731cc75474",
+    "8b9681e7-2542-43c0-8107-bea19ee66e5b",
+    "aa3113d8-10fd-4952-ae79-1135faf2ffd7",
+    "f9b6148f-ca59-4f35-a9fc-59992b0ae349",
+    "52eaad7f-3fd1-494c-9a6e-4ac0cd95745d",
+    "482d3967-4f26-4fc2-91c9-ab3b5d3e865c",
+    "2113bc22-8a62-4a14-b3d8-8c10771b0621",
+    "381e61a9-3a1a-4f29-bf0a-5a23cdaf2b6e",
+    "d94d84d0-0224-4c64-855b-44f4726ad3cc",
+    "e63e90ff-94a1-4e71-b825-a692d261ffb6",
+    "ef818d8e-ffb9-4d92-ac5b-6d95ea3fec82",
+    "fe0f2cf5-e6d2-4198-8e30-3131e7b1408b",
+    "495952d2-4bf1-4655-9b50-0f5735ddce40",
+    "ea97f637-07b3-4afd-9b40-505558abeeb0",
+    "ff2d26d5-d321-4dfb-8c47-d9d807002543",
+    "33f8fc7f-ff65-4d0c-a79e-75a81eda5b58",
+    "55377324-4cfe-4ace-b430-05d0f485d6d9",
+    "16772265663741e36d",
+    "d736d065-12ce-464c-a650-42d75363f117",
+    "93a8a084-03fb-4658-b0c1-b6930690a6ed",
+    "3a12e570-589c-40ec-ae98-767101c3ebc2",
+    "194c6aa8-a223-4de1-85e9-c7c2caa6b1ee"
+  ]
+}

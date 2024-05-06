@@ -1,0 +1,91 @@
+<div class="stamp-section">
+  <div class="page-width">
+    <div class="stamp-wrap">
+  {% for block in section.blocks %}
+     <div class="stamp-image">
+       <img src="{{ block.settings.stamp-img | img_url: 'master' }}" alt=" stamp img">
+     </div>
+  {% endfor %}
+    </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "stamp section",
+    "settings": [],
+    "blocks": [
+      {
+        "type": "column",
+        "name": "Image column",
+        "settings": [
+      {
+        "type": "image_picker",
+        "id": "stamp-img",
+        "label": "Stamp image"        
+      }
+        ]
+      }
+    ],
+        "presets": [
+      {
+        "name": "stamp section"
+      }
+    ]
+  }
+{% endschema %}
+<style>
+  .stamp-section {
+    padding: 24px 0px 100px 0px;
+}
+  .stamp-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 70px
+}
+  .stamp-image {
+    /* width: 10%;
+    height: auto; */
+    width: 186px;
+    height: 177px;
+    flex-shrink: 0;
+}
+  img {
+    width: 100%;
+    height: 100%;
+}
+  
+  @media (max-width: 1100px) {
+    .stamp-section {
+    padding: 24px 0px 80px 0px;
+}
+    .stamp-wrap {
+    column-gap: 25px;
+}
+    .stamp-image {
+    height: 136px;
+}
+  }
+  @media (max-width: 992px) {
+    .stamp-wrap {
+    column-gap: 10px;
+}
+    .stamp-image {
+    width: 160px;
+    height: 110px;
+}
+  }
+  @media (max-width: 767px) {
+    .stamp-section {
+    padding: 24px 0px 40px 0px;
+}
+    .stamp-image {
+    width: 100px;
+    height: 90px;
+}
+    .stamp-wrap {
+    column-gap: 0px;
+      justify-content: space-around;
+}
+  }
+</style>

@@ -1,0 +1,317 @@
+<style>
+  section.reviewsVideo {
+    margin: 70px 0;
+  }
+
+  .mainHeading.h2 {
+    text-align: center;
+    margin-bottom: 35px;
+  }
+
+  .videoCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .videoFrame {
+    width: 550px;
+    box-sizing: border-box;
+    aspect-ratio: 4 / 5;
+  }
+
+  .reviewVidText {
+    max-width: 550px;
+    margin: 0;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.2;
+  }
+
+  .videoHeading {
+    color: {{ section.settings.headingColor }};
+    font-size: {{ section.settings.headingSize }}px;
+  }
+
+  .videoCaption {
+    color: {{ section.settings.captionColor }};
+    font-size: {{ section.settings.captionSize }}px;
+    margin-bottom: 15px;
+  }
+
+  .ctaHeader {
+    color: {{ section.settings.ctaHeaderColor }};
+    font-size: {{ section.settings.ctaHeaderSize }}px;
+    margin: 20px 0;
+  }
+  .cta {
+    position: relative;
+    max-width: 450px;
+    width: 100%;
+  }
+  .ctaButton {
+    color: {{ section.settings.ctaTextColor }};
+    font-size: {{ section.settings.ctaTextSize }}px;
+    background-color: {{ section.settings.ctaButtonColor }};
+    border: none;
+    border-radius: 70px;
+    width: 100%;
+    padding: 10px 30px;
+    cursor: pointer;
+  }
+  .ctaArrow {
+    position: absolute;
+    right: auto;
+    top: -75px;
+    left: -40%;
+  }
+  .flip {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    right: -40%;
+    left: auto;
+  }
+
+  .guarantee-payments {
+    display: flex;
+    margin-top: 15px;
+    width: 550px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .payments-img {
+    width: 50%;
+    max-width: 200px;
+  }
+  .guarantee {
+    display: flex;
+    align-items: center;
+  }
+  .guarantee img {
+    width: 70px;
+    height: fit-content;
+  }
+  .guarantee-text {
+    margin: 0 10px;
+  }
+  .guarantee .text-top {
+    font-size: 1.25rem;
+    font-weight: 700;
+    font-style: italic;
+  }
+  .guarantee .text-bottom {
+    font-size: 1.5rem;
+  }
+
+  @media(max-width: 767px) {
+    .videoFrame {
+      width: 100%;
+    }
+
+    .videoCaption {
+      max-width: 100%;
+    }
+
+    .guarantee-payments {
+      width: 100%;
+      flex-direction: column-reverse;
+    }
+
+    .payments-img {
+      width: 70%;
+      max-width: unset;
+    }
+    .ctaArrow {
+      display: none;
+    }
+  }
+</style>
+
+<script>
+  function expandReview(e){
+    e.style.display = "none";
+    e.parentNode.querySelector(".visibleReview").classList.remove("visibleReview")
+  }
+</script>
+
+<section class="reviewsVideo" style="background:{{ section.settings.backcolor }}">
+  <div class="page-width videoCard">
+    <h2 class="videoHeading reviewVidText">
+      {{ section.settings.heading }}
+    </h2>
+
+    <p class="videoCaption reviewVidText">
+      {{ section.settings.caption }}
+    </p>
+
+    <iframe
+      class="videoFrame"
+      src={{ section.settings.video }}
+      frameborder="0"
+      allow="autoplay; encrypted-media"
+      allowfullscreen></iframe>
+
+    {% if section.settings.ctaEnable %}
+      <h2 class="ctaHeader reviewVidText">
+        {{ section.settings.ctaHeader }}
+      </h2>
+
+      <div class="cta">
+        <a href="{{ section.settings.buttonlink }}">
+          <button class="ctaButton reviewVidText"> {{ section.settings.ctaText }} </button>
+        </a>
+        <img src="https://cdn.shopify.com/s/files/1/0764/0530/9760/files/Arrow.webp" class="ctaArrow">
+        <img src="https://cdn.shopify.com/s/files/1/0764/0530/9760/files/Arrow.webp" class="ctaArrow flip">
+      </div>
+
+      <div class="guarantee-payments">
+        <div class="guarantee">
+          <img src="{{ section.settings.guarantee-img | img_url: 'master' }}" class="guarantee-img">
+          <div class="guarantee-text">
+            <span class="text-top">{{ section.settings.guaranteeTopText }}</span>
+            <br>
+            <span class="text-bottom">{{ section.settings.guaranteeBottomText }}</span>
+          </div>
+        </div>
+        <img src="{{ section.settings.payments-img | img_url: 'master' }}" class="payments-img">
+      </div>
+
+    {% endif %}
+
+  </div>
+</section>
+
+
+{% schema %}
+  {
+    "name": "Reviews Video",
+    "settings": [
+      {
+        "type": "text",
+        "id": "video",
+        "label": "Video Link",
+        "default": "https://www.youtube.com/embed/YMYgDhaSer4"
+      },
+      {
+        "type": "color",
+        "id": "backcolor",
+        "label": "Background Color"
+      },
+      {
+        "type": "textarea",
+        "id": "heading",
+        "label": "Heading",
+        "default": "Watch Now:"
+      },
+      {
+        "type": "color",
+        "id": "headingColor",
+        "label": "Heading Color",
+        "default": "#F5F7F9"
+      }, {
+        "type": "range",
+        "id": "headingSize",
+        "min": 20,
+        "max": 40,
+        "step": 1,
+        "unit": "px",
+        "label": "Heading Font Size",
+        "default": 22
+      }, {
+        "type": "textarea",
+        "id": "caption",
+        "label": "Caption",
+        "default": "'Discover the Root Cause of Your Cat's Behavior'"
+      }, {
+        "type": "color",
+        "id": "captionColor",
+        "label": "Caption Color",
+        "default": "#F5F7F9"
+      }, {
+        "type": "range",
+        "id": "captionSize",
+        "min": 20,
+        "max": 40,
+        "step": 1,
+        "unit": "px",
+        "label": "Caption Font size",
+        "default": 24
+      }, {
+        "type": "checkbox",
+        "id": "ctaEnable",
+        "default": false,
+        "label": "Enable CTA?"
+      }, {
+        "type": "url",
+        "id": "buttonlink",
+        "label": "Button Link"
+      },{
+        "type": "textarea",
+        "id": "ctaHeader",
+        "label": "CTA Header",
+        "default": "Get Special Offer!"
+      }, {
+        "type": "color",
+        "id": "ctaHeaderColor",
+        "label": "CTA Header Color",
+        "default": "#37306B"
+      }, {
+        "type": "range",
+        "id": "ctaHeaderSize",
+        "min": 20,
+        "max": 40,
+        "step": 1,
+        "unit": "px",
+        "label": "CTA Header Font size",
+        "default": 24
+      }, {
+        "type": "textarea",
+        "id": "ctaText",
+        "label": "CTA Text",
+        "default": "Yes, Get My Special Offer!"
+      }, {
+        "type": "color",
+        "id": "ctaTextColor",
+        "label": "CTA Text Color",
+        "default": "#F5F7F9"
+      }, {
+        "type": "range",
+        "id": "ctaTextSize",
+        "min": 20,
+        "max": 40,
+        "step": 1,
+        "unit": "px",
+        "label": "CTA Text Font size",
+        "default": 24
+      }, {
+        "type": "color",
+        "id": "ctaButtonColor",
+        "label": "CTA Button Color",
+        "default": "#37306B"
+      }, {
+        "type": "image_picker",
+        "id": "guarantee-img",
+        "label": "Guarantee Image"
+      }, {
+        "type": "textarea",
+        "id": "guaranteeTopText",
+        "label": "Guarantee Top Text",
+        "default": "30 Day Satisfaction Guarantee"
+      }, {
+        "type": "textarea",
+        "id": "guaranteeBottomText",
+        "label": "Guarantee Bottom Text",
+        "default": "Try it today!"
+      }, {
+        "type": "image_picker",
+        "id": "payments-img",
+        "label": "Payments Image"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Reviews Video"
+      }
+    ]
+  }
+{% endschema %}

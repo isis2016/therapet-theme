@@ -1,0 +1,215 @@
+     <section class="qhero--section">
+        <div class="qhero__wrap">
+         <div class="qhero__image">
+             <div class="{% if section.settings.hide-img %} hide {% endif %}">
+               <img src="{{ section.settings.qhero-img | img_url: 'master' }}" alt="Main img">
+             </div>
+             <img class="desk" src="{{ section.settings.qhero-img2 | img_url: 'master' }}" alt="Headline img">
+             <div class="{% if section.settings.hide-headline %} hide {% endif %}">
+               <img class="mob" src="{{ section.settings.qhero-img3 | img_url: 'master' }}" alt="Headline img">
+             </div>
+          </div>
+          <div class="qhero__content">
+            <div class="main-heading {% if section.settings.hide-text %} hide {% endif %}">
+             <h2>{{ section.settings.qhero-head }}</h2>
+            </div>
+             {{ section.settings.qhero-p }}
+             <div class="two__btns">
+                 <a href="{{ section.settings.red-btn }}" class="btn-pet">{{ section.settings.red-text }}</a>
+                 <a href="{{ section.settings.blue-btn }}" class="btn-pet blue">{{ section.settings.blue-text }}</a>
+             </div>
+          </div>
+        </div>
+       </section>
+{% schema %}
+  {
+    "name": "product name",
+    "settings": [ 
+      {
+        "type": "image_picker",
+        "id": "qhero-img",
+        "label": "Main image"
+      },
+      {
+        "type": "checkbox",
+        "id": "hide-img",
+        "label": "Hide Image on mobile",
+        "default": false
+      },
+      {
+        "type": "image_picker",
+        "id": "qhero-img2",
+        "label": "Headline Desktop image"
+      },
+      {
+        "type": "image_picker",
+        "id": "qhero-img3",
+        "label": "Headline Mobile image"
+      },
+      {
+        "type": "checkbox",
+        "id": "hide-headline",
+        "label": "Hide Headline Image on mobile",
+        "default": false
+      },
+      {
+        "type": "text",
+        "id": "qhero-head",
+        "label": "Heading"
+      },
+      {
+        "type": "checkbox",
+        "id": "hide-text",
+        "label": "Hide heading on mobile",
+        "default": false
+      },
+      {
+        "type": "richtext",
+        "id": "qhero-p",
+        "label": "Paragraph",
+        "default": "<p>Add text<p>"
+      },      
+      {
+        "type": "url",
+        "id": "red-btn",
+        "label": "First button url"
+      },
+      {
+        "type": "text",
+        "id": "red-text",
+        "label": "First button text"
+      },     
+      {
+        "type": "url",
+        "id": "blue-btn",
+        "label": "Second button url"
+      },
+      {
+        "type": "text",
+        "id": "blue-text",
+        "label": "Second button text"
+      }
+    ],
+        "presets": [
+      {
+        "name": "product banner"
+      }
+    ]
+  }
+{% endschema %}
+<style>
+  .qhero__wrap {
+     display: flex;
+ }
+     .qhero__image {
+     width: 50%;
+ }
+  .mob {
+    display: none!important;
+  }
+ .qhero__image img {
+     display: block;
+ }
+ .qhero__content {
+     width: 50%;
+     background: #f2f4f8;
+     padding: 1vw 2vw;
+     display: flex;
+     flex-flow: column;
+     justify-content: center;
+ }
+ .qhero__content h2{
+     font-size: 3.0vw;
+     padding-bottom: 2vw;
+     line-height: 3.5vw;
+     font-weight: 700;
+     margin: 0;
+     letter-spacing: normal;
+     font-family: 'Inter', sans-serif;
+ }
+ .qhero__content p {
+     font-size: 1.5vw;
+     padding-bottom: 2vw;
+     line-height: 2vw;
+     margin: 0;
+     font-family: 'Inter', sans-serif;
+ }
+   .btn-pet {
+     padding: 1rem;
+     font-size: 18px;
+     background: #cd0053;
+     color: #fff;
+     display: inline-block;
+     border-radius: 9999px;
+     min-width: 484px;
+     text-align: center;
+     text-decoration: none;
+     font-weight: 700;
+     opacity: 1;
+ }
+  .btn-pet:hover {
+      opacity: 0.6;
+  }
+ .btn-pet.blue {
+     background: #5d3891;
+ }
+.two__btns {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 0.5rem;
+    width: 100%;
+}
+ .two__btns .btn-pet {
+     min-width: 49.5%;
+     display: inline-flex;
+     justify-content: center;
+     font-family: 'Inter', sans-serif;
+ }
+  img {
+    width: 100%;
+  }
+   @media (max-width: 767px) {
+     .qhero--section {
+    height: 100vh;
+}
+     .two__btns .btn-pet {
+    min-width: 55%;
+}
+     .two__btns .btn-pet.blue {
+    min-width: 40%;
+}
+      .qhero__wrap {
+    flex-flow: column;
+}
+     .qhero__image {
+    width: 100%;
+}
+     .qhero__content {
+    width: 100%;
+    padding: 1.5rem;
+}
+     .qhero__content h2 {
+    font-size: 24px;
+    line-height: 28px;
+    padding-bottom: 1.5rem;
+}
+     .qhero__content p {
+    font-size: 18px;
+    line-height: 25.2px;
+}
+     .mob {
+    display: block!important;
+}
+     .desk {
+    display: none!important;
+}
+     .hide {
+       display: none;
+}
+    }
+  @media (max-width: 360px) {
+    .qhero--section {
+    height: auto;
+}
+  }
+</style>

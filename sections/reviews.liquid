@@ -1,0 +1,40 @@
+<style>
+  .RreviewSblock h2.image-with-text__heading.mainHeading.h2 span {
+    display: inline-block !important;
+}
+</style>
+<section id="appReviews" class="iconBolocksSection RreviewSblock">
+ <h2 class="image-with-text__heading mainHeading h2">
+                {{ section.settings.heading1 }}
+ </h2>
+
+<div style="background-color:white;" id="stamped-main-widget" data-product-id="7473594138780" data-name="{{ product.title | escape }}" data-url="{{ shop.url }}{{ product.url }}" data-description="{{ product.description | escape }}" data-product-sku="{{product.handle}}">   
+</div>
+  
+</section>
+
+
+{% schema %}
+  {
+    "name": "App Reviews",
+    "settings": [
+       {
+        "type":"textarea",
+        "id":"heading1",
+        "label":"heading"
+      }
+      
+    ],
+    "presets":[
+      {
+        "name":"App Reviews"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

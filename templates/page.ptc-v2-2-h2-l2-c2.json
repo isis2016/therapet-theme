@@ -1,0 +1,445 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "329eed7f-ae5a-4659-8567-6e8735c768a8": {
+      "type": "custom-bar",
+      "settings": {
+        "text": "Cats Parents Finds — Online Magazine",
+        "color": "#37306b"
+      }
+    },
+    "fc3ffab4-4446-447d-833f-15b02ee37c8e": {
+      "type": "advertorial-section",
+      "blocks": {
+        "c9392ff9-e9e5-47d4-9b5d-cd24549c19fe": {
+          "type": "Section",
+          "settings": {
+            "rightheading": "Recommended:",
+            "starimage": "shopify:\/\/shop_images\/stars_300x_1.jpg",
+            "reviewtext": "4.9 | Based on 9,622 Reviews",
+            "heading": "TheraPet Diffuser",
+            "image": "shopify:\/\/shop_images\/TheraPetMd_landing_page-29-29.png",
+            "buttncolor": "#3aaa35",
+            "buttnlink": "shopify:\/\/pages\/step2-adv",
+            "buttntext": "Check Availability",
+            "tickimage": "shopify:\/\/shop_images\/yes_100x_7be8875a-175f-4f55-9096-7a9544f74e4d.png",
+            "text1": "<p>Dual Pheromone Formula<\/p>",
+            "text2": "<p>Long-Lasting Peace<\/p>",
+            "text3": "<p>Effortless & Easy-To-Use<\/p>",
+            "text4": "<p>Safe & Drug-Free<\/p>",
+            "text5": "<p>30-Day Money Back Guarantee<\/p>"
+          }
+        },
+        "60990278-3fd4-407c-ba79-ce130822f492": {
+          "type": "Image",
+          "settings": {
+            "leftheading": "If You Spot Your Cat Spraying, Marking, Or Peeing Outside The Box, This Science-Driven Solution Is A Must. Here’s Why.",
+            "center": false,
+            "headingcolor": "#000000",
+            "leftsubheading": "",
+            "mainimage": "shopify:\/\/shop_images\/v22h2.jpg",
+            "video": "",
+            "imagesubheading": "Note: After reading this, you’ll probably never go another day without using this for your cat...",
+            "imagesubheadingcolor": "#f1f1f1",
+            "text": "<p><br\/><\/p><p>Did you know there is such a holiday called <strong>National Urine Day?<\/strong><\/p><p><br\/>Well, in my house, my cat, Lucy was <strong>celebrating<\/strong> this <strong>EVERY SINGLE DAY without fail.<\/strong><br\/><br\/>She's been my fur baby since she was just a kitten – she's six now.<\/p><p><br\/><\/p><p>Her peeing habit started as an <strong>occasional accident<\/strong> – a little spot on the carpet, a damp patch on the couch... <br\/><br\/>But before I knew it, it <strong>turned into her daily ritual... <\/strong><\/p><p><\/p><p><br\/><\/p><p>We're talking boxes, towels, carpets, shoes… you name it – <strong>if it's on the floor, it's Lucy's toilet.<\/strong><\/p><p><\/p><p><br\/><\/p><p>It got to the point where anything I cared about, I couldn't leave on the floor. <\/p><p><\/p><p><br\/><\/p><p>The worst part? Cat pee is like the worst smell ever and sticks around forever, and as you might know, <strong>cleaning it is a real hassle...<\/strong><\/p><p><br\/><\/p><p>I just couldn't understand why she was doing this, and more importantly,<strong> how to make her stop.<\/strong> <br\/><br\/>Every day I woke up wondering, <em>'What's going to be her target today?'<\/em><\/p><p><\/p><p><br\/><\/p><p>I was losing it, seriously. I took her to <strong>3 different VETs<\/strong>, hoping they’d tell me there was <strong>a reason for it…<\/strong><br\/><br\/><\/p><p>But, <strong>$700 worth of tests<\/strong> later, <em>\"She's as healthy as can be\"<\/em> they told me...<\/p>",
+            "text1": "",
+            "text2": "",
+            "text3": "",
+            "text4": "",
+            "text5": "",
+            "text6": "",
+            "text7": "",
+            "text8": "",
+            "text9": "",
+            "text10": "",
+            "btnlink": "",
+            "btntext": "",
+            "color": "#e15d3a"
+          }
+        },
+        "33392e4a-2c78-4ef3-9bd3-0eb3bee65b58": {
+          "type": "Image",
+          "settings": {
+            "leftheading": "“You HAVE To Find Me a Solution, Or I Can't Keep Her!”",
+            "center": false,
+            "headingcolor": "#000000",
+            "leftsubheading": "",
+            "mainimage": "shopify:\/\/shop_images\/peefloor.jpg",
+            "video": "",
+            "imagesubheading": "",
+            "imagesubheadingcolor": "#ffffff",
+            "text": "<p>You wouldn't believe the state I was in. I was in the<strong> FOURTH VET's office<\/strong> – yeah, the fourth one, because <strong>none of the others had any answers…<\/strong><br\/><br\/><\/p><p>So there I was a complete mess, tears streaming down my face. I just blurted it out<em> 'I can't do this anymore! I think I’m gonna give her up!!'  <\/em><\/p><p><\/p><p><br\/><\/p><p><\/p><p>I know it sounded harsh, but I was at my wit's end…<\/p><p><\/p><p><br\/><\/p><p>Every day was a new challenge, and I felt like I was failing her. The thought of <strong>giving Lucy up tore me up inside…<\/strong><br\/><br\/><\/p><p>I mean, she isn't just a cat; she is my little buddy, my fur baby who has been with me for years. She's family, you know?<\/p><p><\/p><p><br\/><\/p><p>But living like that, <strong>constantly cleaning up<\/strong> after her and worrying about what I'd find ruined next, it was <strong>just too much...<\/strong><\/p>",
+            "text1": "",
+            "text2": "",
+            "text3": "",
+            "text4": "",
+            "text5": "",
+            "text6": "",
+            "text7": "",
+            "text8": "",
+            "text9": "",
+            "text10": "",
+            "btnlink": "",
+            "btntext": "",
+            "color": "#e15d3a"
+          }
+        },
+        "26c2c7a5-3461-4efb-91c6-30860c3d10dd": {
+          "type": "Image",
+          "settings": {
+            "leftheading": "“Don't Even Think About Rehoming Her Again…”",
+            "center": false,
+            "headingcolor": "#000000",
+            "leftsubheading": "",
+            "mainimage": "shopify:\/\/shop_images\/vet_e941cbd2-a110-4365-bb58-a38d3e108bfd.jpg",
+            "video": "",
+            "imagesubheading": "",
+            "imagesubheadingcolor": "#ffffff",
+            "text": "<p>These were the exact words Dr. Scott told me.<\/p><p><\/p><p><br\/><\/p><p>He assured me there was a new way to put an <strong>end to cats' peeing behavior as easily and quickly as flipping a switch!<\/strong><\/p><p><\/p><p><br\/><\/p><p><em>“Let me show you something,”<\/em> Dr. Scott continued.<\/p><p><\/p><p><br\/><\/p><p>He opened his desk drawer and pulled out a <strong>weird-looking device.<\/strong><\/p><p><\/p><p><br\/><\/p><p><em>“I’ll tell you what this magical diffuser is in a moment.<\/em><\/p><p><\/p><p><br\/><\/p><p><em>However, first, you must understand <\/em><em><strong>why your cat is peeing <\/strong><\/em><em>all over your belongings…<\/em><\/p><p><\/p><p><br\/><\/p><p><em>Some VETS don’t bother explaining anything and just prescribe some <\/em><em><strong>ineffective pills<\/strong><\/em><em> <\/em><em><strong>that<\/strong><\/em><em> <\/em><em><strong>usually won't work.<\/strong><\/em><\/p><p><\/p><p><br\/><\/p><p><em>I’m different. And I want you to <\/em><em><strong>understand HOW your cat thinks<\/strong><\/em><em>. So let’s take a look.”<\/em><\/p>",
+            "tickimage": "shopify:\/\/shop_images\/vet_89c5087c-f9ed-4142-9ba6-674fefe86d2f.jpg",
+            "text1": "",
+            "text2": "",
+            "text3": "",
+            "text4": "",
+            "text5": "",
+            "text6": "",
+            "text7": "",
+            "text8": "",
+            "text9": "",
+            "text10": "",
+            "btnlink": "",
+            "btntext": "",
+            "color": "#e15d3a"
+          }
+        },
+        "2c1ec566-0242-4d4e-a1a3-e0e03f0353c5": {
+          "type": "Image",
+          "settings": {
+            "leftheading": "Your Cat Won't Stop Until Every Corner of Your Home  Smells Like Urine!",
+            "center": false,
+            "headingcolor": "#000000",
+            "leftsubheading": "",
+            "mainimage": "shopify:\/\/shop_images\/wont_stop_88c75115-b069-4ddb-a4f7-871658f458c9.jpg",
+            "video": "",
+            "imagesubheading": "",
+            "imagesubheadingcolor": "#ffffff",
+            "text": "<p>You see, the ROOT cause behind this frustrating peeing behavior is the <span style=\"text-decoration:underline\"><em><strong>HIGH LEVELS of stress and anxiety that they secretly struggle with!<\/strong><\/em><\/span><\/p><p><\/p><p><br\/><\/p><p><em>\"Cats? Stressed out?! Really?!\"<\/em><\/p><p><\/p><p><br\/><\/p><p><em>“Yes, they do get stressed. In fact, according to the National Institute of Health:  <\/em><em><strong>1 in 4 Cats Suffer from stress and anxiety in the U.S.<\/strong><\/em><\/p><p><\/p><p><br\/><\/p><p><em>Here is where it gets tricky. Cats actually use <\/em><em><strong>peeing as a way to cope<\/strong><\/em><em>, mainly for two reasons…<\/em><\/p><p><\/p><p><br\/><\/p><p><em><strong>Number one is that this is their way of trying to tell us something's up. Like a big red flag saying, 'Hey, I need some help here!'<\/strong><\/em><\/p><p><\/p><p><br\/><\/p><p><em><strong>Number two is when cats smell their urine around, it makes them feel more secure and at home…<\/strong><\/em><em> <\/em><\/p><p><\/p><p><br\/><\/p><p><em>So that's why whenever there's something new around, be it a backpack or a new sofa, their instinct is to just... <\/em><em><strong>pee on it to make it familiar.<\/strong><\/em><\/p><p><\/p><p><br\/><\/p><p><em>So basically, your cat is going around <\/em><em><strong>peeing on your stuff<\/strong><\/em><em> as their way of dealing with stress on their own, <\/em><em><strong>since you are doing nothing about it…<\/strong><\/em><\/p><p><\/p><p><br\/><\/p><p><em>I know it might sound disgusting, <\/em><em><strong>but it is TRUE!<\/strong><\/em><em>\"<\/em><\/p>",
+            "text1": "",
+            "text2": "",
+            "text3": "",
+            "text4": "",
+            "text5": "",
+            "text6": "",
+            "text7": "",
+            "text8": "",
+            "text9": "",
+            "text10": "",
+            "btnlink": "",
+            "btntext": "",
+            "color": "#e15d3a"
+          }
+        },
+        "e5972c32-8a22-42c8-8bd2-bc96d6614cdc": {
+          "type": "Image",
+          "settings": {
+            "leftheading": "Finally, Dr. Scott Told Me That There’s ONE Way to Put An End To This Behavior…",
+            "center": false,
+            "headingcolor": "#000000",
+            "leftsubheading": "",
+            "mainimage": "shopify:\/\/shop_images\/visuals_edited-11.png",
+            "video": "",
+            "imagesubheading": "",
+            "imagesubheadingcolor": "#ffffff",
+            "text": "<p><span style=\"text-decoration:underline\"><em><strong>And it's by using this scent-swapping trick… <\/strong><\/em><\/span><\/p><p><\/p><p><br\/><\/p><p>You see, as we've established, your cat is using her pee smell as a stress relief scent.<\/p><p><\/p><p><br\/><\/p><p>So the only way to effectively turn off this frustrating peeing behavior is to <em><strong>provide cats with another comforting scent, other than urine.<\/strong><\/em><\/p><p><\/p><p><br\/><\/p><p>And this diffuser does exactly that! It was developed by a team of leading cat behavior experts, and they worked in partnership with one US-based startup called TheraPetMD.<\/p><p><\/p><p><br\/><\/p><p><span style=\"text-decoration:underline\"><em><strong>They call it TheraPet Pheromones Diffuser.<\/strong><\/em><\/span><\/p>",
+            "text1": "",
+            "text2": "",
+            "text3": "",
+            "text4": "",
+            "text5": "",
+            "text6": "",
+            "text7": "",
+            "text8": "",
+            "text9": "",
+            "text10": "",
+            "btnlink": "",
+            "btntext": "",
+            "color": "#e15d3a"
+          }
+        },
+        "8fe2a3d8-46d7-49d6-865b-a1a1603fa771": {
+          "type": "Image",
+          "settings": {
+            "leftheading": "How It Works",
+            "center": false,
+            "headingcolor": "#000000",
+            "leftsubheading": "",
+            "video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/1fb4bfd5b9014fbdbfe9a77d1e935675.mp4",
+            "imagesubheading": "",
+            "imagesubheadingcolor": "#ffffff",
+            "text": "<p>You see, when mama cats have kittens, they release a unique scent, called a pheromone. <\/p><p><\/p><p><br\/><\/p><p>This scent helps the kittens <strong>feel safe and tells them everything's alright...<\/strong><\/p><p><br\/><\/p><p>The secret to the TheraPet Diffuser is that It works by <strong>replicating these Maternal Pheromones<\/strong>, releasing them into your cat's environment, and <strong>creating a sense of maternal comfort around them.<\/strong><\/p><p><\/p><p><br\/><\/p><p>And what could be more soothing than the <strong>essence of a mother’s presence? <\/strong><\/p><p><br\/><\/p><p>When your cat senses these pheromones, they quickly, and naturally feel safe and at ease, <strong>COMPLETELY eliminating the need to mark their territory.<\/strong><\/p><p><\/p><p><br\/><\/p><p>TheraPet is completely <strong>drug-free<\/strong> and <strong>designed exclusively for cats<\/strong>. While it's <strong>undetectable to humans<\/strong>, cats can pick it up easily…<\/p><p><\/p><p><br\/><\/p><p>That’s why it instantly makes them <span style=\"text-decoration:underline\"><em><strong>feel safe and reassured, and do not need to pee on everything to feel safe. <\/strong><\/em><\/span><\/p>",
+            "text1": "",
+            "text2": "",
+            "text3": "",
+            "text4": "",
+            "text5": "",
+            "text6": "",
+            "text7": "",
+            "text8": "",
+            "text9": "",
+            "text10": "",
+            "btnlink": "",
+            "btntext": "",
+            "color": "#e15d3a"
+          }
+        },
+        "177f8c20-c7e9-47d8-a0f8-86bfe16c549f": {
+          "type": "Image",
+          "settings": {
+            "leftheading": "It’s Not an Overstatement to Say That TheraPet Diffuser Saved Me, My Stuff, And My Cat!",
+            "center": false,
+            "headingcolor": "#000000",
+            "leftsubheading": "",
+            "mainimage": "shopify:\/\/shop_images\/soluu.jpg",
+            "video": "",
+            "imagesubheading": "",
+            "imagesubheadingcolor": "#ffffff",
+            "text": "<p>I left Dr. Scott’s office feeling a mix of hope and skepticism and went straight to <strong>ordering three TheraPet diffusers. <\/strong><\/p><p><\/p><p><br\/><\/p><p>As soon as they arrived, I set them up in <strong>Lucy’s favorite peeing spots<\/strong>: <strong>the living room, my bedroom, and the kitchen.<\/strong><\/p><p><\/p><p><br\/><\/p><p>Believe it or not, <strong>within just an hour <\/strong>of plugging them in, <strong>I started seeing a change!<\/strong><\/p><p><\/p><p><br\/><\/p><p>Lucy sniffed the diffuser, actually rubbed her face against it, and then settled down for a nap right underneath it!!<\/p><p><br\/><\/p><p>It was as if she instinctively knew this was something good like she thought the diffuser was her mother or something.<\/p><p><\/p><p><br\/><\/p><p>Fast forward two weeks with these diffusers running, <strong>AND NOT A SINGLE PEEING ACCIDENT.<\/strong> Lucy's been using her litter box like a champ.<\/p><p><\/p><p><br\/><\/p><p>And the cherry on top? She's become so much more affectionate and playful – like <strong>she’s genuinely happier.<\/strong><\/p><p><\/p><p><br\/><\/p><p>These diffusers have been a total lifesaver. They've saved my sanity, protected my carpets and belongings from pee, and most importantly, <strong>they've saved my Lucy!<\/strong><\/p>",
+            "text1": "",
+            "text2": "",
+            "text3": "",
+            "text4": "",
+            "text5": "",
+            "text6": "",
+            "text7": "",
+            "text8": "",
+            "text9": "",
+            "text10": "",
+            "btnlink": "",
+            "btntext": "",
+            "color": "#e15d3a"
+          }
+        },
+        "6eb813fc-7fcf-4efe-99c3-12fa12adc662": {
+          "type": "Image",
+          "settings": {
+            "leftheading": "You Don’t Deserve To Live a Life Cleaning & Dealing With Cat Pee!",
+            "center": false,
+            "headingcolor": "#000000",
+            "leftsubheading": "",
+            "mainimage": "shopify:\/\/shop_images\/behavior_6ccfa0de-f7b8-4f6c-a376-035707871e0a.jpg",
+            "video": "",
+            "imagesubheading": "",
+            "imagesubheadingcolor": "#ffffff",
+            "text": "<p>Look, I know <strong>you are busy<\/strong> and have a thousand things to do besides <strong>cleaning after your cat…<\/strong><br\/><br\/><\/p><p>Believe me, I’ve been there. In the “pre-TheraPet era”,  it would take me so much <strong>time and energy every single day to clean after her <\/strong>and to calm myself down after finding each smelly surprise!<br\/><br\/><\/p><p><\/p><p>Lucy turned peeing into her, any time of day, with only a few breaks…<br\/><br\/><\/p><p>Sure, sometimes she'd use the litter box if I placed her in it, but I have a job too. <\/p><p><\/p><p><br\/><\/p><p>I can't spend all day making sure she does her business right…<\/p><p><\/p><p><br\/><\/p><p>And honestly, being a full-time <strong>cat pee-er isn’t my dream job!<\/strong><\/p><p><\/p><p><br\/><\/p><p>If you, like me, are <strong>tired<\/strong> of constantly cleaning up, <strong>it's time for a change!<\/strong><\/p><p><\/p><p><br\/><\/p><p>Many cat parents have <strong>given up<\/strong>, thinking they'll never <strong>break free from this routine…<\/strong><\/p><p><\/p><p><br\/><\/p><p>But I'm telling you, <strong>it's possible!<\/strong> <\/p><p><\/p><p><br\/><\/p><p>Life post-TheraPet? <strong>No more nasty smells, no more gross surprises, and no more battling stains and odors... <\/strong><\/p><p><br\/><strong>This is what the life of a cat parent should always be like!<\/strong><\/p>",
+            "text1": "",
+            "text2": "",
+            "text3": "",
+            "text4": "",
+            "text5": "",
+            "text6": "",
+            "text7": "",
+            "text8": "",
+            "text9": "",
+            "text10": "",
+            "btnlink": "",
+            "btntext": "",
+            "color": "#e15d3a"
+          }
+        },
+        "5fff5562-6467-4d84-a04b-634d802cccde": {
+          "type": "titleAndReviews",
+          "settings": {
+            "leftheading": "Thousands of Cat Parents Were Able To Stop Their Cat's Unwanted Peeing With This Diffuser",
+            "center": false,
+            "headingcolor": "",
+            "leftsubheading": "",
+            "mainimage": "shopify:\/\/shop_images\/visuals_5-02.png",
+            "video": "",
+            "imagesubheading": "",
+            "imagesubheadingcolor": "",
+            "text": "<p>If you check out <a href=\"https:\/\/therapetmd.com\/pages\/step2-adv\" title=\"https:\/\/therapetmd.com\/pages\/step2-adv\">TheraPetMD’s website<\/a>, you will find thousands of reviews from cat parents just like you who were able to completely put an end to their frustrating cat peeing behavior:<\/p>",
+            "text1": "",
+            "text2": "",
+            "text3": "",
+            "text4": "",
+            "text5": "",
+            "text6": "",
+            "text7": "",
+            "text8": "",
+            "text9": "",
+            "text10": "",
+            "image1": "shopify:\/\/shop_images\/tp1.png",
+            "image2": "shopify:\/\/shop_images\/tp2.png",
+            "image3": "shopify:\/\/shop_images\/tp3.png"
+          }
+        },
+        "9a2e7fbe-89ba-4e72-863c-f30054684fcd": {
+          "type": "Image",
+          "settings": {
+            "leftheading": "And the Best Part Is, You Don’t Have to Decide Today! Simply Try It for 30 Days - Risk-FREE - and See What Happens",
+            "center": true,
+            "headingcolor": "#000000",
+            "leftsubheading": "",
+            "mainimage": "shopify:\/\/shop_images\/3_d.jpg",
+            "video": "",
+            "imagesubheading": "",
+            "imagesubheadingcolor": "",
+            "text": "<p>By the way, you don’t have to say yes to the diffusers just now.<\/p><p><br\/><\/p><p>All I’m suggesting is you give it a try. Try it <strong>on their dime<\/strong>. Try it for just 30 days…<\/p><p><br\/><\/p><p>And if you don't see a stop to your cat's random peeing within those 30 days or sooner… <strong>You’ll get every penny back.<\/strong><\/p><p><br\/><\/p><p>Just think about it...<\/p><p><br\/><\/p><p>All those cleaning products, maybe even professional cleaners, and VET visits… <strong>add up to a hefty sum...<\/strong><\/p><p><br\/><\/p><p>Not to mention the s<strong>tress and frustration<\/strong>, which, let's face it, <strong>no one can put a price on.<\/strong><\/p><p><br\/><\/p><p>Yet none of them will ever give you such a guarantee…<\/p><p><br\/><\/p><p><strong>That's a risky bet!<\/strong><\/p><p><br\/><\/p><p>However, here's what <strong>TheraPet promises:<\/strong><\/p><p><br\/><\/p><p>Keep these diffusers plugged for the next 30 days<\/p><p><br\/><\/p><p>It WILL put an end to that frustrating random peeing, and it WILL<strong> bring back peace to your home<\/strong>. Imagine, no more unexpected messes and pee smells.<\/p>",
+            "text1": "",
+            "text2": "",
+            "text3": "",
+            "text4": "",
+            "text5": "",
+            "text6": "",
+            "text7": "",
+            "text8": "",
+            "text9": "",
+            "text10": "",
+            "btnlink": "shopify:\/\/pages\/step2-adv",
+            "btntext": "Check Availability >>",
+            "color": "#bc2e3e"
+          }
+        },
+        "8c1551dd-b408-44e4-949a-356f3a8b96a5": {
+          "type": "Image",
+          "settings": {
+            "leftheading": "",
+            "center": false,
+            "headingcolor": "#000000",
+            "leftsubheading": "",
+            "video": "",
+            "imagesubheading": "",
+            "imagesubheadingcolor": "",
+            "text": "<p>Think about how great it’ll r<em><strong>o relax in a clean, pee-free home...<\/strong><\/em><\/p><p><br\/><\/p><p>To enjoy your space <strong>without the constant worry of finding pee marks...<\/strong><\/p><p><br\/><\/p><p>And to truly bond with your cat again...<\/p><p><br\/><\/p><p>TheraPet offers this chance for a harmonious home life. It's right here for you.<\/p><p><br\/><\/p><p>And if not?<\/p><p><br\/><\/p><p>… If not, you will receive a <strong>100% refund of every penny<\/strong> you invested.<\/p><p><br\/><\/p><p>If it doesn't help with your <strong>cat's random peeing<\/strong>, they will <strong>return 100%<\/strong> of your purchase price, <strong>no questions asked<\/strong>.<\/p><p><br\/><\/p><p>Just contact their customer support at support@therapetmd.com.<\/p><p><br\/><\/p><p>The way I see it, you've got <strong>nothing to lose.<\/strong><\/p>",
+            "text1": "",
+            "text2": "",
+            "text3": "",
+            "text4": "",
+            "text5": "",
+            "text6": "",
+            "text7": "",
+            "text8": "",
+            "text9": "",
+            "text10": "",
+            "btnlink": "",
+            "btntext": "",
+            "color": "#bc2e3e"
+          }
+        },
+        "a8db5b22-082a-45d8-9ab3-995e4de9e7da": {
+          "type": "last",
+          "settings": {
+            "heading": "",
+            "subheading": "",
+            "text": "<span style=\"color:red\"><b>Update:<\/b><\/span> <b>December 9th, 2023<\/b>: Given the current market instability and global circumstances, we regret to inform you that once the current stock runs out, <b>we simply won't be able to maintain this special discount offer.<\/b>\n<br><br>\nYou can find the remaining quantity available by <b>clicking the button below.<\/b>",
+            "btnlink": "shopify:\/\/pages\/step2-adv",
+            "btntext": "Check Availability >>",
+            "back": "#eef6f8",
+            "color": "#bc2e3e"
+          }
+        }
+      },
+      "block_order": [
+        "c9392ff9-e9e5-47d4-9b5d-cd24549c19fe",
+        "60990278-3fd4-407c-ba79-ce130822f492",
+        "33392e4a-2c78-4ef3-9bd3-0eb3bee65b58",
+        "26c2c7a5-3461-4efb-91c6-30860c3d10dd",
+        "2c1ec566-0242-4d4e-a1a3-e0e03f0353c5",
+        "e5972c32-8a22-42c8-8bd2-bc96d6614cdc",
+        "8fe2a3d8-46d7-49d6-865b-a1a1603fa771",
+        "177f8c20-c7e9-47d8-a0f8-86bfe16c549f",
+        "6eb813fc-7fcf-4efe-99c3-12fa12adc662",
+        "5fff5562-6467-4d84-a04b-634d802cccde",
+        "9a2e7fbe-89ba-4e72-863c-f30054684fcd",
+        "8c1551dd-b408-44e4-949a-356f3a8b96a5",
+        "a8db5b22-082a-45d8-9ab3-995e4de9e7da"
+      ],
+      "settings": {
+        "breadcrumb": "By Nancy Campbell | Dec 9, 2023 | 11:11 am EDT",
+        "center": false,
+        "leftheading": "",
+        "headingcolor": "#bc2e3e",
+        "checkbox": true,
+        "bgcolor": "#bc2e3e",
+        "text": "GET UP TO 50% OFF!",
+        "bttnlink": "shopify:\/\/pages\/step2-adv",
+        "bttntext": "Apply Discount & Check Availability"
+      }
+    },
+    "169478021235dc2a9d": {
+      "type": "apps",
+      "blocks": {
+        "4e9afdf4-f972-4af5-9ed8-c3263430cf3d": {
+          "type": "shopify:\/\/apps\/stamped-product-reviews-ugc\/blocks\/main-widget\/a103faaf-2125-4b0e-89fa-de5149736723",
+          "settings": {
+            "animation": true,
+            "tags_exclude": "",
+            "tags_include": "a=peeing",
+            "search": "",
+            "linkify": true,
+            "use_metafields": false,
+            "sku_tagtype": "sku"
+          }
+        }
+      },
+      "block_order": [
+        "4e9afdf4-f972-4af5-9ed8-c3263430cf3d"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "d231cd37-b2e5-4ca9-a673-6deca87058ed": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "custom_liquid": "",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 12
+      }
+    },
+    "44cb79a1-04d3-4666-aa98-dc45a504ca06": {
+      "type": "call-to-action",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/stats.png",
+        "title": "<p>GET <strong>40% OFF TODAY <\/strong>AND UP <strong>TO $105 OFF ON BUNDLES!<\/strong><\/p>",
+        "text": "<p>This limited-time deal is in high demand and the stock keeps selling out.<\/p><p><\/p><p><\/p>",
+        "btn": "✓ CHECK AVAILABILITY",
+        "link": "shopify:\/\/pages\/step2-adv",
+        "color": "#fef9eb",
+        "risk": "Sell-Out Risk:",
+        "riskHigh": "HIGH",
+        "shipping": "FREE Delivery"
+      }
+    },
+    "a35083f2-7e8e-40bc-94f0-8e9d536b4889": {
+      "type": "new-footer",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "gradient1": "#5d3891",
+        "gradient2": "#66347f",
+        "color": "#ffffff",
+        "text": "<p>THIS IS AN ADVERTORIAL AND NOT AN ACTUAL NEWS ARTICLE, BLOG, OR CONSUMER PROTECTION UPDATE.<br\/><br\/>MARKETING DISCLOSURE: This website is owned and operated by TheraPetMD. The advertorial contains fictitious product reviews that reflect a composite of TheraPetMD customers' experiences using the product.<br\/><br\/>The information contained within this site is not intended as a substitute for professional medical or veterinary advice. If your pet has, or you suspect your pet has any medical condition you are urged to consult your veterinarian. These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease. Medical conditions can only be diagnosed by a licensed veterinarian.<\/p><p><\/p><p>The use of the logos is copyrighted by each respective entity and the use of any particular logo may represent a publication, advertisement, or mention of TheraPetMD on a local affiliate or regional carrier.<\/p><p><\/p><p>*Results May Vary. Not intended for human consumption. Please consult your veterinarian regarding any change in treatment or supplementation.<\/p>"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "329eed7f-ae5a-4659-8567-6e8735c768a8",
+    "fc3ffab4-4446-447d-833f-15b02ee37c8e",
+    "169478021235dc2a9d",
+    "d231cd37-b2e5-4ca9-a673-6deca87058ed",
+    "44cb79a1-04d3-4666-aa98-dc45a504ca06",
+    "a35083f2-7e8e-40bc-94f0-8e9d536b4889"
+  ]
+}

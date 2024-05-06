@@ -1,0 +1,395 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "329eed7f-ae5a-4659-8567-6e8735c768a8": {
+      "type": "custom-bar",
+      "settings": {
+        "text": "Dog Parents Finds — Online Magazine",
+        "color": "#3192d1"
+      }
+    },
+    "57fefeca-2806-453d-81d2-024870748dc7": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<!-- Hotjar Tracking Code for CLEANUX CO -->\n<script>\n    (function(h,o,t,j,a,r){\n        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};\n        h._hjSettings={hjid:3438847,hjsv:6};\n        a=o.getElementsByTagName('head')[0];\n        r=o.createElement('script');r.async=1;\n        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;\n        a.appendChild(r);\n    })(window,document,'https:\/\/static.hotjar.com\/c\/hotjar-','.js?sv=');\n<\/script>",
+        "color_scheme": "background-1",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "fc3ffab4-4446-447d-833f-15b02ee37c8e": {
+      "type": "advertorial-section",
+      "blocks": {
+        "c9392ff9-e9e5-47d4-9b5d-cd24549c19fe": {
+          "type": "Section",
+          "settings": {
+            "rightheading": "Recommended:",
+            "starimage": "shopify:\/\/shop_images\/stars_300x_1.jpg",
+            "reviewtext": "4.7 | 4,000+ Verified Reviews",
+            "heading": "TheraPet Diffuser",
+            "image": "shopify:\/\/shop_images\/TheraPetMd_dog_landing_page_elements-28.png",
+            "buttncolor": "#3aaa35",
+            "buttnlink": "shopify:\/\/pages\/step2-dogs",
+            "buttntext": "Check Availability",
+            "tickimage": "shopify:\/\/shop_images\/yes_100x_7be8875a-175f-4f55-9096-7a9544f74e4d.png",
+            "text1": "<p>Dual Pheromone Formula<\/p>",
+            "text2": "<p>Long-Lasting Peace<\/p>",
+            "text3": "<p>Effortless & Easy-To-Use<\/p>",
+            "text4": "<p>Safe & Drug-Free<\/p>",
+            "text5": "<p>30-Day Money Back Guarantee<\/p>"
+          }
+        },
+        "60990278-3fd4-407c-ba79-ce130822f492": {
+          "type": "Image",
+          "settings": {
+            "leftheading": "If You Spot Your Dog  Peeing Indoor, Marking Urine, or Acting Scared, This Science-Driven Solution Is A Must. Here’s Why.",
+            "center": false,
+            "headingcolor": "#000000",
+            "leftsubheading": "",
+            "mainimage": "shopify:\/\/shop_images\/hero_3c03c36a-f533-4162-a96a-77d0e929003f.jpg",
+            "video": "",
+            "imagesubheading": "Note: After reading this, you’ll probably never go another day without using this for your dog...",
+            "imagesubheadingcolor": "#f5f5f5",
+            "text": "<p><\/p><p><br\/><\/p><p><strong>If you spot your dog peeing indoors, acting anxious, barking louder and more often than normal, or showing unusual aggression, it’s likely they're experiencing stress...<\/strong><\/p><p><\/p><p><br\/><\/p><p><strong>This is particularly common during changes in the home environment and can leave your canine friend in a lot of discomfort if ignored… Find out below how to help them now.<\/strong><\/p><p><\/p><p><br\/><\/p><p>When you know what to look out for, the signs of stress and anxiety are clear to see. But what virtually every owner in America today is unaware of, is <strong>where dog stress originates from.<\/strong><\/p><p><\/p><p><br\/><\/p><p>And that’s a huge problem because <strong>without tackling its root cause, episodes of stress-induced inappropriate urination will become a common feature of a dog’s life.<\/strong><\/p><p><\/p><p><br\/><\/p><p>Now, as surprising as it may seem, the stress that causes such peculiar behavior, actually <strong>stems from your dog's reaction to their environment.<\/strong><\/p><p><\/p><p><br\/><\/p><p>See when a dog's environment becomes filled with stress triggers, it soon spreads like wildfire around the rest of your dog's life. Before long, the stress can manifest in your dog's behavior, including the very spot they choose to pee.<\/p><p><\/p><p><br\/><\/p><p>Stressed and anxious dogs may start marking territory anywhere in the house. The compulsion to mark, born out of anxiety, leaves them no option but to act out in a desperate attempt for relief. And their peaceful, serene demeanor can soon give way to restlessness and distress.<\/p><p><\/p><p><br\/><\/p><p>Let's be honest, our dogs deserve far, far better. The thing is, <strong>the power is within our hands to help them, thanks to a remarkable new solution. <\/strong>And, it could be the key to your dog’s future health, comfort, and happiness too...<\/p>",
+            "text1": "",
+            "text2": "",
+            "text3": "",
+            "text4": "",
+            "text5": "",
+            "text6": "",
+            "text7": "",
+            "text8": "",
+            "text9": "",
+            "text10": "",
+            "btnlink": "",
+            "btntext": "",
+            "color": "#e15d3a"
+          }
+        },
+        "33392e4a-2c78-4ef3-9bd3-0eb3bee65b58": {
+          "type": "Image",
+          "settings": {
+            "leftheading": "Who would’ve thought a diffuser would get hailed as a ‘life-changer’ for dogs in 2023?",
+            "center": false,
+            "headingcolor": "#000000",
+            "leftsubheading": "",
+            "mainimage": "shopify:\/\/shop_images\/hailed.jpg",
+            "video": "",
+            "imagesubheading": "",
+            "imagesubheadingcolor": "#ffffff",
+            "text": "<p>TheraPet burst onto the market in 2020 and immediately started making waves on social media and in the news. Now, it’s one of the highest-rated pet supplies companies with over 3,000 5-star reviews!<\/p><p><\/p><p><br\/><\/p><p>Below are some of TheraPet's game-changing benefits that make it an absolute no-brainer for dog parents.<\/p>",
+            "text1": "",
+            "text2": "",
+            "text3": "",
+            "text4": "",
+            "text5": "",
+            "text6": "",
+            "text7": "",
+            "text8": "",
+            "text9": "",
+            "text10": "",
+            "btnlink": "",
+            "btntext": "",
+            "color": "#e15d3a"
+          }
+        },
+        "e2234dc0-da1c-42e1-870f-3cb2e21addfd": {
+          "type": "Image",
+          "settings": {
+            "leftheading": "TheraPet helps balance the stress levels in your dog's environment.",
+            "center": false,
+            "headingcolor": "#000000",
+            "leftsubheading": "",
+            "mainimage": "shopify:\/\/shop_images\/3dogs.jpg",
+            "video": "",
+            "imagesubheading": "",
+            "imagesubheadingcolor": "#ffffff",
+            "text": "<p>As we’ve established, many forms of dogs’ behavioral issues, including indoor urination, are a reaction to stress and anxiety in their environment. If left unattended, these stressors can lead to a recurring problem.<\/p><p><\/p><p><br\/><\/p><p>Recent studies show a dog's behavior and overall well-being can be greatly influenced by their perception of their environment and any associated stress.<\/p><p><\/p><p><br\/><\/p><p>Here's where the magic of TheraPet comes into play. It works by diffusing what's known as 'calming pheromones' into the air, on autopilot.<\/p><p><\/p><p><br\/><\/p><p>Now, if you're wondering what pheromones are, think of them as the animal kingdom's secret language. These are natural chemical signals that dogs use to communicate with each other, kind of like messages floating in the air.<\/p><p><\/p><p><br\/><\/p><p>When your dog senses these pheromones in the air, it's like they're reading a message that says, 'Hey, it's all good here, relax.'<\/p>",
+            "text1": "",
+            "text2": "",
+            "text3": "",
+            "text4": "",
+            "text5": "",
+            "text6": "",
+            "text7": "",
+            "text8": "",
+            "text9": "",
+            "text10": "",
+            "btnlink": "",
+            "btntext": "",
+            "color": "#e15d3a"
+          }
+        },
+        "05c1c36b-129f-4add-8615-33fdebd822a8": {
+          "type": "Image",
+          "settings": {
+            "leftheading": "It can help with their stress and anxiety",
+            "center": false,
+            "headingcolor": "#000000",
+            "leftsubheading": "",
+            "mainimage": "shopify:\/\/shop_images\/worry.jpg",
+            "video": "",
+            "imagesubheading": "",
+            "imagesubheadingcolor": "#ffffff",
+            "text": "<p>Stress and anxiety can quickly turn your pooch from playful, bright, and lively to <strong>anxious, distressed, and uncomfortable.<\/strong><\/p><p><\/p><p><br\/><\/p><p><\/p><p>Maybe you’ve tried countless remedies to conquer your dog's anxiety, <strong>only for it to return time after time...<\/strong><\/p><p><\/p><p><br\/><\/p><p><\/p><p>However, the real reason you’ve never managed to ensure long-lasting comfort for your dog is that you’ve likely <strong>never tackled the root cause of their stress and anxiety.<\/strong><\/p><p><\/p><p><br\/><\/p><p><\/p><p>And as surprising as it might seem, stress often originates from environmental changes or perceived threats. Now, you already know a distressed environment can impact a dog's behavior…<\/p><p><\/p><p><br\/><\/p><p><\/p><p>And that’s just another reason why TheraPet's Diffusers are so great. By diffusing calming pheromones on autopilot, they help <strong>restore your dog's sense of safety and calm<\/strong> and assist with a <strong>healthy emotional balance...<\/strong><\/p>",
+            "text1": "",
+            "text2": "",
+            "text3": "",
+            "text4": "",
+            "text5": "",
+            "text6": "",
+            "text7": "",
+            "text8": "",
+            "text9": "",
+            "text10": "",
+            "btnlink": "",
+            "btntext": "",
+            "color": "#e15d3a"
+          }
+        },
+        "2e40bb7e-0f8a-4ad2-8635-6f2499ae8400": {
+          "type": "Image",
+          "settings": {
+            "leftheading": "It helps with environmental changes and unwanted behaviors",
+            "center": false,
+            "headingcolor": "",
+            "leftsubheading": "",
+            "mainimage": "shopify:\/\/shop_images\/stress_932872fc-db83-4cfc-8fb2-37f0f517ea50.jpg",
+            "video": "",
+            "imagesubheading": "",
+            "imagesubheadingcolor": "",
+            "text": "<p>Dogs experience environmental stress just like us humans, and these stress levels can seriously affect their mental well-being. Especially if they're part of big, loud families, or coexist with multiple pets.<\/p><p><\/p><p><br\/><\/p><p><\/p><p>This stress impacts their behavior and triggers unwanted actions like inappropriate urination - and if your dog is challenged by occasional stress due to traveling or environmental changes, or perhaps events like moving house, then studies have shown that…<\/p><p><\/p><p><br\/><\/p><p><\/p><p><em><strong>Pheromone diffusers help a great deal.<\/strong><\/em><\/p><p><\/p><p><br\/><\/p><p><\/p><p>Experts also recommend starting the use of TheraPet a few days before you know they're about to go through something potentially stressful. For example, <strong>around moving days, introducing new pets, or visiting the vet.<\/strong><\/p><p><\/p><p><br\/><\/p><p><\/p><p>Plus, some <strong>dogs are more emotional than others and get stressed more easily<\/strong>. If that's the case for your feline friend, then regular use of TheraPet will help <strong>support everyday situations<\/strong> like unfamiliar visitors or being left alone while you're at work.<\/p>",
+            "text1": "",
+            "text2": "",
+            "text3": "",
+            "text4": "",
+            "text5": "",
+            "text6": "",
+            "text7": "",
+            "text8": "",
+            "text9": "",
+            "text10": "",
+            "btnlink": "",
+            "btntext": "",
+            "color": "#e15d3a"
+          }
+        },
+        "e5fa0a8a-da98-487e-a6c3-727ff83e8704": {
+          "type": "Image",
+          "settings": {
+            "leftheading": "Your dog will thank you after just weeks of using TheraPet - just like Benny!",
+            "center": false,
+            "headingcolor": "",
+            "leftsubheading": "",
+            "mainimage": "shopify:\/\/shop_images\/testi_2f5785f3-1f51-48a9-a9af-125041b797e3.jpg",
+            "video": "",
+            "imagesubheading": "",
+            "imagesubheadingcolor": "",
+            "text": "<p>Benny isn't alone, either. Lucky, a golden belonging to a close friend of mine, also had similar problems with stress and inappropriate urination. But after a few weeks of using the diffuser, he was a different dog - <strong>able to enjoy life again.<\/strong><\/p><p><br\/><\/p><p><\/p><p>Put simply...<\/p><p><\/p><p><br\/><\/p><p><\/p><p><strong>The TheraPet Diffuser has been a massive hit in the pet world and changed the lives of countless dogs globally.<\/strong><\/p><p><\/p><p><br\/><\/p><p><\/p><p>In light of these incredible results, it's important to note that these pheromone diffusers aren't a <strong>magic solution to severe behavioral problems <\/strong>or health issues. If this is the case for your dog, then it's likely they need to see a vet.<\/p><p><\/p><p><br\/><\/p><p><\/p><p>That said, if you're looking to create an <strong>ideal stress-free environment<\/strong> to support and maintain the overall well-being of your canine friend - <strong>TheraPet is a MUST.<\/strong><\/p>",
+            "text1": "",
+            "text2": "",
+            "text3": "",
+            "text4": "",
+            "text5": "",
+            "text6": "",
+            "text7": "",
+            "text8": "",
+            "text9": "",
+            "text10": "",
+            "btnlink": "shopify:\/\/pages\/step2-dogs",
+            "btntext": "Check Availability >>",
+            "color": "#bc2e3e"
+          }
+        },
+        "5fff5562-6467-4d84-a04b-634d802cccde": {
+          "type": "titleAndReviews",
+          "settings": {
+            "leftheading": "All Dog Parents Love TheraPet!",
+            "center": false,
+            "headingcolor": "",
+            "leftsubheading": "",
+            "video": "",
+            "imagesubheading": "",
+            "imagesubheadingcolor": "",
+            "text": "",
+            "text1": "",
+            "text2": "",
+            "text3": "",
+            "text4": "",
+            "text5": "",
+            "text6": "",
+            "text7": "",
+            "text8": "",
+            "text9": "",
+            "text10": "",
+            "image1": "shopify:\/\/shop_images\/1_736b20a1-0407-44e9-a3e2-7dc1d7e35fa8.png",
+            "image2": "shopify:\/\/shop_images\/2_26aa2e04-3448-4fa3-9e92-d08bd51a07a1.png",
+            "image3": "shopify:\/\/shop_images\/5_0abc0725-3beb-4816-9c38-c3b92e5a3668.png",
+            "image4": "shopify:\/\/shop_images\/7_7002d5af-b6f3-4166-b69c-8ab16de9bf99.png",
+            "image5": "shopify:\/\/shop_images\/4_f4e684fa-2036-4cd9-8dc2-5e7f7a992fc1.png"
+          }
+        },
+        "9a2e7fbe-89ba-4e72-863c-f30054684fcd": {
+          "type": "Image",
+          "settings": {
+            "leftheading": "How To Get The Best Results For Your Dog At The Best Price Possible!",
+            "center": false,
+            "headingcolor": "#000000",
+            "leftsubheading": "",
+            "mainimage": "shopify:\/\/shop_images\/discount.jpg",
+            "video": "",
+            "imagesubheading": "",
+            "imagesubheadingcolor": "",
+            "text": "<p>After evaluating numerous success stories from our delighted TheraPet™ customers, we've found the optimal approach for achieving the best results for your dog at <strong>an unbeatable price.<\/strong><br\/><br\/><\/p><p>A truly exceptional offer awaits you on the next page.<br\/><br\/><\/p><p>As a cherished TheraPet™ customer, you'll enjoy a 40% OFF discount on your purchase, plus FREE shipping (worth $5.99). <br\/><br\/><\/p><p>But wait, there's more!<br\/><br\/><\/p><h3>30-Day Money-Back Guarantee<\/h3><p>When you place your order today, you'll also benefit from our 30-Day Money-Back Guarantee. If for any reason you're not completely satisfied, <strong>you can easily return the product for a full refund.<\/strong><br\/><br\/><\/p><h3><strong>Incredible Value<br\/><\/strong><\/h3><p>Unlike other brands that last for 30 days, TheraPet™ diffusers and refills last for 60 days, providing you with long-lasting <strong>peace of mind and costing you less than $0.5 per day!<\/strong> And as part of this exclusive offer, you can get your extra two-month supply for just $24.95.<br\/><br\/><br\/><\/p><h3>Unbeatable Bundle Discounts<br\/><\/h3><p>We are proud to offer <strong>exclusive bundle discounts that add even more value<\/strong> to your TheraPet™ purchase. Whether you're just starting out or looking for a long-term solution for multiple dogs, our bundle deals are perfect for you. <strong>You can save up to $105 (50% OFF!) <\/strong>on our best-selling bundle for larger households and multiple dogs.<br\/><br\/><br\/><strong>To take advantage of this special offer while it lasts<\/strong>, click the yellow button below, and on the next page, choose the bundle option that works best for you and your dog!<\/p>",
+            "text1": "",
+            "text2": "",
+            "text3": "",
+            "text4": "",
+            "text5": "",
+            "text6": "",
+            "text7": "",
+            "text8": "",
+            "text9": "",
+            "text10": "",
+            "btnlink": "shopify:\/\/pages\/step2-dogs",
+            "btntext": "Check Availability >>",
+            "color": "#bc2e3e"
+          }
+        },
+        "12192fbf-e144-4613-9bb1-4d36220caa98": {
+          "type": "titleAndReviews",
+          "settings": {
+            "leftheading": "Click the link above to take advantage of this 40% discount!",
+            "center": false,
+            "headingcolor": "#000000",
+            "leftsubheading": "TheraPet Passes The Triple Seal Of Approval:",
+            "mainimage": "shopify:\/\/shop_images\/tripleseal_800x_1.jpg",
+            "video": "",
+            "imagesubheading": "",
+            "imagesubheadingcolor": "",
+            "text": "",
+            "text1": "",
+            "text2": "",
+            "text3": "",
+            "text4": "",
+            "text5": "",
+            "text6": "",
+            "text7": "",
+            "text8": "",
+            "text9": "",
+            "text10": "",
+            "image1": "shopify:\/\/shop_images\/visuqls_edited-08.png"
+          }
+        },
+        "a8db5b22-082a-45d8-9ab3-995e4de9e7da": {
+          "type": "last",
+          "settings": {
+            "heading": "",
+            "subheading": "",
+            "text": "<span style=\"color:red\"><b>Update:<\/b><\/span> <b>January 2nd, 2024<\/b>: Given the current market instability and global circumstances, we regret to inform you that once the current stock runs out, <b>we simply won't be able to maintain this special discount offer.<\/b>\n<br><br>\nYou can find the remaining quantity available by <b>clicking the button below.<\/b>",
+            "btnlink": "shopify:\/\/pages\/step2-dogs",
+            "btntext": "Check Availability >>",
+            "back": "#f7cdd2",
+            "color": "#bc2e3e"
+          }
+        },
+        "01c7836d-55f0-40cb-8439-b027ace94c91": {
+          "type": "reviews",
+          "disabled": true,
+          "settings": {
+            "leftheading": "",
+            "color": "",
+            "bcolor": "",
+            "text1": "",
+            "name1": "",
+            "text2": "",
+            "name2": "",
+            "text3": "",
+            "name3": "",
+            "text4": "",
+            "name4": "",
+            "text5": "",
+            "name5": ""
+          }
+        }
+      },
+      "block_order": [
+        "c9392ff9-e9e5-47d4-9b5d-cd24549c19fe",
+        "60990278-3fd4-407c-ba79-ce130822f492",
+        "33392e4a-2c78-4ef3-9bd3-0eb3bee65b58",
+        "e2234dc0-da1c-42e1-870f-3cb2e21addfd",
+        "05c1c36b-129f-4add-8615-33fdebd822a8",
+        "2e40bb7e-0f8a-4ad2-8635-6f2499ae8400",
+        "e5fa0a8a-da98-487e-a6c3-727ff83e8704",
+        "5fff5562-6467-4d84-a04b-634d802cccde",
+        "9a2e7fbe-89ba-4e72-863c-f30054684fcd",
+        "12192fbf-e144-4613-9bb1-4d36220caa98",
+        "a8db5b22-082a-45d8-9ab3-995e4de9e7da",
+        "01c7836d-55f0-40cb-8439-b027ace94c91"
+      ],
+      "settings": {
+        "breadcrumb": "Home › Trending › Products",
+        "center": false,
+        "leftheading": "",
+        "headingcolor": "#bc2e3e",
+        "checkbox": true,
+        "bgcolor": "#bc2e3e",
+        "text": "GET 40% OFF Today!",
+        "bttnlink": "shopify:\/\/pages\/step2-dogs",
+        "bttntext": "Apply Discount & Check Availability"
+      }
+    },
+    "d231cd37-b2e5-4ca9-a673-6deca87058ed": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "custom_liquid": "",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 12
+      }
+    },
+    "44cb79a1-04d3-4666-aa98-dc45a504ca06": {
+      "type": "call-to-action",
+      "disabled": true,
+      "settings": {
+        "title": "<p>GET <strong>30% OFF TODAY <\/strong>AND UP <strong>TO $160 OFF ON BUNDLES <\/strong>FOR A LIMITED TIME ONLY!<\/p>",
+        "text": "<p>This limited-time deal is in high demand and the stock keeps selling out.<\/p><p><\/p><p><\/p>",
+        "btn": "✓ CHECK AVAILABILITY",
+        "link": "https:\/\/cleanux.co\/pages\/step2-sleep",
+        "color": "#fef9eb",
+        "risk": "Sell-Out Risk:",
+        "riskHigh": "HIGH",
+        "shipping": "FREE Delivery"
+      }
+    },
+    "a35083f2-7e8e-40bc-94f0-8e9d536b4889": {
+      "type": "new-footer",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "gradient1": "#5d3891",
+        "gradient2": "#66347f",
+        "color": "#ffffff",
+        "text": "<p>THIS IS AN ADVERTORIAL AND NOT AN ACTUAL NEWS ARTICLE, BLOG, OR CONSUMER PROTECTION UPDATE.<br\/><br\/>MARKETING DISCLOSURE: This website is owned and operated by TheraPetMD. The advertorial contains fictitious product reviews that reflect a composite of TheraPetMD customers' experiences using the product.<br\/><br\/>The information contained within this site is not intended as a substitute for professional medical or veterinary advice. If your pet has, or you suspect your pet has any medical condition you are urged to consult your veterinarian. These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease. Medical conditions can only be diagnosed by a licensed veterinarian.<\/p><p><\/p><p>The use of the logos is copyrighted by each respective entity and the use of any particular logo may represent a publication, advertisement, or mention of TheraPetMD on a local affiliate or regional carrier.<\/p><p><\/p><p>*Results May Vary. Not intended for human consumption. Please consult your veterinarian regarding any change in treatment or supplementation.<\/p>"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "329eed7f-ae5a-4659-8567-6e8735c768a8",
+    "57fefeca-2806-453d-81d2-024870748dc7",
+    "fc3ffab4-4446-447d-833f-15b02ee37c8e",
+    "d231cd37-b2e5-4ca9-a673-6deca87058ed",
+    "44cb79a1-04d3-4666-aa98-dc45a504ca06",
+    "a35083f2-7e8e-40bc-94f0-8e9d536b4889"
+  ]
+}

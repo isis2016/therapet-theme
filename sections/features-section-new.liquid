@@ -1,0 +1,253 @@
+<style>
+  .featuresSectionMain{
+    margin:50px 0 50px !important
+  }
+  .topHeadFeatures{
+    text-align:center
+  }.bottomPortionHead {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0 0px;
+}.firstColumnF, .thirdColumnF {
+    width: 33%;
+}.secondColumnF {
+    width: 28%;
+}.featureBlock {
+    display: flex;
+    flex-direction: column;
+    box-shadow: none;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+}.featureBlock img {
+width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+    border-radius: 0;
+    object-fit: contain;
+    object-position: center;
+}.featureBlock p {
+    margin: 0;
+    font-size: 0.9em;
+}.featureBlock p strong {
+    margin-bottom: 7px;
+    display: block;
+}.secondColumnF img {
+    max-height: 70vh;
+    object-fit: contain;
+}p.featuresDesc {
+    width: 100%;
+    max-width: 900px !important;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+}  .topHeadFeatures p.red {
+    margin: 0 0 -20px;
+    font-size: 0.9em;
+} h2.mainHeading.leaveBlack {
+    margin-bottom: 10px;
+    color: rgba(var(--color-foreground),1) !important;max-width:900px; margin-left:auto;margin-right:auto
+}.warningColor {
+    border: 1px dashed #000000;
+    border-radius: 20px;
+    font-size: 0.85em;
+    padding: 0 10px;
+}.factColor {
+    border-radius: 10px;
+    color: white;
+    font-size: 0.9em;
+    padding: 10px;
+    text-align: center;
+}.factColor p{margin:0}
+h3.bottomText {
+    text-align: center;
+}
+.featureBlock.NEW p.bottom {
+    font-size: 0.8em;
+}.featureBlock img { 
+    margin: auto;
+}
+.thisisDifferent .featureBlock.NEW {
+    box-shadow: none !important;
+}
+.thisisDifferent .featureBlock img {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+    border-radius: 0;
+    object-fit: contain;
+    object-position: center;
+}
+  @media(max-width:800px)
+  {.secondColumnF img:nth-child(1) {
+    display:none
+}.secondColumnF img:nth-child(2) {
+    margin-bottom:20px
+}
+   img.forMobileImg {
+    display: block !important;
+    margin-top: 20px;
+}
+    .bottomPortionHead {
+    display: flex; 
+    margin: 15px 0 0px; 
+    align-items: center;justify-content: space-between;
+}.firstColumnF, .thirdColumnF,.secondColumnF {
+    width: 48%;
+}.featureBlock { 
+    margin-bottom: 25px;padding:0
+}.secondColumnF img {
+    max-height: 50vh;
+    object-fit: contain;
+    max-width: 60%;
+    margin: 0 auto 25px; 
+}.featuresSectionMain.fixpad {
+     margin:50px 0 0px !important
+}.secondColumnF {
+    display: none;
+}
+.thisisDifferent .bottomPortionHead {
+    flex-wrap: wrap;
+}
+ .thisisDifferent  .firstColumnF,.thisisDifferent .thirdColumnF,.thisisDifferent .secondColumnF{
+     width:100% !important
+   }
+  }
+  @media(max-width:767px)
+  {
+    
+  }
+</style>
+
+<section class="featuresSectionMain fixpad thisisDifferent">
+  <div class="page-width">
+<div class="topHeadFeatures">
+<p class="red">{{ section.settings.subheading }}</p>
+<h2 class="mainHeading leaveBlack">{{ section.settings.heading }}</h2>
+<p class="featuresDesc">{{ section.settings.text }}</p> 
+<div style="background: {{ section.settings.colorw }};" class="warningColor">{{ section.settings.textw }}</div> 
+<img style="display:none" class="forMobileImg" src="{{ section.settings.image | img_url: '800x' }}" loading="lazy" alt="{{ section.settings.image.alt }}" width="100%" height="auto">
+</div>
+<div class="bottomPortionHead">
+<div class="firstColumnF">
+{% for block in section.blocks limit: 1 %}
+<div class="featureBlock NEW">
+<img src="{{ block.settings.image | img_url: '200x' }}" loading="lazy" alt="{{ block.settings.image.alt }}" width="100%" height="auto">
+<p>
+ <strong>{{ block.settings.heading }}</strong> 
+</p>
+<p class="bottom">
+  {{ block.settings.text }}
+</p>
+</div>
+{% endfor %}
+</div>
+<div class="secondColumnF">
+<img src="{{ section.settings.image | img_url: '800x' }}" loading="lazy" alt="{{ section.settings.image.alt }}" width="100%" height="auto"> 
+</div>
+<div class="thirdColumnF">
+{% for block in section.blocks offset: 1 %}
+<div class="featureBlock NEW">
+<img src="{{ block.settings.image | img_url: '200x' }}" loading="lazy" alt="{{ block.settings.image.alt }}" width="100%" height="auto">
+<p>
+ <strong>{{ block.settings.heading }}</strong> 
+</p>
+<p class="bottom">
+  {{ block.settings.text }}
+</p>
+</div>
+{% endfor %}
+</div>
+</div>
+ 
+<div style="background: {{ section.settings.factc }};" class="factColor">{{ section.settings.fact }}</div> 
+<h3 class="bottomText">{{ section.settings.bottom }}</h3>  
+</div>
+</section>
+
+{% schema %}
+  {
+    "name": "Features Section New",
+    "settings": [
+      {
+        "type":"text",
+        "label":"SubHeading",
+        "id":"subheading",
+        "default":"THIS NEEDS TO BE DONE IMMEDIATELY"
+      },
+      {
+        "type":"text",
+        "label":"Heading",
+        "id":"heading",
+        "default":"INNOVATIVE DESIGN AND FEATURES"
+      },
+      {
+        "type":"textarea",
+        "id":"text",
+        "label":"Heading",
+        "default":"In CLEANUX, we took the best from all sinus relief methods and combined them in one smart device to ensure maximum relief!"
+      },
+       {
+        "type":"image_picker",
+        "label":"Image",
+        "id":"image"
+      } ,
+      {
+        "type":"richtext",
+        "label":"Warning Text",
+        "id":"textw"
+      } ,{
+        "type":"color",
+        "id":"colorw",
+        "label":"Warning Color"
+      },
+      {
+        "type":"richtext",
+        "label":"Fact Text",
+        "id":"fact"
+      } ,{
+        "type":"color",
+        "id":"factc",
+        "label":"Fact Color"
+      },
+      {
+        "type":"richtext",
+        "label":"Bottom Text",
+        "id":"bottom"
+      }
+    ],
+    "blocks":[
+      {
+        "type":"text",
+        "name":"Feature",
+        "limit":2,
+        "settings":[
+          {
+        "type":"image_picker",
+        "label":"Image",
+        "id":"image"
+      } ,
+         {
+        "type":"text",
+        "label":"Heading",
+        "id":"heading",
+        "default":"INNOVATIVE DESIGN AND FEATURES"
+      },
+      {
+        "type":"textarea",
+        "id":"text",
+        "label":"Heading",
+        "default":"In CLEANUX, we took the best from all sinus relief methods and combined them in one smart device to ensure maximum relief!"
+      } 
+       
+        ]
+      }
+    ],
+    "presets":[
+      {
+        "name":"Features Section New"
+      }
+    ]
+  }
+{% endschema %} 

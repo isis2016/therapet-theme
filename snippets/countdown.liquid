@@ -1,0 +1,111 @@
+<div id="timer"></div>
+
+{% assign month = section.settings.month %}
+{% assign day = section.settings.day %}
+{% assign year = section.settings.year %}
+{% assign time = section.settings.time %}
+<script>
+
+  function updateTimer() {
+    future = Date.parse("{{ month }} {{ day }}, {{ year }} {{time}}+00:00");
+    now = new Date().getTime();
+    diff = future - now;
+
+    days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    hours = Math.floor(diff / (1000 * 60 * 60));
+    mins = Math.floor(diff / (1000 * 60));
+    secs = Math.floor(diff / 1000);
+
+    d = formatTime(days);
+    h = formatTime(hours - days * 24);
+    m = formatTime(mins - hours * 60);
+    s = formatTime(secs - mins * 60);
+
+    document.getElementById("timer").innerHTML =
+        '<div id="time">' + d + '<span>Days</span></div>' +
+        '<div id="time">' + h + '<span>Hrs</span></div>' +
+        '<div id="time">' + m + '<span>Min</span></div>' +
+        '<div id="time">' + s + '<span>Sec</span></div>' ;
+}
+
+function formatTime(time) {
+    // Ensure that the time is always displayed with two digits
+    return time < 10 ? "0" + time : time;
+}
+
+setInterval(updateTimer, 1000);
+
+</script>
+<style>
+
+   
+  #timer {  
+    font-size: 60px;
+    font-weight: 100;
+    color: #fff;
+    background-color: transparent;
+    text-shadow: none;
+    border-radius: 10px;
+    border-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #timer div {
+    display: block;
+    min-width: 50px;
+    color: #fff;
+  }
+
+  #timer span {
+    display: block;
+    color: #fff
+  }
+  #time {
+    line-height: 1;
+    font-size: 1.875rem;
+    font-weight: 600;
+  }
+  #time span {
+    margin-top: 0.5em;
+    line-height: 1;
+    font-size: 0.75rem;
+    font-weight: 400;
+}
+  @media (max-width: 992px) {
+    #time span {
+    text-align: left;
+    display: table-footer-group;
+}
+  }
+  @media screen and (max-width: 767px) {
+    #timer {  
+    font-size: 40px;
+      width: auto;
+      color: #fff;
+  }
+    #timer div {
+    min-width: 60px;
+      color: #fff;
+  }
+    #timer span {
+    color: #fff;
+      padding: 0 20px;  
+}
+    .sale-bar p {
+    width: 30% !important;
+}
+    #time span {
+    display: contents;
+    padding-left: 2px;
+}
+    #time {
+    font-size: 16px!important;
+}
+    #timer div {
+    min-width: auto;
+    padding-right: 5px;
+}
+  }
+</style>

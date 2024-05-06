@@ -1,0 +1,17 @@
+{
+  "parent": "page.lpv2-dogs-v2-h2.json",
+  "context": {
+    "market": "us"
+  },
+  "sections": {
+    "127ed70d-6fa2-4a29-9008-575fa8d7653b": {
+      "settings": {
+        "bubble1": "SAVE $19!",
+        "bubble2": "SAVE $63!",
+        "bubble3": "SAVE $104!"
+      },
+      "blocks": {
+      }
+    }
+  }
+}

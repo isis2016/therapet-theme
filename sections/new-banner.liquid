@@ -1,0 +1,330 @@
+<div class="main-banner">
+  <div class="page-width">
+    <div class="banner-wrap">
+      <div class="banner-content">
+        <h1>{{ section.settings.banner-head }}</h1>
+        <div class="banner-para">{{ section.settings.banner-p }}</div>
+        <div class="banner-btn">
+          <a href="{{ section.settings.button-link }}">{{ section.settings.button-text }}</a>
+        </div>
+        <div class="banner-review">
+          <div class="review-wrap">
+            <div class="star-review">
+              <img src="{{ section.settings.star-img | img_url: 'master' }}" alt=" Star img">
+            </div>
+            <p>{{ section.settings.review-p }}</p>
+          </div>
+          <div class="trust-wrap">
+            <h5>{{ section.settings.trust-p }}</h5>
+            <div class="trust-review">
+              <img src="{{ section.settings.trust-img | img_url: 'master' }}" alt=" Trust img">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="banner-img">
+        <img src="{{ section.settings.main-img | img_url: 'master' }}" alt=" main img">
+      </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "main banner",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "back-img",
+        "label": "Background image"
+      },      
+      {
+        "type": "text",
+        "id": "banner-head",
+        "label": "Heading"
+      },
+      {
+        "type": "richtext",
+        "id": "banner-p",
+        "label": "Paragraph",
+        "default": "<p>Tailored treatment, personalised to your pet, delivered when you need it, so you never forget.<p>"
+      },
+      {
+        "type": "text",
+        "id": "button-text",
+        "label": "Button text"
+      },      
+      {
+        "type": "url",
+        "id": "button-link",
+        "label": "Button link"
+      },   
+      {
+        "type": "image_picker",
+        "id": "star-img",
+        "label": "Rating image"
+      },
+      {
+        "type": "text",
+        "id": "review-p",
+        "label": "Rating"
+      },
+      {
+        "type": "text",
+        "id": "trust-p",
+        "label": "Total reviews"
+      },
+      {
+        "type": "image_picker",
+        "id": "trust-img",
+        "label": "Trust image"
+      },
+      {
+        "type": "image_picker",
+        "id": "main-img",
+        "label": "Image"
+      }
+    ],
+    "presets": [
+      {
+        "name": "main banner"
+      }
+    ]
+  }
+{% endschema %}
+<style>
+   img {
+    width: 100%;
+    height: 100%;
+  }
+  .main-banner {
+    background-image: url("{{ section.settings.back-img | img_url: 'master' }}");
+    height: 100%;
+    padding: 133px 0px 0px 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+  }
+  .banner-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .banner-content {
+    width: 85%;
+    padding-bottom: 88px;
+  }
+  .banner-content h1 {
+    margin: 0px 0px 30px 0px;
+    color: #38306A;
+    font-family: AvertaStd-ExtraBold;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 80px;
+  }
+  .banner-para {
+    margin: 0px 0px 30px 0px;
+  }  
+  .banner-para p {
+    margin: 0px;
+    color: #555;
+    font-family: Poppins;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .banner-btn {
+    margin: 0px 0px 75px 0px;
+  }
+  .banner-btn a {
+    color: var(--White, #FFF);
+    text-align: center;
+    font-variant-numeric: lining-nums tabular-nums;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    text-decoration: none;
+    border-radius: 70px;
+    background: #F675A8;
+    padding: 18px 30px;
+    display: inline-block;
+  }
+  .review-wrap {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 10px;
+    margin-bottom: 20px;
+  }
+  .star-review {
+    width: 14%;
+    height: auto;
+    line-height: 0px;
+  }
+  .review-wrap p {
+    margin: 0px;
+    color: #38306A;
+    text-align: center;
+    font-variant-numeric: lining-nums tabular-nums;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .trust-wrap {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    column-gap: 10px;
+  }
+  .trust-wrap h5 {
+    margin: 0px;
+    color: #38306A;
+    font-variant-numeric: lining-nums tabular-nums;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+  }
+  .trust-review {
+    width: 12%;
+    height: auto;
+    line-height: 0px;
+  }
+  .banner-img {
+    width: 100%;
+    height: auto;
+  }
+  @media (max-width: 1280px) {
+    .banner-content h1 {
+    font-size: 55px;
+    line-height: 65px;
+}
+    .banner-para p {
+    font-size: 20px;
+}
+    .banner-btn {
+    margin: 0px 0px 50px;
+}
+    .trust-wrap {
+    align-items: center;
+}
+  }
+  @media (max-width: 1100px) {
+    .main-banner {
+    padding: 100px 0px 0px 0px;
+}
+    .banner-content {
+    padding-bottom: 50px;
+}
+    .banner-content h1 {
+    margin: 0px 0px 25px;
+    font-size: 40px;
+    line-height: 50px;
+}
+    .banner-para {
+    margin: 0px 0px 25px;
+}
+    .banner-para p {
+    font-size: 18px;
+}
+    .banner-btn {
+    margin: 0px 0px 25px;
+}
+    .banner-btn a {
+    padding: 12px 30px;
+    font-size: 16px;
+}
+    .review-wrap {
+    margin-bottom: 5px;
+}
+    .review-wrap p {
+    font-size: 17px;
+}
+    .star-review {
+    width: 25%;
+}
+    .trust-wrap h5 {
+    font-size: 21px;
+}
+    .trust-review {
+    width: 20%;
+}
+  }
+  @media (max-width: 992px) {
+    .main-banner {
+    padding: 80px 0px 0px 0px;
+}
+    .banner-content h1 {
+    margin: 0px 0px 20px;
+    font-size: 30px;
+    line-height: 40px;
+}
+    .banner-para {
+    margin: 0px 0px 20px;
+}
+    .banner-btn {
+    margin: 0px 0px 20px;
+}
+    .review-wrap p {
+    font-size: 14px;
+}
+    .trust-wrap {
+    align-items: center;
+}
+    .trust-wrap h5 {
+    font-size: 20px;
+}
+  }
+  @media (max-width: 767px) {
+    .main-banner {
+    padding: 30px 0px 0px 0px;
+}
+    .banner-content h1 {
+    font-size: 30px;
+    line-height: 36px;
+    width: 90%;
+    margin: 0 auto 12px;
+}
+    .banner-para p {
+    font-size: 16px;
+}
+    .banner-para {
+    margin: 0px 0px 12px;
+}
+    .review-wrap p {
+    font-size: 16px;
+}
+    .trust-wrap h5 {
+    font-size: 16px;
+}
+    .banner-wrap {
+    flex-wrap: wrap;
+}
+    .banner-content {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    text-align: center;
+}
+    .banner-btn {
+    margin: 0px 0px 15px;
+}
+    .trust-wrap {
+    align-items: center;
+    justify-content: center;
+}
+    .review-wrap {
+    margin-bottom: 7px;
+    justify-content: center;
+}
+  }
+</style>

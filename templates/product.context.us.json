@@ -1,0 +1,12 @@
+{
+  "parent": "product.json",
+  "context": {
+    "market": "us"
+  },
+  "sections": {
+  },
+  "order": [
+    "main",
+    "product-recommendations"
+  ]
+}

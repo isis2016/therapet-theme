@@ -1,0 +1,97 @@
+<style>
+.wrapBlocks{
+  display:flex;flex-wrap:wrap;justify-content: space-between;
+}.iconBlock {
+    background: linear-gradient(180deg, rgba(37, 71, 141, 0.0357) 0%, rgba(255, 255, 255, 0.07) 100%);
+    border: 1px solid rgba(37, 71, 141, 0.25);
+    border-radius: 12px;
+    padding: 20px;    text-align: center;
+    margin-bottom: 25px;width: 23.5%;
+}.iconBlock img{
+  width:80px;height:80px;object-fit:contain
+}.iconBlock p {
+    margin: 0;font-size:0.9em;color:#242424
+}.iconBlock p strong {
+    margin: 10px 0 10px;
+    display: block;
+}
+  @media(max-width:1000px)
+  {
+    .iconBlock { 
+    width: 48.5%;
+}
+  }
+  @media(max-width:767px)
+  {
+    .iconBlock { 
+    width: 100%;
+}
+  }
+</style>
+
+<section class="iconBolocksSection">
+ <h2 class="image-with-text__heading mainHeading h2">
+                {{ section.settings.heading1 }}
+ </h2>
+  
+  <div class="page-width">
+<div class="wrapBlocks"> 
+{% for block in section.blocks %}
+<div class="iconBlock">
+<img src="{{ block.settings.image | img_url: '200x' }}" loading="lazy" alt="{{ block.settings.image.alt }}" width="100%" height="auto">
+<p>
+ <strong>{{ block.settings.heading }}</strong> 
+</p>
+<p>
+  {{ block.settings.text }}
+</p>
+</div>
+{% endfor %} 
+</div>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Icon Blocks",
+    "settings": [
+   {
+        "type":"textarea",
+        "id":"heading1",
+        "label":"heading"
+      }
+      
+    ],
+    "blocks":[
+      {
+        "type":"text",
+        "name":"Block", 
+        "settings":[
+          {
+        "type":"image_picker",
+        "label":"Image",
+        "id":"image"
+      } ,
+         {
+        "type":"text",
+        "label":"Heading",
+        "id":"heading",
+        "default":"INNOVATIVE DESIGN AND FEATURES"
+      },
+      {
+        "type":"textarea",
+        "id":"text",
+        "label":"Heading",
+        "default":"In CLEANUX, we took the best from all sinus relief methods and combined them in one smart device to ensure maximum relief!"
+      } 
+       
+        ]
+      }
+    ],
+    "presets":[
+      {
+        "name":"Icon Blocks"
+      }
+    ]
+  }
+{% endschema %} 

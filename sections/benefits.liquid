@@ -1,0 +1,159 @@
+<style>
+ section.benefitsSection {
+    margin: 50px 0;
+}p.benefitFsub {
+    text-align: center;
+    margin: 0;
+    font-size: 0.9em;
+}.benefitFsub+h2.image-with-text__heading.mainHeading.h2 {
+    margin: 0 0 30px;
+}.wrapitNOWFeat {
+    display: flex;
+    font-size: 0.9em;
+}.wrapitNOWFeat p {
+    margin: 0;
+}.featureVideoBlock {
+    width: 28%;
+}.arrowWRAP {
+    width: 8%;    padding-top: 14%;
+}.wrapitNOWFeat+h3 {
+    margin: 40px auto 0;
+    text-align: center;
+    max-width: 600px;
+}
+  @media(max-width:767px)
+  {
+    .arrowWRAP {
+    display: none;
+}.featureVideoBlock {
+    width: 100%;
+    margin: 20px auto;
+    max-width: 500px;    text-align: center;
+}.wrapitNOWFeat { 
+    flex-wrap: wrap;
+}.benefitFsub+h2.image-with-text__heading.mainHeading.h2 {
+    margin: 5px 0 10px;
+}.featureVideoBlock strong {
+    margin: 6px 0;
+    display: block;
+}.wrapitNOWFeat+h3 {
+    margin: 15px auto 0; 
+}
+  }
+</style>
+
+<section class="benefitsSection">
+<div class="page-width">
+<p class="benefitFsub">
+{{ section.settings.subheading }}
+</p>
+<h2 class="image-with-text__heading mainHeading h2">
+{{ section.settings.heading }}
+ </h2>
+<div class="wrapitNOWFeat">
+{% for block in section.blocks %}
+<div class="featureVideoBlock">
+  <video src="{{ block.settings.video }}" 
+         type="video/mp4" class="videoF"
+         loop muted playsinline autoplay disablepictureinpicture controlslist="nodownload" height="auto"
+         style="margin:auto;width:100%;">
+  </video>
+<strong>{{ block.settings.heading }}</strong>
+{{ block.settings.text }}
+</div>
+  {% unless forloop.last %}
+    <div class="arrowWRAP">
+{% if forloop.first %}
+<img class="arrowA" src="{{ section.settings.arrow1 | img_url: '500x' }}" loading="lazy" alt="{{ section.settings.arrow1.alt }}" width="100%" height="auto">
+  {% else %}
+<img class="arrowA" src="{{ section.settings.arrow2 | img_url: '500x' }}" loading="lazy" alt="{{ section.settings.arrow2.alt }}" width="100%" height="auto">
+  {% endif %}
+    </div>
+  {% endunless %}
+{% endfor %}
+</div>
+ <h3>{{ section.settings.bottom }}</h3> 
+</div>
+</section>
+<script>
+  Object.defineProperty(HTMLMediaElement.prototype, 'playing', {
+get: function () {
+return !!(this.currentTime > 0 && !this.paused && !this.ended && this.readyState > 2);
+}});
+document.body.addEventListener("click", playVideoOnLowPower);
+document.body.addEventListener("touchstart", playVideoOnLowPower);
+function playVideoOnLowPower(){
+try{
+const videoElements = document.querySelectorAll("video[autoplay]");
+for (i = 0; i < videoElements.length; i++) {
+if (videoElements[i].playing) {
+// video is already playing so do nothing
+ }
+else {
+// video is not playing so play video now
+videoElements[i].play(); 
+}}}
+catch(err) {
+console.log(err);
+}}
+</script>
+{% schema %}
+  {
+    "name": "Benefits Section",
+    "settings": [
+      {
+        "type":"text",
+        "id":"subheading",
+        "label":"Subheading"
+      },
+      {
+        "type":"text",
+        "id":"heading",
+        "label":"Heading"
+      },
+      {
+        "type":"text",
+        "id":"bottom",
+        "label":"Bottom"
+      },
+      {
+        "type":"image_picker",
+        "id":"arrow1",
+        "label":"Arrow 1"
+      },
+      {
+        "type":"image_picker",
+        "id":"arrow2",
+        "label":"Arrow 2"
+      }
+    ],
+    "presets":[
+      {
+        "name":"Benefits Section"
+      }
+    ],
+    "blocks":[
+      {
+        "type":"Benefit",
+        "name":"Benefit",
+        "settings":[
+          {
+            "type":"textarea",
+            "id":"video",
+            "label":"Video"
+          },
+          {
+            "type":"text",
+            "id":"heading",
+            "label":"Heading"
+          },
+          {
+            "type":"richtext",
+            "id":"text",
+            "label":"Text"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %} 

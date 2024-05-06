@@ -1,0 +1,348 @@
+<div class="benefit-section {{ section.settings.section_css_class }}">
+  <div class="benefit-animal-image">
+    <img src="{{ section.settings.animal-img | img_url: 'master' }}" alt=" animal img">
+  </div>
+  <div class="page-width">
+    <h2>{{ section.settings.benefit-head }}</h2>
+    <div class="benefit-wrap">
+      {% for block in section.blocks %}
+        <div class="benefit-content">
+            <div class="benefit-cover">
+              <div class="benefit-image">
+                <img src="{{ block.settings.benefit-img | img_url: 'master' }}" alt="Benefit image">
+              </div>
+              <p>{{ block.settings.benefit-text }}</p>
+            </div>
+            <div class="benefit-line">
+              <img src="{{ block.settings.line-img | img_url: 'master' }}" alt="Line img">
+            </div>
+          </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "new benefits section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "section_css_class",
+        "label": "Custom Class"
+      },
+      {
+        "type": "text",
+        "id": "benefit-head",
+        "label": "Heading"
+      },
+      {
+        "type": "image_picker",
+        "id": "animal-img",
+        "label": "Pets image"
+      }      
+    ],
+    "blocks": [
+      {
+        "type": "column",
+        "name": "benefits column",
+        "settings": [
+      {
+        "type": "image_picker",
+        "id": "benefit-img",
+        "label": "Benefit image"        
+      },      
+      {
+        "type": "text",
+        "id": "benefit-text",
+        "label": "Text"
+      },
+          {
+        "type": "image_picker",
+        "id": "line-img",
+        "label": "Line image"        
+      }
+        ]
+      }
+    ],
+        "presets": [
+      {
+        "name": "new benefits section"
+      }
+    ]
+  }
+{% endschema %}
+<style>
+  .benefit-section {
+    padding: 100px 0px;
+    position: relative;
+    background: #fff;
+}  
+.benefit-section.change--bg {
+    background:url("https://cdn.shopify.com/s/files/1/0764/0530/9760/files/benefit-bg.png?v=1698929276") no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 186px 0px;
+  }
+.benefit-section.change--bg .benefit-line {
+    display:none;
+  }
+.benefit-section.change--bg .benefit-animal-image{
+     display:none;
+  }
+.benefit-section.change--bg .benefit-section h2{
+    color:#fff;
+  }
+.benefit-section.change--bg .benefit-cover p {
+    color: #fff;
+    width: 100%;
+    font-size: 17px;
+  }
+  .benefit-animal-image {
+    width: 19%;
+    height: auto;
+    position: absolute;
+    right: 44px;
+    top: -8.79em;
+}
+  .benefit-section h2 {
+    margin: 0px 0px 53px 0px;
+    color: #37306B;
+    text-align: center;
+    font-family: AvertaStd-ExtraBold;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60px;
+}
+  .change--bg h2 {
+    color: #fff;
+}
+  .benefit-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+  .benefit-content {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+    width: 25%;
+}
+  .benefit-content:last-child {
+    justify-content: right;
+}
+  .benefit-content:first-child {
+    justify-content: left;
+}
+  .benefit-content:last-child .benefit-line {
+  display: none;
+}
+  .benefit-image {
+    width: 211px;
+    height: auto;
+    margin: 0px auto 30px auto;
+}
+  .benefit-cover {
+    z-index: 1;
+}
+  .benefit-cover p {
+    color: #37306B;
+    text-align: center;
+    font-family: AvertaStd-Bold;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    width: 75%;
+    margin: 0 auto;
+}
+  .benefit-line {
+    width: 276px;
+    height: auto;
+    position: absolute;
+    right: -7em;
+    top: 5em;
+}
+    .change--bg .benefit-image {
+    width: 171px;
+    height: 179px;
+}
+  .change--bg .benefit-wrap {
+    column-gap: 50px;
+}
+
+  @media (max-width: 1680px) {
+  .benefit-animal-image {
+    top: -5.7em;
+    width: 14%;
+}
+  }
+  @media (max-width: 1600px) {
+  .benefit-animal-image {
+    top: -5em;
+    width: 13%;
+}
+  }
+  @media (max-width: 1440px) {
+    .benefit-animal-image {
+    width: 15%;
+    top: -5.2em;
+}
+  }
+  @media (max-width: 1400px) {
+  .benefit-animal-image {
+    top: -5.05em;
+}
+  }
+  @media (max-width: 1366px) {
+  .benefit-animal-image {
+    top: -4.95em;
+}
+  }
+  @media (max-width: 1280px) {
+  .benefit-animal-image {
+    top: -4.6em;
+}
+  .change--bg .benefit-wrap {
+    column-gap: 10px;
+}
+  .benefit-section.change--bg .benefit-cover p {
+    font-size: 15px;
+}
+  .change--bg .benefit-image {
+    width: 160px;
+    height: 160px;
+}
+  }
+  @media (max-width: 1100px) {
+    .benefit-section.change--bg {
+    padding: 80px 0px;
+  }
+    .benefit-section {
+    padding: 80px 0px;
+}
+    .benefit-wrap {
+    align-items: flex-start;
+}
+    .benefit-animal-image {
+    width: 13%;
+    top: -3.2em;
+}
+    .benefit-section h2 {
+    margin: 0px 0px 25px;
+    font-size: 40px;
+    line-height: 50px;
+}
+    .benefit-image {
+    width: 165px;
+    margin: 0px auto 25px auto;
+}
+    .benefit-cover p {
+    font-size: 17px;
+    line-height: normal;
+    width: 90%;
+}
+    .change--bg .benefit-wrap {
+    column-gap: 35px;
+    flex-wrap: wrap;
+}
+    .benefit-content {
+    width: 30%;
+    margin-bottom: 20px;
+}
+  }
+  @media (max-width: 992px) {
+    .benefit-section h2 {
+    margin: 0px 0px 20px;
+    font-size: 30px;
+    line-height: 40px;
+}
+    .benefit-cover p {
+    font-size: 15px;
+    width: 100%;
+}
+    .benefit-section.change--bg .benefit-cover p {
+    font-size: 15px;
+  }
+    .benefit-image {
+    width: 140px;
+}
+    .benefit-line {
+    top: 3.3em;
+}
+    .benefit-section.change--bg {
+    background: #4a4286;
+}
+    .change--bg .benefit-content {
+    width: 49%;
+    margin-bottom: 30px !important;
+    justify-content: space-evenly;
+    align-items: center;
+}
+    .change--bg .benefit-image {
+    width: 147px;
+    height: 147px;
+}
+    .benefit-section.change--bg .benefit-cover p {
+    width: 70%;
+    margin: 0 auto;
+}
+    .change--bg .benefit-wrap {
+    column-gap: 10px;
+}
+  }
+  @media (max-width: 767px) {
+    .benefit-section {
+    padding: 40px 0px;
+}
+    .benefit-section.change--bg {
+    padding: 40px 0px;
+  }
+    .benefit-animal-image {
+    display: none;
+}
+    .benefit-section h2 {
+      margin: 0px 0px 30px;
+      font-family: AvertaStd-Bold;
+}
+    .benefit-wrap {
+      flex-wrap: wrap;
+      width: 90%;
+      margin: 0 auto;
+}
+    .benefit-line {
+      display: none;
+    }
+    .benefit-content {
+    width: 50%;
+    margin-bottom: 30px;  
+}
+    .benefit-content:nth-child(1n+3) {
+    margin-bottom: 0px;  
+}
+    .benefit-image {
+      width: 100px;
+      margin: 0px auto 12px auto;
+    line-height: 0;
+}
+    .benefit-content:nth-child(2) .benefit-line{
+    display: none;
+}
+    .benefit-cover p {
+      font-size: 16px;
+      font-family: AvertaStd-SemiBold;
+      width: 90%;
+}
+    .benefit-section.change--bg .benefit-cover p {
+    width: 100%;
+}
+    .benefit-section.change--bg .benefit-content {
+    width: 48%;
+}
+    .change--bg .benefit-image {
+    width: 100px;
+    height: 100px;
+}
+  }
+</style>

@@ -1,0 +1,20 @@
+{% if block.settings.show %}
+<div class="YKGWWrz2 NqYQDz9I" bis_skin_checked="1" style="background-color: {{ block.settings.blockcolor }}">
+  <div class="exfvG3Xy NqYQDz9I" bis_skin_checked="1">
+    <img width="36" height="37" src="{{ block.settings.blocklogo | img_url: 'master' }}"
+      alt="{{ block.settings.blocklogo }}"
+      class="MxBDTeuB" loading="lazy">
+    <div class="X9Xi3S9j" bis_skin_checked="1">{{ block.settings.logoText }}</div>
+  </div>
+
+  <div class="cxCbrDDb" bis_skin_checked="1">
+    <img width="74.7" height="36" src="{{ block.settings.blockImage | img_url: 'master' }}"
+      alt="{{ block.settings.blockImage }}"
+      class="hlbBiXmO banner-product" loading="lazy">
+  </div>
+  
+  <div class="V1VEtMC9" bis_skin_checked="1">{{ block.settings.blockText }}
+  <small class="timerBlock"><span style="color:{{ block.settings.salecolor }}">Sale is live!</span> Ends in <span class="blockTimerA" style="color:{{ block.settings.salecolor }}"></span></small>
+  </div>
+</div> 
+{% endif %}

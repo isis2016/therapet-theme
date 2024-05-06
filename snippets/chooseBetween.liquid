@@ -1,0 +1,238 @@
+ 
+{% assign tabsExists = false %}
+<div class="chooseBetweenBundle">
+<p style="font-weight: 500;font-size: 0.85em;">{{ block.settings.mainLabel }}</p>
+
+<div class="topTabsPart">
+{% for i in (1..3) %}
+{% capture imagelabel %}tabImage{{ i }}{% endcapture %}
+{% capture textlabel %}text{{ i }}{% endcapture %} 
+{% if block.settings[textlabel] != blank %}
+<div class="tabItem tab{{ forloop.index }} tabSelector {% if forloop.index == 2 %}active{% endif %}" data-tab="{{ forloop.index }}" onclick="selectNewTab('.tab{{ forloop.index }}')">
+<img src="{{ block.settings[imagelabel] | image_url:width:130 }}" alt="{{ block.settings[imagelabel].alt }}" class="tabLabel">
+<span>{{ block.settings[textlabel] }}</span>
+</div> 
+{% assign tabsExists = true %}
+{% endif %}
+{% endfor %}
+</div>
+
+
+<div class="tabSelectionPart">
+{% for i in (1..3) %}
+{% capture imagelabel %}tabImage{{ i }}{% endcapture %}
+{% capture textlabel %}text{{ i }}{% endcapture %} 
+ 
+  <div class="tabItemContent tab{{ forloop.index }} tabSelector {% if forloop.index == 2 %}active{% endif %}" {% if tabsExists %}style="display:none"{% else %}style="display:flex"{% endif %} data-tab="{{ forloop.index }}">
+
+{% for j in (1..3) %} 
+
+    {% capture prodItem %}prod{{ i }}{{ j }}{% endcapture %}
+  {% assign productItem = block.settings[prodItem] %}
+
+  {% if productItem != blank %}
+    <input
+    class="simpleRadioItem"
+    type="radio"
+    id="simpleRadioItem{{ i }}{{ j }}{{ section.id }}-{{ forloop.index0 }}"
+    name="labeltemWrap"
+    value="" 
+    {% if i == 1 and j == 2 %}
+      checked
+    {% endif %}
+  >         
+  <label class="label labeltemWrap" onclick="updatepaymentOptions()" for="simpleRadioItem{{ i }}{{ j }}{{ section.id }}-{{ forloop.index0 }}">
+ 
+    {% capture badgeA %}badge{{ i }}{{ j }}{% endcapture %}
+    {% assign badgeAtm = block.settings[badgeA] %}
+  {% if badgeAtm != blank %}
+    <div class="absolute -left-2 -top-2 aspect-square w-16 overflow-hidden rounded-sm">
+      <div class="absolute right-0 top-0 h-2 w-2 bg-[#604ec2]"></div>
+      <div class="absolute bottom-0 left-0 h-2 w-2 bg-[#604ec2]"></div>
+      <div class="w-square-diagonal absolute bottom-0 left-0 block origin-bottom-left -rotate-45 bg-[#604ec2] py-[2px] text-center text-[8px]/[1.2] font-semibold uppercase tracking-wider text-white">
+        {{ badgeAtm }}
+      </div>
+    </div>
+    {% endif %}
+   {% render 'buyButton',product:productItem %}
+  <div class="leftAreaALLaa">
+    <div class="mr-1 sml:mr-2 flex h-[20px] w-[20px] sml:h-[25px] sml:w-[25px] flex-shrink-0 items-center justify-center rounded-full bg-white border border-[#a99dea]">
+     <div data-element-type="radio-button" class="h-[10px] w-[10px] sml:h-[15px] sml:w-[15px] rounded-full bg-[#604EC2]"></div>
+    </div>
+    <div class="mainPartCC">
+<strong>{{ productItem.title }}</strong>
+
+{% if forloop.last %}
+{% capture lastLin %}text{{ i }}1{% endcapture %}
+{% assign lastLine = block.settings[lastLin] %} 
+  {% if lastLine != blank %}
+<span class="lastLineItem" style="color:{{ block.settings.text3Color }}">
+{{ lastLine }}
+</span>
+  {% endif %}
+  {% endif %}
+      
+      {% if j > 1 %}
+<div class="labelsArea">
+{% if productItem.selected_or_first_available_variant.compare_at_price > productItem.selected_or_first_available_variant.price %}
+<span class="greenSavingLabel labelItem" style="background-color:{{ block.settings.badge1Color }}">
+Save {{ productItem.selected_or_first_available_variant.compare_at_price | minus: productItem.selected_or_first_available_variant.price | money_without_trailing_zeros }}
+</span>
+{% endif %}
+
+{% if j == 2 %}
+     {% capture badge11A %}badge{{ i }}{% endcapture %}
+    {% assign badge11Atm = block.settings[badge11A] %} 
+  {% if badge11Atm != blank %}
+<span class="secondLabel labelItem" style="background-color:{{ block.settings.badge2Color }}">
+{{ badge11Atm }}
+</span>
+  {% endif %}
+{% endif %}
+</div>
+      {% endif %}
+    </div>
+  </div>
+    
+    <div class="priceAreaCC">
+    {% capture multipleVal %}multiple{{ i }}{{ j }}{% endcapture %}
+    {% assign multipleValue = block.settings[multipleVal] %}
+    {% assign perPrice = productItem.selected_or_first_available_variant.price | divided_by: multipleValue %}
+  {% assign perPricefour = productItem.selected_or_first_available_variant.price | divided_by: 4 %}
+    <strong class="priceFetchFromHere" data-price="{{ productItem.selected_or_first_available_variant.price | money }}" data-perprice="{{ perPricefour | money }}">{{ perPrice | money }} {% unless multipleValue == 1 %}<span>Each</span>{% endunless %}</strong>
+    </div>
+ 
+  </label>
+{% endif %}
+{% endfor %}
+  
+    
+    {% capture TabTextVal %}TabText{{ i }}{% endcapture %}
+    {% assign TabTextValue = block.settings[TabTextVal] %}
+  {% if TabTextValue != blank %}
+    <div class="descPart mt-9 text-[15px] leading-[24px]" style="margin-top: 0;">
+{{ TabTextValue | replace: 'href="#"' , 'href=javascript:openPopup()' }}
+    </div>
+  {% endif %}
+  </div> 
+  
+{% endfor %}
+</div>
+  
+</div>
+
+
+
+
+
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal2">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+<div class="topHeader"> 
+<span class="closeModal" onclick="closePopups()">
+<svg height="12" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.8037 1.24295L12.8366 0.287365C12.575 0.0256846 12.1426 0.0256846 11.8696 0.287365L7.0455 5.11128L2.13052 0.196346C1.86873 -0.0654486 1.43638 -0.0654486 1.16344 0.196346L0.196347 1.16343C-0.0654491 1.42511 -0.0654491 1.85745 0.196347 2.13051L5.10006 7.03418L0.287368 11.8696C0.0256848 12.1313 0.0256848 12.5636 0.287368 12.8367L1.25446 13.8037C1.51614 14.0654 1.94848 14.0654 2.22154 13.8037L7.0455 8.97971L11.8696 13.8037C12.1312 14.0654 12.5636 14.0654 12.8366 13.8037L13.8037 12.8367C14.0654 12.575 14.0654 12.1426 13.8037 11.8696L8.9683 7.04555L13.7924 2.22164C14.0654 1.94835 14.0654 1.51601 13.8037 1.24295Z" fill="black"></path></svg>
+</span>
+</div> 
+
+{{ block.settings.pagePopup.content }}    
+</div>
+
+</div>
+
+
+ 
+  <script>
+
+    // Get the modal
+var modal = document.getElementById("myModal"); 
+  
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("closeModal")[0];
+
+// When the user clicks the button, open the modal 
+function openPopup() {
+  modal.style.display = "flex";
+}
+
+// When the user clicks on <span> (x), close the modal
+function closePopups() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}  
+
+
+ 
+
+    
+function chooseBetween()
+  {
+  document.querySelector('button.product-form__submit.button.button--full-width.button--primary').classList.add('loading');
+  
+  document.querySelector('input[name="labeltemWrap"]:checked+label product-form button[type="submit"]').click();
+
+
+
+ fetch(`${window.location.origin}/cart.js`)
+  .then(res => res.clone().json().then(data => {
+    var cart = {
+      total_price: data.total_price/100,
+      $value: data.total_price/100,
+      total_discount: data.total_discount,
+      original_total_price: data.original_total_price/100,
+      items: data.items
+    }
+    if (typeof item !== 'undefined') {
+      cart = Object.assign(cart, item)
+    }
+    
+        _learnq.push(['track', 'Added to Cart', cart]); 
+    console.log('Added to Cart');
+  }));
+ 
+    
+  setTimeout(function(){
+    if(typeof shippingProtectionUpdate == "function")
+shippingProtectionUpdate();
+    
+  document.querySelector('button.product-form__submit.button.button--full-width.button--primary').classList.remove('loading');
+  },2000);
+  }
+
+function repeatTwoTimes()
+  {
+       var price = document.querySelector('input.simpleRadioItem:checked+label.label.labeltemWrap strong.priceFetchFromHere').dataset.price;
+   var perPrice = document.querySelector('input.simpleRadioItem:checked+label.label.labeltemWrap strong.priceFetchFromHere').dataset.perprice;
+   if(document.querySelector('p.singlePaymentAll'))
+   {
+     document.querySelector('p.singlePaymentAll').innerHTML = price;
+   }
+    if(document.querySelector('p.dividePaymentSplit'))
+   {
+     document.querySelector('p.dividePaymentSplit').innerHTML = perPrice;
+   }
+  }
+function updatepaymentOptions()
+  {
+repeatTwoTimes();setTimeout(repeatTwoTimes,200);
+  }
+
+function selectNewTab(selector)
+  {
+    $('.tabSelector').removeClass('active');
+    $(selector).addClass('active')
+  }
+    
+ document.addEventListener("DOMContentLoaded", (event) => {
+  updatepaymentOptions()
+});
+  </script>
