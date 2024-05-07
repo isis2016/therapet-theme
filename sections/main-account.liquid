@@ -31,6 +31,7 @@
 
       {% paginate customer.orders by 20 %}
         {%- if customer.orders.size > 0 -%}
+          {% render 'rtx-account-btn', customer: customer %}
           <table role="table" class="order-history">
             <caption class="visually-hidden">{{ 'customer.orders.title' | t }}</caption>
             <thead role="rowgroup">

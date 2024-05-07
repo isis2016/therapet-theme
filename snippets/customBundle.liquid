@@ -10,7 +10,7 @@
                     {% for block in section.blocks %}
                       {% if block.type == "product" %}
                         {% assign product = block.settings.product %}
-                        
+                      
                       <div {% if block.settings.background != "rgba(0,0,0,0)" %}style="background-color:{{ block.settings.background }}"{% endif %}
                         data-element-type="bundle-selector"
                         class="custom-bundle-inner rounded-lg border border-[#a99dea] relative"
@@ -37,6 +37,7 @@
                           type="radio"
                           id="{{ section.id }}-{{ product.id }}-{{ forloop.index0 }}"
                           name="customBundle"
+                          handle="{{ product.handle }}"
                           value="{{ product.selected_or_first_available_variant.id }}" 
                           {% if block.settings.default %}
                             checked

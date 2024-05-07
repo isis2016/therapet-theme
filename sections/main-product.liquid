@@ -365,31 +365,31 @@
             {%- when 'custom_liquid' -%}
               {{ block.settings.custom_liquid }}
             {% when 'icons' %}
-            <div class="stamp-section">
-              <div class="new-stamp-wrap">
-               <div class="new-stamp-image">
-                 <img src="{{ block.settings.stamp-img1 | img_url: 'master' }}" alt=" Stamp img">
-               </div>
+              <div class="stamp-section">
+                <div class="new-stamp-wrap">
                 <div class="new-stamp-image">
-                 <img src="{{ block.settings.stamp-img2 | img_url: 'master' }}" alt=" Stamp img">
-               </div>
-                <div class="new-stamp-image">
-                 <img src="{{ block.settings.stamp-img3 | img_url: 'master' }}" alt=" Stamp img">
-               </div>
+                  <img src="{{ block.settings.stamp-img1 | img_url: 'master' }}" alt=" Stamp img">
+                </div>
+                  <div class="new-stamp-image">
+                  <img src="{{ block.settings.stamp-img2 | img_url: 'master' }}" alt=" Stamp img">
+                </div>
+                  <div class="new-stamp-image">
+                  <img src="{{ block.settings.stamp-img3 | img_url: 'master' }}" alt=" Stamp img">
+                </div>
+                </div>
               </div>
-          </div>
             {% when 'reviewed' %}
-            <div class="reviewed-wrap">
-              <div class="reviewed-content">
-                <h6>{{ block.settings.reviewed-head }}</h6>
-                <p>{{ block.settings.reviewed-text }}</p>
-                <h5 class="reviewed-dark">{{ block.settings.reviewed-h5 }}</h5>
-                <h5 class="reviewed-light">{{ block.settings.reviewed-h4 }}</h5>
+              <div class="reviewed-wrap">
+                <div class="reviewed-content">
+                  <h6>{{ block.settings.reviewed-head }}</h6>
+                  <p>{{ block.settings.reviewed-text }}</p>
+                  <h5 class="reviewed-dark">{{ block.settings.reviewed-h5 }}</h5>
+                  <h5 class="reviewed-light">{{ block.settings.reviewed-h4 }}</h5>
+                </div>
+                <div class="reviewed-image">
+                  <img src="{{ block.settings.reviewed-img | img_url: 'master' }}" alt=" Reviewed img">
+                </div>
               </div>
-              <div class="reviewed-image">
-                <img src="{{ block.settings.reviewed-img | img_url: 'master' }}" alt=" Reviewed img">
-              </div>
-            </div>
             {%- when 'collapsible_tab' -%}
               <div class="product__accordion accordion quick-add-hidden" {{ block.shopify_attributes }}>
                 <details id="Details-{{ block.id }}-{{ section.id }}">
@@ -408,6 +408,8 @@
                   </div>
                 </details>
               </div>
+       
+                
             {%- when 'quantity_selector' -%}
               <div
                 class="product-form__input product-form__quantity{% if settings.inputs_shadow_vertical_offset != 0 and settings.inputs_shadow_vertical_offset < 0 %} product-form__quantity-top{% endif %}"
@@ -609,8 +611,7 @@
                 </div>
               </noscript>
 
-
-
+            
             {% when 'emi' %}
                 <div id="emi-box" class="mt-3 max-w-[500px]">
                   <p class="text-[14px] leading-[27px] text-black tracking-wider font-semibold">
@@ -747,97 +748,103 @@
                     {%- endform -%}
                   </div>
                   </div>
-
-                {% when 'buy_button' %}
+            
+            
+           
+            
+            {% when 'buy_button' %}
             
               {% assign showit = false %}
               {% for block in section.blocks %}
               {% if block.type == "product" %}
-              {% assign bundleProducts = true %}
+                {% assign bundleProducts = true %}
+                  
               {% endif %}
               {% endfor %}
-              {% if bundleProducts %}          
+              {% if bundleProducts %}                 
                 {% render 'customBundle' ,section:section%}
                 <script>
                   window.onload = () => {
                     $(".custom-product").insertBefore('.main-addtocart')
                   }
-              async function customBundle()
-                {
-                document.querySelector('button.product-form__submit.button.button--full-width.button--primary').classList.add('loading');
-                
-                // document.querySelector('input[name="customBundle"]:checked+label product-form button[type="submit"]').click();
-                  const complementaryProduct = document.querySelector('.bundleComplementaryCheckbox:checked')
+                async function customBundle()
+                  {
+                  document.querySelector('button.product-form__submit.button.button--full-width.button--primary').classList.add('loading');
+                  
+                  // document.querySelector('input[name="customBundle"]:checked+label product-form button[type="submit"]').click();
+                    const complementaryProduct = document.querySelector('.bundleComplementaryCheckbox:checked')
 
-                  if (complementaryProduct) {
-                    const config = fetchConfig('javascript');
-                    config.headers['X-Requested-With'] = 'XMLHttpRequest';
-                    delete config.headers['Content-Type'];
-                    const formData = new FormData($(complementaryProduct).parents('.card').find('product-form form').get(0));
-                    config.body = formData;
-                    const a = await fetch('/cart/add', config).then(response => response.json())
-                    .then(data => {
-                      // Handle the response data
-                      console.log('Product added to the cart:', data);
-                    })
-                    .catch(error => {
-                      // Handle errors
-                      console.error('Error adding product to the cart:', error);
-                    });
+                    if (complementaryProduct) {
+                      const config = fetchConfig('javascript');
+                      config.headers['X-Requested-With'] = 'XMLHttpRequest';
+                      delete config.headers['Content-Type'];
+                      const formData = new FormData($(complementaryProduct).parents('.card').find('product-form form').get(0));                     
+                      config.body = formData;
+                      const a = await fetch('/cart/add', config).then(response => response.json())
+                      .then(data => {
+                        // Handle the response data
+                        console.log('Product added to the cart:', data);
+                      })
+                      .catch(error => {
+                        // Handle errors
+                        console.error('Error adding product to the cart:', error);
+                      });
+                    }
+
+                  
+                  document.querySelector('input[name="customBundle"]:checked+label product-form').onSubmitHandler({preventDefault: ()=> {}})
+                
+                  setTimeout(function(){
+                  document.querySelector('button.product-form__submit.button.button--full-width.button--primary').classList.remove('loading');
+                  },2000);
                   }
+                  </script>
+                {% endif %}   
 
-                
-                document.querySelector('input[name="customBundle"]:checked+label product-form').onSubmitHandler({preventDefault: ()=> {}})
-              
-                setTimeout(function(){
-                document.querySelector('button.product-form__submit.button.button--full-width.button--primary').classList.remove('loading');
-                },2000);
-                }
-                </script>
-              {% endif %}   
-
-            {% if block.settings.amount != blank %}
-              <div class="amount-main">
-                <div class="amount">
-                  <p>{{ block.settings.amount }}</p>
-                  <a class="openpop" href="javascript:;"><img src="https://cdn.shopify.com/s/files/1/0764/0530/9760/files/information-icon.adeb9be0.svg?v=1699953686"/></a>
-                </div>
-              </div>
-            {% endif %}  
-            {% if block.settings.free-dilevery %}
-              <div class="dilevery">
-                <div class="dilevery-wrap">
-                  {% if block.settings.dilevery-icon %}
-                  <div class="dilevery-icon">
-                    <img src="{{ block.settings.dilevery-icon | img_url: 'master' }}">
+                {% if block.settings.amount != blank %}
+                  <div class="amount-main">
+                    <div class="amount">
+                      <p>{{ block.settings.amount }}</p>
+                      <a class="openpop" href="javascript:;"><img src="https://cdn.shopify.com/s/files/1/0764/0530/9760/files/information-icon.adeb9be0.svg?v=1699953686"/></a>
+                    </div>
                   </div>
-                  {% endif %}  
-                  {% if block.settings.dilevery-text %}
-                  <div class="dilevery-text">
-                    {{ block.settings.dilevery-text }}
+                {% endif %}  
+                {% if block.settings.free-dilevery %}
+                  <div class="dilevery">
+                    <div class="dilevery-wrap">
+                      {% if block.settings.dilevery-icon %}
+                      <div class="dilevery-icon">
+                        <img src="{{ block.settings.dilevery-icon | img_url: 'master' }}">
+                      </div>
+                      {% endif %}  
+                      {% if block.settings.dilevery-text %}
+                      <div class="dilevery-text">
+                        {{ block.settings.dilevery-text }}
+                      </div>
+                      {% endif %}  
+                    </div>
                   </div>
-                  {% endif %}  
-                </div>
-              </div>
-            {% endif %}
-            {% if block.settings.no-contract %}
-              <div class="dilevery">
-                <div class="dilevery-wrap">
-                  {% if block.settings.contract-icon %}
-                  <div class="dilevery-icon">
-                    <img src="{{ block.settings.contract-icon | img_url: 'master' }}">
+                {% endif %}
+                {% if block.settings.no-contract %}
+                  <div class="dilevery">
+                    <div class="dilevery-wrap">
+                      {% if block.settings.contract-icon %}
+                      <div class="dilevery-icon">
+                        <img src="{{ block.settings.contract-icon | img_url: 'master' }}">
+                      </div>
+                      {% endif %}  
+                      {% if block.settings.contract-text %}
+                      <div class="dilevery-text">
+                        {{ block.settings.contract-text }}
+                      </div>
+                      {% endif %}  
+                    </div>
                   </div>
-                  {% endif %}  
-                  {% if block.settings.contract-text %}
-                  <div class="dilevery-text">
-                    {{ block.settings.contract-text }}
-                  </div>
-                  {% endif %}  
-                </div>
-              </div>
-            {% endif %}
-        
+                {% endif %}
             
+               <!--Stay Ai-->
+               {% render 'rtx-pdp', product: product, block: block, product_form_id: '' %}
+                    
                 <product-form class="cart main-addtocart" client:idle>
                   <p
                     class="text-red-500"
@@ -857,7 +864,8 @@
                       name="id"
                       value="{{ product.selected_or_first_available_variant.id }}"
                       disabled
-                    >
+                    >                   
+
                     <div class="grid items-stretch [&_[aria-hidden]]:hidden [&_button[aria-disabled]]:background-red-500 [&_.shopify-payment-button_>_div]:mt-4">
                          <button
                             {% unless bundleProducts %} type="submit"
@@ -896,6 +904,8 @@
                   {%- endform -%}
                 </product-form>
 
+            
+            
             {% when 'pop__up' %}
             <div class="custom--pop">
                 <div class="custom__pop__cont">
@@ -2123,6 +2133,186 @@
           "info": "t:sections.main-product.blocks.custom_liquid.settings.custom_liquid.info"
         }
       ]
+    },
+    {
+      "type": "stay_ai_subscriptions",
+      "name": "Stay Ai Subscriptions",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "show_purchase_options",
+          "default": true,
+          "label": "Show purchase options",
+          "info": "Displays the purchase options: One time and Subscription purchase"
+        },
+         {
+          "type": "text",
+          "id": "purchase_type_label",
+          "label": "Purchase type label",
+          "default": "Purchase type:"
+        },
+        {
+          "type": "text",
+          "id": "one_time_purchase_label",
+          "label": "One-time purchase label",
+          "default": "One-Time Purchase"
+        },
+        {
+          "type": "text",
+          "id": "subscription_label",
+          "label": "Subscription label",
+          "default": "Subscribe & Save"
+        },
+        {
+          "type": "checkbox",
+          "id": "default_to_subscription",
+          "default": true,
+          "label": "Set subscription as default purchase option"
+        },
+        {
+          "type": "checkbox",
+          "id": "frequency_visible",
+          "default": false,
+          "label": "Keep frequency selector always visible"
+        }, 
+        { 
+          "type": "text",
+          "id": "frequency_heading",
+          "label": "Frequency heading",
+          "default": "Frequency:"
+        },
+        {
+          "type": "header",
+          "content": "Subscription Details Box Settings"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_subscription_details",
+          "default": true,
+          "label": "Show subscription details box"
+        },
+        {
+          "type": "text",
+          "id": "subscription_details_box_button_text",
+          "label": "Subscription details box hover text",
+          "default": "Subscription Details"
+        },
+        {
+          "type": "text",
+          "id": "icon_path",
+          "label": "SVG for Subscription Details Icon",
+          "default": "<svg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'><path fill='currentColor' d='M13.64 2.35C12.19 0.9 10.2 0 7.99 0C3.57 0 0 3.58 0 8C0 12.42 3.57 16 7.99 16C11.72 16 14.83 13.45 15.72 10H13.64C12.82 12.33 10.6 14 7.99 14C4.68 14 1.99 11.31 1.99 8C1.99 4.69 4.68 2 7.99 2C9.65 2 11.13 2.69 12.21 3.78L8.99 7H15.99V0L13.64 2.35Z'></path></svg>",
+          "info": "Input the SVG for your icon."
+        },
+        {
+          "type": "text",
+          "id": "subscription_details_box_title",
+          "label": "Subscription details box title",
+          "default": "How subscriptions work"
+        },
+        {
+          "type": "richtext",
+          "id": "subscription_details_box_content",
+          "label": "Subscription details box content",
+          "default": "<p>Products are automatically delivered on your schedule. No obligation, modify or cancel your subscription anytime.</p>"
+        },        
+        {
+          "type": "header",
+          "content": "Widget layout"
+        },
+         {
+          "type": "checkbox",
+          "id": "subscription_label_first",
+          "default": false,
+          "label": "Display the subscription label first"
+        },
+        {
+          "type": "select",
+          "id": "widget_layout",
+          "options": [
+            {
+              "value": "standard",
+              "label": "Stacked buttons with radio buttons"
+            },
+            {
+              "value": "stacked-buttons",
+              "label": "Stacked buttons without radio buttons"
+            },
+            {
+              "value": "side-by-side-buttons",
+              "label": "Side by side buttons"
+            }
+          ],
+          "default": "standard",
+          "label": "Select the widget layout"
+        },      
+        {
+          "type": "header",
+          "content": "Typography"
+        },
+        {
+          "type": "font_picker",
+          "id": "font_family",
+          "label": "Select the font",
+          "default": "work_sans_n6"
+        },
+        {
+          "type": "color",
+          "id": "text_color",
+          "label": "Text color",
+          "default": "#000000"
+        },
+        {
+          "type": "number",
+          "id": "font_size",
+          "label": "Font size",
+          "default": 14
+        },
+        {
+          "type": "header",
+          "content": "Background and Border"
+        },
+        {
+          "type": "color",
+          "id": "border_color",
+          "label": "Border color",
+          "default": "#E0E0E0"
+        },
+        {
+          "type": "color",
+          "id": "selected_bg_color",
+          "label": "Selected background color",
+          "default": "#E0E0E0"
+        },
+        {
+          "type": "color",
+          "id": "selected_text_color",
+          "label": "Selected text color",
+          "default": "#121212"
+        },
+        {
+          "type": "color",
+          "id": "accent_color",
+          "label": "Accent color",
+          "default": "#121212"
+        },
+        {
+          "type": "number",
+          "id": "border_width",
+          "label": "Border width, set to 0 to remove border",
+          "default": 1
+        },
+        {
+          "type": "number",
+          "id": "border_radius",
+          "label": "Border radius",
+          "default": 10
+        }
+       
+
+      ]
+      
     },
     {
       "type": "collapsible_tab",

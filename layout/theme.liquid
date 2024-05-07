@@ -372,18 +372,18 @@ window.TriplePixelData={TripleName:"aefbf0.myshopify.com",ver:"1.9.0"},function(
     {%- endif -%}
 
     <script>
-    {% assign product = all_products['cleanux™-nasal-water-jet'] %}
-  var _learnq = window._learnq || [];
+    {% assign myProduct = all_products['cleanux™-nasal-water-jet'] %}
+  var _learnq = window._learnq || [];  
   var product = {
-    Name: '{{product.title}}',
-    ProductID: {{product.id}},
-    Categories: "{{ product.collections }}",
-    ImageURL: "{{product.featured_image | img_url: 'master'}}",
-    URL: "{{ shop.url }}/products/{{product.handle}}",
-    Brand: "{{product.vendor}}",
-    Price: "{{product.price | money | remove: '<span class=money>' | remove: '</span>'}}",
-    CompareAtPrice: "{{product.compare_at_price | money  | remove: '<span class=money>' | remove: '</span>'}}",
-  };
+    Name: ' {{myProductoduct.title}} ',
+    ProductID: '{{ myProduct.id }} ',
+    Categories: "{{ myProduct.collections }}",
+    ImageURL: "{{myProduct.featured_image | img_url: 'master'}}",
+    URL: "{{ shop.url }}/products/{{myProduct.handle}}",
+    Brand: "{{myProduct.vendor}}",
+    Price: "{{myProduct.price | money | remove: '<span class=money>' | remove: '</span>'}}",
+    CompareAtPrice: "{{myProduct.compare_at_price | money  | remove: '<span class=money>' | remove: '</span>'}}",
+  };  
   _learnq.push(['track', 'Viewed Product', product]);
     </script>
     

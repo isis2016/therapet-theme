@@ -8,7 +8,8 @@ if (!customElements.get('product-form')) {
       this.form.addEventListener('submit', this.onSubmitHandler.bind(this));
       this.cart = document.querySelector('cart-notification') || document.querySelector('cart-drawer');
       this.submitButton = this.querySelector('[type="submit"]');
-      if (document.querySelector('cart-drawer')) this.submitButton.setAttribute('aria-haspopup', 'dialog');
+      if (document.querySelector('cart-drawer') && this.submitButton) this.submitButton.setAttribute('aria-haspopup', 'dialog');
+         
     }
 
     onSubmitHandler(evt) {
@@ -37,7 +38,7 @@ if (!customElements.get('product-form')) {
         .then((response) => response.json())
         .then((response) => {
           if (response.status) {
-            this.handleErrorMessage(response.description);
+            this.handleErrorMessage(response.description);           
 
             const soldOutMessage = this.submitButton.querySelector('.sold-out-message');
             if (!soldOutMessage) return;

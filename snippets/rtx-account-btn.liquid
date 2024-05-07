@@ -1,0 +1,70 @@
+{% assign hasSubscriptionOrders = false %}
+{% for order in customer.orders %}
+  {% for line_item in order.line_items %}
+    {% if line_item.selling_plan_allocation %}
+      {% assign hasSubscriptionOrders = true %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+  {% if hasSubscriptionOrders %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+
+{% if hasSubscriptionOrders %}
+
+<p class="rtxn_customer_portal_login" >
+  <button class="rtxn_manage_subscriptions_btn" href="#">Manage Subscriptions</button>
+</p>
+
+<script>
+  function loginRetextionCustomerPortal() {
+    const appName = "retextion";
+    const customerId = {% if customer.id %}
+      {{ customer.id }}
+    {% else %}
+      null
+    {% endif %};
+    if (customerId) { 
+      // Construct an HTTP request
+      var xhr = new XMLHttpRequest();
+      xhr.open("POST", "/apps/" + appName + "/login", true);
+      xhr.setRequestHeader("Accept", "application/json; charset=utf-8");
+      xhr.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
+
+      // Send the collected data as JSON
+      const data = {
+        customerId
+      };
+      xhr.send(JSON.stringify(data));
+      xhr.onloadend = function(response) {
+        if (response.target.status === 200) {
+          const data = JSON.parse(xhr.responseText);
+          if (data.token) {
+            const oneHour = 60 * 60 * 1000;
+            localStorage
+              .setItem('customer-portal-token', data.token)
+              localStorage
+              .setItem('customer-portal-token-expiration', new Date().getTime() + oneHour)
+              window
+              .location
+              .replace("/apps/" + appName + "/#/shop/subscriptions");
+          }
+        }
+      };
+    } else {
+      window.location.replace("/apps/" + appName + "/#/login");
+    }
+    window.addEventListener("load", loginRetextionCustomerPortal);
+  }
+  function checkShowCustomerPortalStatus() {
+    document.querySelectorAll('.rtxn_manage_subscriptions_btn').forEach(btn=>{
+      btn.addEventListener("click", loginRetextionCustomerPortal);
+    });
+  }
+  document.addEventListener('DOMContentLoaded', function() {
+    checkShowCustomerPortalStatus();
+  })
+</script>
+
+{% endif %}
